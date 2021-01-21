@@ -162,7 +162,7 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                 break;
             case R.id.bt_addtocart:
                 if (Common.MERCHANT_TYPE == 1) {
-                    if (addition_id == 0 | size_id == 0 | removal_id == 0) {
+                    if (size_id == 0) {
                         Toast.makeText(this, "All field is required", Toast.LENGTH_SHORT).show();
                         return;
                     }

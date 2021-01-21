@@ -12,10 +12,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.gson.Gson;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import okhttp3.RequestBody;
 import ontime.app.R;
+import ontime.app.customer.doneActivity.UserProfileActivity;
 import ontime.app.databinding.ActivityNotificationBinding;
 import ontime.app.model.restaurantlist.RestaurantExample;
 import ontime.app.okhttp.APIcall;
@@ -65,6 +67,7 @@ public class MurchanNotification extends BaseActivity implements View.OnClickLis
     protected void setListener() {
         super.setListener();
         binding.back.setOnClickListener(this);
+        binding.llDelete.setOnClickListener(this);
     }
 
     @Override
@@ -73,8 +76,23 @@ public class MurchanNotification extends BaseActivity implements View.OnClickLis
             case R.id.back:
                 onBackPressed();
                 break;
+            case R.id.ll_delete:
+                if (isConnected()) {
+                    GetAPICallNotificastionDelete();
+                }
+                break;
 
         }
+    }
+
+    private void GetAPICallNotificastionDelete() {
+        JSONObject jsonObject = new JSONObject();
+        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
+        String url = AppConstant.GET_READER_DELETE_NOTIFICATION;
+        APIcall apIcall = new APIcall(getApplicationContext());
+        apIcall.isPost(true);
+        apIcall.setBody(body);
+        apIcall.execute(url, APIcall.OPERATION_READER_DELETE_NOTIFICATION, this);
     }
 
     private void showDialog() {
@@ -112,6 +130,9 @@ public class MurchanNotification extends BaseActivity implements View.OnClickLis
         if (operationCode == APIcall.OPERATION_NOTIFICATION) {
             showDialog();
         }
+        if (operationCode == APIcall.OPERATION_READER_DELETE_NOTIFICATION) {
+            showDialog();
+        }
 
     }
 
@@ -128,17 +149,40 @@ public class MurchanNotification extends BaseActivity implements View.OnClickLis
                 Gson gson = new Gson();
                 NotificationExample exampleUser = gson.fromJson(response, NotificationExample.class);
                 if (exampleUser.getStatus() == 200) {
-                    binding.rvList.setVisibility(View.VISIBLE);
-                    binding.txtNoItem.setVisibility(View.GONE);
-                    madapter = new MutchantNotificationListAdapter(getContext(),exampleUser.getResponceData());
-                    binding.rvList.setItemAnimator(new DefaultItemAnimator());
-                    binding.rvList.setAdapter(madapter);
-                    Toast.makeText(MurchanNotification.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    if (exampleUser.getResponceData().size() == 0) {
+                        binding.llDelete.setVisibility(View.VISIBLE);
+                        binding.rvList.setVisibility(View.VISIBLE);
+                        binding.txtNoItem.setVisibility(View.GONE);
+                        madapter = new MutchantNotificationListAdapter(getContext(), exampleUser.getResponceData());
+                        binding.rvList.setItemAnimator(new DefaultItemAnimator());
+                        binding.rvList.setAdapter(madapter);
+                        Toast.makeText(MurchanNotification.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    } else {
+                        binding.llDelete.setVisibility(View.GONE);
+                        binding.rvList.setVisibility(View.GONE);
+                        binding.txtNoItem.setVisibility(View.VISIBLE);
+                    }
+
                 } else {
+                    binding.llDelete.setVisibility(View.GONE);
                     binding.rvList.setVisibility(View.GONE);
                     binding.txtNoItem.setVisibility(View.VISIBLE);
                     Toast.makeText(MurchanNotification.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
+            }
+            if (operationCode == APIcall.OPERATION_READER_DELETE_NOTIFICATION) {
+                hideDialog();
+                JSONObject root = null;
+                try {
+                    root = new JSONObject(response);
+                    Toast.makeText(MurchanNotification.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
+                    GetAPICallNotificastion();
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+
             }
         } catch (Exception e) {
 
@@ -153,7 +197,7 @@ public class MurchanNotification extends BaseActivity implements View.OnClickLis
 
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(MurchanNotification.this,RiderOrderDetails.class));
+        startActivity(new Intent(MurchanNotification.this, RiderOrderDetails.class));
         finish();
     }
 }

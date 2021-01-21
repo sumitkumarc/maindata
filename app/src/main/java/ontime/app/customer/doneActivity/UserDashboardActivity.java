@@ -5,32 +5,78 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.databinding.DataBindingUtil;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
+import com.google.gson.Gson;
+
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import okhttp3.RequestBody;
 import ontime.app.R;
 import ontime.app.databinding.ActivityHomeBinding;
 import ontime.app.model.usermain.Userdate;
+import ontime.app.okhttp.APIcall;
+import ontime.app.okhttp.AppConstant;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
 import ontime.app.utils.SessionManager;
 
-public class UserDashboardActivity extends BaseActivity implements View.OnClickListener {
+public class UserDashboardActivity extends BaseActivity implements View.OnClickListener, APIcall.ApiCallListner {
     SessionManager sessionManager;
     Userdate userData;
     ActivityHomeBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         sessionManager = new SessionManager(UserDashboardActivity.this);
         userData = sessionManager.getUserDetails();
+
         setUpUI();
+        FirebaseMessaging.getInstance().getToken()
+                .addOnCompleteListener(new OnCompleteListener<String>() {
+                    @Override
+                    public void onComplete(@NonNull Task<String> task) {
+                        if (!task.isSuccessful()) {
+                            Log.w("TAG", "Fetching FCM registration token failed", task.getException());
+                            return;
+                        }
+                        GetGetUpdateToken(task.getResult());
+
+                    }
+                });
+
+    }
+
+    private void GetGetUpdateToken(String result) {
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("device_token", result);
+            jsonObject.put("user_id", userData.getId());
+            jsonObject.put("device_type", "android");
+            jsonObject.put("user_type", userData.getUserType());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
+        String url = AppConstant.GET_UPDATE_DEVICE_TOKEN;
+        APIcall apIcall = new APIcall(getApplicationContext());
+        apIcall.isPost(true);
+        apIcall.setBody(body);
+        apIcall.execute(url, APIcall.OPERATION_UPDATE_DEVICE_TOKEN, this);
     }
 
     private void setUpUI() {
@@ -172,6 +218,29 @@ public class UserDashboardActivity extends BaseActivity implements View.OnClickL
             default:
                 break;
         }
+    }
+    @Override
+    public void onStartLoading(int operationCode) {
+
+    }
+
+    @Override
+    public void onProgress(int operationCode, int progress) {
+
+    }
+
+    @Override
+    public void onSuccess(int operationCode, String response, Object customData) {
+        if (operationCode == APIcall.OPERATION_UPDATE_DEVICE_TOKEN) {
+            Gson gson = new Gson();
+
+
+        }
+    }
+
+    @Override
+    public void onFail(int operationCode, String response) {
+
     }
 
 

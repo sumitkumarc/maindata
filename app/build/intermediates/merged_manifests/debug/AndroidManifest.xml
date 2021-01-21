@@ -50,6 +50,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <activity android:name="ontime.app.customer.doneActivity.RestRattingListActivity" />
         <activity
             android:name="ontime.app.restaurant.ui.Activity.NewOrderItemListActivity"
             android:theme="@style/AppTheme1" />
@@ -114,7 +115,7 @@
             android:name="ontime.app.customer.Activity.SentRequestActivity"
             android:theme="@style/AppTheme1" />
         <activity
-            android:name="ontime.app.customer.Activity.RequestPending"
+            android:name="ontime.app.customer.doneActivity.RequestPendingActivity"
             android:theme="@style/AppTheme1" />
         <activity
             android:name="ontime.app.customer.doneActivity.MyOrdersListActivity"

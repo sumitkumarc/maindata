@@ -4,6 +4,7 @@ package ontime.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -19,16 +20,16 @@ public final class RowNotificationItemBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final TextView txtDetails;
+  public final ImageView ivProfile;
 
   @NonNull
-  public final TextView txtTitle;
+  public final TextView txtDetails1;
 
-  private RowNotificationItemBinding(@NonNull RelativeLayout rootView, @NonNull TextView txtDetails,
-      @NonNull TextView txtTitle) {
+  private RowNotificationItemBinding(@NonNull RelativeLayout rootView, @NonNull ImageView ivProfile,
+      @NonNull TextView txtDetails1) {
     this.rootView = rootView;
-    this.txtDetails = txtDetails;
-    this.txtTitle = txtTitle;
+    this.ivProfile = ivProfile;
+    this.txtDetails1 = txtDetails1;
   }
 
   @Override
@@ -58,19 +59,19 @@ public final class RowNotificationItemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.txt_details;
-      TextView txtDetails = rootView.findViewById(id);
-      if (txtDetails == null) {
+      id = R.id.iv_profile;
+      ImageView ivProfile = rootView.findViewById(id);
+      if (ivProfile == null) {
         break missingId;
       }
 
-      id = R.id.txt_title;
-      TextView txtTitle = rootView.findViewById(id);
-      if (txtTitle == null) {
+      id = R.id.txt_details1;
+      TextView txtDetails1 = rootView.findViewById(id);
+      if (txtDetails1 == null) {
         break missingId;
       }
 
-      return new RowNotificationItemBinding((RelativeLayout) rootView, txtDetails, txtTitle);
+      return new RowNotificationItemBinding((RelativeLayout) rootView, ivProfile, txtDetails1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

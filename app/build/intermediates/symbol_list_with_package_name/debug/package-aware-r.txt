@@ -2283,6 +2283,7 @@ drawable graybg
 drawable graycircle
 drawable home
 drawable homered
+drawable ic_action_delete
 drawable ic_action_filter
 drawable ic_action_shopping
 drawable ic_action_user
@@ -2573,6 +2574,7 @@ id browser_actions_menu_view
 id bt_add_now
 id bt_addtocart
 id bt_apply
+id bt_cancel
 id bt_cancelled
 id bt_close
 id bt_confirm
@@ -2581,6 +2583,7 @@ id bt_delivered
 id bt_expiration_date_sheet
 id bt_expiration_month_grid_view
 id bt_expiration_year_grid_view
+id bt_pay_now
 id bt_reOrder
 id bt_send
 id bt_send_request
@@ -2803,6 +2806,7 @@ id iv_order_item
 id iv_pament_methord
 id iv_payment
 id iv_pro_image
+id iv_profile
 id iv_rest_img
 id iv_rest_menu
 id iv_rest_profile_img
@@ -3151,7 +3155,6 @@ id tv_paymentprogress
 id tv_resturant
 id tv_storelink
 id tv_supermart
-id tvcart
 id tvdine
 id tvtake
 id txt
@@ -3183,6 +3186,7 @@ id txt_count
 id txt_date
 id txt_deliver_time
 id txt_details
+id txt_details1
 id txt_discount
 id txt_edit
 id txt_english
@@ -3232,6 +3236,8 @@ id txt_rest_name
 id txt_rest_qty
 id txt_sFirst
 id txt_sSecond
+id txt_service_fees
+id txt_service_tax
 id txt_sign_out
 id txt_status
 id txt_tax
@@ -3240,6 +3246,7 @@ id txt_title
 id txt_top
 id txt_total
 id txt_total_spend
+id txt_total_tax
 id txt_user_name
 id txt_wallet
 id unchecked
@@ -3351,6 +3358,7 @@ layout activity_phone_number
 layout activity_profile
 layout activity_registet_page
 layout activity_requestpending
+layout activity_rest_ratting_list
 layout activity_restaurantlist
 layout activity_restdetail
 layout activity_restprofile
@@ -3368,6 +3376,7 @@ layout c_row_category_list_item
 layout c_row_item_cart
 layout c_row_menu_dishes
 layout c_row_my_cart_item
+layout c_row_requestpending_item
 layout c_row_restaurant_item
 layout charge_status_expandable_layout
 layout charge_status_layout
@@ -3437,7 +3446,6 @@ layout item_order1super
 layout item_order2super
 layout item_ordersuper
 layout item_payment
-layout item_requestpending
 layout item_supermarket
 layout item_visa
 layout item_wallet

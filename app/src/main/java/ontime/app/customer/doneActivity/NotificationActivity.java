@@ -44,14 +44,14 @@ public class NotificationActivity extends BaseActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         if (Common.MERCHANT_TYPE == 1) {
             Common.setSystemBarColor(this, R.color.colorAccent);
-            Common.setSystemBarLight(this);
+//            Common.setSystemBarLight(this);
             binding.ivLogo.setColorFilter(getResources().getColor(R.color.colorAccent));
             binding.ivBack.setColorFilter(getResources().getColor(R.color.colorAccent));
             binding.txtTitle.setTextColor(getResources().getColor(R.color.colorAccent));
 
         } else {
             Common.setSystemBarColor(this, R.color.super_mart);
-            Common.setSystemBarLight(this);
+//            Common.setSystemBarLight(this);
             binding.ivLogo.setColorFilter(getResources().getColor(R.color.super_mart));
             binding.ivBack.setColorFilter(getResources().getColor(R.color.super_mart));
             binding.txtTitle.setTextColor(getResources().getColor(R.color.super_mart));
@@ -63,10 +63,21 @@ public class NotificationActivity extends BaseActivity implements View.OnClickLi
         GetAPICallNotificastion();
     }
 
+    private void GetAPICallNotificastionDelete() {
+        JSONObject jsonObject = new JSONObject();
+        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
+        String url = AppConstant.GET_USER_DELETE_NOTIFICATION;
+        APIcall apIcall = new APIcall(getApplicationContext());
+        apIcall.isPost(true);
+        apIcall.setBody(body);
+        apIcall.execute(url, APIcall.OPERATION_USER_DELETE_NOTIFICATION, this);
+    }
+
     @Override
     protected void setListener() {
         super.setListener();
         binding.back.setOnClickListener(this);
+        binding.llDelete.setOnClickListener(this);
     }
 
     @Override
@@ -74,6 +85,11 @@ public class NotificationActivity extends BaseActivity implements View.OnClickLi
         switch (view.getId()) {
             case R.id.back:
                 onBackPressed();
+                break;
+            case R.id.ll_delete:
+                if (isConnected()) {
+                    GetAPICallNotificastionDelete();
+                }
                 break;
 
         }
@@ -114,6 +130,9 @@ public class NotificationActivity extends BaseActivity implements View.OnClickLi
         if (operationCode == APIcall.OPERATION_NOTIFICATION) {
             showDialog();
         }
+        if (operationCode == APIcall.OPERATION_USER_DELETE_NOTIFICATION) {
+            showDialog();
+        }
 
     }
 
@@ -130,17 +149,38 @@ public class NotificationActivity extends BaseActivity implements View.OnClickLi
                 Gson gson = new Gson();
                 RestaurantExample exampleUser = gson.fromJson(response, RestaurantExample.class);
                 if (exampleUser.getStatus() == 200) {
-                    binding.rvList.setVisibility(View.VISIBLE);
-                    binding.txtNoItem.setVisibility(View.GONE);
-                    madapter = new RvNotificationListAdapter(getContext(),exampleUser.getResponceData());
-                    binding.rvList.setItemAnimator(new DefaultItemAnimator());
-                    binding.rvList.setAdapter(madapter);
-                    Toast.makeText(NotificationActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    if (exampleUser.getResponceData().size() != 0) {
+                        binding.llDelete.setVisibility(View.VISIBLE);
+                        binding.rvList.setVisibility(View.VISIBLE);
+                        binding.txtNoItem.setVisibility(View.GONE);
+                        binding.rvList.setItemAnimator(new DefaultItemAnimator());
+                        madapter = new RvNotificationListAdapter(getContext(), exampleUser.getResponceData());
+                        binding.rvList.setAdapter(madapter);
+                        Toast.makeText(NotificationActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    } else {
+                        binding.llDelete.setVisibility(View.GONE);
+                        binding.rvList.setVisibility(View.GONE);
+                        binding.txtNoItem.setVisibility(View.VISIBLE);
+                    }
                 } else {
                     binding.rvList.setVisibility(View.GONE);
                     binding.txtNoItem.setVisibility(View.VISIBLE);
                     Toast.makeText(NotificationActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
+            }
+            if (operationCode == APIcall.OPERATION_USER_DELETE_NOTIFICATION) {
+                hideDialog();
+                JSONObject root = null;
+                try {
+                    root = new JSONObject(response);
+                    Toast.makeText(NotificationActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
+                    GetAPICallNotificastion();
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+
             }
         } catch (Exception e) {
 

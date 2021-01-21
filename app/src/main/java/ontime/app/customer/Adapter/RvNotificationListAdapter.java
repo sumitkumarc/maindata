@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import ontime.app.R;
 import ontime.app.customer.doneActivity.PaymentActivity;
 import ontime.app.databinding.RowCardDetailsBinding;
@@ -39,12 +41,18 @@ public class RvNotificationListAdapter extends RecyclerView.Adapter<RvNotificati
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
-        if (Common.MERCHANT_TYPE == 1) {
-            holder.binding.txtTitle.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
-        } else {
-            holder.binding.txtTitle.setTextColor(mContext.getResources().getColor(R.color.super_mart));
+        try {
+            holder.binding.txtDetails1.setText("" + Common.isStrempty(mResponceData.get(position).getMessage()));
+            if (mResponceData.get(position).getRestaurant().getImage() != null) {
+                Glide.with(mContext).load(mResponceData.get(position).getRestaurant().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivProfile);
+            }else {
+                holder.binding.ivProfile.setImageDrawable(mContext.getResources().getDrawable(R.mipmap.ic_launcher));
+            }
+        } catch (Exception e) {
+            holder.binding.ivProfile.setImageDrawable(mContext.getResources().getDrawable(R.mipmap.ic_launcher));
         }
-        holder.binding.txtDetails.setText(""+ mResponceData.get(position).getMessage());
+
+
 //        holder.binding.txtTitle.setText(""+ mResponceData.get(position).getRestaurant().);
 
 
@@ -52,7 +60,7 @@ public class RvNotificationListAdapter extends RecyclerView.Adapter<RvNotificati
 
     @Override
     public int getItemCount() {
-        return 10;
+        return mResponceData.size();
     }
 
 

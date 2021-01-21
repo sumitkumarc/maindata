@@ -33,13 +33,16 @@ public class ActivityOrdersummaryBindingImpl extends ActivityOrdersummaryBinding
         sViewsWithIds.put(R.id.checkBox, 17);
         sViewsWithIds.put(R.id.txt_grand_total, 18);
         sViewsWithIds.put(R.id.txt_additional_item, 19);
-        sViewsWithIds.put(R.id.txt_order_total, 20);
-        sViewsWithIds.put(R.id.txt_discount, 21);
-        sViewsWithIds.put(R.id.txt_pay_amount, 22);
-        sViewsWithIds.put(R.id.llbotom, 23);
-        sViewsWithIds.put(R.id.bt_apply, 24);
-        sViewsWithIds.put(R.id.ed_CouponCode, 25);
-        sViewsWithIds.put(R.id.bt_send_request, 26);
+        sViewsWithIds.put(R.id.txt_total_tax, 20);
+        sViewsWithIds.put(R.id.txt_service_fees, 21);
+        sViewsWithIds.put(R.id.txt_service_tax, 22);
+        sViewsWithIds.put(R.id.txt_order_total, 23);
+        sViewsWithIds.put(R.id.txt_discount, 24);
+        sViewsWithIds.put(R.id.txt_pay_amount, 25);
+        sViewsWithIds.put(R.id.llbotom, 26);
+        sViewsWithIds.put(R.id.bt_apply, 27);
+        sViewsWithIds.put(R.id.ed_CouponCode, 28);
+        sViewsWithIds.put(R.id.bt_send_request, 29);
     }
     // views
     @NonNull
@@ -50,14 +53,14 @@ public class ActivityOrdersummaryBindingImpl extends ActivityOrdersummaryBinding
     // Inverse Binding Event Handlers
 
     public ActivityOrdersummaryBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 27, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 30, sIncludes, sViewsWithIds));
     }
     private ActivityOrdersummaryBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.appcompat.widget.AppCompatButton) bindings[24]
-            , (androidx.appcompat.widget.AppCompatButton) bindings[26]
+            , (androidx.appcompat.widget.AppCompatButton) bindings[27]
+            , (androidx.appcompat.widget.AppCompatButton) bindings[29]
             , (android.widget.CheckBox) bindings[17]
-            , (android.widget.EditText) bindings[25]
+            , (android.widget.EditText) bindings[28]
             , (android.widget.LinearLayout) bindings[6]
             , (android.widget.ImageView) bindings[4]
             , (de.hdodenhof.circleimageview.CircleImageView) bindings[7]
@@ -65,7 +68,7 @@ public class ActivityOrdersummaryBindingImpl extends ActivityOrdersummaryBinding
             , (android.widget.LinearLayout) bindings[12]
             , (android.widget.LinearLayout) bindings[5]
             , (android.widget.LinearLayout) bindings[2]
-            , (android.widget.LinearLayout) bindings[23]
+            , (android.widget.LinearLayout) bindings[26]
             , (android.widget.LinearLayout) bindings[1]
             , (androidx.recyclerview.widget.RecyclerView) bindings[13]
             , (androidx.recyclerview.widget.RecyclerView) bindings[16]
@@ -73,12 +76,15 @@ public class ActivityOrdersummaryBindingImpl extends ActivityOrdersummaryBinding
             , (android.widget.TextView) bindings[19]
             , (android.widget.TextView) bindings[11]
             , (android.widget.TextView) bindings[14]
-            , (android.widget.TextView) bindings[21]
+            , (android.widget.TextView) bindings[24]
             , (android.widget.TextView) bindings[18]
             , (android.widget.TextView) bindings[9]
-            , (android.widget.TextView) bindings[20]
-            , (android.widget.TextView) bindings[22]
+            , (android.widget.TextView) bindings[23]
+            , (android.widget.TextView) bindings[25]
             , (android.widget.TextView) bindings[10]
+            , (android.widget.TextView) bindings[21]
+            , (android.widget.TextView) bindings[22]
+            , (android.widget.TextView) bindings[20]
             , (android.widget.TextView) bindings[15]
             );
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];

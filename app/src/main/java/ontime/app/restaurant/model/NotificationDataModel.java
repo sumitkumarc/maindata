@@ -3,6 +3,8 @@ package ontime.app.restaurant.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import ontime.app.model.usermain.Restaurant;
+
 public class NotificationDataModel {
 
     @SerializedName("id")
@@ -43,7 +45,7 @@ public class NotificationDataModel {
     private Object deletedAt;
     @SerializedName("restaurant")
     @Expose
-    private Object restaurant;
+    private Restaurant restaurant;
 
     public Integer getId() {
         return id;
@@ -141,11 +143,11 @@ public class NotificationDataModel {
         this.deletedAt = deletedAt;
     }
 
-    public Object getRestaurant() {
+    public Restaurant getRestaurant() {
         return restaurant;
     }
 
-    public void setRestaurant(Object restaurant) {
+    public void setRestaurant(Restaurant restaurant) {
         this.restaurant = restaurant;
     }
 

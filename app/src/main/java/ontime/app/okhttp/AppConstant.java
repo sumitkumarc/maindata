@@ -3,7 +3,7 @@ package ontime.app.okhttp;
 public class AppConstant {
     public static final String REQUEST_HEADER_TOKEN = "Authorization";
     public static final String CONNECTION_ERROR_MSG = "No connection found. Please connect & try again.";
-    public static final String BASE_URL1 = "http://ontime-sa.com/";
+    public static final String BASE_URL1 = "https://ontime-sa.com/";
     public static final String BASE_URL_READER = BASE_URL1 + "api/merchant/";
 
     public static final String BASE_URL_NEW =BASE_URL1 + "api/customer/";
@@ -37,12 +37,19 @@ public class AppConstant {
     public static final String GET_WALLET = BASE_URL_NEW +"getWallet";
     public static final String GET_USER_CANCEL_ORDER = BASE_URL_NEW +"cancelOrder";
     public static final String GET_USER_NOTIFICATION = BASE_URL_NEW +"getNotification";
-
+    public static final String GET_UPDATE_DEVICE_TOKEN = BASE_URL_NEW +"updateDeviceToken";
     public static final String GET_READER_ORDERDETAIL = BASE_URL_READER +"getOrders";
     public static final String GET_READER_ORDER_ACCEPT = BASE_URL_READER +"acceptOrder";
     public static final String GET_READER_ORDER_REJECT = BASE_URL_READER +"rejectOrder";
     public static final String GET_READER_ORDER_COMPLETE = BASE_URL_READER +"completeOrder";
     public static final String GET_MURCHANT_NOTI = BASE_URL_READER +"getNotification";
+	 public static final String GET_READER_LOGOUT = BASE_URL_READER +"logout";
+	 public static final String GET_READER_DELETE_NOTIFICATION = BASE_URL_READER +"deleteNotification";
+	 public static final String GET_USER_DELETE_NOTIFICATION = BASE_URL_NEW +"deleteNotification";
+	 
+	 public static final String GET_USER_RESTAURNT_RATING = BASE_URL_NEW +"getRestaurantRating";
+	 public static final String GET_USER_PAYMENT_FAIL = BASE_URL_NEW +"paymentFail";
+	 public static final String GET_USER_PAYMENT_POST = BASE_URL_NEW +"postPayment";
 
 
 

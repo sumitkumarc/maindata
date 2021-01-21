@@ -100,6 +100,12 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
         }
 
         binding.rbRatingbar.setEnabled(false);
+        binding.rbRatingbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RestaurantProfileActivity.this,RestRattingListActivity.class));
+            }
+        });
         LinearLayoutManager mLayoutManager1as = new LinearLayoutManager(getContext());
         mLayoutManager1as.setOrientation(LinearLayoutManager.VERTICAL);
         binding.rvList.setLayoutManager(mLayoutManager1as);

@@ -30,6 +30,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode">
+        <activity android:name=".customer.doneActivity.RestRattingListActivity"></activity>
         <activity
             android:name=".restaurant.ui.Activity.NewOrderItemListActivity"
             android:theme="@style/AppTheme1" />
@@ -94,15 +95,16 @@
             android:name=".customer.Activity.SentRequestActivity"
             android:theme="@style/AppTheme1" />
         <activity
-            android:name=".customer.Activity.RequestPending"
+            android:name=".customer.doneActivity.RequestPendingActivity"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.MyOrdersListActivity"
-            android:theme="@style/AppTheme1" >
+            android:theme="@style/AppTheme1">
             <intent-filter>
-                <action android:name="none"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="none" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
@@ -129,7 +131,6 @@
         <activity
             android:name=".customer.Activity.SentRequestSuper"
             android:theme="@style/AppTheme1" />
-
         <activity
             android:name=".restaurant.ui.Activity.MurchanNotification"
             android:theme="@style/AppTheme1" />

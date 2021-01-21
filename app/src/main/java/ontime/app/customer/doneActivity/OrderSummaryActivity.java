@@ -91,6 +91,7 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
     float price = 0;
     float dprice = 0;
     int percentage = 0;
+    String GrandTotal = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,6 +143,42 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
             }
         });
     }
+    private void GetAPICallUserpaymentFail(){
+		 JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("payment_type", 2);
+            jsonObject.put("transaction_amount", 100);
+            jsonObject.put("transaction_type", "transaction_fail");
+            jsonObject.put("payment_status", "failure");
+            jsonObject.put("order_id", "1");
+            jsonObject.put("transaction_id", "#tw554545");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
+        String url = AppConstant.GET_USER_PAYMENT_FAIL;
+        APIcall apIcall = new APIcall(getApplicationContext());
+        apIcall.isPost(true);
+        apIcall.setBody(body);
+        apIcall.execute(url, APIcall.OPERATION_USER_PAYMENT_FAIL, this);
+	}
+    private void GetAPICallUserpaymentPost(){
+		 JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("payment_type", 2);
+            jsonObject.put("transaction_amount", 100);
+            jsonObject.put("order_id", "1");
+            jsonObject.put("transaction_id", "#tw554545");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
+        String url = AppConstant.GET_USER_PAYMENT_POST;
+        APIcall apIcall = new APIcall(getApplicationContext());
+        apIcall.isPost(true);
+        apIcall.setBody(body);
+        apIcall.execute(url, APIcall.OPERATION_USER_PAYMENT_POST, this);
+	}
 
     private void GetAPICallRestaurantNewCartList() {
         if (Common.newCartItem.size() != 0) {
@@ -258,6 +295,7 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
             jsonObject.put("restaurant_id", Common.newCartItem.get(0).getRestaurantId());
             jsonObject.put("cart_id", Common.newCartItem.get(0).getCartId());
             jsonObject.put("total_price", price);
+            jsonObject.put("grand_total", GrandTotal);
             jsonObject.put("payment_type", Common.PAYMENT_TYPE);
             jsonObject.put("transaction_id", "#000123");
             jsonObject.put("items", arrForA);
@@ -309,6 +347,12 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
             showDialog();
         }
         if (operationCode == APIcall.OPERATION_DISCOUNT) {
+            showDialog();
+        }
+		if (operationCode == APIcall.OPERATION_USER_PAYMENT_FAIL) {
+            showDialog();
+        }
+		if (operationCode == APIcall.OPERATION_USER_PAYMENT_POST) {
             showDialog();
         }
     }
@@ -364,9 +408,13 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
                 if (exampleUser.getStatus() == 200) {
                     Toast.makeText(this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                     price = Float.parseFloat(exampleUser.getResponceData().getDiscountedAmount());
+                    GrandTotal = exampleUser.getResponceData().getGrandTotal();
                     binding.txtAdditionalItem.setText("Additional item : SR " + Common.isStrempty(exampleUser.getResponceData().getAdditional()));
+                    binding.txtAdditionalItem.setText("Tax Tax : SR " + Common.isStrempty(exampleUser.getResponceData().getTax()));
+                    binding.txtAdditionalItem.setText("Service Fee : SR " + Common.isStrempty(exampleUser.getResponceData().getServiceFee()));
+                    binding.txtAdditionalItem.setText("Service Fee Tax : SR " + Common.isStrempty(exampleUser.getResponceData().getServiceFeeTax()));
                     binding.txtOrderTotal.setText("Total : SR " + Common.isStrempty(exampleUser.getResponceData().getTotal()));
-                    binding.txtPayAmount.setText("Total : SR " + Common.isStrempty(exampleUser.getResponceData().getDiscountedAmount()));
+                    binding.txtPayAmount.setText("Total : SR " + Common.isStrempty(exampleUser.getResponceData().getGrandTotal()));
                     String  nullres = Common.isStrempty(String.valueOf(exampleUser.getResponceData().getPercentage()));
                     if(nullres.equals("null")){
                         binding.txtDiscount.setText("Discount : " + "0%");
@@ -394,6 +442,32 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
                     Toast.makeText(getContext(), "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
+			if (operationCode == APIcall.OPERATION_USER_PAYMENT_FAIL) {
+        
+				hideDialog();
+                JSONObject root = null;
+                try {
+                    root = new JSONObject(response);
+                    Toast.makeText(OrderSummaryActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
+
+                 
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+			}
+			if (operationCode == APIcall.OPERATION_USER_PAYMENT_POST) {
+        
+				hideDialog();
+                JSONObject root = null;
+                try {
+                    root = new JSONObject(response);
+                    Toast.makeText(OrderSummaryActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
+
+                 
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+			}
         } catch (Exception e) {
 
         }

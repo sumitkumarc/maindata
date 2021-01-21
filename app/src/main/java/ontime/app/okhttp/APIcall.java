@@ -60,6 +60,16 @@ public class APIcall {
     public static int OPERATION_WALLET_BALANCE = 100033;
     public static int OPERATION_NOTIFICATION = 100034;
 
+    public static int OPERATION_UPDATE_DEVICE_TOKEN= 100035;
+    public static int OPERATION_READER_LOGOUT= 100036;
+	
+    public static int OPERATION_READER_DELETE_NOTIFICATION= 100037;
+    public static int OPERATION_USER_DELETE_NOTIFICATION= 100038;
+    public static int OPERATION_USER_RESTAURNT_RATING= 100039;
+    public static int OPERATION_USER_PAYMENT_FAIL= 100040;
+    public static int OPERATION_USER_PAYMENT_POST= 100041;
+
+
 
 
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");

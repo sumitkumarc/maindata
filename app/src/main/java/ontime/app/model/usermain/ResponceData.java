@@ -170,6 +170,18 @@ public class ResponceData {
     @SerializedName("additional")
     @Expose
     private String additional;
+	@SerializedName("tax")
+	@Expose
+	private String tax;
+	@SerializedName("service_fee")
+	@Expose
+	private String serviceFee;
+	@SerializedName("service_fee_tax")
+	@Expose
+	private String serviceFeeTax;
+	@SerializedName("grand_total")
+	@Expose
+	private String grandTotal;
 
     public Integer getId() {
         return id;
@@ -258,6 +270,37 @@ public class ResponceData {
     public void setAdditional(String additional) {
         this.additional = additional;
     }
+	public String getTax() {
+	return tax;
+	}
+
+	public void setTax(String tax) {
+	this.tax = tax;
+	}
+
+	public String getServiceFee() {
+	return serviceFee;
+	}
+
+	public void setServiceFee(String serviceFee) {
+	this.serviceFee = serviceFee;
+	}
+
+	public String getServiceFeeTax() {
+	return serviceFeeTax;
+	}
+
+	public void setServiceFeeTax(String serviceFeeTax) {
+	this.serviceFeeTax = serviceFeeTax;
+	}
+
+	public String getGrandTotal() {
+	return grandTotal;
+	}
+
+	public void setGrandTotal(String grandTotal) {
+	this.grandTotal = grandTotal;
+	}
 
 
     @SerializedName("user_id")

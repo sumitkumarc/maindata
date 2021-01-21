@@ -31,6 +31,24 @@
                     android:src="@drawable/backblack" />
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/ll_delete"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_action_delete"
+                    app:tint="@color/colorAccent" />
+            </LinearLayout>
+
         </RelativeLayout>
 
         <LinearLayout
@@ -59,18 +77,18 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="@string/Notifications"
-                android:visibility="gone"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
                 android:textColor="@color/red"
-                android:textSize="22sp" />
+                android:textSize="22sp"
+                android:visibility="gone" />
         </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:layout_height="match_parent">
+            android:paddingEnd="10dp">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_list"
@@ -94,7 +112,6 @@
                 android:textSize="20sp"
                 android:visibility="gone" />
         </FrameLayout>
-
 
 
     </LinearLayout>

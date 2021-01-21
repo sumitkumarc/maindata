@@ -1,318 +1,326 @@
 [
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_row_cancel_item.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_row_cancel_item.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\navigationmenu.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\navigationmenu.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_myorders.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_myorders.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sentrequest.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_sentrequest.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_categoryall.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_categoryall.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_cart2.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_cart2.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_card_details.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/row_card_details.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_notification_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\row_notification_item.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_profile.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_profile.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ordersummary.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_ordersummary.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_category.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_category.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_cartpending.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_cartpending.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_main.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_fragment_new_order.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_fragment_new_order.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_order2super.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_order2super.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_dashboard.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/navigationmenu.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/navigationmenu.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\tab_order_cancelled.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\tab_order_cancelled.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/tab_order_processing.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/tab_order_processing.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_verify_page.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_verify_page.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_dashboard.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_dashboard.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_myorders.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_myorders.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_activity_welcome.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_activity_welcome.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_categoryall.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_categoryall.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/pop_addto_cart_success.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/pop_addto_cart_success.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_mac.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_mac.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_aboutus.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_aboutus.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_home.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/c_row_category_list_item.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/c_row_category_list_item.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_supermarket.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_supermarket.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/navigationmenu2.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/navigationmenu2.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_category.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_category.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_mac.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_mac.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_row_cancel_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_row_cancel_item.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/c_row_my_cart_item.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/c_row_my_cart_item.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/popup_doyouwant.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/popup_doyouwant.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_activity_welcome.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_activity_welcome.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_supermarket.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_supermarket.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_dishesmarket.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_dishesmarket.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\popup_doyouwant.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\popup_doyouwant.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/c_row_item_cart.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/c_row_item_cart.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_requestpending_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_requestpending_item.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_itemorder_prossing.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/row_itemorder_prossing.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_activity_login.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_activity_login.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_login.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notification.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_notification.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_restprofile.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_restprofile.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_card_details.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\row_card_details.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_order1super.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_order1super.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_my_cart_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_my_cart_item.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_categorylistmarket.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_categorylistmarket.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_language.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_language.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_visa.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_visa.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_forget_page.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_forget_page.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_registet_page.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_registet_page.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\navigationmenu2.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\navigationmenu2.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_language.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_language.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_dishesmarket.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_dishesmarket.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_row_neworder_item.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_row_neworder_item.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_restaurantlist.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_restaurantlist.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_activity_login.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_activity_login.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_itemorder_cancelled.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\row_itemorder_cancelled.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_row_completed_item.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_row_completed_item.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_activity_riderorderdetails.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_activity_riderorderdetails.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_requestpending.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_requestpending.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_fragment_cancelling_order.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_fragment_cancelling_order.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_contactus.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_contactus.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_payment.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_payment.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_fragment_cancelling_order.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_fragment_cancelling_order.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_mur_notification_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\row_mur_notification_item.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_home.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_home.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_item_cart.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_item_cart.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_wallet.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_wallet.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/tab_order_cancelled.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/tab_order_cancelled.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\pop_addto_cart_success.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\pop_addto_cart_success.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_fragment_new_order.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_fragment_new_order.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_restdetail.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_restdetail.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_new_order_item_list.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_new_order_item_list.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_order2super.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_order2super.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_mur_notification.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_mur_notification.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_contactus.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_contactus.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_cartpending.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_cartpending.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_mur_notification.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_mur_notification.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_cartpending2.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_cartpending2.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_new_order_item_list.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_new_order_item_list.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_cart.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_cart.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_fragment_processing_order.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_fragment_processing_order.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_requestpending.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_requestpending.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_payment.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_payment.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_payment.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_payment.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\tab_order_processing.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\tab_order_processing.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_item_payment_methord.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/row_item_payment_methord.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_welcome.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_welcome.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_verify_page.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_verify_page.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_order1super.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_order1super.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/c_row_menu_dishes.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/c_row_menu_dishes.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_categorylistmarket.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_categorylistmarket.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_notification.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_notification.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_itemorder_finised.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\row_itemorder_finised.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_mur_notification_item.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/row_mur_notification_item.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_nivo_slider.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_nivo_slider.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_activity_splash.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_activity_splash.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_cartpending.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_cartpending.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_fragment_processing_order.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_fragment_processing_order.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_activity_splash.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_activity_splash.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/tab_order_finised.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/tab_order_finised.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\tab_order_finised.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\tab_order_finised.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_row_processing_order_item.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_row_processing_order_item.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_requestpending.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_requestpending.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_welcome.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_welcome.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_wallet.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_wallet.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_sentrequest.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_sentrequest.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_cartpending2.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_cartpending2.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_forget_page.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_forget_page.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_rest_ratting_list.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_rest_ratting_list.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_status_item_layout.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_status_item_layout.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\pop_edit_profile.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\pop_edit_profile.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_cartpending.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_cartpending.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\pop_add_card.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\pop_add_card.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_cart2.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_cart2.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_cart.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_cart.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_sentrequest2.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_sentrequest2.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_status_item_layout.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_status_item_layout.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_nivo_slider.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_nivo_slider.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_visa.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_visa.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_itemorder_finised.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/row_itemorder_finised.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_requestpending.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_requestpending.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_payment.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_payment.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_itemorder_prossing.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\row_itemorder_prossing.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_restdetail.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_restdetail.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_restaurant_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_restaurant_item.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_restaurantlist.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_restaurantlist.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_category_list_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_category_list_item.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_change_password.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_change_password.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_change_password.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_change_password.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/pop_add_amount.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/pop_add_amount.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_registet_page.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_registet_page.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_activity_riderorderdetails.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_activity_riderorderdetails.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_ordersuper.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_ordersuper.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_ordersuper.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/item_ordersuper.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_aboutus.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_aboutus.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/r_row_item_details.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/r_row_item_details.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_row_processing_order_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_row_processing_order_item.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/pop_edit_profile.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/pop_edit_profile.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_menu_dishes.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_menu_dishes.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/c_row_restaurant_item.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/c_row_restaurant_item.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_row_completed_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_row_completed_item.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/pop_add_card.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/pop_add_card.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sentrequest2.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_sentrequest2.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_ordersummary.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/activity_ordersummary.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_item_payment_methord.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\row_item_payment_methord.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_itemorder_cancelled.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/row_itemorder_cancelled.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_row_item_details.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_row_item_details.xml"
     },
     {
-        "merged": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_notification_item.xml",
-        "source": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/res/layout/row_notification_item.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_restprofile.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_restprofile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_row_neworder_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_row_neworder_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\pop_add_amount.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\pop_add_amount.xml"
     }
 ]

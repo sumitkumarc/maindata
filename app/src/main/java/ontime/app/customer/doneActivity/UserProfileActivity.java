@@ -37,6 +37,7 @@ import ontime.app.restaurant.ui.Activity.WelcomeActivity;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
 import ontime.app.utils.SessionManager;
+
 import com.google.gson.Gson;
 
 import org.json.JSONException;
@@ -117,6 +118,15 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
         apIcall.execute(url, APIcall.OPERATION_USER_DASHBOARD, this);
     }
 
+    private void GetAPICallUserLogout() {
+        Common.hideKeyboard(getActivity());
+        String url = AppConstant.GET_USER_LOGOUT;
+        APIcall apIcall = new APIcall(getApplicationContext());
+        apIcall.isPost(false);
+        apIcall.execute(url, APIcall.OPERATION_USER_LOGOUT, this);
+    }
+
+
     @Override
     protected void initView() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_profile);
@@ -132,15 +142,13 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
                 showDialogProfileUpdate();
                 break;
             case R.id.fl_update_profile:
-                Intent i = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(i, SELECT_PICTURE);
                 break;
             case R.id.txt_sign_out:
-                sessionManager.logoutUser();
-                Intent intent = new Intent(UserProfileActivity.this, WelcomeActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
-                finish();
+                if (isConnected()) {
+                    GetAPICallUserProfileLogout();
+                }
                 break;
             default:
                 break;
@@ -178,10 +186,10 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
 
     private void GetAPICallUserProfileLogout() {
         Common.hideKeyboard(getActivity());
-        String url = AppConstant.GET_USER_PROFILE;
+        String url = AppConstant.GET_USER_LOGOUT;
         APIcall apIcall = new APIcall(getApplicationContext());
         apIcall.isPost(false);
-        apIcall.execute(url, APIcall.OPERATION_USER_PROFILE, this);
+        apIcall.execute(url, APIcall.OPERATION_USER_LOGOUT, this);
     }
 
     private void GetAPICallUploadUserImage(String FileName, String Filepath) {
@@ -241,15 +249,13 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
 
                     binding.edName.setText(user_date.getFullName());
                     binding.edPhoneNo.setText(user_date.getContactNumber());
-                    sessionManager.setUserDetails("",exampleUser.getResponceData().getUser());
+                    sessionManager.setUserDetails("", exampleUser.getResponceData().getUser());
 
                 } else {
                     Toast.makeText(this, exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
-            if (operationCode == APIcall.OPERATION_USER_LOGOUT) {
-                hideDialog();
-            }
+
             if (operationCode == APIcall.OPERATION_USER_UPLOAD_IMAGE) {
                 hideDialog();
                 JSONObject root = null;
@@ -288,6 +294,23 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
                     Toast.makeText(this, exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
+            if (operationCode == APIcall.OPERATION_USER_LOGOUT) {
+                hideDialog();
+                JSONObject root = null;
+                try {
+                    root = new JSONObject(response);
+                    Toast.makeText(UserProfileActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
+                    sessionManager.logoutUser();
+                    Intent intent = new Intent(UserProfileActivity.this, WelcomeActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                    finish();
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+
 
         } catch (Exception e) {
             hideDialog();

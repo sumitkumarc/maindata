@@ -27,6 +27,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import ontime.app.R;
+import ontime.app.model.usermain.OrderProccessing;
 import ontime.app.model.usermain.UserCartItem;
 import ontime.app.model.usernewmain.UserItem;
 import ontime.app.restaurant.model.readerOrder.OrderDetail;
@@ -67,6 +68,7 @@ public class Common {
     public static List<UserCartItem> newCartItem;
     public static UserCartItem UpdateCart;
     public static  ReaderNewOrder READERNEWORDER;
+    public static OrderProccessing ORDERPROCCESSING_ORDER;
     public static List<UserItem> newUserCart;
     public static String DELIVER_TYPE = "";
     public static int PAYMENT_TYPE = 4;

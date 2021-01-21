@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -13,7 +14,9 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import okhttp3.RequestBody;
 import ontime.app.databinding.RActivityRiderorderdetailsBinding;
+import ontime.app.model.usermain.Userdate;
 import ontime.app.okhttp.APIcall;
 import ontime.app.okhttp.AppConstant;
 import ontime.app.restaurant.adapte.DItemadapter;
@@ -27,42 +30,61 @@ import ontime.app.restaurant.ui.fragment.ProcessingFragment;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
 import ontime.app.utils.SessionManager;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.gson.Gson;
 import com.yarolegovich.discretescrollview.DiscreteScrollView;
 import com.yarolegovich.discretescrollview.transform.ScaleTransformer;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class RiderOrderDetails extends BaseActivity implements DiscreteScrollView.ScrollStateChangeListener<DItemadapter.ViewHolder>,
         DiscreteScrollView.OnItemChangedListener<DItemadapter.ViewHolder>, APIcall.ApiCallListner {
-    String[] strings = new String[]{"New order","Processing","Cancelled","Completed"};
+    String[] strings = new String[]{"New order", "Processing", "Cancelled", "Completed"};
     List<Integer> intTotal = new ArrayList<>();
     FragmentManager fragmentManager = getSupportFragmentManager();
     SessionManager sessionManager;
     private ProgressDialog dialog;
     public static RActivityRiderorderdetailsBinding binding;
     public static ReaderData mreaderData;
+    Userdate userData;
 
     @Override
     protected void initView() {
         binding = DataBindingUtil.setContentView(this, R.layout.r_activity_riderorderdetails);
     }
+
     @Override
     @SuppressLint("ClickableViewAccessibility")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         GetAPICallRiderOrderDetails();
         sessionManager = new SessionManager(RiderOrderDetails.this);
+        userData = sessionManager.getUserDetails();
+        FirebaseMessaging.getInstance().getToken()
+                .addOnCompleteListener(new OnCompleteListener<String>() {
+                    @Override
+                    public void onComplete(@NonNull Task<String> task) {
+                        if (!task.isSuccessful()) {
+                            Log.w("TAG", "Fetching FCM registration token failed", task.getException());
+                            return;
+                        }
+                        GetGetUpdateToken(task.getResult());
 
+                    }
+                });
         binding.txtSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sessionManager.logoutUser();
-                Intent intent = new Intent(RiderOrderDetails.this, WelcomeActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
-                finish();
+                if (isConnected()) {
+                    GetAPICallUserProfileLogout();
+                }
             }
         });
 
@@ -75,6 +97,32 @@ public class RiderOrderDetails extends BaseActivity implements DiscreteScrollVie
             }
         });
 
+    }
+
+    private void GetAPICallUserProfileLogout() {
+        Common.hideKeyboard(getActivity());
+        String url = AppConstant.GET_READER_LOGOUT;
+        APIcall apIcall = new APIcall(getApplicationContext());
+        apIcall.isPost(false);
+        apIcall.execute(url, APIcall.OPERATION_READER_LOGOUT, this);
+    }
+
+    private void GetGetUpdateToken(String result) {
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("device_token", result);
+            jsonObject.put("user_id", userData.getId());
+            jsonObject.put("device_type", "android");
+            jsonObject.put("user_type", userData.getUserType());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
+        String url = AppConstant.GET_UPDATE_DEVICE_TOKEN;
+        APIcall apIcall = new APIcall(getApplicationContext());
+        apIcall.isPost(true);
+        apIcall.setBody(body);
+        apIcall.execute(url, APIcall.OPERATION_UPDATE_DEVICE_TOKEN, this);
     }
 
 
@@ -162,6 +210,9 @@ public class RiderOrderDetails extends BaseActivity implements DiscreteScrollVie
         if (operationCode == APIcall.OPERATION_READER_ORDERLIST) {
             showDialog();
         }
+        if (operationCode == APIcall.OPERATION_READER_LOGOUT) {
+            showDialog();
+        }
 
     }
 
@@ -185,7 +236,7 @@ public class RiderOrderDetails extends BaseActivity implements DiscreteScrollVie
                     intTotal.add(mreaderData.getOrders().getCancel().size());
                     intTotal.add(mreaderData.getOrders().getCompleted().size());
                     binding.picker.setSlideOnFling(true);
-                    binding.picker.setAdapter(new DItemadapter(this, strings,intTotal));
+                    binding.picker.setAdapter(new DItemadapter(this, strings, intTotal));
                     binding.picker.addOnItemChangedListener(this);
                     binding.picker.addScrollStateChangeListener(this);
                     binding.picker.scrollToPosition(0);
@@ -195,6 +246,26 @@ public class RiderOrderDetails extends BaseActivity implements DiscreteScrollVie
                             .build());
                 } else {
                     Toast.makeText(RiderOrderDetails.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            }
+            if (operationCode == APIcall.OPERATION_UPDATE_DEVICE_TOKEN) {
+                Gson gson = new Gson();
+            }
+            if (operationCode == APIcall.OPERATION_READER_LOGOUT) {
+                hideDialog();
+                JSONObject root = null;
+                try {
+                    root = new JSONObject(response);
+
+                    Toast.makeText(RiderOrderDetails.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
+                    sessionManager.logoutUser();
+                    Intent intent = new Intent(RiderOrderDetails.this, WelcomeActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                    finish();
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
             }
             hideDialog();

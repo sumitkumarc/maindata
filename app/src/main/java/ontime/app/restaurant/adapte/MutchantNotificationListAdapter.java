@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 import ontime.app.R;
@@ -36,15 +38,16 @@ public class MutchantNotificationListAdapter extends RecyclerView.Adapter<Mutcha
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
-        if (Common.MERCHANT_TYPE == 1) {
-            holder.binding.txtTitle.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
-        } else {
-            holder.binding.txtTitle.setTextColor(mContext.getResources().getColor(R.color.super_mart));
-        }
+//        if (Common.MERCHANT_TYPE == 1) {
+//            holder.binding.txtTitle.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
+//        } else {
+//            holder.binding.txtTitle.setTextColor(mContext.getResources().getColor(R.color.super_mart));
+//        }
 
         String data = mResponceData.get(position).getMessage();
 
-        holder.binding.txtDetails.setText(""+ data);
+        holder.binding.txtDetails1.setText("" + data);
+//        Glide.with(mContext).load(mResponceData.get(position).getRestaurant().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivProfile);
 //        holder.binding.txtTitle.setText(""+ mResponceData.get(position).getRestaurant().);
 
 

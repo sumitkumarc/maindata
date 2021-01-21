@@ -31,6 +31,7 @@ import ontime.app.databinding.ActivityOrdersummaryBindingImpl;
 import ontime.app.databinding.ActivityPaymentBindingImpl;
 import ontime.app.databinding.ActivityProfileBindingImpl;
 import ontime.app.databinding.ActivityRegistetPageBindingImpl;
+import ontime.app.databinding.ActivityRequestpendingBindingImpl;
 import ontime.app.databinding.ActivityRestaurantlistBindingImpl;
 import ontime.app.databinding.ActivityRestdetailBindingImpl;
 import ontime.app.databinding.ActivityRestprofileBindingImpl;
@@ -75,27 +76,29 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYREGISTETPAGE = 16;
 
-  private static final int LAYOUT_ACTIVITYRESTAURANTLIST = 17;
+  private static final int LAYOUT_ACTIVITYREQUESTPENDING = 17;
 
-  private static final int LAYOUT_ACTIVITYRESTDETAIL = 18;
+  private static final int LAYOUT_ACTIVITYRESTAURANTLIST = 18;
 
-  private static final int LAYOUT_ACTIVITYRESTPROFILE = 19;
+  private static final int LAYOUT_ACTIVITYRESTDETAIL = 19;
 
-  private static final int LAYOUT_ACTIVITYSENTREQUEST = 20;
+  private static final int LAYOUT_ACTIVITYRESTPROFILE = 20;
 
-  private static final int LAYOUT_ACTIVITYVERIFYPAGE = 21;
+  private static final int LAYOUT_ACTIVITYSENTREQUEST = 21;
 
-  private static final int LAYOUT_CROWCATEGORYLISTITEM = 22;
+  private static final int LAYOUT_ACTIVITYVERIFYPAGE = 22;
 
-  private static final int LAYOUT_RACTIVITYRIDERORDERDETAILS = 23;
+  private static final int LAYOUT_CROWCATEGORYLISTITEM = 23;
 
-  private static final int LAYOUT_RFRAGMENTNEWORDER = 24;
+  private static final int LAYOUT_RACTIVITYRIDERORDERDETAILS = 24;
 
-  private static final int LAYOUT_ROWITEMPAYMENTMETHORD = 25;
+  private static final int LAYOUT_RFRAGMENTNEWORDER = 25;
 
-  private static final int LAYOUT_TABORDERPROCESSING = 26;
+  private static final int LAYOUT_ROWITEMPAYMENTMETHORD = 26;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(26);
+  private static final int LAYOUT_TABORDERPROCESSING = 27;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(27);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.activity_aboutus, LAYOUT_ACTIVITYABOUTUS);
@@ -114,6 +117,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.activity_payment, LAYOUT_ACTIVITYPAYMENT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.activity_profile, LAYOUT_ACTIVITYPROFILE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.activity_registet_page, LAYOUT_ACTIVITYREGISTETPAGE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.activity_requestpending, LAYOUT_ACTIVITYREQUESTPENDING);
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.activity_restaurantlist, LAYOUT_ACTIVITYRESTAURANTLIST);
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.activity_restdetail, LAYOUT_ACTIVITYRESTDETAIL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.activity_restprofile, LAYOUT_ACTIVITYRESTPROFILE);
@@ -231,6 +235,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_registet_page is invalid. Received: " + tag);
         }
+        case  LAYOUT_ACTIVITYREQUESTPENDING: {
+          if ("layout/activity_requestpending_0".equals(tag)) {
+            return new ActivityRequestpendingBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_requestpending is invalid. Received: " + tag);
+        }
         case  LAYOUT_ACTIVITYRESTAURANTLIST: {
           if ("layout/activity_restaurantlist_0".equals(tag)) {
             return new ActivityRestaurantlistBindingImpl(component, view);
@@ -344,7 +354,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(26);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(27);
 
     static {
       sKeys.put("layout/activity_aboutus_0", ontime.app.R.layout.activity_aboutus);
@@ -363,6 +373,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/activity_payment_0", ontime.app.R.layout.activity_payment);
       sKeys.put("layout/activity_profile_0", ontime.app.R.layout.activity_profile);
       sKeys.put("layout/activity_registet_page_0", ontime.app.R.layout.activity_registet_page);
+      sKeys.put("layout/activity_requestpending_0", ontime.app.R.layout.activity_requestpending);
       sKeys.put("layout/activity_restaurantlist_0", ontime.app.R.layout.activity_restaurantlist);
       sKeys.put("layout/activity_restdetail_0", ontime.app.R.layout.activity_restdetail);
       sKeys.put("layout/activity_restprofile_0", ontime.app.R.layout.activity_restprofile);

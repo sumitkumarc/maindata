@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "/home/dell/.gradle/caches/transforms-2/files-2.1/9d25d4284fe6de317d682b1c55b6028f/jetified-WheelPicker-1.1.2/res/values-zh/values-zh.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\9d25d4284fe6de317d682b1c55b6028f\\jetified-WheelPicker-1.1.2\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

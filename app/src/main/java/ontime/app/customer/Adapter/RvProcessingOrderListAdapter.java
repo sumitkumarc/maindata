@@ -3,6 +3,7 @@ package ontime.app.customer.Adapter;
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import ontime.app.R;
 import ontime.app.customer.doneActivity.MyOrdersListActivity;
+import ontime.app.customer.doneActivity.RequestPendingActivity;
 import ontime.app.databinding.RRowNeworderItemBinding;
 import ontime.app.databinding.RowItemorderProssingBinding;
 import ontime.app.databinding.RowNotificationItemBinding;
@@ -102,6 +104,18 @@ public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderL
             @Override
             public void onClick(View v) {
                 APICallUserCancleOrder(mProccessings.get(position).getId());
+            }
+        });
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Common.isStrempty(mProccessings.get(position).getCountdownTime()).equals("")){
+                    Common.ORDERPROCCESSING_ORDER=  mProccessings.get(position);
+                    mContext.startActivity(new Intent(mContext, RequestPendingActivity.class));
+                }else {
+                    Toast.makeText(mContext, "Order Not accepted", Toast.LENGTH_SHORT).show();
+                }
+//                APICallUserCancleOrder(mProccessings.get(position).getId());
             }
         });
 
