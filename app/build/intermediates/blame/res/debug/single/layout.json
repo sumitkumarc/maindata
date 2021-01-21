@@ -1,0 +1,310 @@
+[
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_activity_splash.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_activity_splash.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_ordersuper.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_ordersuper.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_forget_page.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_forget_page.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_new_order_item_list.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_new_order_item_list.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_welcome.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_itemorder_cancelled.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_itemorder_cancelled.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_row_item_details.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_row_item_details.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_aboutus.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_aboutus.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_dishesmarket.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_dishesmarket.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\pop_edit_profile.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\pop_edit_profile.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_profile.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\navigationmenu2.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\navigationmenu2.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_cartpending.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_cartpending.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_activity_riderorderdetails.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_activity_riderorderdetails.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_cartpending2.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_cartpending2.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\tab_order_cancelled.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\tab_order_cancelled.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_category.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_category.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_cart2.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_cart2.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_order1super.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_order1super.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_fragment_cancelling_order.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_fragment_cancelling_order.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_requestpending.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_requestpending.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\popup_doyouwant.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\popup_doyouwant.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_mac.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_mac.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_categoryall.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_categoryall.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_item_cart.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\c_row_item_cart.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_card_details.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_card_details.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_visa.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_visa.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\tab_order_finised.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\tab_order_finised.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_contactus.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_contactus.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\pop_add_amount.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\pop_add_amount.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_menu_dishes.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\c_row_menu_dishes.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_my_cart_item.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\c_row_my_cart_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_fragment_processing_order.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_fragment_processing_order.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_categorylistmarket.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_categorylistmarket.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_order2super.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_order2super.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_row_neworder_item.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_row_neworder_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_row_processing_order_item.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_row_processing_order_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_registet_page.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_registet_page.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\pop_addto_cart_success.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\pop_addto_cart_success.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_restaurant_item.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\c_row_restaurant_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_payment.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_payment.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_payment.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_payment.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_verify_page.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_verify_page.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_wallet.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_wallet.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_dashboard.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_itemorder_prossing.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_itemorder_prossing.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_restaurantlist.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_restaurantlist.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_fragment_new_order.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_fragment_new_order.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_activity_login.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_activity_login.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_supermarket.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_supermarket.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_status_item_layout.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_status_item_layout.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_row_cancel_item.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_row_cancel_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_myorders.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_myorders.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notification.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_notification.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sentrequest.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_sentrequest.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_cartpending.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_cartpending.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_notification_item.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_notification_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\tab_order_processing.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\tab_order_processing.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ordersummary.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_ordersummary.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\pop_add_card.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\pop_add_card.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_restprofile.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_restprofile.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\navigationmenu.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\navigationmenu.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_category_list_item.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\c_row_category_list_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_activity_welcome.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_activity_welcome.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_change_password.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_change_password.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\r_row_completed_item.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_row_completed_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_cart.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_cart.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_itemorder_finised.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_itemorder_finised.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_requestpending.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_requestpending.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sentrequest2.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_sentrequest2.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_nivo_slider.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_nivo_slider.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_language.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_language.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_restdetail.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_restdetail.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_item_payment_methord.xml",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_item_payment_methord.xml"
+    }
+]

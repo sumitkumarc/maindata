@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/btn_gray"
+            android:paddingBottom="40dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lllist"
+                android:paddingTop="25dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp">
+                    <ImageView
+                        android:src="@drawable/bariyani"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:id="@+id/second"
+                    android:layout_weight="1"
+                    android:layout_toRightOf="@+id/fist"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:paddingLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/kesari"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="White Apple"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/kesari"
+                        android:textSize="16dp"
+                        android:text="Order time 12:00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textColor="@color/darkgray"
+                        android:layout_marginTop="3dp"
+                        android:textSize="16dp"
+                        android:text="Oder No: MB214ZX5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textColor="@color/darkgray"
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:text="Paid: SR 117.65"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textColor="@color/darkgray"
+                        android:layout_marginTop="3dp"
+                        android:textSize="16dp"
+                        android:text="Payment type: Credit card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="@color/green"
+                        android:layout_marginTop="3dp"
+                        android:textSize="16dp"
+                        android:text="Status: Delivered"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textColor="@color/darkgray"
+                        android:layout_marginTop="3dp"
+                        android:textSize="16dp"
+                        android:text="Delivery time: 12:15pm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textColor="@color/darkgray"
+                        android:layout_marginTop="3dp"
+                        android:textSize="16dp"
+                        android:text="Cancel time: Within 2 mins"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RatingBar
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/RatingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:isIndicator="false"/>
+
+                    <EditText
+                        android:textSize="12dp"
+                        android:padding="15dp"
+                        android:hint="Share your expirence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_marginTop="15dp"
+        android:gravity="bottom|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Reorder"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="@color/darkwhite"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:background="@drawable/btn_red"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="bottom|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

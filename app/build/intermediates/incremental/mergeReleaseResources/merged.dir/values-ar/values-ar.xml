@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="About_On_time">حول في الوقت المحدد</string>
+    <string name="Add_New_Card">إضافة بطاقة جديدة</string>
+    <string name="Add_new_card">أضف بطاقة جديدة</string>
+    <string name="Add_now">إضافة الآن</string>
+    <string name="Add_to_Cart">أضف إلى السلة</string>
+    <string name="Added_on_Cart">تمت الإضافة في عربة التسوق \ n بنجاح</string>
+    <string name="Address">عنوان</string>
+    <string name="Balance">توازن</string>
+    <string name="Cancel">إلغاء</string>
+    <string name="Cancelled">ألغيت</string>
+    <string name="Card_number">رقم البطاقة</string>
+    <string name="Cart">عربة التسوق</string>
+    <string name="Change_password">غير كلمة السر</string>
+    <string name="Completed">منجز</string>
+    <string name="Contact_US">اتصل بنا</string>
+    <string name="Create_To_Your_Account">إنشاء لحساب \ n الخاص بك</string>
+    <string name="D_type">نوع D.</string>
+    <string name="Date">تاريخ</string>
+    <string name="Delivered">تم التوصيل</string>
+    <string name="Delivery_Type">نوع التوصيل</string>
+    <string name="Dine_in">تناول الطعام في</string>
+    <string name="Do_you_want">هل تريد</string>
+    <string name="Edit">تعديل</string>
+    <string name="Enter_OTP">أدخل OTP</string>
+    <string name="Expiry">انقضاء</string>
+    <string name="Finished">تم الانتهاء من</string>
+    <string name="Go_cart">اذهب عربة</string>
+    <string name="Home">الصفحة الرئيسية</string>
+    <string name="Hours">ساعات</string>
+    <string name="Languages">اللغات</string>
+    <string name="Minute">دقيقة</string>
+    <string name="My_orders">طلباتي</string>
+    <string name="Name_on_card">الاسم على البطاقة</string>
+    <string name="Notifications">إشعارات</string>
+    <string name="Or">أو</string>
+    <string name="OrderNumber">رقم الأمر</string>
+    <string name="Orders">أوامر</string>
+    <string name="P_type">نوع P.</string>
+    <string name="Payment">دفع</string>
+    <string name="Payment_Methods">طرق الدفع</string>
+    <string name="Payment_Type">نوع الدفع</string>
+    <string name="Please_wait">ارجوك انتظر...</string>
+    <string name="Processing">معالجة</string>
+    <string name="Profile_update">تحديث الملف الشخصي</string>
+    <string name="Qty">الكمية</string>
+    <string name="Register">تسجيل</string>
+    <string name="Register_msg">عن طريق النقر فوق زر تسجيل ، وافقت على الشروط والأحكام الخاصة بنا</string>
+    <string name="Reorder">إعادة ترتيب</string>
+    <string name="Resend">إعادة إرسال</string>
+    <string name="Search">بحث</string>
+    <string name="Seconds">ثواني</string>
+    <string name="Set_Delivery_Time">حدد موعد التسليم</string>
+    <string name="Sign_out">خروج</string>
+    <string name="Take_Away">يبعد</string>
+    <string name="Total">مجموع</string>
+    <string name="Total_Spends">إجمالي الإنفاق</string>
+    <string name="Undo">الغاء التحميل</string>
+    <string name="Update_profile">تحديث الملف</string>
+    <string name="Verify">تحقق</string>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"التوجه إلى المنزل"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"التنقل إلى أعلى"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"خيارات أكثر"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"تم"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"عرض الكل"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"اختيار تطبيق"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"إيقاف"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"تفعيل"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"حذف"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"فضاء"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"القائمة+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"بحث…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"محو طلب البحث"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"طلب بحث"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"البحث"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"إرسال طلب البحث"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"بحث صوتي"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"مشاركة مع"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"مشاركة مع <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"تصغير"</string>
+    <string name="actionbar_title_address_on_card">العنوان الموجود في البطاقة</string>
+    <string name="add_amount">Add amount</string>
+    <string name="alert_un_supported_card_message">نوع البطاقة غير مدعوم</string>
+    <string name="alert_un_supported_card_title">تنبيه</string>
+    <string name="amount">Amount</string>
+    <string name="app_name">OnTime</string>
+    <string name="bt_cid">الرمز الأمني</string>
+    <string name="bt_cvc">الرمز الأمني</string>
+    <string name="bt_cvn">الرمز الأمني</string>
+    <string name="bt_cvv">الرمز الأمني</string>
+    <string name="bt_cvv_invalid">%s غير صحيح </string>
+    <string name="bt_cvv_required">%s مطلوب</string>
+    <string name="bt_expiration_invalid">تاريخ انتهاء البطاقة غير صحيح</string>
+    <string name="bt_expiration_required">تاريخ انتهاء البطاقة مطلوب</string>
+    <string name="bt_form_hint_cvv">@string/bt_cvv</string>
+    <string name="bt_form_hint_expiration">تاريخ انتهاء البطاقة</string>
+    <string name="bt_month">شهر</string>
+    <string name="bt_submit">إرسال</string>
+    <string name="bt_year">سنة</string>
+    <string name="btn_title_confirm">تأكيد</string>
+    <string name="btn_title_save">حفظ</string>
+    <string name="business_icon_description">Business icon</string>
+    <string name="cancel">إلغاء</string>
+    <string name="card_saved_before">تم حفظ بطاقتك من قبل ، لا يمكنك حفظها مرتين!</string>
+    <string name="change_password">\كلمه السرn\يتغيرون</string>
+    <string name="close">إغلاق</string>
+    <string name="code">الشفرة</string>
+    <string name="code_expires_on" translatable="false">تنتهي صلاحية الكود في</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"تفعيل"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"‏لن يعمل <ns1:g id="APP_NAME">%1$s</ns1:g> ما لم يتم تفعيل خدمات Google Play."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"‏تفعيل خدمات Google Play"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"تثبيت"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"‏لن يتم تشغيل <ns1:g id="APP_NAME">%1$s</ns1:g> بدون خدمات Google Play، والتي لا تتوفر على جهازك."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"‏الحصول على خدمات Google Play"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"‏مدى توفّر خدمات Google Play"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"‏خطأ في خدمات Google Play"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"‏لدى <ns1:g id="APP_NAME">%1$s</ns1:g> مشكلة في خدمات Google Play. يُرجى إعادة المحاولة."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"‏لن يتم تشغيل <ns1:g id="APP_NAME">%1$s</ns1:g> بدون خدمات Google Play التي لا يوفرها جهازك."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"تحديث"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"‏لن يتم تشغيل <ns1:g id="APP_NAME">%1$s</ns1:g> ما لم يتم تحديث خدمات Google Play."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"‏تحديث خدمات Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"‏لن يتم تشغيل <ns1:g id="APP_NAME">%1$s</ns1:g> بدون خدمات Google Play، والتي يتم تحديثها حاليًا."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"‏يجب توفر إصدار جديد من خدمات Google Play. سيتم تحديثها تلقائيًا قريبًا."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"فتح على الهاتف"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"تسجل الدخول"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"‏تسجيل الدخول عبر Google"</string>
+    <string name="conect_send">إرسال</string>
+    <string name="conect_write_message_here">اكتب الرسالة هنا</string>
+    <string name="conect_your_phone_no">رقم هاتفك</string>
+    <string name="contact_number">رقم الاتصال</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"تم نسخ الرابط إلى الحافظة."</string>
+    <string name="delete_saved_card_button_Cancel">إلغاء</string>
+    <string name="delete_saved_card_button_Delete">حذف</string>
+    <string name="delete_saved_card_msg">هل أنت متأكد من حذف البطاقة </string>
+    <string name="delete_saved_card_title">حذف البطاقة</string>
+    <string name="device_has_aproblem_in_connectivity_manager">يواجه الجهاز مشكلة في مدير الاتصال بالانترنت </string>
+    <string name="dismiss">إلغاء</string>
+    <string name="ed_confirm_password_hint">تأكيد كلمة المرور</string>
+    <string name="ed_new_password_hint">كلمة سر جديدة</string>
+    <string name="edittext_hint_CVV">الرمز الأمني</string>
+    <string name="edittext_hint_address_on_card">العنوان الموجود في البطاقة</string>
+    <string name="edittext_hint_card_number">رقم البطاقة</string>
+    <string name="edittext_hint_city">المدينة</string>
+    <string name="edittext_hint_email">الايميل</string>
+    <string name="edittext_hint_expiration_date">سنه/ شهر</string>
+    <string name="edittext_hint_line1">Line 1</string>
+    <string name="edittext_hint_line2">Line 2</string>
+    <string name="edittext_hint_name">الاسم</string>
+    <string name="edittext_hint_name_on_card">الاسم الموجود في البطاقة</string>
+    <string name="edittext_hint_phone_number">رقم الهاتق</string>
+    <string name="edittext_hint_state">الدولة</string>
+    <string name="edittext_hint_zip_code">Zip code</string>
+    <string name="email_id_hint">البريد الإلكتروني</string>
+    <string name="email_sent" translatable="false">تم إرسال رسالة بريد إلكتروني لـ</string>
+    <string name="error_deleting_card_msg">لا يمكن حذف البطاقة في الوقت الحالي. يرجى المحاولة لاحقا.</string>
+    <string name="error_deleting_card_title">عذراً</string>
+    <string name="extra_fees_alert_confirm_message_cancel">إلغاء</string>
+    <string name="extra_fees_alert_confirm_message_confirm">تأكيد</string>
+    <string name="extra_fees_alert_confirm_message_title">تأكيد الرسوم الإضافية</string>
+    <string name="extra_fees_alert_message">سوف تتم إضافة  %s لهذه العملية، إجمالي المبلغ المطلوب  %s</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"نسخ الرابط"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"فتح في المتصفح"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"مشاركة الرابط"</string>
+    <string name="fawry_cash_location">ب موقع لفوري
+باستخدام الرابط التالي لإستكمال عملية الدفع
+  </string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"متنوعة"</string>
+    <string name="forgot_password">هل نسيت كلمة المرور</string>
+    <string name="full_name_hint">الاسم الكامل</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="internet_connection_is_not_available">اتصال الإنترنت غير متوفر</string>
+    <string name="internet_connectivity_message">اتصال الإنترنت غير متوفر</string>
+    <string name="internet_connectivity_title">خطأ في الشبكة</string>
+    <string name="key_sdkLanguage">key_sdkLanguage</string>
+    <string name="key_sdk_appearance_mode">key_sdk_appearance_mode</string>
+    <string name="key_sdk_transaction_currency">key_sdk_transaction_currency</string>
+    <string name="key_sdk_transaction_mode">key_sdk_transaction_mode</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="login_page">تسجيل الدخول إلى الخاص بك\nالحساب</string>
+    <string name="mobile_verification_fails">Mobile Number verification fails.</string>
+    <string name="mycart_next">التالى</string>
+    <string name="mycart_no_data_found">لاتوجد بيانات.</string>
+    <string name="mycart_title">عربة التسوق الخاصة بي</string>
+    <string name="new_order">طلب جديد</string>
+    <string name="ok">حسنا</string>
+    <string name="optional_hint">(اختياري)</string>
+    <string name="order_code">كودالطلب</string>
+    <string name="otp_cancel_dialog">لا</string>
+    <string name="otp_cancel_payment_message">هل تود إلغاء عملية الدفع؟</string>
+    <string name="otp_cancel_payment_title">إلغاء عملية الدفع</string>
+    <string name="otp_confirm_dialog">تأكيد</string>
+    <string name="password">كلمه السر</string>
+    <string name="password_hint">كلمه السر</string>
+    <string name="pay">ادفع</string>
+    <string name="payment_in_progress">عملية الدفع قيد التنفيذ</string>
+    <string name="payment_status_alert_declined">مرفوض</string>
+    <string name="payment_status_alert_failed">فشل</string>
+    <string name="payment_status_alert_invalid">غير صالحة</string>
+    <string name="payment_status_alert_successful">ناجح</string>
+    <string name="payment_status_alert_timedout">انتهي الوقت</string>
+    <string name="payment_status_alert_unknown">غير معروف</string>
+    <string name="restaurants">مطاعم</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="save_card">حفظ البطاقة</string>
+    <string name="sdk_error">خطأ</string>
+    <string name="sdk_not_configure_correctly">خطأ فى اعدادات ال SDK</string>
+    <string name="search">بحث</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"البحث"</string>
+    <string name="select_currency_title">اختر العملة</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="supermarkets">محلات السوبر ماركت</string>
+    <string name="textview_disclaimer_go_pay_checkouts">By enabling goPay, your card details will be saved with Tap Payments in order for you to get faster and more secure checkouts in multiple apps and websites</string>
+    <string name="textview_disclaimer_otp_sent_number">يرجى إدخال رمز التأكيد الذي تم إرساله إلى </string>
+    <string name="textview_disclaimer_save_card">للدفع الآمن والسريع ، احفظ بطاقتك</string>
+    <string name="textview_disclaimer_save_card_header_title">ادفع</string>
+    <string name="textview_disclaimer_save_card_info">لن يتم استخدام البطاقات المحفوظة إلا بموافقتك ، ويمكنك إزالتها في أي وقت.</string>
+    <string name="textview_placeholder_last_four_digits">••••%s</string>
+    <string name="textview_title_address_on_card">العنوان الموجود في البطاقة</string>
+    <string name="textview_title_country">الدولة</string>
+    <string name="textview_title_others">أخرى</string>
+    <string name="textview_title_personal_info">Your Personal Info</string>
+    <string name="textview_title_recent">تم الحفظ مؤخرًا</string>
+    <string name="textview_title_recent_cancel">إلغاء</string>
+    <string name="textview_title_recent_edit">تعديل</string>
+    <string name="textview_title_resend_again">إعادة إرسال</string>
+    <string name="textview_title_save_for_gopay">Save for goPay Checkouts</string>
+    <string name="textview_title_save_for_merchant">Save for %s Checkouts</string>
+    <string name="title_activity_home">Home</string>
+    <string name="tokenize">ادفع</string>
+    <string name="v_check_internet_connnection">تحقق من اتصالك بالإنترنت وحاول مرة أخرى</string>
+    <string name="v_co_enter_password">الرجاء إدخال كلمة المرور مطابقة.</string>
+    <string name="v_enter_card_date">الرجاء إدخال تاريخ انتهاء صلاحية الائتمان.</string>
+    <string name="v_enter_card_hoder">الرجاء إدخال اسم صاحب الائتمان.</string>
+    <string name="v_enter_card_no">الرجاء إدخال رقم بطاقة الائتمان.</string>
+    <string name="v_enter_full_name">الرجاء إدخال الاسم الكامل.</string>
+    <string name="v_enter_message">الرجاء إدخال الرسالة.</string>
+    <string name="v_enter_mobile_no">الرجاء إدخال رقم الجوال.</string>
+    <string name="v_enter_password">الرجاء إدخال كلمة المرور.</string>
+    <string name="v_select_profile_image">الرجاء تحديد صورة الملف الشخصي.</string>
+    <string name="v_valid_email_id">الرجاء إدخال البريد الإلكتروني الصحيح.</string>
+    <string name="v_valid_phone_no">الرجاء إدخال رقم هاتف صحيح.</string>
+    <string name="welcome_back">مرحبا بعودتك</string>
+    <string name="with_your_fawry_pay_reference">تتضمن معلومات عن عملية الدفع بواسطة فوري.</string>
+</resources>

@@ -1,0 +1,690 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ontime.app"
+4    android:versionCode="1"
+5    android:versionName="1.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:6:5-79
+11-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:7:5-67
+12-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:8:5-76
+13-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:8:22-73
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:6:5-79
+14-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:6:22-76
+15    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+15-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:10:5-70
+15-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:10:22-67
+16    <uses-permission android:name="android.permission.READ_SMS" />
+16-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:11:5-67
+16-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:11:22-64
+17    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+17-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:12:5-75
+17-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:12:22-72
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:13:5-80
+18-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:13:22-77
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:14:5-81
+19-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:14:22-78
+20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+20-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:15:5-79
+20-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:15:22-76
+21    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+21-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:16:5-82
+21-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:16:22-79
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:13:5-65
+22-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:13:22-62
+23    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+23-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:14:5-78
+23-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:14:22-75
+24    <uses-permission android:name="android.permission.VIBRATE" />
+24-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:15:5-66
+24-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:15:22-63
+25    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+25-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:24:5-68
+25-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:24:22-65
+26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+26-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:26:5-82
+26-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:26:22-79
+27    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+27-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:26:5-110
+27-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:26:22-107
+28
+29    <uses-feature
+29-->[io.card:android-sdk:5.5.1] /home/dell/.gradle/caches/transforms-2/files-2.1/472d443b33a5b46d303143d0aa163a03/jetified-android-sdk-5.5.1/AndroidManifest.xml:12:5-14:36
+30        android:name="android.hardware.camera"
+30-->[io.card:android-sdk:5.5.1] /home/dell/.gradle/caches/transforms-2/files-2.1/472d443b33a5b46d303143d0aa163a03/jetified-android-sdk-5.5.1/AndroidManifest.xml:13:9-47
+31        android:required="false" />
+31-->[io.card:android-sdk:5.5.1] /home/dell/.gradle/caches/transforms-2/files-2.1/472d443b33a5b46d303143d0aa163a03/jetified-android-sdk-5.5.1/AndroidManifest.xml:14:9-33
+32    <uses-feature
+32-->[io.card:android-sdk:5.5.1] /home/dell/.gradle/caches/transforms-2/files-2.1/472d443b33a5b46d303143d0aa163a03/jetified-android-sdk-5.5.1/AndroidManifest.xml:15:5-17:36
+33        android:name="android.hardware.camera.autofocus"
+33-->[io.card:android-sdk:5.5.1] /home/dell/.gradle/caches/transforms-2/files-2.1/472d443b33a5b46d303143d0aa163a03/jetified-android-sdk-5.5.1/AndroidManifest.xml:16:9-57
+34        android:required="false" />
+34-->[io.card:android-sdk:5.5.1] /home/dell/.gradle/caches/transforms-2/files-2.1/472d443b33a5b46d303143d0aa163a03/jetified-android-sdk-5.5.1/AndroidManifest.xml:17:9-33
+35
+36    <application
+36-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:18:5-167:19
+37        android:name="androidx.multidex.MultiDexApplication"
+38        android:allowBackup="true"
+38-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:19:9-35
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.3.1] /home/dell/.gradle/caches/transforms-2/files-2.1/cdfea8f3da9d3d8e26bbb73a40c2de98/core-1.3.1/AndroidManifest.xml:24:18-86
+40        android:debuggable="true"
+40-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:20:9-34
+41        android:hardwareAccelerated="true"
+41-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:21:9-43
+42        android:hasCode="true"
+42-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:22:9-31
+43        android:icon="@mipmap/ic_launcher"
+43-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:23:9-43
+44        android:isolatedProcess="true"
+44-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:24:9-39
+45        android:label="@string/app_name"
+45-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:25:9-41
+46        android:largeHeap="true"
+46-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:26:9-33
+47        android:requestLegacyExternalStorage="true"
+47-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:27:9-52
+48        android:roundIcon="@mipmap/ic_launcher_round"
+48-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:28:9-54
+49        android:supportsRtl="true"
+49-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:29:9-35
+50        android:theme="@style/AppTheme"
+50-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:30:9-40
+51        android:usesCleartextTraffic="true" >
+51-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:31:9-44
+52        <activity
+52-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:33:9-35:48
+53            android:name="ontime.app.restaurant.ui.Activity.NewOrderItemListActivity"
+53-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:34:13-76
+54            android:theme="@style/AppTheme1" />
+54-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:35:13-45
+55
+56        <provider
+57            android:name="androidx.core.content.FileProvider"
+57-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:38:13-62
+58            android:authorities="ontime.app.provider"
+58-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:39:13-60
+59            android:exported="false"
+59-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:40:13-37
+60            android:grantUriPermissions="true" >
+60-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:41:13-47
+61            <meta-data
+61-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:42:13-44:58
+62                android:name="android.support.FILE_PROVIDER_PATHS"
+62-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:43:17-67
+63                android:resource="@xml/provider_paths" />
+63-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:44:17-55
+64        </provider>
+65
+66        <activity
+66-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:47:9-49:48
+67            android:name="ontime.app.customer.doneActivity.ChangePasswordActivity"
+67-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:48:13-73
+68            android:theme="@style/AppTheme1" />
+68-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:49:13-45
+69        <activity
+69-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:50:9-53:48
+70            android:name="ontime.app.restaurant.ui.Activity.RiderOrderDetails"
+70-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:51:13-69
+71            android:label="@string/title_activity_home"
+71-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:52:13-56
+72            android:theme="@style/AppTheme1" />
+72-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:53:13-45
+73        <activity
+73-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:54:9-56:48
+74            android:name="ontime.app.restaurant.ui.Activity.WelcomeActivity"
+74-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:55:13-67
+75            android:theme="@style/AppTheme1" />
+75-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:56:13-45
+76        <activity
+76-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:57:9-59:48
+77            android:name="ontime.app.restaurant.ui.Activity.LoginPage"
+77-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:58:13-61
+78            android:theme="@style/AppTheme1" />
+78-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:59:13-45
+79        <activity
+79-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:60:9-62:48
+80            android:name="ontime.app.customer.doneActivity.ForgotpasswordActivity"
+80-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:61:13-73
+81            android:theme="@style/AppTheme1" />
+81-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:62:13-45
+82        <activity
+82-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:63:9-65:48
+83            android:name="ontime.app.customer.doneActivity.VerificationCodeActivity"
+83-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:64:13-75
+84            android:theme="@style/AppTheme1" />
+84-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:65:13-45
+85        <activity
+85-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:66:9-68:48
+86            android:name="ontime.app.customer.doneActivity.RegistetActivity"
+86-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:67:13-67
+87            android:theme="@style/AppTheme1" />
+87-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:68:13-45
+88        <activity
+88-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:69:9-71:48
+89            android:name="ontime.app.customer.doneActivity.LoginActivity"
+89-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:70:13-64
+90            android:theme="@style/AppTheme1" />
+90-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:71:13-45
+91        <activity
+91-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:72:9-74:48
+92            android:name="ontime.app.customer.doneActivity.UserDashboardActivity"
+92-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:73:13-72
+93            android:theme="@style/AppTheme1" />
+93-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:74:13-45
+94        <activity
+94-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:75:9-77:48
+95            android:name="ontime.app.customer.doneActivity.RestCartPenddingItemActivity"
+95-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:76:13-79
+96            android:theme="@style/AppTheme1" />
+96-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:77:13-45
+97        <activity
+97-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:78:9-80:48
+98            android:name="ontime.app.customer.doneActivity.RestaurantlistActivity"
+98-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:79:13-73
+99            android:theme="@style/AppTheme1" />
+99-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:80:13-45
+100        <activity
+100-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:81:9-83:48
+101            android:name="ontime.app.customer.doneActivity.RestaurantProfileActivity"
+101-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:82:13-76
+102            android:theme="@style/AppTheme1" />
+102-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:83:13-45
+103        <activity
+103-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:84:9-86:48
+104            android:name="ontime.app.customer.doneActivity.RestaurantDetailActivity"
+104-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:85:13-75
+105            android:theme="@style/AppTheme1" />
+105-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:86:13-45
+106        <activity
+106-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:87:9-89:48
+107            android:name="ontime.app.customer.doneActivity.RestCartItemActivity"
+107-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:88:13-71
+108            android:theme="@style/AppTheme1" />
+108-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:89:13-45
+109        <activity
+109-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:90:9-92:48
+110            android:name="ontime.app.customer.doneActivity.OrderSummaryActivity"
+110-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:91:13-71
+111            android:theme="@style/AppTheme1" />
+111-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:92:13-45
+112        <activity
+112-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:93:9-95:48
+113            android:name="ontime.app.customer.Activity.SentRequestActivity"
+113-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:94:13-66
+114            android:theme="@style/AppTheme1" />
+114-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:95:13-45
+115        <activity
+115-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:96:9-98:48
+116            android:name="ontime.app.customer.Activity.RequestPending"
+116-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:97:13-61
+117            android:theme="@style/AppTheme1" />
+117-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:98:13-45
+118        <activity
+118-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:99:9-107:20
+119            android:name="ontime.app.customer.doneActivity.MyOrdersListActivity"
+119-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:100:13-71
+120            android:theme="@style/AppTheme1" >
+120-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:101:13-45
+121            <intent-filter>
+121-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:102:13-106:29
+122                <action android:name="none" />
+122-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:103:17-46
+122-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:103:25-44
+123
+124                <category android:name="android.intent.category.LAUNCHER" />
+124-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:104:17-76
+124-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:104:27-74
+125                <category android:name="android.intent.category.DEFAULT" />
+125-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:105:17-75
+125-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:105:27-73
+126            </intent-filter>
+127        </activity>
+128        <activity
+128-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:108:9-110:48
+129            android:name="ontime.app.customer.doneActivity.PaymentActivity"
+129-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:109:13-66
+130            android:theme="@style/AppTheme1" />
+130-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:110:13-45
+131        <activity
+131-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:111:9-113:48
+132            android:name="ontime.app.customer.doneActivity.NotificationActivity"
+132-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:112:13-71
+133            android:theme="@style/AppTheme1" />
+133-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:113:13-45
+134        <activity
+134-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:114:9-116:48
+135            android:name="ontime.app.customer.doneActivity.ContactusActivity"
+135-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:115:13-68
+136            android:theme="@style/AppTheme1" />
+136-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:116:13-45
+137        <activity
+137-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:117:9-119:48
+138            android:name="ontime.app.customer.doneActivity.LanguageActivity"
+138-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:118:13-67
+139            android:theme="@style/AppTheme1" />
+139-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:119:13-45
+140        <activity
+140-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:120:9-122:48
+141            android:name="ontime.app.customer.doneActivity.AboutusActivity"
+141-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:121:13-66
+142            android:theme="@style/AppTheme1" />
+142-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:122:13-45
+143        <activity
+143-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:123:9-125:48
+144            android:name="ontime.app.customer.doneActivity.UserProfileActivity"
+144-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:124:13-70
+145            android:theme="@style/AppTheme1" />
+145-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:125:13-45
+146        <activity
+146-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:126:9-128:48
+147            android:name="ontime.app.customer.doneActivity.AddCardActivity"
+147-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:127:13-66
+148            android:theme="@style/AppTheme1" />
+148-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:128:13-45
+149        <activity
+149-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:129:9-131:48
+150            android:name="ontime.app.customer.Activity.SentRequestSuper"
+150-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:130:13-63
+151            android:theme="@style/AppTheme1" />
+151-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:131:13-45
+152        <activity
+152-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:133:9-135:48
+153            android:name="ontime.app.restaurant.ui.Activity.MurchanNotification"
+153-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:134:13-71
+154            android:theme="@style/AppTheme1" />
+154-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:135:13-45
+155        <activity
+155-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:136:9-144:20
+156            android:name="ontime.app.restaurant.ui.Activity.SplashActivity"
+156-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:137:13-66
+157            android:theme="@style/AppTheme1" >
+157-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:138:13-45
+158            <intent-filter>
+158-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:139:13-143:29
+159                <action android:name="android.intent.action.MAIN" />
+159-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:140:17-69
+159-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:140:25-66
+160
+161                <category android:name="android.intent.category.LAUNCHER" />
+161-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:104:17-76
+161-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:104:27-74
+162            </intent-filter>
+163        </activity>
+164
+165        <meta-data
+165-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:146:9-148:54
+166            android:name="com.google.firebase.messaging.default_notification_icon"
+166-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:147:13-83
+167            android:resource="@mipmap/ic_launcher" />
+167-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:148:13-51
+168        <!--
+169 Set color used with incoming notification messages. This is used when no color is set for the incoming
+170             notification message. See README(https://goo.gl/6BKBk7) for more.
+171        -->
+172        <meta-data
+172-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:153:9-155:53
+173            android:name="com.google.firebase.messaging.default_notification_color"
+173-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:154:13-84
+174            android:resource="@color/colorAccent" /> <!-- [END fcm_default_icon] -->
+174-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:155:13-50
+175        <!-- [START fcm_default_channel] -->
+176        <meta-data
+176-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:157:9-159:48
+177            android:name="com.google.firebase.messaging.default_notification_channel_id"
+177-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:158:13-89
+178            android:value="@string/app_name" /> <!-- [END fcm_default_channel] -->
+178-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:159:13-45
+179        <service
+179-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:160:9-166:19
+180            android:name="ontime.app.utils.MyFirebaseMessagingService"
+180-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:161:13-61
+181            android:exported="false" >
+181-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:162:13-37
+182            <intent-filter>
+182-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:163:13-165:29
+183                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+183-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:164:17-78
+183-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:164:25-75
+184            </intent-filter>
+185        </service>
+186
+187        <activity
+187-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:18:9-21:58
+188            android:name="company.tap.gosellapi.internal.activities.GoSellPaymentActivity"
+188-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:19:13-91
+189            android:theme="@style/TransparentCompat"
+189-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:20:13-53
+190            android:windowSoftInputMode="adjustResize" />
+190-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:21:13-55
+191        <activity
+191-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:22:9-24:56
+192            android:name="company.tap.gosellapi.internal.activities.GoSellCardAddressActivity"
+192-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:23:13-95
+193            android:theme="@style/GoSellSDKAppTheme" />
+193-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:24:13-53
+194        <activity
+194-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:25:9-27:56
+195            android:name="company.tap.gosellapi.internal.activities.CurrenciesActivity"
+195-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:26:13-88
+196            android:theme="@style/GoSellSDKAppTheme" />
+196-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:27:13-53
+197        <activity
+197-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:28:9-30:56
+198            android:name="company.tap.gosellapi.internal.activities.BaseActionBarActivity"
+198-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:29:13-91
+199            android:theme="@style/GoSellSDKAppTheme" />
+199-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:30:13-53
+200        <activity
+200-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:31:9-34:56
+201            android:name="company.tap.gosellapi.internal.activities.WebPaymentActivity"
+201-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:32:13-88
+202            android:screenOrientation="portrait"
+202-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:33:13-49
+203            android:theme="@style/GoSellSDKAppTheme" />
+203-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:34:13-53
+204        <activity
+204-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:35:9-37:56
+205            android:name="company.tap.gosellapi.internal.activities.CountriesActivity"
+205-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:36:13-87
+206            android:theme="@style/GoSellSDKAppTheme" />
+206-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:37:13-53
+207        <activity
+207-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:38:9-40:56
+208            android:name="company.tap.gosellapi.internal.activities.AsynchronousPaymentActivity"
+208-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:39:13-97
+209            android:theme="@style/TransparentCompat" />
+209-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] /home/dell/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml:40:13-53
+210        <activity
+210-->[:PhoneVerification] /media/dell/data/AndroidProjects/OnTime/onTimeAndroid/PhoneVerification/build/intermediates/library_manifest/release/AndroidManifest.xml:14:9-17:59
+211            android:name="com.phonenumberui.CountryCodeActivity"
+211-->[:PhoneVerification] /media/dell/data/AndroidProjects/OnTime/onTimeAndroid/PhoneVerification/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-65
+212            android:screenOrientation="portrait"
+212-->[:PhoneVerification] /media/dell/data/AndroidProjects/OnTime/onTimeAndroid/PhoneVerification/build/intermediates/library_manifest/release/AndroidManifest.xml:16:13-49
+213            android:theme="@style/AppTheme.NoActionBar" />
+213-->[:PhoneVerification] /media/dell/data/AndroidProjects/OnTime/onTimeAndroid/PhoneVerification/build/intermediates/library_manifest/release/AndroidManifest.xml:17:13-56
+214        <activity
+214-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:27:9-44:20
+215            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+215-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:28:13-80
+216            android:excludeFromRecents="true"
+216-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:29:13-46
+217            android:exported="true"
+217-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:30:13-36
+218            android:launchMode="singleTask"
+218-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:31:13-44
+219            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+219-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:32:13-72
+220            <intent-filter>
+220-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:33:13-43:29
+221                <action android:name="android.intent.action.VIEW" />
+221-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:17-69
+221-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:25-66
+222
+223                <category android:name="android.intent.category.DEFAULT" />
+223-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:105:17-75
+223-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:105:27-73
+224                <category android:name="android.intent.category.BROWSABLE" />
+224-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:17-78
+224-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:27-75
+225
+226                <data
+226-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:39:17-42:51
+227                    android:host="firebase.auth"
+227-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:40:21-49
+228                    android:path="/"
+228-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:41:21-37
+229                    android:scheme="genericidp" />
+229-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:42:21-48
+230            </intent-filter>
+231        </activity>
+232        <activity
+232-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:45:9-62:20
+233            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+233-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:46:13-79
+234            android:excludeFromRecents="true"
+234-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:47:13-46
+235            android:exported="true"
+235-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:48:13-36
+236            android:launchMode="singleTask"
+236-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:49:13-44
+237            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+237-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:50:13-72
+238            <intent-filter>
+238-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:51:13-61:29
+239                <action android:name="android.intent.action.VIEW" />
+239-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:17-69
+239-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:25-66
+240
+241                <category android:name="android.intent.category.DEFAULT" />
+241-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:105:17-75
+241-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:105:27-73
+242                <category android:name="android.intent.category.BROWSABLE" />
+242-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:17-78
+242-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:27-75
+243
+244                <data
+244-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:39:17-42:51
+245                    android:host="firebase.auth"
+245-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:40:21-49
+246                    android:path="/"
+246-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:41:21-37
+247                    android:scheme="recaptcha" />
+247-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:42:21-48
+248            </intent-filter>
+249        </activity>
+250
+251        <service
+251-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:64:9-73:19
+252            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+252-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:65:13-101
+253            android:enabled="true"
+253-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:66:13-35
+254            android:exported="false" >
+254-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:67:13-37
+255            <intent-filter>
+255-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:68:13-72:29
+256                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+256-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:69:17-89
+256-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:69:25-86
+257
+258                <category android:name="android.intent.category.DEFAULT" />
+258-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:105:17-75
+258-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:105:27-73
+259            </intent-filter>
+260        </service>
+261        <service
+261-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:74:9-80:19
+262            android:name="com.google.firebase.components.ComponentDiscoveryService"
+262-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:75:13-84
+263            android:directBootAware="true"
+263-->[com.google.firebase:firebase-common:19.4.0] /home/dell/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:35:13-43
+264            android:exported="false" >
+264-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:76:13-37
+265            <meta-data
+265-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:77:13-79:85
+266                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+266-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:78:17-109
+267                android:value="com.google.firebase.components.ComponentRegistrar" />
+267-->[com.google.firebase:firebase-auth:20.0.1] /home/dell/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:79:17-82
+268            <meta-data
+268-->[com.google.firebase:firebase-messaging:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/0ef514cb9c6783fd4e104bc1487eb9d0/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:39:13-41:85
+269                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+269-->[com.google.firebase:firebase-messaging:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/0ef514cb9c6783fd4e104bc1487eb9d0/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:40:17-119
+270                android:value="com.google.firebase.components.ComponentRegistrar" />
+270-->[com.google.firebase:firebase-messaging:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/0ef514cb9c6783fd4e104bc1487eb9d0/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:41:17-82
+271            <meta-data
+271-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:32:13-34:85
+272                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+272-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:33:17-96
+273                android:value="com.google.firebase.components.ComponentRegistrar" />
+273-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:34:17-82
+274            <meta-data
+274-->[com.google.firebase:firebase-datatransport:17.0.3] /home/dell/.gradle/caches/transforms-2/files-2.1/c757708a611d30d65997521c603f91fc/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+275                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+275-->[com.google.firebase:firebase-datatransport:17.0.3] /home/dell/.gradle/caches/transforms-2/files-2.1/c757708a611d30d65997521c603f91fc/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+276                android:value="com.google.firebase.components.ComponentRegistrar" />
+276-->[com.google.firebase:firebase-datatransport:17.0.3] /home/dell/.gradle/caches/transforms-2/files-2.1/c757708a611d30d65997521c603f91fc/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+277            <meta-data
+277-->[com.google.android.gms:play-services-measurement-api:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:30:13-32:85
+278                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+278-->[com.google.android.gms:play-services-measurement-api:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:31:17-139
+279                android:value="com.google.firebase.components.ComponentRegistrar" />
+279-->[com.google.android.gms:play-services-measurement-api:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:32:17-82
+280            <meta-data
+280-->[com.google.firebase:firebase-installations:16.3.4] /home/dell/.gradle/caches/transforms-2/files-2.1/25cc831f1bf7a761536517aab3350bc7/jetified-firebase-installations-16.3.4/AndroidManifest.xml:18:13-20:85
+281                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+281-->[com.google.firebase:firebase-installations:16.3.4] /home/dell/.gradle/caches/transforms-2/files-2.1/25cc831f1bf7a761536517aab3350bc7/jetified-firebase-installations-16.3.4/AndroidManifest.xml:19:17-127
+282                android:value="com.google.firebase.components.ComponentRegistrar" />
+282-->[com.google.firebase:firebase-installations:16.3.4] /home/dell/.gradle/caches/transforms-2/files-2.1/25cc831f1bf7a761536517aab3350bc7/jetified-firebase-installations-16.3.4/AndroidManifest.xml:20:17-82
+283        </service>
+284        <!--
+285             FirebaseMessagingService performs security checks at runtime,
+286             but set to not exported to explicitly avoid allowing another app to call it.
+287        -->
+288        <service
+288-->[com.google.firebase:firebase-messaging:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/0ef514cb9c6783fd4e104bc1487eb9d0/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:28:9-35:19
+289            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+289-->[com.google.firebase:firebase-messaging:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/0ef514cb9c6783fd4e104bc1487eb9d0/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:29:13-82
+290            android:directBootAware="true"
+290-->[com.google.firebase:firebase-messaging:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/0ef514cb9c6783fd4e104bc1487eb9d0/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:30:13-43
+291            android:exported="false" >
+291-->[com.google.firebase:firebase-messaging:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/0ef514cb9c6783fd4e104bc1487eb9d0/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:31:13-37
+292            <intent-filter android:priority="-500" >
+292-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:163:13-165:29
+293                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+293-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:164:17-78
+293-->/media/dell/data/AndroidProjects/OnTime/onTimeAndroid/app/src/main/AndroidManifest.xml:164:25-75
+294            </intent-filter>
+295        </service>
+296
+297        <receiver
+297-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:37:9-44:20
+298            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+298-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:38:13-78
+299            android:exported="true"
+299-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:39:13-36
+300            android:permission="com.google.android.c2dm.permission.SEND" >
+300-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:40:13-73
+301            <intent-filter>
+301-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:41:13-43:29
+302                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+302-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:42:17-81
+302-->[com.google.firebase:firebase-iid:21.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/75ec9d0ae71b4ae67ac9ab96bea34584/jetified-firebase-iid-21.0.0/AndroidManifest.xml:42:25-78
+303            </intent-filter>
+304        </receiver>
+305
+306        <provider
+306-->[com.google.firebase:firebase-common:19.4.0] /home/dell/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:26:9-31:39
+307            android:name="com.google.firebase.provider.FirebaseInitProvider"
+307-->[com.google.firebase:firebase-common:19.4.0] /home/dell/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:27:13-77
+308            android:authorities="ontime.app.firebaseinitprovider"
+308-->[com.google.firebase:firebase-common:19.4.0] /home/dell/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:28:13-72
+309            android:directBootAware="true"
+309-->[com.google.firebase:firebase-common:19.4.0] /home/dell/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:29:13-43
+310            android:exported="false"
+310-->[com.google.firebase:firebase-common:19.4.0] /home/dell/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:30:13-37
+311            android:initOrder="100" />
+311-->[com.google.firebase:firebase-common:19.4.0] /home/dell/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:31:13-36
+312
+313        <activity
+313-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d92a27efcac738b4f280b9ad0c07bda7/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+314            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+314-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d92a27efcac738b4f280b9ad0c07bda7/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+315            android:exported="false"
+315-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d92a27efcac738b4f280b9ad0c07bda7/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+316            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+316-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d92a27efcac738b4f280b9ad0c07bda7/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+317
+318        <receiver
+318-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:29:9-33:20
+319            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+319-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:30:13-85
+320            android:enabled="true"
+320-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:31:13-35
+321            android:exported="false" >
+321-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:32:13-37
+322        </receiver>
+323
+324        <service
+324-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:35:9-38:40
+325            android:name="com.google.android.gms.measurement.AppMeasurementService"
+325-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:36:13-84
+326            android:enabled="true"
+326-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:37:13-35
+327            android:exported="false" />
+327-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:38:13-37
+328        <service
+328-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:39:9-43:72
+329            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+329-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:40:13-87
+330            android:enabled="true"
+330-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:41:13-35
+331            android:exported="false"
+331-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:42:13-37
+332            android:permission="android.permission.BIND_JOB_SERVICE" />
+332-->[com.google.android.gms:play-services-measurement:18.0.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:43:13-69
+333
+334        <meta-data
+334-->[com.google.android.gms:play-services-basement:17.1.0] /home/dell/.gradle/caches/transforms-2/files-2.1/c77d530a894c9cdc1e02ae73843c5ba2/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
+335            android:name="com.google.android.gms.version"
+335-->[com.google.android.gms:play-services-basement:17.1.0] /home/dell/.gradle/caches/transforms-2/files-2.1/c77d530a894c9cdc1e02ae73843c5ba2/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
+336            android:value="@integer/google_play_services_version" />
+336-->[com.google.android.gms:play-services-basement:17.1.0] /home/dell/.gradle/caches/transforms-2/files-2.1/c77d530a894c9cdc1e02ae73843c5ba2/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
+337
+338        <service
+338-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d8bebe705ef0687fee7487ad3898c72b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+339            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+339-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d8bebe705ef0687fee7487ad3898c72b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+340            android:exported="false" >
+340-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d8bebe705ef0687fee7487ad3898c72b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+341            <meta-data
+341-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d8bebe705ef0687fee7487ad3898c72b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+342                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+342-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d8bebe705ef0687fee7487ad3898c72b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+343                android:value="cct" />
+343-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/d8bebe705ef0687fee7487ad3898c72b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+344        </service>
+345        <service
+345-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/513af2d81cb12d386383dd14717874ca/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+346            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+346-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/513af2d81cb12d386383dd14717874ca/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+347            android:exported="false"
+347-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/513af2d81cb12d386383dd14717874ca/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+348            android:permission="android.permission.BIND_JOB_SERVICE" >
+348-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/513af2d81cb12d386383dd14717874ca/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+349        </service>
+350
+351        <receiver
+351-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/513af2d81cb12d386383dd14717874ca/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+352            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+352-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/513af2d81cb12d386383dd14717874ca/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+353            android:exported="false" />
+353-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/dell/.gradle/caches/transforms-2/files-2.1/513af2d81cb12d386383dd14717874ca/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+354
+355        <activity
+355-->[io.card:android-sdk:5.5.1] /home/dell/.gradle/caches/transforms-2/files-2.1/472d443b33a5b46d303143d0aa163a03/jetified-android-sdk-5.5.1/AndroidManifest.xml:20:9-22:66
+356            android:name="io.card.payment.CardIOActivity"
+356-->[io.card:android-sdk:5.5.1] /home/dell/.gradle/caches/transforms-2/files-2.1/472d443b33a5b46d303143d0aa163a03/jetified-android-sdk-5.5.1/AndroidManifest.xml:21:13-58
+357            android:configChanges="keyboardHidden|orientation" />
+357-->[io.card:android-sdk:5.5.1] /home/dell/.gradle/caches/transforms-2/files-2.1/472d443b33a5b46d303143d0aa163a03/jetified-android-sdk-5.5.1/AndroidManifest.xml:22:13-63
+358        <activity android:name="io.card.payment.DataEntryActivity" />
+358-->[io.card:android-sdk:5.5.1] /home/dell/.gradle/caches/transforms-2/files-2.1/472d443b33a5b46d303143d0aa163a03/jetified-android-sdk-5.5.1/AndroidManifest.xml:23:9-70
+358-->[io.card:android-sdk:5.5.1] /home/dell/.gradle/caches/transforms-2/files-2.1/472d443b33a5b46d303143d0aa163a03/jetified-android-sdk-5.5.1/AndroidManifest.xml:23:19-67
+359    </application>
+360
+361</manifest>

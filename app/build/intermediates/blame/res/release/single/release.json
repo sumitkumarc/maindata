@@ -1,0 +1,1602 @@
+[
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_phone.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\phone.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_homered.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\homered.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_tab_order_processing.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\tab_order_processing.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_zoom_out.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\zoom_out.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_login_bg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\login_bg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_ic_menu_black.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\ic_menu_black.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_home.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_menuwhite.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\menuwhite.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_register.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\register.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_super_btn_design.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\super_btn_design.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn1_design.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn1_design.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_ic_action_user.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_user.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_red.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_red.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_slide_in_left.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\slide_in_left.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_phone.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\phone.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_icon.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_eeysoff.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\eeysoff.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_ic_action_filter.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-mdpi\\ic_action_filter.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_backred.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\backred.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_restprofile.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_restprofile.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_ic_menu_black.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_menu_black.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_phone.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\phone.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_menuwhite.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\menuwhite.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_filter.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\filter.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_rest_circle_itemback.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\rest_circle_itemback.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_searchred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\searchred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_searchred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\searchred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_plus.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\plus.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_noti2.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\noti2.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_edit.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\edit.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_c_row_item_cart.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\c_row_item_cart.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_ic_menu_red.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\ic_menu_red.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_ic_action_shopping.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-hdpi\\ic_action_shopping.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_paymentred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\paymentred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_backblackbg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\backblackbg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_sentrequest.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_sentrequest.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_c_row_restaurant_item.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\c_row_restaurant_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_home.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\home.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_wallet.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_wallet.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_cart2.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_cart2.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_r_ic_baseline_supervised_user_circle_24.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\r_ic_baseline_supervised_user_circle_24.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_activity_login.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_activity_login.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_graycircle.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\graycircle.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_gray.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_gray.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_otp.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\otp.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_ic_action_filter.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-hdpi\\ic_action_filter.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_ic_menu_red.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\ic_menu_red.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_circlecartkesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\circlecartkesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_summaryorange.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\summaryorange.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_ic_action_filter.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_filter.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_restaurantlist.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_restaurantlist.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_profilebg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\profilebg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_plus.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\plus.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_visa.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_visa.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_welcome.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\welcome.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_searchkesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\searchkesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_status_item_layout.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_status_item_layout.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_circle.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_circle.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_ic_add_payment.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_add_payment.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_edittextbg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\edittextbg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_summary.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\summary.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_menuwhite.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\menuwhite.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_splash.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\splash.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_ic_menu_black.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\ic_menu_black.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_cartpending.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_cartpending.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_r_ic_baseline_supervised_user_circle_24.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\r_ic_baseline_supervised_user_circle_24.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_delete.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\delete.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_lbg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_lbg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_rb_selected_state.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\rb_selected_state.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_ic_add_shopping_cart_black_24dp.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\ic_add_shopping_cart_black_24dp.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_searchred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\searchred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_menuwhite.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\menuwhite.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_btn_design_white.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_btn_design_white.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_pop_add_amount.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\pop_add_amount.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_payment.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_payment.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_redpeople.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\redpeople.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_plus.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\plus.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_filterkesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\filterkesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_orders.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\orders.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_people.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\people.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_visared.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\visared.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_menukesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\menukesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_orderred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\orderred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_r_ic_baseline_supervised_user_circle_24.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\r_ic_baseline_supervised_user_circle_24.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_cartbg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\cartbg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_menukesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\menukesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_cartred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\cartred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_phone.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\phone.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_plus.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\plus.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_edit.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\edit.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_ic_pro.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_ic_pro.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_edit.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\edit.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_searchkesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\searchkesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_btn_design2.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_btn_design2.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_edit.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\edit.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_plus.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\plus.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_menuwhite.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\menuwhite.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_myorders.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_myorders.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_nivo_slider.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_nivo_slider.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_activity_welcome.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_activity_welcome.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_backred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\backred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_circle_white.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\circle_white.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_ic_add_shopping_cart_black_24dp.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_add_shopping_cart_black_24dp.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_banner.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\banner.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_eyes_on.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_eyes_on.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_gradient_toolbar.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\gradient_toolbar.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_row_card_details.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_card_details.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_searchkesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\searchkesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_welbg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\welbg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_red_border.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_red_border.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_profile.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_top.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_top.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_fragment_processing_order.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_fragment_processing_order.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_slide_out_left.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\slide_out_left.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_search.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\search.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_splsh.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_splsh.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_ordersummary.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_ordersummary.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_ic_action_shopping.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-mdpi\\ic_action_shopping.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_phone.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\phone.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_pop_addto_cart_success.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\pop_addto_cart_success.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_ic_action_user.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_action_user.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_chicken2.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\chicken2.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_bg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\bg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_pop.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_pop.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_row_itemorder_prossing.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_itemorder_prossing.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_phone.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\phone.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_plus.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\plus.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_liner_background.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\liner_background.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_supermarket.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\supermarket.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_aboutus.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_aboutus.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_delete.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\delete.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_ic_menu_red.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_menu_red.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_contactus.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\contactus.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_searchkesari.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\searchkesari.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_marketprofilebg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\marketprofilebg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_menukesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\menukesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_backred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\backred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_pinkbg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\pinkbg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_profileborder.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\profileborder.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_back.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\back.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_menukesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\menukesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_close.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\close.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_row_neworder_item.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_row_neworder_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_ic_add_shopping_cart_black_24dp.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\ic_add_shopping_cart_black_24dp.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn1_designwhite.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn1_designwhite.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_visaorabge.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\visaorabge.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_cart.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\cart.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_item_animation_fall_down.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\item_animation_fall_down.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_searchred.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\searchred.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_design2.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_design2.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_darkhighgray.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_darkhighgray.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_fragment_new_order.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_fragment_new_order.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_add.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\add.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_ic_add_payment.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_add_payment.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_sentrequest2.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_sentrequest2.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_dishesmarket.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_dishesmarket.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_dashboard.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_layout_animation_up_to_down.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\layout_animation_up_to_down.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_ic_add_shopping_cart_black_24dp.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_add_shopping_cart_black_24dp.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_menuwhite.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\menuwhite.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_pop_add_card.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\pop_add_card.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_fragment_cancelling_order.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_fragment_cancelling_order.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_notifi.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\notifi.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_rebg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\rebg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_back.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\back.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_contact.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\contact.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_marketlogo.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\marketlogo.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_menukesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\menukesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_searchkesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\searchkesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_payment.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_payment.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_design.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_design.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_backbg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\backbg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_navigationmenu2.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\navigationmenu2.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_restuarant.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\restuarant.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_login_bg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_login_bg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_bariyani.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\bariyani.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_btn_design.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_btn_design.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_row_processing_order_item.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_row_processing_order_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_aboutus.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\aboutus.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_newpwd.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\newpwd.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_applebanner.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\applebanner.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_search.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\search.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_back.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\back.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_duration.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\duration.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_welbg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_welbg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_backblack.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\backblack.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_backblack.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\backblack.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_ic_menu_black.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\ic_menu_black.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_whitebg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\whitebg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_ic_menu_red.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\ic_menu_red.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_close.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\close.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_ic_action_user.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-hdpi\\ic_action_user.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_golden.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_golden.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_row_itemorder_finised.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_itemorder_finised.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_change_password.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_change_password.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_slide_in_up.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\slide_in_up.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_c_row_my_cart_item.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\c_row_my_cart_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_delete.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\delete.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_kesari.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_kesari.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_delete.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\delete.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_search.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\search.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_language.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_language.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_design_white.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_design_white.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_rest_pop.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_rest_pop.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_r_ic_baseline_supervised_user_circle_24.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\r_ic_baseline_supervised_user_circle_24.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_menu.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\menu.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_circle.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\circle.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_whitecircle.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\whitecircle.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_ic_action_filter.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_action_filter.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_back.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\back.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_ic_action_user.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-mdpi\\ic_action_user.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_ic_menu_red.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\ic_menu_red.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_ic_menu_black.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_menu_black.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_categoryall.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_categoryall.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_r_ic_baseline_supervised_user_circle_24.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\r_ic_baseline_supervised_user_circle_24.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_search.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\search.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_searchkesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\searchkesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_darkgray.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_darkgray.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_close.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\close.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_notired.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\notired.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_ic_add_shopping_cart_black_24dp.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_add_shopping_cart_black_24dp.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_backred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\backred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_ordersuper.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_ordersuper.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_whiteborder.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_whiteborder.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_delete.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\delete.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_backblack.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\backblack.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_activity_riderorderdetails.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_activity_riderorderdetails.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_ic_action_shopping.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_action_shopping.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_restdetail.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_restdetail.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_btn1_design.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_btn1_design.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_backblack.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\backblack.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_search.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\search.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_phone.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\phone.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_searchred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\searchred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_ic_add_shopping_cart_black_24dp.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\ic_add_shopping_cart_black_24dp.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_requestpending.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_requestpending.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_super_circle_itemback.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\super_circle_itemback.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_mac.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_mac.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_edit.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\edit.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_edit_photo.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\edit_photo.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_ic_user.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_ic_user.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_cart.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_cart.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_wallet.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\wallet.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_language.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\language.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_aboutred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\aboutred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_edit.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\edit.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_ic_add_payment.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\ic_add_payment.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_row_notification_item.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_notification_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_close.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\close.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_ic_add_payment.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_add_payment.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_back.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\back.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_super_delete_bg.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\super_delete_bg.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_tab_order_finised.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\tab_order_finised.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_backred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\backred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_ic_action_shopping.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_shopping.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_backesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\backesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_backred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\backred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_slide_out_right.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_search.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\search.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_verify_page.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_verify_page.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_c_row_menu_dishes.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\c_row_menu_dishes.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_zoom_in.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\zoom_in.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_new_order_item_list.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_new_order_item_list.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_delete.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\delete.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_backblack.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\backblack.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_menukesari.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\menukesari.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_icon.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_icon.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_light_circle.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_light_circle.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_goldenrectorange.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_goldenrectorange.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_contactus.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_contactus.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_c_row_category_list_item.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\c_row_category_list_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_navigationmenu.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\navigationmenu.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_goldenrect.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_goldenrect.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_left_to_right.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\left_to_right.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_cartpending.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_cartpending.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_back_button.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_back_button.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_rest_delete_bg.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\rest_delete_bg.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_minus.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\minus.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_layout_animation.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\layout_animation.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_ic_action_filter.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_filter.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_closeimg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\closeimg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_login.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn1_designrect.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn1_designrect.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_profile.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\profile.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_liner_background.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_liner_background.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_picture.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\picture.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_order2super.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_order2super.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_requestpending.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_requestpending.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_successmarket.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\successmarket.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_grayback.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\grayback.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_ic_menu_black.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_menu_black.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_back.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\back.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_pop_edit_profile.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\pop_edit_profile.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_ic_add_payment.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\ic_add_payment.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_rb_regular.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\rb_regular.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_supermarket.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_supermarket.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_slide_up.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\slide_up.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_ic_add_payment.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\ic_add_payment.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\xml_provider_paths.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\xml\\provider_paths.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_activity_splash.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_activity_splash.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_backred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\backred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_up_to_down.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\up_to_down.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_bg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_bg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_notification.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\notification.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_top_to_up.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\top_to_up.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_backblack.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\backblack.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_ic_menu_red.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_menu_red.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_minuskesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\minuskesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_edit.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\edit.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_push_up_out.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\push_up_out.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_center_zoom_out.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\center_zoom_out.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_restaurant.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\restaurant.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_graybg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\graybg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_appetizers.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\appetizers.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_registet_page.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_registet_page.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_notification.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_notification.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_slide_in_right.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_menukesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\menukesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_super_contecte_border.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\super_contecte_border.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_ic_add_shopping_cart_black_24dp.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\ic_add_shopping_cart_black_24dp.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_searchkesari.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\searchkesari.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_cartpending2.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_cartpending2.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_ic_menu_red.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_menu_red.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_eyes_off.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_eyes_off.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_r_ic_order_icon.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\r_ic_order_icon.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_row_itemorder_cancelled.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_itemorder_cancelled.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_close.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\close.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_searchred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\searchred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_close.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\close.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_delete.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\delete.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_top_kesari.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_top_kesari.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_category.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_category.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_row_cancel_item.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_row_cancel_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_profilesuper.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\profilesuper.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_u_homebg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\u_homebg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_circlebg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\circlebg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_rb_selected.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\rb_selected.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_search.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\search.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_wallettype.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\wallettype.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_row_item_details.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_row_item_details.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_welcome.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_contactred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\contactred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_searchred.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\searchred.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_popup_doyouwant.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\popup_doyouwant.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_r_ic_baseline_supervised_user_circle_24.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\r_ic_baseline_supervised_user_circle_24.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_backblack.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\backblack.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_menuwhite.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\menuwhite.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_green.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_green.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_categorylistmarket.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_categorylistmarket.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_push_up_in.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\push_up_in.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_back.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\back.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_r_row_completed_item.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\r_row_completed_item.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_mac.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\mac.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_ic_action_user.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_user.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_close.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\close.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_bottan_to_up.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\bottan_to_up.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_item_order1super.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\item_order1super.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_success_s.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\success_s.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_forget_page.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_forget_page.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_tab_order_cancelled.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\tab_order_cancelled.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_circlered.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\circlered.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_contactusbg.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\contactusbg.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_chicken.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\chicken.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_plus.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\plus.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_ic_add_payment.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\ic_add_payment.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_languagered.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\languagered.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_ic_action_shopping.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_shopping.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_ic_menu_black.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\ic_menu_black.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_restart.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\restart.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_cod.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\cod.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_row_item_payment_methord.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\row_item_payment_methord.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_orange_border.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_orange_border.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_super_pop.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_super_pop.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_successorange.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\successorange.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_sandvich.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\sandvich.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_logo_1.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\logo_1.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\anim_slide_out_up.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\anim\\slide_out_up.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_rest_contecte_border.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\rest_contecte_border.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_chickenmachboo.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\chickenmachboo.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_graylight.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\btn_graylight.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_main.xml.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_r_ic_baseline_supervised_user_circle_24.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\r_ic_baseline_supervised_user_circle_24.png"
+    },
+    {
+        "merged": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\res\\merged\\release\\drawable_visa.png.flat",
+        "source": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\src\\main\\res\\drawable\\visa.png"
+    }
+]

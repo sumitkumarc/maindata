@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2feafffb83d237e9bd6bc0ee641d3d51/jetified-goSellSDK-AndroidX-3.11.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Tap-Payments/goSellSDK-AndroidX/3.11.2/bb48dc1c2258d631c6ebed8d1b01644ce6fd38c5/goSellSDK-AndroidX-3.11.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
