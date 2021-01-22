@@ -16,10 +16,12 @@ public class ActivityNotificationBindingImpl extends ActivityNotificationBinding
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.back, 1);
         sViewsWithIds.put(R.id.iv_back, 2);
-        sViewsWithIds.put(R.id.iv_logo, 3);
-        sViewsWithIds.put(R.id.txt_title, 4);
-        sViewsWithIds.put(R.id.rv_list, 5);
-        sViewsWithIds.put(R.id.txt_no_item, 6);
+        sViewsWithIds.put(R.id.ll_delete, 3);
+        sViewsWithIds.put(R.id.iv_delete, 4);
+        sViewsWithIds.put(R.id.iv_logo, 5);
+        sViewsWithIds.put(R.id.txt_title, 6);
+        sViewsWithIds.put(R.id.rv_list, 7);
+        sViewsWithIds.put(R.id.txt_no_item, 8);
     }
     // views
     @NonNull
@@ -30,16 +32,18 @@ public class ActivityNotificationBindingImpl extends ActivityNotificationBinding
     // Inverse Binding Event Handlers
 
     public ActivityNotificationBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
     }
     private ActivityNotificationBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.LinearLayout) bindings[1]
             , (android.widget.ImageView) bindings[2]
-            , (android.widget.ImageView) bindings[3]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[5]
+            , (android.widget.ImageView) bindings[4]
+            , (android.widget.ImageView) bindings[5]
+            , (android.widget.LinearLayout) bindings[3]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[7]
+            , (android.widget.TextView) bindings[8]
             , (android.widget.TextView) bindings[6]
-            , (android.widget.TextView) bindings[4]
             );
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);

@@ -349,7 +349,17 @@ public class ResponceData {
         this.status = status;
     }
 
+    @SerializedName("review")
+    @Expose
+    private Rest_Review review;
 
+    public Rest_Review getReview() {
+        return review;
+    }
+
+    public void setReview(Rest_Review review) {
+        this.review = review;
+    }
 
 
 

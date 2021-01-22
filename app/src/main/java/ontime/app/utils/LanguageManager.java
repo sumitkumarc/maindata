@@ -13,7 +13,7 @@ public class LanguageManager {
 
     public static final String LANGUAGE_KEY_ENGLISH = "en";
     public static final String LANGUAGE_KEY_ARABIC = "ar";
-    private static final String LANGUAGE_KEY = "language_key";
+    public static final String LANGUAGE_KEY = "language_key";
 
     public static Context setLocale(Context mContext) {
         return updateResources(mContext, getLanguagePref(mContext));

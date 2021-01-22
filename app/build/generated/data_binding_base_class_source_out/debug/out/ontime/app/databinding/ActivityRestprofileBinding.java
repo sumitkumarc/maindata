@@ -39,6 +39,9 @@ public abstract class ActivityRestprofileBinding extends ViewDataBinding {
   public final LinearLayout llMain;
 
   @NonNull
+  public final LinearLayout llRating;
+
+  @NonNull
   public final RatingBar rbRatingbar;
 
   @NonNull
@@ -64,9 +67,9 @@ public abstract class ActivityRestprofileBinding extends ViewDataBinding {
 
   protected ActivityRestprofileBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ImageView ivAddtocart, ImageView ivBackArrow, CircleImageView ivRestProfileImg,
-      LinearLayout llBack, LinearLayout llBar, LinearLayout llMain, RatingBar rbRatingbar,
-      RelativeLayout rlMain, RecyclerView rvFilterList, RecyclerView rvList, TextView txtCount,
-      TextView txtNoItem, TextView txtResBarnchname, TextView txtResName) {
+      LinearLayout llBack, LinearLayout llBar, LinearLayout llMain, LinearLayout llRating,
+      RatingBar rbRatingbar, RelativeLayout rlMain, RecyclerView rvFilterList, RecyclerView rvList,
+      TextView txtCount, TextView txtNoItem, TextView txtResBarnchname, TextView txtResName) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ivAddtocart = ivAddtocart;
     this.ivBackArrow = ivBackArrow;
@@ -74,6 +77,7 @@ public abstract class ActivityRestprofileBinding extends ViewDataBinding {
     this.llBack = llBack;
     this.llBar = llBar;
     this.llMain = llMain;
+    this.llRating = llRating;
     this.rbRatingbar = rbRatingbar;
     this.rlMain = rlMain;
     this.rvFilterList = rvFilterList;

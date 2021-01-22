@@ -30,7 +30,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode">
-        <activity android:name=".customer.doneActivity.RestRattingListActivity"></activity>
+
+        <activity android:name=".customer.doneActivity.RestRattingListActivity"
+            android:theme="@style/AppTheme1"/>
         <activity
             android:name=".restaurant.ui.Activity.NewOrderItemListActivity"
             android:theme="@style/AppTheme1" />

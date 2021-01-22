@@ -131,16 +131,23 @@
                                     android:textColor="@color/darkwhite"
                                     android:textSize="14sp" />
 
-                                <RatingBar
-                                    android:id="@+id/rb_ratingbar"
-                                    style="?android:attr/ratingBarStyleSmall"
-                                    android:layout_width="wrap_content"
+                                <LinearLayout
+                                    android:id="@+id/ll_rating"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:isIndicator="false"
-                                    android:numStars="5"
-                                    android:rating="2"
-                                    android:theme="@style/RatingBar1" />
+                                    android:padding="5dp"
+                                    android:gravity="center">
+
+                                    <RatingBar
+                                        android:id="@+id/rb_ratingbar"
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:progressTint="#FFFFFF"
+                                        android:rating="3" />
+
+
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </RelativeLayout>

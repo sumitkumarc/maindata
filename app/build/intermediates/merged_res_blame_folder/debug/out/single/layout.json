@@ -240,6 +240,10 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\pop_edit_profile.xml"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\c_row_review_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_review_item.xml"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\pop_add_card.xml",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\pop_add_card.xml"
     },

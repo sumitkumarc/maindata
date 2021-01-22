@@ -63,6 +63,10 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
     int RE_ID = 0;
     int CartItems = 0;
     int RestaurantId = 0;
+    String REST_IMAGE = "";
+    String REST_NAME = "";
+    String REST_NAME_BARNCH = "";
+    Integer REST_RATING = 0;
 
 
     @Override
@@ -85,14 +89,14 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
         binding.llMain.setVisibility(View.GONE);
 
         if (Common.MERCHANT_TYPE == 1) {
-            Common.setSystemBarColor(this, R.color.colorAccent);
+//            Common.setSystemBarColor(this, R.color.colorAccent);
 //            Common.setSystemBarLight(this);
             binding.rlMain.setBackground(getResources().getDrawable(R.drawable.profilebg));
             binding.llBar.setBackgroundColor(getResources().getColor(R.color.colorAccent));
             binding.ivBackArrow.setColorFilter(getResources().getColor(R.color.colorAccent));
 
         } else {
-            Common.setSystemBarColor(this, R.color.super_mart);
+//            Common.setSystemBarColor(this, R.color.super_mart);
 //            Common.setSystemBarLight(this);
             binding.rlMain.setBackground(getResources().getDrawable(R.drawable.marketprofilebg));
             binding.llBar.setBackgroundColor(getResources().getColor(R.color.super_mart));
@@ -100,12 +104,6 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
         }
 
         binding.rbRatingbar.setEnabled(false);
-        binding.rbRatingbar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(RestaurantProfileActivity.this,RestRattingListActivity.class));
-            }
-        });
         LinearLayoutManager mLayoutManager1as = new LinearLayoutManager(getContext());
         mLayoutManager1as.setOrientation(LinearLayoutManager.VERTICAL);
         binding.rvList.setLayoutManager(mLayoutManager1as);
@@ -127,6 +125,7 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
     protected void setListener() {
         super.setListener();
         binding.ivAddtocart.setOnClickListener(this);
+        binding.llRating.setOnClickListener(this);
         binding.llBack.setOnClickListener(this);
     }
 
@@ -135,6 +134,15 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
         switch (view.getId()) {
             case R.id.ll_back:
                 onBackPressed();
+                break;
+            case R.id.ll_rating:
+
+                Intent intent = new Intent(this, RestRattingListActivity.class);
+                intent.putExtra("REST_IMAGE", REST_IMAGE);
+                intent.putExtra("REST_NAME", REST_NAME);
+                intent.putExtra("REST_NAME_BARNCH", REST_NAME_BARNCH);
+                intent.putExtra("REST_RATING", REST_RATING);
+                startActivity(intent);
                 break;
             case R.id.iv_addtocart:
 
@@ -254,12 +262,13 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
                 if (exampleUser.getStatus() == 200) {
                     List<UserRestaurantProCategory> userRestaurantProCategories = exampleUser.getResponceData().getRestaurant().getCategories();
                     RestaurantId = exampleUser.getResponceData().getRestaurant().getId();
+                    REST_RATING = exampleUser.getResponceData().getRestaurant().getAvag_rating();
+                    REST_NAME = Common.isStrempty(exampleUser.getResponceData().getRestaurant().getName());
+                    REST_NAME_BARNCH = Common.isStrempty(exampleUser.getResponceData().getRestaurant().getBranchName());
+                    REST_IMAGE = exampleUser.getResponceData().getRestaurant().getImage();
                     binding.txtResName.setText(Common.isStrempty(exampleUser.getResponceData().getRestaurant().getName()));
                     binding.txtResBarnchname.setText(Common.isStrempty(exampleUser.getResponceData().getRestaurant().getBranchName()));
                     binding.rbRatingbar.setRating(exampleUser.getResponceData().getRestaurant().getAvag_rating());
-                    binding.rbRatingbar.setIsIndicator(false);
-                    binding.rbRatingbar.setClickable(false);
-                    binding.rbRatingbar.setActivated(false);
                     Glide.with(getContext()).load(exampleUser.getResponceData().getRestaurant().getImage()).centerCrop().into(binding.ivRestProfileImg);
                     menuFilterListAdapter = new RvRestaurantMenuFilterListAdapter(getContext(), userRestaurantProCategories);
                     binding.rvFilterList.setItemAnimator(new DefaultItemAnimator());

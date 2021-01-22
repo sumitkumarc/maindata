@@ -2846,6 +2846,7 @@ id ll_main_top
 id ll_msg
 id ll_order
 id ll_phone
+id ll_rating
 id ll_toolbar
 id ll_top
 id ll_total_spendes
@@ -2979,6 +2980,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id rb_home_pro
 id rb_ratingbar
 id rb_star
 id realitve
@@ -3155,6 +3157,8 @@ id tv_paymentprogress
 id tv_resturant
 id tv_storelink
 id tv_supermart
+id tv_title
+id tv_user_name
 id tvdine
 id tvtake
 id txt
@@ -3378,6 +3382,7 @@ layout c_row_menu_dishes
 layout c_row_my_cart_item
 layout c_row_requestpending_item
 layout c_row_restaurant_item
+layout c_row_review_item
 layout charge_status_expandable_layout
 layout charge_status_layout
 layout custom_dialog

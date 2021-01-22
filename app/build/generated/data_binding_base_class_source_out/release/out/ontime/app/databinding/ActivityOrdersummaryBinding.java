@@ -97,6 +97,15 @@ public abstract class ActivityOrdersummaryBinding extends ViewDataBinding {
   public final TextView txtPrice;
 
   @NonNull
+  public final TextView txtServiceFees;
+
+  @NonNull
+  public final TextView txtServiceTax;
+
+  @NonNull
+  public final TextView txtTotalTax;
+
+  @NonNull
   public final TextView txtWallet;
 
   protected ActivityOrdersummaryBinding(Object _bindingComponent, View _root, int _localFieldCount,
@@ -107,7 +116,8 @@ public abstract class ActivityOrdersummaryBinding extends ViewDataBinding {
       RecyclerView rvList, RecyclerView rvPaymnetMethordList, LinearLayout second,
       TextView txtAdditionalItem, TextView txtAddress, TextView txtDate, TextView txtDiscount,
       TextView txtGrandTotal, TextView txtName, TextView txtOrderTotal, TextView txtPayAmount,
-      TextView txtPrice, TextView txtWallet) {
+      TextView txtPrice, TextView txtServiceFees, TextView txtServiceTax, TextView txtTotalTax,
+      TextView txtWallet) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btApply = btApply;
     this.btSendRequest = btSendRequest;
@@ -134,6 +144,9 @@ public abstract class ActivityOrdersummaryBinding extends ViewDataBinding {
     this.txtOrderTotal = txtOrderTotal;
     this.txtPayAmount = txtPayAmount;
     this.txtPrice = txtPrice;
+    this.txtServiceFees = txtServiceFees;
+    this.txtServiceTax = txtServiceTax;
+    this.txtTotalTax = txtTotalTax;
     this.txtWallet = txtWallet;
   }
 

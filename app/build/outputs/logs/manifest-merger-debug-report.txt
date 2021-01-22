@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:38:9-46:20
+INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:40:9-48:20
 	android:grantUriPermissions
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:42:13-47
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:44:13-47
 	android:authorities
 		INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:40:13-60
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:42:13-60
 	android:exported
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:41:13-37
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:39:13-62
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:41:13-62
 manifest
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-170:12
-INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-170:12
-INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-170:12
-INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-170:12
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-172:12
+INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-172:12
+INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-172:12
+INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-172:12
 MERGED from [androidx.databinding:databinding-adapters:4.1.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d1999b9fa91ff403d0b28ad2424b994c\databinding-adapters-4.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:4.1.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\bf8bcde40b059539e951e7d59abf6096\databinding-runtime-4.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:viewbinding:4.1.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\eec870e7a879d52aad89bd338666481d\jetified-viewbinding-4.1.1\AndroidManifest.xml:17:1-22:12
@@ -106,22 +106,22 @@ MERGED from [jp.wasabeef:blurry:2.1.1] C:\Users\Dell\.gradle\caches\transforms-2
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:2:1-26:12
 MERGED from [cn.aigestudio.wheelpicker:WheelPicker:1.1.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\9d25d4284fe6de317d682b1c55b6028f\jetified-WheelPicker-1.1.2\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\8381bbf20898b9ff376e783de7687dd6\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
-INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-170:12
-INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-170:12
-INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-170:12
+INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-172:12
+INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-172:12
+INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-172:12
 	package
 		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:4:5-25
 		INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-170:12
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-172:12
 		INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-170:12
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:1-172:12
 		INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:2:11-69
@@ -210,7 +210,7 @@ ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest
 	android:name
 		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:16:22-79
 application
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:18:5-168:19
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:18:5-170:19
 MERGED from [com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:17:5-41:19
 MERGED from [com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:17:5-41:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\e9a7396e1444c212720c909ece4c39d7\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -316,235 +316,237 @@ MERGED from [io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-
 	android:usesCleartextTraffic
 		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:31:9-44
 activity#ontime.app.customer.doneActivity.RestRattingListActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:33:9-92
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:34:9-35:47
+	android:theme
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:35:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:33:19-80
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:34:19-80
 activity#ontime.app.restaurant.ui.Activity.NewOrderItemListActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:34:9-36:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:36:9-38:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:36:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:38:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:35:13-76
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:37:13-76
 activity#ontime.app.customer.doneActivity.ChangePasswordActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:48:9-50:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:50:9-52:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:50:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:52:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:49:13-73
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:51:13-73
 activity#ontime.app.restaurant.ui.Activity.RiderOrderDetails
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:51:9-54:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:53:9-56:48
 	android:label
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:53:13-56
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:55:13-56
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:54:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:56:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:52:13-69
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:54:13-69
 activity#ontime.app.restaurant.ui.Activity.WelcomeActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:55:9-57:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:57:9-59:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:57:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:59:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:56:13-67
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:58:13-67
 activity#ontime.app.restaurant.ui.Activity.LoginPage
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:58:9-60:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:60:9-62:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:60:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:62:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:59:13-61
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:61:13-61
 activity#ontime.app.customer.doneActivity.ForgotpasswordActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:61:9-63:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:63:9-65:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:63:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:65:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:62:13-73
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:64:13-73
 activity#ontime.app.customer.doneActivity.VerificationCodeActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:64:9-66:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:66:9-68:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:66:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:68:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:65:13-75
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:67:13-75
 activity#ontime.app.customer.doneActivity.RegistetActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:67:9-69:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:69:9-71:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:69:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:71:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:68:13-67
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:70:13-67
 activity#ontime.app.customer.doneActivity.LoginActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:70:9-72:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:72:9-74:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:72:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:74:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:71:13-64
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:73:13-64
 activity#ontime.app.customer.doneActivity.UserDashboardActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:73:9-75:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:75:9-77:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:75:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:77:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:74:13-72
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:76:13-72
 activity#ontime.app.customer.doneActivity.RestCartPenddingItemActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:76:9-78:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:78:9-80:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:78:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:80:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:77:13-79
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:79:13-79
 activity#ontime.app.customer.doneActivity.RestaurantlistActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:79:9-81:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:81:9-83:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:81:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:83:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:80:13-73
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:82:13-73
 activity#ontime.app.customer.doneActivity.RestaurantProfileActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:82:9-84:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:84:9-86:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:84:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:86:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:83:13-76
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:85:13-76
 activity#ontime.app.customer.doneActivity.RestaurantDetailActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:85:9-87:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:87:9-89:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:87:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:89:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:86:13-75
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:88:13-75
 activity#ontime.app.customer.doneActivity.RestCartItemActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:88:9-90:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:90:9-92:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:90:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:92:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:89:13-71
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:91:13-71
 activity#ontime.app.customer.doneActivity.OrderSummaryActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:91:9-93:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:93:9-95:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:93:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:95:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:92:13-71
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:94:13-71
 activity#ontime.app.customer.Activity.SentRequestActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:94:9-96:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:96:9-98:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:96:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:98:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:95:13-66
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:97:13-66
 activity#ontime.app.customer.doneActivity.RequestPendingActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:97:9-99:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:99:9-101:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:99:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:101:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:98:13-73
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:100:13-73
 activity#ontime.app.customer.doneActivity.MyOrdersListActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:100:9-109:20
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:102:9-111:20
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:102:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:104:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:101:13-71
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:103:13-71
 intent-filter#action:name:none+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:103:13-108:29
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:105:13-110:29
 action#none
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:104:17-47
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:106:17-47
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:104:25-44
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:106:25-44
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:106:17-77
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:108:17-77
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:106:27-74
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:108:27-74
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:17-76
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:109:17-76
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:27-73
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:109:27-73
 activity#ontime.app.customer.doneActivity.PaymentActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:110:9-112:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:112:9-114:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:112:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:114:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:13-66
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:113:13-66
 activity#ontime.app.customer.doneActivity.NotificationActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:113:9-115:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:115:9-117:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:115:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:117:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:114:13-71
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:116:13-71
 activity#ontime.app.customer.doneActivity.ContactusActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:116:9-118:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:118:9-120:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:118:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:120:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:117:13-68
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:119:13-68
 activity#ontime.app.customer.doneActivity.LanguageActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:119:9-121:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:121:9-123:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:121:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:123:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:120:13-67
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:122:13-67
 activity#ontime.app.customer.doneActivity.AboutusActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:122:9-124:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:124:9-126:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:124:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:126:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:123:13-66
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:125:13-66
 activity#ontime.app.customer.doneActivity.UserProfileActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:125:9-127:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:127:9-129:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:127:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:129:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:126:13-70
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:128:13-70
 activity#ontime.app.customer.doneActivity.AddCardActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:128:9-130:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:130:9-132:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:130:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:132:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:129:13-66
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:131:13-66
 activity#ontime.app.customer.Activity.SentRequestSuper
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:131:9-133:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:133:9-135:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:133:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:135:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:132:13-63
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:134:13-63
 activity#ontime.app.restaurant.ui.Activity.MurchanNotification
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:134:9-136:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:136:9-138:48
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:136:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:138:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:135:13-71
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:137:13-71
 activity#ontime.app.restaurant.ui.Activity.SplashActivity
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:137:9-145:20
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:139:9-147:20
 	android:theme
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:139:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:141:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:138:13-66
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:140:13-66
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:140:13-144:29
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:142:13-146:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:141:17-69
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:143:17-69
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:141:25-66
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:143:25-66
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:147:9-149:54
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:149:9-151:54
 	android:resource
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:149:13-51
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:151:13-51
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:148:13-83
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:150:13-83
 meta-data#com.google.firebase.messaging.default_notification_color
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:154:9-156:53
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:156:9-158:53
 	android:resource
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:156:13-50
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:158:13-50
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:155:13-84
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:157:13-84
 meta-data#com.google.firebase.messaging.default_notification_channel_id
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:158:9-160:48
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:160:9-162:48
 	android:value
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:160:13-45
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:162:13-45
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:159:13-89
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:161:13-89
 service#ontime.app.utils.MyFirebaseMessagingService
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:161:9-167:19
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:163:9-169:19
 	android:exported
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:163:13-37
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:13-37
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:162:13-61
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:164:13-61
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:164:13-166:29
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:166:13-168:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:17-78
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:167:17-78
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:25-75
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:167:25-75
 uses-sdk
 INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
@@ -744,11 +746,11 @@ INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManif
 		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:43:13-45:58
+ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:45:13-47:58
 	android:resource
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:45:17-55
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:47:17-55
 	android:name
-		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:44:17-67
+		ADDED from C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:46:17-67
 uses-permission#android.permission.CAMERA
 ADDED from [com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:13:5-65
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:9:5-65

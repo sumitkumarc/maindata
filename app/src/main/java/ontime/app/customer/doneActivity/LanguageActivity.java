@@ -9,9 +9,11 @@ import androidx.databinding.DataBindingUtil;
 
 import ontime.app.R;
 import ontime.app.databinding.ActivityLanguageBinding;
+import ontime.app.okhttp.SharedPreferenceManagerFile;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
 import ontime.app.utils.LanguageManager;
+import ontime.app.utils.SessionManager;
 
 import java.util.Locale;
 
@@ -19,10 +21,12 @@ public class LanguageActivity extends BaseActivity implements View.OnClickListen
 
     ActivityLanguageBinding binding;
     private ProgressDialog dialog;
+    private SharedPreferenceManagerFile sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sharedPref = new SharedPreferenceManagerFile(LanguageActivity.this);
         Locale locale;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             locale = getResources().getConfiguration().getLocales().get(0);
@@ -80,11 +84,13 @@ public class LanguageActivity extends BaseActivity implements View.OnClickListen
                 onBackPressed();
                 break;
             case R.id.txt_arbic:
+				sharedPref.setStringSharedPreference(this, LanguageManager.LANGUAGE_KEY, LanguageManager.LANGUAGE_KEY_ARABIC);
                 LanguageManager.setNewLocale(this, LanguageManager.LANGUAGE_KEY_ARABIC);
                 onBackPressed();
                 finish();
                 break;
             case R.id.txt_english:
+				sharedPref.setStringSharedPreference(this, LanguageManager.LANGUAGE_KEY, LanguageManager.LANGUAGE_KEY_ENGLISH);
                 LanguageManager.setNewLocale(this, LanguageManager.LANGUAGE_KEY_ENGLISH);
                 onBackPressed();
                 finish();

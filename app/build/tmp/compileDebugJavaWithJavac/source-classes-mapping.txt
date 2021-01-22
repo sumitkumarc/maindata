@@ -27,6 +27,8 @@ ontime/app/databinding/RFragmentProcessingOrderBinding.java
  ontime.app.databinding.RFragmentProcessingOrderBinding
 ontime/app/restaurant/adapte/Itemadapter.java
  ontime.app.restaurant.adapte.Itemadapter
+ontime/app/databinding/CRowReviewItemBinding.java
+ ontime.app.databinding.CRowReviewItemBinding
 ontime/app/model/userprofile/UserProfileData.java
  ontime.app.model.userprofile.UserProfileData
 ontime/app/databinding/ActivityRestdetailBinding.java
@@ -179,6 +181,8 @@ ontime/app/utils/CustomerViewModel.java
  ontime.app.utils.CustomerViewModel
 ontime/app/model/usermain/UserCartItemAdditionId.java
  ontime.app.model.usermain.UserCartItemAdditionId
+ontime/app/model/usermain/Rest_User.java
+ ontime.app.model.usermain.Rest_User
 ontime/app/databinding/ActivityChangePasswordBinding.java
  ontime.app.databinding.ActivityChangePasswordBinding
 ontime/app/model/advertisements/AdvertisementDatum.java
@@ -232,7 +236,6 @@ ontime/app/customer/doneActivity/RestaurantProfileActivity.java
  ontime.app.customer.doneActivity.RestaurantProfileActivity
  ontime.app.customer.doneActivity.RestaurantProfileActivity$1
  ontime.app.customer.doneActivity.RestaurantProfileActivity$2
- ontime.app.customer.doneActivity.RestaurantProfileActivity$3
 ontime/app/databinding/PopupDoyouwantBinding.java
  ontime.app.databinding.PopupDoyouwantBinding
 ontime/app/restaurant/adapte/RvItemsDetailsListAdapter.java
@@ -480,6 +483,9 @@ ontime/app/databinding/CRowMyCartItemBinding.java
  ontime.app.databinding.CRowMyCartItemBinding
 ontime/app/sqllight/DBManager.java
  ontime.app.sqllight.DBManager
+ontime/app/customer/Adapter/RvRestRatingListAdapter.java
+ ontime.app.customer.Adapter.RvRestRatingListAdapter
+ ontime.app.customer.Adapter.RvRestRatingListAdapter$MyViewHolder
 ontime/app/customer/doneActivity/MyOrdersListActivity.java
  ontime.app.customer.doneActivity.MyOrdersListActivity
  ontime.app.customer.doneActivity.MyOrdersListActivity$1
@@ -538,6 +544,8 @@ ontime/app/okhttp/AppConstant.java
  ontime.app.okhttp.AppConstant
 ontime/app/restaurant/ui/fragment/CancelledFragment.java
  ontime.app.restaurant.ui.fragment.CancelledFragment
+ontime/app/model/usermain/Rest_Review.java
+ ontime.app.model.usermain.Rest_Review
 ontime/app/model/usermain/Cart.java
  ontime.app.model.usermain.Cart
 ontime/app/model/usermain/UserRestaurantsData.java
@@ -555,6 +563,8 @@ ontime/app/restaurant/model/readerOrder/ReaderData.java
  ontime.app.restaurant.model.readerOrder.ReaderData
 ontime/app/customer/Fragment/BaseFragment.java
  ontime.app.customer.Fragment.BaseFragment
+ontime/app/model/usermain/Rest_Datum.java
+ ontime.app.model.usermain.Rest_Datum
 ontime/app/restaurant/ui/Activity/SplashActivity.java
  ontime.app.restaurant.ui.Activity.SplashActivity
  ontime.app.restaurant.ui.Activity.SplashActivity$1

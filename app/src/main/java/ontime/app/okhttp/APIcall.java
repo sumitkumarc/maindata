@@ -17,6 +17,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import ontime.app.utils.LanguageManager;
 
 public class APIcall {
 
@@ -166,10 +167,11 @@ public class APIcall {
                 String sessionGUID = sharedPreferenceManagerFile.getFromStringSharedPreference(moContext,SharedPreferenceManagerFile.SESSION_GUID);
 //                String sessionGUID = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRlNWEwYTg1MWE1NmFmNTJlOGNkZjk5NGJjNzgzNDA1YTlhYmE3MWZlNjdjMGUzZTc3MzE3YmZhMzhkZmU1ZGQwY2U5MjU1MDM3MTEwZjU4In0.eyJhdWQiOiI3IiwianRpIjoiNGU1YTBhODUxYTU2YWY1MmU4Y2RmOTk0YmM3ODM0MDVhOWFiYTcxZmU2N2MwZTNlNzczMTdiZmEzOGRmZTVkZDBjZTkyNTUwMzcxMTBmNTgiLCJpYXQiOjE2MDg4ODg0NTcsIm5iZiI6MTYwODg4ODQ1NywiZXhwIjoxNjQwNDI0NDU3LCJzdWIiOiIyMyIsInNjb3BlcyI6W119.p9z8nzj8BNw3kX75a_YtsyiNEwLjMrTGXUKW9kdXCLRfzaHVAm5y_ztFSEaJBjccqLDi-4cKhO33vR0b46bF92LCQu-MgntB-HFZYrdvd_yAdgGKlVs2OdibpvWMiHbp5xqpaHivXfD0YO7v7D5F-z4jFg0uM0pU2o0teKljVTkZ2CsfIlUdnbIwH2Nqmqs1PWduBaO5zvqZxaBCh0LP2yXCeNJjgRco6b-Fc0Tv1viRq7f5JOLy12EbqvFDGCZTCTQKo56b1dnxhKNMA4uCB-EVn5EQUnNUVGo1z5OJxgkF7XZg0Pfqn8SlqAgpwuwK7UJbIeqJYO_o-ucOrF8fgrmnnnMcNXfD2lgMZRQ9BTeuZsQY-ElhyHZFYpkstqfe0-v0Seuc1tmWwctPpaJHj1shzHQfqBsAuH2_WOrp0oq4S-9pyjqsdJBCoG6b03Zce5j2sMg73mY1D9fThSlrCNeP8_ms8AK-LxImpCVA7xW7XWuZ5e1tAQpeyldLM9BQ262_oC97bO7m-AJQnh5aIt4XLB1nPhqP4G8ixrnjdJxqK6pa4NujOlW0L6d5gAkrx-Ebcr4YT2GPBrFZSSnZZbjVS2dsAzpSi2AYyk7HR2OhqTpZ2c3w40CHFOlMq0Hq-nZxpjktIlgFQS5LNpgJDu31xN1NltNVnzEaRZt_Hm8";
                 Log.e("sessionGUID", "" + sessionGUID);
-
+				String sessionLanguage = sharedPreferenceManagerFile.getFromStringSharedPreference(moContext, LanguageManager.LANGUAGE_KEY);
                 if (!Common.isEmpty(sessionGUID)) {
                     reqBuilder.addHeader(AppConstant.REQUEST_HEADER_TOKEN, sessionGUID);
-                    reqBuilder.addHeader("Accept-Language", "en");
+                    reqBuilder.addHeader("Accept-Language", sessionLanguage);
+                    reqBuilder.addHeader("X-localization", sessionLanguage);
 //                    reqBuilder.addHeader("Accept", "application/json");
 //                    reqBuilder.addHeader("Content-Type", "application/json");
                     reqBuilder.addHeader("app-key", "#%2$#12fd$%^fg5");
@@ -177,7 +179,8 @@ public class APIcall {
 
                 if (!Common.isEmpty(tempSessionGUID)) {
                     reqBuilder.addHeader(AppConstant.REQUEST_HEADER_TOKEN, tempSessionGUID);
-                    reqBuilder.addHeader("Accept-Language", "en");
+                    reqBuilder.addHeader("Accept-Language", sessionLanguage);
+                    reqBuilder.addHeader("X-localization", sessionLanguage);
 //                    reqBuilder.addHeader("Accept", "application/json");
 //                    reqBuilder.addHeader("Content-Type", "application/json");
                     reqBuilder.addHeader("app-key", "#%2$#12fd$%^fg5");

@@ -24,7 +24,13 @@ public abstract class ActivityNotificationBinding extends ViewDataBinding {
   public final ImageView ivBack;
 
   @NonNull
+  public final ImageView ivDelete;
+
+  @NonNull
   public final ImageView ivLogo;
+
+  @NonNull
+  public final LinearLayout llDelete;
 
   @NonNull
   public final RecyclerView rvList;
@@ -36,12 +42,14 @@ public abstract class ActivityNotificationBinding extends ViewDataBinding {
   public final TextView txtTitle;
 
   protected ActivityNotificationBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      LinearLayout back, ImageView ivBack, ImageView ivLogo, RecyclerView rvList,
-      TextView txtNoItem, TextView txtTitle) {
+      LinearLayout back, ImageView ivBack, ImageView ivDelete, ImageView ivLogo,
+      LinearLayout llDelete, RecyclerView rvList, TextView txtNoItem, TextView txtTitle) {
     super(_bindingComponent, _root, _localFieldCount);
     this.back = back;
     this.ivBack = ivBack;
+    this.ivDelete = ivDelete;
     this.ivLogo = ivLogo;
+    this.llDelete = llDelete;
     this.rvList = rvList;
     this.txtNoItem = txtNoItem;
     this.txtTitle = txtTitle;
