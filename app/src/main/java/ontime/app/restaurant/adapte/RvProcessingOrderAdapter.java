@@ -1,6 +1,7 @@
 package ontime.app.restaurant.adapte;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.CountDownTimer;
@@ -76,11 +77,11 @@ public class RvProcessingOrderAdapter extends BaseAdapter<RvProcessingOrderAdapt
     @SuppressLint({"SimpleDateFormat", "SetTextI18n"})
     @Override
     protected void bindRViewHolder(MyViewHolder holder, final int position) {
-
+        holder.setIsRecyclable(false);
         Glide.with(mContext).load(mreaderProccessings.get(position).getUser().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivUserImg);
         Glide.with(mContext).load(mreaderProccessings.get(position).getOrderDetail().get(0).getItemDetail().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivRestImg);
         holder.binding.txtUserName.setText(mreaderProccessings.get(position).getUser().getFullName());
-        holder.setIsRecyclable(false);
+
         holder.binding.txtRestName.setText(mreaderProccessings.get(position).getOrderDetail().get(0).getItemDetail().getItemName());
         holder.binding.txtRestQty.setText("Qty : " + mreaderProccessings.get(position).getOrderDetail().get(0).getQuantity());
 
@@ -106,12 +107,13 @@ public class RvProcessingOrderAdapter extends BaseAdapter<RvProcessingOrderAdapt
         } else if ((mreaderProccessings.get(position).getPaymentType().equals("4"))) {
             holder.binding.txtPtype.setText(mContext.getResources().getString(R.string.P_type) + " : " + "Cash On Delivery");
         }
+
+
         Calendar c = Calendar.getInstance();
         @SuppressLint("SimpleDateFormat") SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT);
         dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
         Date ss = new Date();
         try {
-
             ss = dateFormat.parse(mreaderProccessings.get(position).getCountdownTime());
             c.setTime(ss);
             c.add(Calendar.SECOND, Integer.parseInt(String.valueOf(parseTimeStringToSeconds(mreaderProccessings.get(position).getDeliveryTime()))));
@@ -121,8 +123,16 @@ public class RvProcessingOrderAdapter extends BaseAdapter<RvProcessingOrderAdapt
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        GetCountDownStart(holder);
 
+        ((Activity) mContext).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Date current_dateas = new Date();
+                if (!current_dateas.after(event_date)) {
+                    GetCountDownStart(holder);
+                }
+            }
+        });
 
 
         holder.binding.btDelivered.setOnClickListener(new View.OnClickListener() {
@@ -135,7 +145,6 @@ public class RvProcessingOrderAdapter extends BaseAdapter<RvProcessingOrderAdapt
             }
         });
     }
-
 
 
     private void showDialog() {
@@ -209,6 +218,8 @@ public class RvProcessingOrderAdapter extends BaseAdapter<RvProcessingOrderAdapt
     public class MyViewHolder extends RecyclerView.ViewHolder {
         RRowProcessingOrderItemBinding binding;
 
+        CountDownTimer countDownTimer;
+
         MyViewHolder(View itemView, RRowProcessingOrderItemBinding itemBinding) {
             super(itemView);
             binding = itemBinding;
@@ -256,8 +267,61 @@ public class RvProcessingOrderAdapter extends BaseAdapter<RvProcessingOrderAdapt
         return h * 3600 + m * 60 + s;
     }
 
-    private void GetCountDownStart( final MyViewHolder mholder) {
-        runnable = new Runnable() {
+    private void GetCountDownStart(final MyViewHolder mholder) {
+
+        if (mholder.countDownTimer != null) {
+            mholder.countDownTimer.cancel();
+        }
+        Date current_dateas = new Date();
+        if (!current_dateas.after(event_date)) {
+            long diff = event_date.getTime() - current_dateas.getTime();
+
+            mholder.countDownTimer = new CountDownTimer(diff, 500) {
+
+                @Override
+                public void onTick(long l) {
+                    long Days = l / (24 * 60 * 60 * 1000);
+                    long Hours = l / (60 * 60 * 1000) % 24;
+                    long Minutes = l / (60 * 1000) % 60;
+                    long Seconds = l / 1000 % 60;
+                    //
+                    timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d:%02d", Hours, Minutes, Seconds);
+                    char ch1 = timeLeftFormatted.charAt(0);
+                    char ch2 = timeLeftFormatted.charAt(1);
+
+                    char ch3 = timeLeftFormatted.charAt(3);
+                    char ch4 = timeLeftFormatted.charAt(4);
+
+                    char ch5 = timeLeftFormatted.charAt(6);
+                    char ch6 = timeLeftFormatted.charAt(7);
+
+                    if (mholder.binding.txtHfirst.getText().hashCode() != ch1) {
+                        mholder.binding.txtHfirst.setText(Character.toString(ch1));
+                    }
+                    if (mholder.binding.txtHfsecond.getText().hashCode() != ch2) {
+                        mholder.binding.txtHfsecond.setText(Character.toString(ch2));
+                    }
+                    if (mholder.binding.txtMfirst.getText().hashCode() != ch3) {
+                        mholder.binding.txtMfirst.setText(Character.toString(ch3));
+                    }
+                    if (mholder.binding.txtMSecond.getText().hashCode() != ch4) {
+                        mholder.binding.txtMSecond.setText(Character.toString(ch4));
+                    }
+                    if (mholder.binding.txtSFirst.getText().hashCode() != ch5) {
+                        mholder.binding.txtSFirst.setText(Character.toString(ch5));
+                    }
+                    if (mholder.binding.txtSSecond.getText().hashCode() != ch6) {
+                        mholder.binding.txtSSecond.setText(Character.toString(ch6));
+                    }
+                }
+
+                @Override
+                public void onFinish() {
+                    mholder.countDownTimer.cancel();
+                }
+            }.start();
+        }
+        /*runnable = new Runnable() {
             @Override
             public void run() {
                 try {
@@ -310,5 +374,6 @@ public class RvProcessingOrderAdapter extends BaseAdapter<RvProcessingOrderAdapt
             }
         };
         handler.postDelayed(runnable, 0);
+    }*/
     }
 }

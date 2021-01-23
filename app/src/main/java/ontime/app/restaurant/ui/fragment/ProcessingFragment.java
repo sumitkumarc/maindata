@@ -30,12 +30,13 @@ import ontime.app.restaurant.model.readerOrder.ReaderProccessing;
 import ontime.app.restaurant.ui.Activity.RiderOrderDetails;
 import ontime.app.utils.Common;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ProcessingFragment extends BaseFragment implements APIcall.ApiCallListner {
     RFragmentProcessingOrderBinding binding;
     RvProcessingOrderAdapter rvProcessingOrderAdapter;
-    List<ReaderProccessing> readerProccessings;
+    ArrayList<ReaderProccessing> readerProccessings = new ArrayList<>();
     ProgressDialog dialog;
 
     private void showDialog() {
@@ -70,7 +71,13 @@ public class ProcessingFragment extends BaseFragment implements APIcall.ApiCallL
             LinearLayoutManager mLayoutManager1as = new LinearLayoutManager(getContext());
             mLayoutManager1as.setOrientation(LinearLayoutManager.VERTICAL);
             binding.rvDetails.setLayoutManager(mLayoutManager1as);
-          GetAPICallRiderOrderDetails();
+
+            rvProcessingOrderAdapter = new RvProcessingOrderAdapter(getContext(), readerProccessings);
+            binding.rvDetails.setItemAnimator(new DefaultItemAnimator());
+            binding.rvDetails.setAdapter(rvProcessingOrderAdapter);
+
+
+            GetAPICallRiderOrderDetails();
         }
     }
 
@@ -81,11 +88,9 @@ public class ProcessingFragment extends BaseFragment implements APIcall.ApiCallL
     }
 
     @Override
-    public void setUserVisibleHint(boolean visible)
-    {
+    public void setUserVisibleHint(boolean visible) {
         super.setUserVisibleHint(visible);
-        if (visible && isResumed())
-        {
+        if (visible && isResumed()) {
 //            if (isConnected()) {
 //                GetAPICallRiderOrderDetails();
 //            }
@@ -102,6 +107,7 @@ public class ProcessingFragment extends BaseFragment implements APIcall.ApiCallL
     public void onStop() {
         super.onStop();
     }
+
     @Override
     public void onStartLoading(int operationCode) {
         if (operationCode == APIcall.OPERATION_READER_ORDERLIST) {
@@ -122,19 +128,17 @@ public class ProcessingFragment extends BaseFragment implements APIcall.ApiCallL
                 Gson gson = new Gson();
                 ReaderExample exampleUser = gson.fromJson(response, ReaderExample.class);
                 if (exampleUser.getResponceData() != null) {
-                    readerProccessings = exampleUser.getResponceData().getOrders().getProccessing();
+                    readerProccessings.clear();
+                    readerProccessings.addAll(exampleUser.getResponceData().getOrders().getProccessing());
                     if (readerProccessings.size() != 0) {
                         binding.rvDetails.setVisibility(View.VISIBLE);
                         binding.txtNoData.setVisibility(View.GONE);
 
-                        rvProcessingOrderAdapter = new RvProcessingOrderAdapter(getContext(), readerProccessings);
-                        binding.rvDetails.setItemAnimator(new DefaultItemAnimator());
-                        binding.rvDetails.setAdapter(rvProcessingOrderAdapter);
-                        rvProcessingOrderAdapter.notifyDataSetChanged();
                     } else {
                         binding.rvDetails.setVisibility(View.GONE);
                         binding.txtNoData.setVisibility(View.GONE);
                     }
+                    rvProcessingOrderAdapter.notifyDataSetChanged();
                 } else {
                     Toast.makeText(getContext(), "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }

@@ -240,7 +240,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         try {
             jsonObject.put("contact_number", PhoneNo);
             jsonObject.put("password", Password);
-            jsonObject.put("country_code", mSelectedCountry.getPhoneCode());
+            jsonObject.put("country_code", "+"+mSelectedCountry.getPhoneCode());
             jsonObject.put("device_type", "android");
             jsonObject.put("device_token", token);
         } catch (JSONException e) {
