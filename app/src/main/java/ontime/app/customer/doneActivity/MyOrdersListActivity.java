@@ -1,9 +1,21 @@
 package ontime.app.customer.doneActivity;
 
+import android.app.ActivityOptions;
+import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.databinding.DataBindingUtil;
 import androidx.viewpager.widget.ViewPager;
@@ -13,23 +25,27 @@ import ontime.app.customer.Fragment.TabOrderCancelled;
 import ontime.app.customer.Fragment.TabOrderFinished;
 import ontime.app.customer.Fragment.TabOrderProcessing;
 import ontime.app.databinding.ActivityMyordersBinding;
-import ontime.app.model.usermain.ExampleUser;
 import ontime.app.model.usermain.OrderCancelled;
 import ontime.app.model.usermain.OrderFinished;
 import ontime.app.model.usermain.OrderProccessing;
 import ontime.app.model.userorder.UserOrderList;
 import ontime.app.okhttp.APIcall;
 import ontime.app.okhttp.AppConstant;
+import ontime.app.restaurant.ui.Activity.RiderOrderDetails;
+import ontime.app.restaurant.ui.Activity.SplashActivity;
+import ontime.app.restaurant.ui.Activity.WelcomeActivity;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
 import com.google.gson.Gson;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import okhttp3.RequestBody;
+import ontime.app.utils.SessionManager;
 
 public class MyOrdersListActivity extends BaseActivity implements View.OnClickListener, APIcall.ApiCallListner {
     ActivityMyordersBinding binding;
@@ -38,10 +54,51 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
     public static List<OrderFinished> objFinished = new ArrayList<>();
     public static List<OrderCancelled> objCancelled = new ArrayList<>();
     Pager_tab adapter;
+    public static Dialog dialogm;
+    boolean temp;
 
     @Override
     protected void initView() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_myorders);
+    }
+
+    private void showcustomedialog() {
+
+        dialogm = new Dialog(this);
+        dialogm.setCancelable(true);
+        dialogm.setContentView(R.layout.orderrequest_activity);
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(dialogm.getWindow().getAttributes());
+        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+        lp.height = WindowManager.LayoutParams.MATCH_PARENT;
+        lp.gravity = Gravity.CENTER;
+        dialogm.getWindow().setAttributes(lp);
+        dialogm.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+        dialogm.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+
+        TextView yesbtn = (TextView) dialogm.findViewById(R.id.yes);
+        TextView nobtn = (TextView) dialogm.findViewById(R.id.no);
+        yesbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+//                Intent intent=new Intent(MyOrdersListActivity.this,Dialog_Activity.class);
+//                intent.putExtra("YES","yes");
+//                startActivity(intent);
+//                dialogm.dismiss();
+                temp=true;
+                GetAPICallOrderrequestuser("Order received");
+            }
+        });
+
+        nobtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                temp=false;
+                GetAPICallOrderrequestuser("Order not received");
+            }
+        });
+        dialogm.show();
     }
 
     private void showDialog() {
@@ -68,7 +125,7 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
 //            Common.setSystemBarLight(this);
             binding.ivBack.setColorFilter(getResources().getColor(R.color.super_mart));
         }
-
+        showcustomedialog();
         GetAPICallOrderList();
 
 
@@ -83,6 +140,25 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
         apIcall.isPost(true);
         apIcall.setBody(body);
         apIcall.execute(url, APIcall.OPERATION_ORDER_LIST, this);
+    }
+
+    private void GetAPICallOrderrequestuser(String order_received) {
+        Common.hideKeyboard(getActivity());
+        JSONObject jsonObject = new JSONObject();
+
+        try {
+            jsonObject.put("message", order_received);
+            jsonObject.put("order_id", "1");
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
+        String url = AppConstant.GET_USER_MSG;
+        APIcall apIcall = new APIcall(this);
+        apIcall.isPost(true);
+        apIcall.setBody(body);
+        apIcall.execute(url, APIcall.OPERATION_USER_MSG_LIST, this);
     }
 
     @Override
@@ -106,6 +182,9 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
         if (operationCode == APIcall.OPERATION_ORDER_LIST) {
             showDialog();
         }
+//        if (operationCode == APIcall.OPERATION_ORDER_LIST) {
+//            showDialog();
+//        }
 
     }
 
@@ -149,6 +228,36 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
                         }
                     });
 
+                } else {
+                    Toast.makeText(MyOrdersListActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            } catch (Exception e) {
+                Log.d("SUMITPATEL", "MAINRL" + e.getMessage());
+            }
+        }
+
+        if (operationCode == APIcall.OPERATION_USER_MSG_LIST) {
+            hideDialog();
+            try {
+                Gson gson = new Gson();
+                UserOrderList exampleUser = gson.fromJson(response, UserOrderList.class);
+                if (exampleUser.getStatus() == 400) {
+
+                    if(temp)
+                    {
+                        Intent intent=new Intent(MyOrdersListActivity.this,Dialog_Activity.class);
+                        intent.putExtra("YES","yes");
+                        startActivity(intent);
+                    }else
+                    {
+                        Intent intent=new Intent(MyOrdersListActivity.this,Dialog_Activity.class);
+                        intent.putExtra("YES","no");
+                        startActivity(intent);
+//                        dialogm.dismiss();
+                    }
+
+//                    opendismisdialog();
+//                    Toast.makeText(MyOrdersListActivity.this, "yes", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MyOrdersListActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }

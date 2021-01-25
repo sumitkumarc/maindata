@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\PrmodApps\\onTimeAndroid\\MyRestaurantAppUpload\\MyRestaurantApp12012021\\onTimeAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "C:\\MYDATA\\OntimeNew-main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\2ef8773b7cf2ed4e44067a7905b2c8a2\\jetified-WheelPicker-1.1.2\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\b80bc030410e865abbec80cdf8702677\\jetified-WheelPicker-1.1.2\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

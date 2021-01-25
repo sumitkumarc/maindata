@@ -1133,6 +1133,7 @@ color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
 color dark_gray
 color darkgray
+color darkred
 color darkwhite
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
@@ -2018,6 +2019,7 @@ drawable edit
 drawable edit_photo
 drawable edittextbg
 drawable eeysoff
+drawable fillstar
 drawable filter
 drawable filterkesari
 drawable flag_afghanistan
@@ -2281,6 +2283,7 @@ drawable gradient_toolbar
 drawable grayback
 drawable graybg
 drawable graycircle
+drawable greystar
 drawable home
 drawable homered
 drawable ic_action_delete
@@ -2399,6 +2402,8 @@ drawable r_liner_background
 drawable r_login_bg
 drawable r_splsh
 drawable r_welbg
+drawable ratingstars
+drawable ratingstars1
 drawable rb_regular
 drawable rb_selected
 drawable rb_selected_state
@@ -2414,6 +2419,7 @@ drawable restaurant
 drawable restuarant
 drawable rounded_corner_red_rectangle
 drawable rounded_corner_white_rectangle_border_grey
+drawable sadpng
 drawable sandvich
 drawable search
 drawable searchkesari
@@ -2424,6 +2430,7 @@ drawable shape_password_cell_normal
 drawable shape_payment_options_viewholder_normal
 drawable shape_payment_options_viewholder_pressed
 drawable shape_switch_track_green_normal
+drawable simplestar
 drawable splash
 drawable success_s
 drawable successmarket
@@ -2448,6 +2455,7 @@ drawable welbg
 drawable welcome
 drawable whitebg
 drawable whitecircle
+drawable whitestar
 font avenir_next_regular
 font font_family
 font roboto_light
@@ -2822,6 +2830,7 @@ id jumpToStart
 id labeled
 id largeLabel
 id layout
+id layoutfram
 id left
 id light
 id line1
@@ -2925,6 +2934,7 @@ id nameOnCardField
 id nav_view
 id navigation_header_container
 id never
+id no
 id noScroll
 id none
 id normal
@@ -3076,6 +3086,7 @@ id status_text
 id stop
 id stretch
 id submenuarrow
+id submit
 id submit_area
 id sv_left_header
 id tabLayout
@@ -3274,6 +3285,7 @@ id withText
 id withinBounds
 id wrap
 id wrap_content
+id yes
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -3401,6 +3413,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout error_msg_dialog
 layout gosellapi_action_bar_custom_view
 layout gosellapi_activity_card_address
 layout gosellapi_activity_countries
@@ -3519,6 +3532,8 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout order_receivepopup
+layout orderrequest_activity
 layout payment_card_web_view
 layout pop_add_amount
 layout pop_add_card
@@ -3538,6 +3553,7 @@ layout r_row_item_details
 layout r_row_neworder_item
 layout r_row_processing_order_item
 layout r_status_item_layout
+layout rate_app
 layout row_card_details
 layout row_item_payment_methord
 layout row_itemorder_cancelled
@@ -5487,6 +5503,8 @@ style custom_style_cvv_expdate
 style etDigits
 style etDigitsOTP
 style etText
+style foodRatingBar
+style foodRatingBar1
 style header_text
 style popup_window_animation_phone
 style secondary_text

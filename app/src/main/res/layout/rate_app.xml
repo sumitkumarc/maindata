@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wish you good health \n and happiness \n\n Rate Restaurant"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:textSize="26dp"></TextView>
+        <RatingBar
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:isIndicator="true"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:stepSize="0.1"
+            style="@style/foodRatingBar"
+            android:visibility="visible"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Share your experience"
+            android:textSize="14dp"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate App"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:textSize="26dp"></TextView>
+
+        <RatingBar
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:isIndicator="true"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:stepSize="1"
+            android:filterTouchesWhenObscured="true"
+            style="@style/foodRatingBar"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Submit"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/margin_basic_10dp"
+            android:paddingTop="@dimen/margin_basic_4dp"
+            android:paddingBottom="@dimen/margin_basic_4dp"
+            android:paddingLeft="@dimen/font_size_20sp"
+            android:paddingRight="@dimen/font_size_20sp"
+            android:background="@drawable/btn_golden"></TextView>
+    </LinearLayout>
+</FrameLayout>

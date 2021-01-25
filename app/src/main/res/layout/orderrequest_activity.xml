@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20sp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/font_size_20sp"
+            android:layout_marginLeft="@dimen/font_size_20sp"
+            android:layout_marginRight="@dimen/font_size_20sp"
+            app:cardCornerRadius="@dimen/margin_basic_10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/chicken2"
+                android:scaleType="fitXY"></ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/font_size_12sp"
+            android:textColor="@color/gray"
+            android:text="Chicken Machboos is ready !"
+            android:gravity="center"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/red"
+            android:text="At: Parallax Restaurant"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/gray"
+            android:text="Did you Take it?"
+            android:gravity="center"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/font_size_20sp"
+            android:layout_marginBottom="@dimen/font_size_20sp">
+
+            <TextView
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="YES"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingTop="@dimen/margin_basic_4dp"
+                android:paddingBottom="@dimen/margin_basic_4dp"
+                android:paddingLeft="@dimen/font_size_20sp"
+                android:paddingRight="@dimen/font_size_20sp"
+                android:background="@drawable/btn_green"></TextView>
+            <TextView
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="NO"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/font_size_20sp"
+                android:textColor="@color/white"
+                android:paddingTop="@dimen/margin_basic_4dp"
+                android:paddingBottom="@dimen/margin_basic_4dp"
+                android:paddingLeft="@dimen/font_size_20sp"
+                android:paddingRight="@dimen/font_size_20sp"
+                android:background="@drawable/btn_golden"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

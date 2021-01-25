@@ -157,6 +157,9 @@
             android:name="ontime.app.restaurant.ui.Activity.MurchanNotification"
             android:theme="@style/AppTheme1" />
         <activity
+            android:name="ontime.app.customer.doneActivity.Dialog_Activity"
+            android:theme="@style/AppTheme1" />
+        <activity
             android:name="ontime.app.restaurant.ui.Activity.SplashActivity"
             android:theme="@style/AppTheme1" >
             <intent-filter>

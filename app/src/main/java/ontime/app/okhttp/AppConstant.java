@@ -51,7 +51,8 @@ public class AppConstant {
 	 public static final String GET_USER_PAYMENT_FAIL = BASE_URL_NEW +"paymentFail";
 	 public static final String GET_USER_PAYMENT_POST = BASE_URL_NEW +"postPayment";
 
-
+    public static final String GET_USER_MSG = BASE_URL_NEW +"sendReport";
+    public static final String GET_USER_RATE = BASE_URL_NEW +"rateReview";
 
 
 
