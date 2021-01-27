@@ -9,7 +9,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -59,9 +58,6 @@ public abstract class ActivityRegistetPageBinding extends ViewDataBinding {
   public final LinearLayout llCc;
 
   @NonNull
-  public final TextView prefix;
-
-  @NonNull
   public final RelativeLayout realitve;
 
   @NonNull
@@ -74,8 +70,7 @@ public abstract class ActivityRegistetPageBinding extends ViewDataBinding {
       ImageView back, CardView cvUploadimage, EditText edAddress, EditText edEmailId,
       EditText edFullname, EditText edPassword, EditText edPhoneNo, EditText etCountryCode,
       FrameLayout flUpdateProfile, ImageView flagImv, ImageView ivUserProfile, LinearLayout llCc,
-      TextView prefix, RelativeLayout realitve, AppCompatButton registerBtn,
-      AppCompatTextView txt) {
+      RelativeLayout realitve, AppCompatButton registerBtn, AppCompatTextView txt) {
     super(_bindingComponent, _root, _localFieldCount);
     this.back = back;
     this.cvUploadimage = cvUploadimage;
@@ -89,7 +84,6 @@ public abstract class ActivityRegistetPageBinding extends ViewDataBinding {
     this.flagImv = flagImv;
     this.ivUserProfile = ivUserProfile;
     this.llCc = llCc;
-    this.prefix = prefix;
     this.realitve = realitve;
     this.registerBtn = registerBtn;
     this.txt = txt;

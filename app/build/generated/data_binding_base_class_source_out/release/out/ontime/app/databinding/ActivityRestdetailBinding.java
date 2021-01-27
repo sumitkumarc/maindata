@@ -22,9 +22,6 @@ import ontime.app.R;
 
 public abstract class ActivityRestdetailBinding extends ViewDataBinding {
   @NonNull
-  public final FrameLayout addtocart;
-
-  @NonNull
   public final LinearLayout back;
 
   @NonNull
@@ -34,7 +31,13 @@ public abstract class ActivityRestdetailBinding extends ViewDataBinding {
   public final EditText edNotes;
 
   @NonNull
+  public final FrameLayout flAddtocart;
+
+  @NonNull
   public final ImageView ivAdd;
+
+  @NonNull
+  public final ImageView ivAddtocart;
 
   @NonNull
   public final ImageView ivProImage;
@@ -70,6 +73,9 @@ public abstract class ActivityRestdetailBinding extends ViewDataBinding {
   public final TextView txtCalories;
 
   @NonNull
+  public final TextView txtCount;
+
+  @NonNull
   public final TextView txtProCalories;
 
   @NonNull
@@ -91,18 +97,20 @@ public abstract class ActivityRestdetailBinding extends ViewDataBinding {
   public final TextView txtQty;
 
   protected ActivityRestdetailBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      FrameLayout addtocart, LinearLayout back, AppCompatButton btAddtocart, EditText edNotes,
-      ImageView ivAdd, ImageView ivProImage, ImageView ivSub, LinearLayout llDetails,
-      LinearLayout llMain, LinearLayout llbotom, RadioGroup rgCD, RadioGroup rgCDs,
-      RadioGroup rgCDss, RelativeLayout rly, TextView txtAddition, TextView txtCalories,
-      TextView txtProCalories, TextView txtProDsc, TextView txtProName, TextView txtProPrice,
-      TextView txtProRemoval, TextView txtProSize, TextView txtQty) {
+      LinearLayout back, AppCompatButton btAddtocart, EditText edNotes, FrameLayout flAddtocart,
+      ImageView ivAdd, ImageView ivAddtocart, ImageView ivProImage, ImageView ivSub,
+      LinearLayout llDetails, LinearLayout llMain, LinearLayout llbotom, RadioGroup rgCD,
+      RadioGroup rgCDs, RadioGroup rgCDss, RelativeLayout rly, TextView txtAddition,
+      TextView txtCalories, TextView txtCount, TextView txtProCalories, TextView txtProDsc,
+      TextView txtProName, TextView txtProPrice, TextView txtProRemoval, TextView txtProSize,
+      TextView txtQty) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.addtocart = addtocart;
     this.back = back;
     this.btAddtocart = btAddtocart;
     this.edNotes = edNotes;
+    this.flAddtocart = flAddtocart;
     this.ivAdd = ivAdd;
+    this.ivAddtocart = ivAddtocart;
     this.ivProImage = ivProImage;
     this.ivSub = ivSub;
     this.llDetails = llDetails;
@@ -114,6 +122,7 @@ public abstract class ActivityRestdetailBinding extends ViewDataBinding {
     this.rly = rly;
     this.txtAddition = txtAddition;
     this.txtCalories = txtCalories;
+    this.txtCount = txtCount;
     this.txtProCalories = txtProCalories;
     this.txtProDsc = txtProDsc;
     this.txtProName = txtProName;

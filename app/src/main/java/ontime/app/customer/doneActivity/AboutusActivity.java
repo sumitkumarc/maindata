@@ -36,13 +36,13 @@ public class AboutusActivity extends BaseActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         if (Common.MERCHANT_TYPE == 1) {
             Common.setSystemBarColor(this, R.color.colorAccent);
-            Common.setSystemBarLight(this);
+//            Common.setSystemBarLight(this);
             binding.ivLogo.setColorFilter(getResources().getColor(R.color.colorAccent));
             binding.txtTitle.setTextColor(getResources().getColor(R.color.colorAccent));
 
         } else {
             Common.setSystemBarColor(this, R.color.super_mart);
-            Common.setSystemBarLight(this);
+//            Common.setSystemBarLight(this);
             binding.ivLogo.setColorFilter(getResources().getColor(R.color.super_mart));
             binding.txtTitle.setTextColor(getResources().getColor(R.color.super_mart));
         }

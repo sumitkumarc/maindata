@@ -293,4 +293,126 @@ public class Restaurant {
         this.removalDetail = removalDetail;
     }
 
+
+    @SerializedName("type")
+    @Expose
+    private Integer type;
+    @SerializedName("user_type")
+    @Expose
+    private String userType;
+    @SerializedName("google_location_link")
+    @Expose
+    private String googleLocationLink;
+    @SerializedName("ibn_number")
+    @Expose
+    private String ibnNumber;
+    @SerializedName("ibn_card_img")
+    @Expose
+    private String ibnCardImg;
+    @SerializedName("contract")
+    @Expose
+    private String contract;
+    @SerializedName("full_address")
+    @Expose
+    private Object fullAddress;
+    @SerializedName("avg_rate")
+    @Expose
+    private String avgRate;
+    @SerializedName("is_banned")
+    @Expose
+    private Integer isBanned;
+    @SerializedName("resource")
+    @Expose
+    private Object resource;
+
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
+
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
+    }
+
+
+    public String getGoogleLocationLink() {
+        return googleLocationLink;
+    }
+
+    public void setGoogleLocationLink(String googleLocationLink) {
+        this.googleLocationLink = googleLocationLink;
+    }
+
+
+
+    public String getIbnNumber() {
+        return ibnNumber;
+    }
+
+    public void setIbnNumber(String ibnNumber) {
+        this.ibnNumber = ibnNumber;
+    }
+
+    public String getIbnCardImg() {
+        return ibnCardImg;
+    }
+
+    public void setIbnCardImg(String ibnCardImg) {
+        this.ibnCardImg = ibnCardImg;
+    }
+
+
+
+    public String getContract() {
+        return contract;
+    }
+
+    public void setContract(String contract) {
+        this.contract = contract;
+    }
+
+    public Object getFullAddress() {
+        return fullAddress;
+    }
+
+    public void setFullAddress(Object fullAddress) {
+        this.fullAddress = fullAddress;
+    }
+
+    public String getAvgRate() {
+        return avgRate;
+    }
+
+    public void setAvgRate(String avgRate) {
+        this.avgRate = avgRate;
+    }
+
+    public Integer getIsBanned() {
+        return isBanned;
+    }
+
+    public void setIsBanned(Integer isBanned) {
+        this.isBanned = isBanned;
+    }
+
+    public Object getResource() {
+        return resource;
+    }
+
+    public void setResource(Object resource) {
+        this.resource = resource;
+    }
+
+
+
 }

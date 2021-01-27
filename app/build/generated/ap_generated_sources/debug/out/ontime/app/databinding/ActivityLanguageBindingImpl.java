@@ -20,7 +20,7 @@ public class ActivityLanguageBindingImpl extends ActivityLanguageBinding  {
     }
     // views
     @NonNull
-    private final android.widget.LinearLayout mboundView0;
+    private final android.widget.RelativeLayout mboundView0;
     // variables
     // values
     // listeners
@@ -35,7 +35,7 @@ public class ActivityLanguageBindingImpl extends ActivityLanguageBinding  {
             , (android.widget.TextView) bindings[2]
             , (android.widget.TextView) bindings[3]
             );
-        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners

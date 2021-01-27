@@ -21,13 +21,14 @@
         <item name="colorControlActivated">@color/yellow</item>
     </style>
 
-    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
-    <item name="android:progressDrawable">@drawable/ratingstars</item>
-<!--                <item name="android:minHeight">22dip</item>-->
-<!--                <item name="android:maxHeight">22dip</item>-->
-    </style>
     <style name="foodRatingBar1" parent="@android:style/Widget.RatingBar">
         <item name="android:progressDrawable">@drawable/ratingstars1</item>
+        <!--                <item name="android:minHeight">22dip</item>-->
+        <!--                <item name="android:maxHeight">22dip</item>-->
+    </style>
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
         <!--                <item name="android:minHeight">22dip</item>-->
         <!--                <item name="android:maxHeight">22dip</item>-->
     </style>

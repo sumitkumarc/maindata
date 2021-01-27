@@ -54,13 +54,13 @@ public class RestCartPenddingItemActivity extends BaseActivity implements View.O
         binding.payButtonId.setVisibility(View.VISIBLE);
         if (Common.MERCHANT_TYPE == 1) {
             Common.setSystemBarColor(this, R.color.colorAccent);
-            Common.setSystemBarLight(this);
+//            Common.setSystemBarLight(this);
             binding.txtTitle.setTextColor(getResources().getColor(R.color.colorAccent));
             binding.payButtonId.setBackground(getResources().getDrawable(R.drawable.r_btn_design));
 
         } else {
             Common.setSystemBarColor(this, R.color.super_mart);
-            Common.setSystemBarLight(this);
+//            Common.setSystemBarLight(this);
             binding.txtTitle.setTextColor(getResources().getColor(R.color.super_mart));
             binding.payButtonId.setBackground(getResources().getDrawable(R.drawable.super_btn_design));
         }
@@ -165,12 +165,27 @@ public class RestCartPenddingItemActivity extends BaseActivity implements View.O
         JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("cart_item_id", item_id.getId());
-            jsonObject.put("addition_id", item_id.getAdditionId().getId());
-            jsonObject.put("size_id", item_id.getSizeId().getId());
-            jsonObject.put("removal_id", item_id.getRemovalId().getId());
+            if (item_id.getAdditionId() != null) {
+                jsonObject.put("addition_id", item_id.getAdditionId().getId());
+            } else {
+                jsonObject.put("addition_id", 0);
+            }
+
+            if (item_id.getSizeId() != null) {
+                jsonObject.put("size_id", item_id.getSizeId().getId());
+            } else {
+                jsonObject.put("size_id", 0);
+            }
+
+            if (item_id.getRemovalId() != null) {
+                jsonObject.put("removal_id", item_id.getRemovalId().getId());
+            } else {
+                jsonObject.put("removal_id", 0);
+            }
             jsonObject.put("quantity", item_id.getQuantity());
             jsonObject.put("unit_price", item_id.getUnitPrice());
             jsonObject.put("total_price", item_id.getTotalPrice());
+            jsonObject.put("addition_price", "0.00");
         } catch (JSONException e) {
             e.printStackTrace();
         }

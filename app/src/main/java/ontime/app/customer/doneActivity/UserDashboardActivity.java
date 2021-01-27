@@ -85,6 +85,12 @@ public class UserDashboardActivity extends BaseActivity implements View.OnClickL
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        setUpUI();
+        //will be executed onResume
+    }
+    @Override
     protected void setListener() {
         super.setListener();
         binding.tvResturant.setOnClickListener(this);

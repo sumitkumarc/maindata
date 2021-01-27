@@ -277,10 +277,22 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
         try {
             for (int i = 0; i < Common.newCartItem.size(); i++) {
                 itemA.put("menu_id", Common.newCartItem.get(i).getMenuId());
-                itemA.put("size_id", Common.newCartItem.get(i).getSizeId().getId());
+                if(Common.newCartItem.get(i).getSizeId() != null){
+                    itemA.put("size_id", Common.newCartItem.get(i).getSizeId().getId());
+                }else {
+                    itemA.put("size_id", 0);
+                }
+                 if(Common.newCartItem.get(i).getRemovalId() != null){
+                    itemA.put("removal_id", Common.newCartItem.get(i).getRemovalId().getId());
+                }else {
+                    itemA.put("removal_id", 0);
+                }
+                if(Common.newCartItem.get(i).getAdditionId() != null){
+                    itemA.put("addition_id", Common.newCartItem.get(i).getAdditionId().getId());
+                }else {
+                    itemA.put("addition_id", 0);
+                }
                 itemA.put("item_id", Common.newCartItem.get(i).getItemId());
-                itemA.put("removal_id", Common.newCartItem.get(i).getRemovalId().getId());
-                itemA.put("addition_id", Common.newCartItem.get(i).getAdditionId().getId());
                 itemA.put("quantity", Common.newCartItem.get(i).getQuantity());
                 itemA.put("unit_price", Common.newCartItem.get(i).getUnitPrice());
                 itemA.put("total_price", Common.newCartItem.get(i).getTotalPrice());
@@ -393,7 +405,7 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
                 ExampleUser exampleUser = gson.fromJson(response, ExampleUser.class);
                 if (exampleUser.getStatus() == 200) {
                     Toast.makeText(this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
-
+//
                     Intent intent = new Intent(OrderSummaryActivity.this, SentRequestActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
@@ -406,13 +418,13 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
                 Gson gson = new Gson();
                 ExampleUser exampleUser = gson.fromJson(response, ExampleUser.class);
                 if (exampleUser.getStatus() == 200) {
-                    Toast.makeText(this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                     price = Float.parseFloat(exampleUser.getResponceData().getDiscountedAmount());
                     GrandTotal = exampleUser.getResponceData().getGrandTotal();
                     binding.txtAdditionalItem.setText("Additional item : SR " + Common.isStrempty(exampleUser.getResponceData().getAdditional()));
-                    binding.txtAdditionalItem.setText("Tax Tax : SR " + Common.isStrempty(exampleUser.getResponceData().getTax()));
-                    binding.txtAdditionalItem.setText("Service Fee : SR " + Common.isStrempty(exampleUser.getResponceData().getServiceFee()));
-                    binding.txtAdditionalItem.setText("Service Fee Tax : SR " + Common.isStrempty(exampleUser.getResponceData().getServiceFeeTax()));
+                    binding.txtTotalTax.setText("Total Tax : SR " + Common.isStrempty(exampleUser.getResponceData().getTax()));
+                    binding.txtServiceFees.setText("Service Fee : SR " + Common.isStrempty(exampleUser.getResponceData().getServiceFee()));
+                    binding.txtServiceTax.setText("Service Fee Tax : SR " + Common.isStrempty(exampleUser.getResponceData().getServiceFeeTax()));
                     binding.txtOrderTotal.setText("Total : SR " + Common.isStrempty(exampleUser.getResponceData().getTotal()));
                     binding.txtPayAmount.setText("Total : SR " + Common.isStrempty(exampleUser.getResponceData().getGrandTotal()));
                     String  nullres = Common.isStrempty(String.valueOf(exampleUser.getResponceData().getPercentage()));
@@ -437,7 +449,7 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
                         binding.txtWallet.setTextColor(getResources().getColor(R.color.green));
                     }
                     binding.txtWallet.setText("Wallet : SR " + Common.isStrempty(exampleUser.getResponceData().getBalance()));
-                    Toast.makeText(getContext(), "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getContext(), "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getContext(), "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
@@ -448,7 +460,7 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
                 JSONObject root = null;
                 try {
                     root = new JSONObject(response);
-                    Toast.makeText(OrderSummaryActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(OrderSummaryActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
 
                  
                 } catch (JSONException e) {
@@ -461,7 +473,7 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
                 JSONObject root = null;
                 try {
                     root = new JSONObject(response);
-                    Toast.makeText(OrderSummaryActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(OrderSummaryActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
 
                  
                 } catch (JSONException e) {

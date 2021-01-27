@@ -1,6 +1,7 @@
 package ontime.app.customer.doneActivity;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,8 +9,9 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,8 +32,8 @@ import ontime.app.utils.Common;
 public class Dialog_Activity extends AppCompatActivity implements View.OnClickListener, APIcall.ApiCallListner {
     String str;
     private Dialog customdialog;
-    FrameLayout layoutfram;
-    TextView submit;
+    private ProgressDialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,50 +43,53 @@ public class Dialog_Activity extends AppCompatActivity implements View.OnClickLi
 
         MyOrdersListActivity.dialogm.dismiss();
         str = getIntent().getStringExtra("YES");
-        if(str.equals("yes"))
-        {
+        if (str.equals("yes")) {
             setContentView(R.layout.order_receivepopup);
-//            layoutfram=(FrameLayout)findViewById(R.id.layoutfram);
-        }else
-        {
+        } else {
             setContentView(R.layout.error_msg_dialog);
         }
 
-        if(str.equals("yes"))
-        {
+        if (str.equals("yes")) {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-//                    setContentView(R.layout.rate_app);
                     openratedialog();
                 }
-            },2000);
+            }, 2000);
         }
     }
+
     private void openratedialog() {
-        customdialog= new Dialog(this,android.R.style.Theme_Light_NoTitleBar_Fullscreen);
+        customdialog = new Dialog(this);
         customdialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         customdialog.setCancelable(false);
         customdialog.setContentView(R.layout.rate_app);
-        TextView submitbtn = (TextView) customdialog.findViewById(R.id.submit);
-        submitbtn.setOnClickListener(new View.OnClickListener() {
+        TextView txt_submit = (TextView) customdialog.findViewById(R.id.txt_submit);
+        RatingBar rb_rate_review = (RatingBar) customdialog.findViewById(R.id.rb_rate_review);
+        RatingBar rb_rate_review1 = (RatingBar) customdialog.findViewById(R.id.rb_rate_review_1);
+        EditText ed_review_msg = (EditText) customdialog.findViewById(R.id.ed_review_msg);
+        txt_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                GetAPICallRateuser();
+                String StrRateReview = String.valueOf(rb_rate_review.getRating());
+                String StrRateReview1 = String.valueOf(rb_rate_review1.getRating());
+                GetAPICallRateuser(StrRateReview,StrRateReview1,ed_review_msg.getText().toString());
             }
         });
-
+        WindowManager.LayoutParams layoutParams = customdialog.getWindow().getAttributes();
+        customdialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+        customdialog.getWindow().setAttributes(layoutParams);
         customdialog.show();
     }
 
-    private void GetAPICallRateuser() {
+    private void GetAPICallRateuser(String strRateReview, String strRateReview1, String msg) {
         Common.hideKeyboard(this);
         JSONObject jsonObject = new JSONObject();
 
         try {
-            jsonObject.put("rate", 5);
-            jsonObject.put("review", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s");
-            jsonObject.put("merchant_id", 3);
+            jsonObject.put("rate", strRateReview);
+            jsonObject.put("review", msg);
+            jsonObject.put("merchant_id", Common.MERCHANT_TYPE);
             jsonObject.put("rate_type", 2);
             jsonObject.put("order_id", 2);
 
@@ -96,7 +101,7 @@ public class Dialog_Activity extends AppCompatActivity implements View.OnClickLi
         APIcall apIcall = new APIcall(getApplicationContext());
         apIcall.isPost(true);
         apIcall.setBody(body);
-        apIcall.execute(url, APIcall.OPERATION_USER_RATE_LIST, Dialog_Activity.this);
+        apIcall.execute(url, APIcall.OPERATION_USER_RATE_US, Dialog_Activity.this);
     }
 
     @Override
@@ -110,9 +115,24 @@ public class Dialog_Activity extends AppCompatActivity implements View.OnClickLi
 
     }
 
+    private void showDialog() {
+        dialog = new ProgressDialog(Dialog_Activity.this);
+        dialog.setMessage(getResources().getString(R.string.Please_wait));
+        dialog.setCancelable(false);
+        dialog.show();
+    }
+
+    private void hideDialog() {
+        if (dialog != null && dialog.isShowing())
+            dialog.dismiss();
+    }
+
+
     @Override
     public void onStartLoading(int operationCode) {
-
+        if (operationCode == APIcall.OPERATION_USER_RATE_US) {
+            showDialog();
+        }
     }
 
     @Override
@@ -122,18 +142,22 @@ public class Dialog_Activity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onSuccess(int operationCode, String response, Object customData) {
-        if (operationCode == APIcall.OPERATION_USER_RATE_LIST) {
-//            hideDialog();
+        if (operationCode == APIcall.OPERATION_USER_RATE_US) {
+            hideDialog();
             try {
-                Gson gson = new Gson();
-                UserOrderList exampleUser = gson.fromJson(response, UserOrderList.class);
-                if (exampleUser.getStatus() == 200) {
-                    this.finish();
-//                    opendismisdialog();
-//                    Toast.makeText(MyOrdersListActivity.this, "yes", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(Dialog_Activity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                hideDialog();
+                JSONObject root = null;
+                try {
+                    root = new JSONObject(response);
+                    Toast.makeText(Dialog_Activity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
+                customdialog.dismiss();
+                Intent intent = new Intent(Dialog_Activity.this, UserDashboardActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
             } catch (Exception e) {
                 Log.d("SUMITPATEL", "MAINRL" + e.getMessage());
             }

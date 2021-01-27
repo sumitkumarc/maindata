@@ -10,6 +10,9 @@ public class UserCartItemSizeId {
     @SerializedName("size")
     @Expose
     private String size;
+    @SerializedName("price")
+    @Expose
+    private String price;
 
     public Integer getId() {
         return id;
@@ -25,5 +28,13 @@ public class UserCartItemSizeId {
 
     public void setSize(String size) {
         this.size = size;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 }

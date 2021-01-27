@@ -24,10 +24,11 @@ public class ActivityRestprofileBindingImpl extends ActivityRestprofileBinding  
         sViewsWithIds.put(R.id.iv_rest_profile_img, 8);
         sViewsWithIds.put(R.id.txt_res_name, 9);
         sViewsWithIds.put(R.id.txt_res_barnchname, 10);
-        sViewsWithIds.put(R.id.rb_ratingbar, 11);
-        sViewsWithIds.put(R.id.rv_filter_list, 12);
-        sViewsWithIds.put(R.id.rv_list, 13);
-        sViewsWithIds.put(R.id.txt_no_item, 14);
+        sViewsWithIds.put(R.id.ll_rating, 11);
+        sViewsWithIds.put(R.id.rb_ratingbar, 12);
+        sViewsWithIds.put(R.id.rv_filter_list, 13);
+        sViewsWithIds.put(R.id.rv_list, 14);
+        sViewsWithIds.put(R.id.txt_no_item, 15);
     }
     // views
     @NonNull
@@ -38,7 +39,7 @@ public class ActivityRestprofileBindingImpl extends ActivityRestprofileBinding  
     // Inverse Binding Event Handlers
 
     public ActivityRestprofileBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 15, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 16, sIncludes, sViewsWithIds));
     }
     private ActivityRestprofileBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
@@ -48,12 +49,13 @@ public class ActivityRestprofileBindingImpl extends ActivityRestprofileBinding  
             , (android.widget.LinearLayout) bindings[2]
             , (android.widget.LinearLayout) bindings[1]
             , (android.widget.LinearLayout) bindings[6]
-            , (android.widget.RatingBar) bindings[11]
+            , (android.widget.LinearLayout) bindings[11]
+            , (android.widget.RatingBar) bindings[12]
             , (android.widget.RelativeLayout) bindings[7]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[12]
             , (androidx.recyclerview.widget.RecyclerView) bindings[13]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[14]
             , (android.widget.TextView) bindings[4]
-            , (android.widget.TextView) bindings[14]
+            , (android.widget.TextView) bindings[15]
             , (android.widget.TextView) bindings[10]
             , (android.widget.TextView) bindings[9]
             );

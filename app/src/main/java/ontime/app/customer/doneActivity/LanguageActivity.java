@@ -35,7 +35,7 @@ public class LanguageActivity extends BaseActivity implements View.OnClickListen
         }
         if (Common.MERCHANT_TYPE == 1) {
             Common.setSystemBarColor(this, R.color.colorAccent);
-            Common.setSystemBarLight(this);
+//            Common.setSystemBarLight(this);
             binding.txtArbic.setTextColor(getResources().getColor(R.color.colorAccent));
 
             if (locale.getLanguage().equals(LanguageManager.LANGUAGE_KEY_ARABIC)) {
@@ -48,7 +48,7 @@ public class LanguageActivity extends BaseActivity implements View.OnClickListen
 
         } else {
             Common.setSystemBarColor(this, R.color.super_mart);
-            Common.setSystemBarLight(this);
+//            Common.setSystemBarLight(this);
             binding.txtArbic.setTextColor(getResources().getColor(R.color.super_mart));
             binding.txtEnglish.setTextColor(getResources().getColor(R.color.super_mart));
 

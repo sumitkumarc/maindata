@@ -12,6 +12,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -49,6 +50,7 @@ public class PaymentActivity extends BaseActivity implements View.OnClickListene
     public static RvCreditCardListAdapter mAdapter;
     public static ArrayList<CardDetails> cardDetails;
     private ProgressDialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +77,7 @@ public class PaymentActivity extends BaseActivity implements View.OnClickListene
         GetApiCallToWallets();
 
     }
+
     private void showDialog() {
         dialog = new ProgressDialog(PaymentActivity.this);
         dialog.setMessage(getResources().getString(R.string.Please_wait));
@@ -113,6 +116,45 @@ public class PaymentActivity extends BaseActivity implements View.OnClickListene
 
     }
 
+    @SuppressLint("SetTextI18n")
+    private void showDialogSelectPayment(String amount) {
+        final Dialog dalSelectPayment = new Dialog(this);
+        dalSelectPayment.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dalSelectPayment.setContentView(R.layout.pop_select_paymnet_methord);
+        dalSelectPayment.setCancelable(false);
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(dalSelectPayment.getWindow().getAttributes());
+        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        TextView txt_apple_pay = dalSelectPayment.findViewById(R.id.txt_apple_pay);
+        TextView txt_credit_debit_card = dalSelectPayment.findViewById(R.id.txt_credit_debit_card);
+        txt_apple_pay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dalSelectPayment.dismiss();
+                if(isConnected()){
+                    ApiCallToAddPayment(amount);
+                }
+            }
+        });
+        txt_credit_debit_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dalSelectPayment.dismiss();
+                if(isConnected()){
+                    ApiCallToAddPayment(amount);
+                }
+            }
+        });
+        dalSelectPayment.findViewById(R.id.bt_sub_cancel).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dalSelectPayment.dismiss();
+            }
+        });
+        dalSelectPayment.show();
+        dalSelectPayment.getWindow().setAttributes(lp);
+    }
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -123,12 +165,9 @@ public class PaymentActivity extends BaseActivity implements View.OnClickListene
                 showAddtoCartItem();
                 break;
             case R.id.ll_add_pamnet:
-                    if(isConnected()){
-                        showAddAmount();
-
-                    }
-
-
+                if (isConnected()) {
+                    showAddAmount();
+                }
                 break;
 
         }
@@ -148,12 +187,14 @@ public class PaymentActivity extends BaseActivity implements View.OnClickListene
         apIcall.setBody(body);
         apIcall.execute(url, APIcall.OPERATION_WALLET_BALANCE, this);
     }
+
     private void GetApiCallToWallets() {
         String url = AppConstant.GET_WALLET;
         APIcall apIcall = new APIcall(getApplicationContext());
         apIcall.isPost(false);
         apIcall.execute(url, APIcall.OPERATION_WALLET, this);
     }
+
     @Override
     public void onStartLoading(int operationCode) {
         if (operationCode == APIcall.OPERATION_WALLET_BALANCE) {
@@ -184,14 +225,14 @@ public class PaymentActivity extends BaseActivity implements View.OnClickListene
                     Toast.makeText(getContext(), "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
-            if(operationCode ==APIcall.OPERATION_WALLET){
+            if (operationCode == APIcall.OPERATION_WALLET) {
                 hideDialog();
                 Gson gson = new Gson();
                 ExampleUser exampleUser = gson.fromJson(response, ExampleUser.class);
                 if (exampleUser.getStatus() == 200) {
                     Float main = Float.valueOf(exampleUser.getResponceData().getBalance());
                     binding.txtWallet.setText("SR " + Common.isStrempty(exampleUser.getResponceData().getBalance()));
-                    Toast.makeText(getContext(), "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getContext(), "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getContext(), "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
@@ -207,6 +248,7 @@ public class PaymentActivity extends BaseActivity implements View.OnClickListene
     public void onFail(int operationCode, String response) {
 
     }
+
     public void showAddAmount() {
         final Dialog dialogm = new Dialog(this);
         dialogm.setCancelable(true);
@@ -240,7 +282,8 @@ public class PaymentActivity extends BaseActivity implements View.OnClickListene
                 if (!Common.edvalidateName(ed_card_number.getText().toString(), ed_card_number, getResources().getString(R.string.v_enter_card_no))) {
                     return;
                 }
-                ApiCallToAddPayment(ed_card_number.getText().toString());
+                showDialogSelectPayment(ed_card_number.getText().toString());
+
                 dialogm.dismiss();
             }
         });
@@ -252,6 +295,7 @@ public class PaymentActivity extends BaseActivity implements View.OnClickListene
         });
         dialogm.show();
     }
+
     public void showAddtoCartItem() {
         final Dialog dialogm = new Dialog(this);
         dialogm.setCancelable(true);

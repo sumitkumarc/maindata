@@ -130,4 +130,6 @@
     <string name="Date">تاريخ</string>
     <string name="Delivery_Type">نوع التوصيل</string>
     <string name="Total">مجموع</string>
+
+    <string name="Save">حفظ</string>
 </resources>

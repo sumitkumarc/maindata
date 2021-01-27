@@ -49,8 +49,11 @@ public class RvRestaurantCartPenddingListAdapter extends RecyclerView.Adapter<Rv
             @Override
             public void onClick(View view) {
                 rvInterface.OnItemClick(position, userCartItem.getId());
+                removeAt(position);
             }
         });
+
+
         if (userCartItem.getItemDetail() != null) {
             if (Common.MERCHANT_TYPE == 1) {
                 holder.binding.txtName.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
@@ -64,8 +67,9 @@ public class RvRestaurantCartPenddingListAdapter extends RecyclerView.Adapter<Rv
             try {
                 holder.binding.txtName.setText(Common.isStrempty(userCartItem.getItemDetail().getItemName()));
                 Glide.with(mContext).load(userCartItem.getItemDetail().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivRestProfileImg);
-                holder.binding.txtAddress.setText(Common.isStrempty(userCartItem.getItemDetail().getDescription()));
-                holder.binding.txtPrice.setText("SR " + Common.isStrempty(userCartItem.getItemDetail().getPrice()));
+//                holder.binding.txtAddress.setText(Common.isStrempty(userCartItem.getItemDetail().getDescription()));
+                holder.binding.txtAddress.setText("Status : Pending");
+                holder.binding.txtPrice.setText("SR " + Common.isStrempty(userCartItem.getTotalPrice()));
 
                 holder.binding.txtQty.setText(String.valueOf(userCartItem.getQuantity()));
                 if (mABoolean) {
@@ -112,6 +116,9 @@ public class RvRestaurantCartPenddingListAdapter extends RecyclerView.Adapter<Rv
                         Intent i2 = new Intent(mContext, RestaurantDetailActivity.class);
                         i2.putExtra("MENU_ID", userCartItem.getItemDetail().getMenuId());
                         i2.putExtra("ITEM_ID", userCartItem.getItemDetail().getId());
+                        i2.putExtra("CART_ITEM_ID", userCartItem.getId());
+                        i2.putExtra("CART_ITEM_SIZE", mresponceDatumList.size());
+                        i2.putExtra("restaurant_id", userCartItem.getItemDetail().getRestaurantId());
                         i2.putExtra("UPDATE_ITEM", 0);
                         mContext.startActivity(i2);
                     }
@@ -130,6 +137,11 @@ public class RvRestaurantCartPenddingListAdapter extends RecyclerView.Adapter<Rv
     public void setOnItemClickListener(rv_interface rvsInterface) {
         rvInterface = rvsInterface;
 
+    }
+    public void removeAt(int position) {
+        mresponceDatumList.remove(position);
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position, mresponceDatumList.size());
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

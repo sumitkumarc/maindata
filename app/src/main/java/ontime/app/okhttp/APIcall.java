@@ -69,8 +69,14 @@ public class APIcall {
     public static int OPERATION_USER_RESTAURNT_RATING= 100039;
     public static int OPERATION_USER_PAYMENT_FAIL= 100040;
     public static int OPERATION_USER_PAYMENT_POST= 100041;
-    public static int OPERATION_USER_MSG_LIST= 100042;
-    public static int OPERATION_USER_RATE_LIST= 100043;
+    public static int OPERATION_USER_SERRCH_RESRAURANTS= 100042;
+
+    public static int OPERATION_USER_MSG= 100043;
+    public static int OPERATION_USER_RATE_US= 100044;
+
+    public static int OPERATION_ADD_TO_CART_SUPER= 100045;
+    public static int OPERATION_SUPER_MENU_ITEM_UPDATE_DETAIL = 100046;
+
 
 
 

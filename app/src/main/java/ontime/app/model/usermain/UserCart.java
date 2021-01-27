@@ -15,6 +15,9 @@ public class UserCart {
     @SerializedName("Restaurant")
     @Expose
     private Restaurant restaurant;
+    @SerializedName("delivery_type")
+    @Expose
+    private String deliveryType;
     @SerializedName("items")
     @Expose
     private List<UserCartItem> items = null;
@@ -38,7 +41,13 @@ public class UserCart {
     public Restaurant getRestaurant() {
         return restaurant;
     }
+    public String getDeliveryType() {
+        return deliveryType;
+    }
 
+    public void setDeliveryType(String deliveryType) {
+        this.deliveryType = deliveryType;
+    }
     public void setRestaurant(Restaurant restaurant) {
         this.restaurant = restaurant;
     }

@@ -15,6 +15,8 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Looper;
 import android.provider.Settings;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Animation;
@@ -44,6 +46,7 @@ import ontime.app.okhttp.SharedPreferenceManagerFile;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
 import ontime.app.utils.SessionManager;
+
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
@@ -63,10 +66,12 @@ import java.util.TimerTask;
 
 import okhttp3.RequestBody;
 
+import static ontime.app.utils.Common.MERCHANT_TYPE;
+
 public class RestaurantlistActivity extends BaseActivity implements View.OnClickListener, APIcall.ApiCallListner {
 
     ActivityRestaurantlistBinding binding;
-    private ProgressDialog dialog;
+     ProgressDialog dialog;
     RvRestaurantListAdapter mAdapter;
     SessionManager sessionManager;
     Userdate userData;
@@ -74,8 +79,8 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
     int CAT_TYPE = 1;
     List<AdvertisementDatum> advertisementData;
     FusedLocationProviderClient mFusedLocationClient;
-    String Latitude="";
-    String Langtitude="";
+    String Latitude = "";
+    String Langtitude = "";
     int PERMISSION_ID = 101;
 
     @Override
@@ -110,20 +115,59 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
         getLastLocation();
         Animation bottomUp = AnimationUtils.loadAnimation(this, R.anim.top_to_up);
         binding.ivMenu.startAnimation(bottomUp);
+        binding.edSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (s.toString().length() != 0) {
+                    if (s.toString().length() > 3)
+                        filter(s.toString());
+                } else {
+                    GetAPICallRestaurantList(CAT_TYPE);
+                }
+
+            }
+        });
 
 
         setUpUI();
+    }
+  
+
+    private void filter(String text) {
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("marchent_type", MERCHANT_TYPE);
+            jsonObject.put("page", 1);
+            jsonObject.put("no_of_rows", 10);
+            jsonObject.put("keyword", text);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
+        String url = AppConstant.GET_USER_SERRCH_RESRAURANTS;
+        APIcall apIcall = new APIcall(getApplicationContext());
+        apIcall.isPost(true);
+        apIcall.setBody(body);
+        apIcall.execute(url, APIcall.OPERATION_USER_SERRCH_RESRAURANTS, this);
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")
     private void setUpUI() {
 
-        if (Common.MERCHANT_TYPE == 1) {
+        if (MERCHANT_TYPE == 1) {
             Common.setSystemBarColor(this, R.color.colorAccent);
 //            Common.setSystemBarLight(this);
             binding.llBack.setBackground(getResources().getDrawable(R.drawable.rest_circle_itemback));
             binding.txtTop.setBackground(getResources().getDrawable(R.drawable.btn_top));
-            binding.evsearch.setBackground(getResources().getDrawable(R.drawable.btn_golden));
+            binding.edSearch.setBackground(getResources().getDrawable(R.drawable.btn_golden));
             binding.ivMenu.setColorFilter(getResources().getColor(R.color.colorAccent));
             binding.ivFilter.setColorFilter(getResources().getColor(R.color.colorAccent));
             binding.ivHome.setColorFilter(getResources().getColor(R.color.colorAccent));
@@ -153,7 +197,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
             binding.llBack.setBackground(getResources().getDrawable(R.drawable.super_circle_itemback));
             binding.txtTop.setBackground(getResources().getDrawable(R.drawable.btn_top_kesari));
             binding.ivMenu.setColorFilter(getResources().getColor(R.color.super_mart));
-            binding.evsearch.setBackground(getResources().getDrawable(R.drawable.btn_kesari));
+            binding.edSearch.setBackground(getResources().getDrawable(R.drawable.btn_kesari));
             binding.ivFilter.setColorFilter(getResources().getColor(R.color.super_mart));
             binding.ivHome.setColorFilter(getResources().getColor(R.color.super_mart));
             binding.ivSearch.setColorFilter(getResources().getColor(R.color.super_mart));
@@ -233,14 +277,14 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
                 break;
             case R.id.iv_filter:
                 binding.ivFilter.setVisibility(View.GONE);
-                binding.evsearch.setVisibility(View.GONE);
+                binding.edSearch.setVisibility(View.GONE);
                 binding.ivSearch.setVisibility(View.VISIBLE);
                 binding.txtTop.setVisibility(View.VISIBLE);
                 binding.txtNearMe.setVisibility(View.VISIBLE);
                 break;
             case R.id.iv_search:
                 binding.ivFilter.setVisibility(View.VISIBLE);
-                binding.evsearch.setVisibility(View.VISIBLE);
+                binding.edSearch.setVisibility(View.VISIBLE);
                 binding.ivSearch.setVisibility(View.GONE);
                 binding.txtTop.setVisibility(View.GONE);
                 binding.txtNearMe.setVisibility(View.GONE);
@@ -306,7 +350,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
     private void showData(int i) {
         Common.FILTER_TYPE = i;
         if (i == 1) {
-            if (Common.MERCHANT_TYPE == 1) {
+            if (MERCHANT_TYPE == 1) {
                 binding.txtTop.setTextColor(getResources().getColor(R.color.white));
                 binding.txtTop.setBackground(getResources().getDrawable(R.drawable.btn_top));
                 binding.txtNearMe.setTextColor(getResources().getColor(R.color.colorAccent));
@@ -318,7 +362,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
                 binding.txtNearMe.setBackground(null);
             }
         } else {
-            if (Common.MERCHANT_TYPE == 1) {
+            if (MERCHANT_TYPE == 1) {
                 binding.txtTop.setTextColor(getResources().getColor(R.color.colorAccent));
                 binding.txtTop.setBackground(null);
                 binding.txtNearMe.setTextColor(getResources().getColor(R.color.white));
@@ -369,6 +413,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
         );
 
     }
+
     private boolean checkPermissions() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
@@ -376,6 +421,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
         }
         return false;
     }
+
     private void requestPermissions() {
         ActivityCompat.requestPermissions(
                 this,
@@ -383,6 +429,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
                 PERMISSION_ID
         );
     }
+
     private boolean isLocationEnabled() {
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || locationManager.isProviderEnabled(
@@ -399,14 +446,17 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
             }
         }
     }
+
     @Override
     public void onResume() {
         super.onResume();
+        setUpUI();
         if (checkPermissions()) {
             getLastLocation();
         }
 
     }
+
     @SuppressLint("MissingPermission")
     private void getLastLocation() {
         if (checkPermissions()) {
@@ -448,6 +498,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
             requestPermissions();
         }
     }
+
     private LocationCallback mLocationCallback = new LocationCallback() {
         @Override
         public void onLocationResult(LocationResult locationResult) {
@@ -455,6 +506,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
             getLocastionAddress(mLastLocation);
         }
     };
+
     private void getLocastionAddress(Location location) {
         Geocoder gcd = new Geocoder(getBaseContext(), Locale.getDefault());
         List<Address> addresses;
@@ -477,6 +529,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
             e.printStackTrace();
         }
     }
+
     private void GetAPICallRestaurantList(int CatTpe) {
         Common.hideKeyboard(getActivity());
         JSONObject jsonObject = new JSONObject();
@@ -518,12 +571,12 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
 
     @Override
     public void onStartLoading(int operationCode) {
-//        if(operationCode == APIcall.OPERATION_ADVERTISEMENTS){
-//            showDialog();
-//        }
-        if (operationCode == APIcall.OPERATION_RESTAURANT_LIST) {
+        if (operationCode == APIcall.OPERATION_USER_SERRCH_RESRAURANTS) {
             showDialog();
         }
+//        if (operationCode == APIcall.OPERATION_RESTAURANT_LIST) {
+//            showDialog();
+//        }
 
     }
 
@@ -534,6 +587,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
 
     @Override
     public void onSuccess(int operationCode, String response, Object customData) {
+        hideDialog();
         if (operationCode == APIcall.OPERATION_ADVERTISEMENTS) {
             hideDialog();
             binding.llMain.setVisibility(View.VISIBLE);
@@ -548,8 +602,22 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
             } else {
                 Toast.makeText(RestaurantlistActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
             }
-        }
+        }else
         if (operationCode == APIcall.OPERATION_RESTAURANT_LIST) {
+            hideDialog();
+            binding.llMain.setVisibility(View.VISIBLE);
+            Gson gson = new Gson();
+            ExampleUser exampleUser = gson.fromJson(response, ExampleUser.class);
+            if (exampleUser.getStatus() == 200) {
+                List<UserRestaurantsData> userRestaurantsData = exampleUser.getResponceData().getRestaurants().getData();
+                mAdapter = new RvRestaurantListAdapter(getContext(), userRestaurantsData);
+                binding.rvList.setItemAnimator(new DefaultItemAnimator());
+                binding.rvList.setAdapter(mAdapter);
+            } else {
+                Toast.makeText(RestaurantlistActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        }else
+        if (operationCode == APIcall.OPERATION_USER_SERRCH_RESRAURANTS) {
             hideDialog();
             binding.llMain.setVisibility(View.VISIBLE);
             Gson gson = new Gson();
@@ -571,7 +639,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
 
     @Override
     public void onFail(int operationCode, String response) {
-
+        hideDialog();
     }
 
     @Override

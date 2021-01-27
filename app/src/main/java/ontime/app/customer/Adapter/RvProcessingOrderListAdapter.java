@@ -67,17 +67,18 @@ public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderL
             holder.binding.txtTitle.setTextColor(mContext.getResources().getColor(R.color.super_mart));
             holder.binding.txtTime.setTextColor(mContext.getResources().getColor(R.color.super_mart));
         }
+
         holder.binding.txtTitle.setText(Common.isStrempty(mProccessings.get(position).getRestaurant().getName()));
         holder.binding.txtOrderId.setText("Oder No : " + Common.isStrempty(mProccessings.get(position).getOrderNumber()));
         holder.binding.txtTime.setText("Oder time : " + Common.parseDateToddMMyyyy(mProccessings.get(position).getCreatedAt()));
         holder.binding.txtDeliverTime.setText("Deliver time : " + Common.parseDateToddMMyyyy(mProccessings.get(position).getCreatedAt()));
-        holder.binding.txtOrderPaymentStatus.setText(Common.isStrempty(mProccessings.get(position).getPaymentStatus() + " : SR "+Common.isStrempty(mProccessings.get(position).getGrandTotal())));
+//        holder.binding.txtOrderPaymentStatus.setText(Common.isStrempty(mOrderFinisheds.get(position).getPaymentStatus() + " : SR "+Common.isStrempty(mOrderFinisheds.get(position).getGrandTotal())));
         Glide.with(mContext).load(mProccessings.get(position).getRestaurant().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivRestProfileImg);
 
         if ((mProccessings.get(position).getDeliveryStatus() == 0)) {
             holder.binding.txtOrderStatus.setText("Status : " + "New");
         } else if ((mProccessings.get(position).getDeliveryStatus() == 1)) {
-            holder.binding.txtOrderStatus.setText("Status : " + "processing");
+            holder.binding.txtOrderStatus.setText("Status : " + "Processing");
         } else if ((mProccessings.get(position).getDeliveryStatus() == 2)) {
             holder.binding.txtOrderStatus.setText("Status : " + "Cancelled By User");
         } else if ((mProccessings.get(position).getDeliveryStatus() == 3)) {
@@ -89,16 +90,61 @@ public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderL
         }
 
         if ((mProccessings.get(position).getPaymentType().equals("1"))) {
-            holder.binding.txtOrderStatus.setText("Payment type : " + "Wallet");
+            holder.binding.txtOrderPamentType.setText(mContext.getResources().getString(R.string.P_type) + " : " + "Wallet");
         } else if ((mProccessings.get(position).getPaymentType().equals("2"))) {
-            holder.binding.txtOrderStatus.setText("Payment type : " + "Card");
+            holder.binding.txtOrderPamentType.setText(mContext.getResources().getString(R.string.P_type) + " : " + "Card");
         } else if ((mProccessings.get(position).getPaymentType().equals("3"))) {
-            holder.binding.txtOrderStatus.setText("Payment type : " + "Apple Pay");
+            holder.binding.txtOrderPamentType.setText(mContext.getResources().getString(R.string.P_type) + " : " + "Apple Pay");
         } else if ((mProccessings.get(position).getPaymentType().equals("99"))) {
-            holder.binding.txtOrderStatus.setText("Payment type : " + "Unknown");
+            holder.binding.txtOrderPamentType.setText(mContext.getResources().getString(R.string.P_type) + " : " + "Unknown");
         } else if ((mProccessings.get(position).getPaymentType().equals("4"))) {
-            holder.binding.txtOrderStatus.setText("Payment type : " + "Cash On Delivery");
+            holder.binding.txtOrderPamentType.setText(mContext.getResources().getString(R.string.P_type) + " : " + "Cod");
         }
+        try {
+            if (Common.isStrempty(mProccessings.get(position).getPaymentStatus()).equals("success")) {
+                holder.binding.txtOrderPaymentStatus.setTextColor(mContext.getResources().getColor(R.color.green));
+                holder.binding.txtOrderPaymentStatus.setText("Paid" + " : SR " + Common.isStrempty(mProccessings.get(position).getTotalPrice()));
+
+            } else {
+                holder.binding.txtOrderPaymentStatus.setText("Pending" + " : SR " + Common.isStrempty(mProccessings.get(position).getTotalPrice()));
+                holder.binding.txtOrderPaymentStatus.setTextColor(mContext.getResources().getColor(R.color.red));
+            }
+        } catch (Exception e) {
+            holder.binding.txtOrderPaymentStatus.setVisibility(View.GONE);
+        }
+
+//        holder.binding.txtTitle.setText(Common.isStrempty(mProccessings.get(position).getRestaurant().getName()));
+//        holder.binding.txtOrderId.setText("Oder No : " + Common.isStrempty(mProccessings.get(position).getOrderNumber()));
+//        holder.binding.txtTime.setText("Oder time : " + Common.parseDateToddMMyyyy(mProccessings.get(position).getCreatedAt()));
+//        holder.binding.txtDeliverTime.setText("Deliver time : " + Common.parseDateToddMMyyyy(mProccessings.get(position).getCreatedAt()));
+//        holder.binding.txtOrderPaymentStatus.setText(Common.isStrempty(mProccessings.get(position).getPaymentStatus() + " : SR "+Common.isStrempty(mProccessings.get(position).getGrandTotal())));
+//        Glide.with(mContext).load(mProccessings.get(position).getRestaurant().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivRestProfileImg);
+//
+//        if ((mProccessings.get(position).getDeliveryStatus() == 0)) {
+//            holder.binding.txtOrderStatus.setText("Status : " + "New");
+//        } else if ((mProccessings.get(position).getDeliveryStatus() == 1)) {
+//            holder.binding.txtOrderStatus.setText("Status : " + "processing");
+//        } else if ((mProccessings.get(position).getDeliveryStatus() == 2)) {
+//            holder.binding.txtOrderStatus.setText("Status : " + "Cancelled By User");
+//        } else if ((mProccessings.get(position).getDeliveryStatus() == 3)) {
+//            holder.binding.txtOrderStatus.setText("Status : " + "Cancelled");
+//        } else if ((mProccessings.get(position).getDeliveryStatus() == 4)) {
+//            holder.binding.txtOrderStatus.setText("Status : " + "Completed");
+//        }else if ((mProccessings.get(position).getDeliveryStatus() == 99)) {
+//            holder.binding.txtOrderStatus.setText("Status : " + "Unknown");
+//        }
+//
+//        if ((mProccessings.get(position).getPaymentType().equals("1"))) {
+//            holder.binding.txtOrderStatus.setText("Payment type : " + "Wallet");
+//        } else if ((mProccessings.get(position).getPaymentType().equals("2"))) {
+//            holder.binding.txtOrderStatus.setText("Payment type : " + "Card");
+//        } else if ((mProccessings.get(position).getPaymentType().equals("3"))) {
+//            holder.binding.txtOrderStatus.setText("Payment type : " + "Apple Pay");
+//        } else if ((mProccessings.get(position).getPaymentType().equals("99"))) {
+//            holder.binding.txtOrderStatus.setText("Payment type : " + "Unknown");
+//        } else if ((mProccessings.get(position).getPaymentType().equals("4"))) {
+//            holder.binding.txtOrderStatus.setText("Payment type : " + "Cash On Delivery");
+//        }
 
         holder.binding.btCancelled.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,7 +155,7 @@ public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderL
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!Common.isStrempty(mProccessings.get(position).getCountdownTime()).equals("")){
+                if(mProccessings.get(position).getCountdownTime() != null){
                     Common.ORDERPROCCESSING_ORDER=  mProccessings.get(position);
                     mContext.startActivity(new Intent(mContext, RequestPendingActivity.class));
                 }else {
@@ -170,6 +216,7 @@ public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderL
     public void onSuccess(int operationCode, String response, Object customData) {
         try {
             if (operationCode == APIcall.OPERATION_USER_CANCEL_ORDER) {
+                hideDialog();
                 Gson gson = new Gson();
                 ExampleUser exampleUser = gson.fromJson(response, ExampleUser.class);
                 if (exampleUser.getStatus() == 200) {
@@ -179,7 +226,7 @@ public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderL
                 }
             }
         } catch (Exception e) {
-
+            hideDialog();
         }
     }
 

@@ -4,9 +4,11 @@ package ontime.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,10 +27,16 @@ public final class RowItemorderFinisedBinding implements ViewBinding {
   public final AppCompatButton btReOrder;
 
   @NonNull
+  public final EditText edReviewMsg;
+
+  @NonNull
   public final ImageView ivRestProfileImg;
 
   @NonNull
   public final LinearLayout llMain;
+
+  @NonNull
+  public final RatingBar rbRateReview;
 
   @NonNull
   public final LinearLayout second;
@@ -43,7 +51,7 @@ public final class RowItemorderFinisedBinding implements ViewBinding {
   public final TextView txtOrderId;
 
   @NonNull
-  public final TextView txtOrderPamnetType;
+  public final TextView txtOrderPamentType;
 
   @NonNull
   public final TextView txtOrderPaymentStatus;
@@ -58,20 +66,24 @@ public final class RowItemorderFinisedBinding implements ViewBinding {
   public final TextView txtTitle;
 
   private RowItemorderFinisedBinding(@NonNull FrameLayout rootView,
-      @NonNull AppCompatButton btReOrder, @NonNull ImageView ivRestProfileImg,
-      @NonNull LinearLayout llMain, @NonNull LinearLayout second, @NonNull TextView txtCancleTime,
-      @NonNull TextView txtDeliverTime, @NonNull TextView txtOrderId,
-      @NonNull TextView txtOrderPamnetType, @NonNull TextView txtOrderPaymentStatus,
-      @NonNull TextView txtOrderStatus, @NonNull TextView txtTime, @NonNull TextView txtTitle) {
+      @NonNull AppCompatButton btReOrder, @NonNull EditText edReviewMsg,
+      @NonNull ImageView ivRestProfileImg, @NonNull LinearLayout llMain,
+      @NonNull RatingBar rbRateReview, @NonNull LinearLayout second,
+      @NonNull TextView txtCancleTime, @NonNull TextView txtDeliverTime,
+      @NonNull TextView txtOrderId, @NonNull TextView txtOrderPamentType,
+      @NonNull TextView txtOrderPaymentStatus, @NonNull TextView txtOrderStatus,
+      @NonNull TextView txtTime, @NonNull TextView txtTitle) {
     this.rootView = rootView;
     this.btReOrder = btReOrder;
+    this.edReviewMsg = edReviewMsg;
     this.ivRestProfileImg = ivRestProfileImg;
     this.llMain = llMain;
+    this.rbRateReview = rbRateReview;
     this.second = second;
     this.txtCancleTime = txtCancleTime;
     this.txtDeliverTime = txtDeliverTime;
     this.txtOrderId = txtOrderId;
-    this.txtOrderPamnetType = txtOrderPamnetType;
+    this.txtOrderPamentType = txtOrderPamentType;
     this.txtOrderPaymentStatus = txtOrderPaymentStatus;
     this.txtOrderStatus = txtOrderStatus;
     this.txtTime = txtTime;
@@ -111,6 +123,12 @@ public final class RowItemorderFinisedBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.ed_review_msg;
+      EditText edReviewMsg = rootView.findViewById(id);
+      if (edReviewMsg == null) {
+        break missingId;
+      }
+
       id = R.id.ivRestProfileImg;
       ImageView ivRestProfileImg = rootView.findViewById(id);
       if (ivRestProfileImg == null) {
@@ -120,6 +138,12 @@ public final class RowItemorderFinisedBinding implements ViewBinding {
       id = R.id.ll_main;
       LinearLayout llMain = rootView.findViewById(id);
       if (llMain == null) {
+        break missingId;
+      }
+
+      id = R.id.rb_rate_review;
+      RatingBar rbRateReview = rootView.findViewById(id);
+      if (rbRateReview == null) {
         break missingId;
       }
 
@@ -147,9 +171,9 @@ public final class RowItemorderFinisedBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txt_order_pamnet_type;
-      TextView txtOrderPamnetType = rootView.findViewById(id);
-      if (txtOrderPamnetType == null) {
+      id = R.id.txt_order_pament_type;
+      TextView txtOrderPamentType = rootView.findViewById(id);
+      if (txtOrderPamentType == null) {
         break missingId;
       }
 
@@ -177,9 +201,9 @@ public final class RowItemorderFinisedBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RowItemorderFinisedBinding((FrameLayout) rootView, btReOrder, ivRestProfileImg,
-          llMain, second, txtCancleTime, txtDeliverTime, txtOrderId, txtOrderPamnetType,
-          txtOrderPaymentStatus, txtOrderStatus, txtTime, txtTitle);
+      return new RowItemorderFinisedBinding((FrameLayout) rootView, btReOrder, edReviewMsg,
+          ivRestProfileImg, llMain, rbRateReview, second, txtCancleTime, txtDeliverTime, txtOrderId,
+          txtOrderPamentType, txtOrderPaymentStatus, txtOrderStatus, txtTime, txtTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -56,7 +56,7 @@ public class TabOrderCancelled extends BaseFragment {
         LinearLayoutManager mLayoutManager1as = new LinearLayoutManager(getContext());
         mLayoutManager1as.setOrientation(LinearLayoutManager.VERTICAL);
         binding.rvDetails.setLayoutManager(mLayoutManager1as);
-        if(MyOrdersListActivity.objProcessing.size() != 0){
+        if(MyOrdersListActivity.objCancelled.size() != 0){
             binding.rvDetails.setVisibility(View.VISIBLE);
             binding.txtNoData.setVisibility(View.GONE);
             mAdapter = new RvCancelledOrderListAdapter(getContext(), MyOrdersListActivity.objCancelled);

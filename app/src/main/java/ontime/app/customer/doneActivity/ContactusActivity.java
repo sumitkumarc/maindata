@@ -38,7 +38,7 @@ public class ContactusActivity extends BaseActivity implements View.OnClickListe
     private void setUpUI() {
         if (Common.MERCHANT_TYPE == 1) {
             Common.setSystemBarColor(this, R.color.colorAccent);
-            Common.setSystemBarLight(this);
+//            Common.setSystemBarLight(this);
             binding.ivBack.setColorFilter(getResources().getColor(R.color.colorAccent));
             binding.llTop.setBackgroundColor(getResources().getColor(R.color.colorAccent));
             binding.btSend.setBackground(getResources().getDrawable(R.drawable.btn_goldenrect));
@@ -47,7 +47,7 @@ public class ContactusActivity extends BaseActivity implements View.OnClickListe
 
         } else {
             Common.setSystemBarColor(this, R.color.super_mart);
-            Common.setSystemBarLight(this);
+//            Common.setSystemBarLight(this);
             binding.ivBack.setColorFilter(getResources().getColor(R.color.super_mart));
             binding.llTop.setBackgroundColor(getResources().getColor(R.color.super_mart));
             binding.llMsg.setBackground(getResources().getDrawable(R.drawable.super_contecte_border));

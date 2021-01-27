@@ -62,8 +62,7 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
         binding = DataBindingUtil.setContentView(this, R.layout.activity_myorders);
     }
 
-    private void showcustomedialog() {
-
+    private void showcustomedialog(int order_id) {
         dialogm = new Dialog(this);
         dialogm.setCancelable(true);
         dialogm.setContentView(R.layout.orderrequest_activity);
@@ -81,21 +80,20 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
         yesbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-//                Intent intent=new Intent(MyOrdersListActivity.this,Dialog_Activity.class);
-//                intent.putExtra("YES","yes");
-//                startActivity(intent);
-//                dialogm.dismiss();
-                temp=true;
-                GetAPICallOrderrequestuser("Order received");
+                if(isConnected()) {
+                    temp = true;
+                    GetAPICallOrderrequestuser("Order received",order_id);
+                }
             }
         });
 
         nobtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                temp=false;
-                GetAPICallOrderrequestuser("Order not received");
+                if(isConnected()) {
+                    temp = false;
+                    GetAPICallOrderrequestuser("Order not received",order_id);
+                }
             }
         });
         dialogm.show();
@@ -125,7 +123,17 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
 //            Common.setSystemBarLight(this);
             binding.ivBack.setColorFilter(getResources().getColor(R.color.super_mart));
         }
-        showcustomedialog();
+        try {
+            Bundle b = getIntent().getExtras();
+            if (b != null) {
+                int  order_id = Integer.parseInt(b.getString("order_id"));
+                int noty_type = Integer.parseInt(b.getString("noty_type"));
+                showcustomedialog(order_id);
+            }
+        } catch (Exception e) {
+            // cat_id = getIntent().getIntExtra("CatId", 1);
+        }
+
         GetAPICallOrderList();
 
 
@@ -142,13 +150,13 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
         apIcall.execute(url, APIcall.OPERATION_ORDER_LIST, this);
     }
 
-    private void GetAPICallOrderrequestuser(String order_received) {
+    private void GetAPICallOrderrequestuser(String order_received,int order_id) {
         Common.hideKeyboard(getActivity());
         JSONObject jsonObject = new JSONObject();
 
         try {
             jsonObject.put("message", order_received);
-            jsonObject.put("order_id", "1");
+            jsonObject.put("order_id", order_id);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -158,7 +166,7 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
         APIcall apIcall = new APIcall(this);
         apIcall.isPost(true);
         apIcall.setBody(body);
-        apIcall.execute(url, APIcall.OPERATION_USER_MSG_LIST, this);
+        apIcall.execute(url, APIcall.OPERATION_USER_MSG, this);
     }
 
     @Override
@@ -180,6 +188,9 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
     @Override
     public void onStartLoading(int operationCode) {
         if (operationCode == APIcall.OPERATION_ORDER_LIST) {
+            showDialog();
+        }
+        if (operationCode == APIcall.OPERATION_USER_MSG) {
             showDialog();
         }
 //        if (operationCode == APIcall.OPERATION_ORDER_LIST) {
@@ -236,7 +247,7 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
             }
         }
 
-        if (operationCode == APIcall.OPERATION_USER_MSG_LIST) {
+        if (operationCode == APIcall.OPERATION_USER_MSG) {
             hideDialog();
             try {
                 Gson gson = new Gson();

@@ -32,6 +32,10 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_activity_riderorderdetails.xml"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\orderrequest_activity.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\orderrequest_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\item_cartpending.xml",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_cartpending.xml"
     },
@@ -84,8 +88,16 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\r_fragment_new_order.xml"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\order_receivepopup.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\order_receivepopup.xml"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_restdetail.xml",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_restdetail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\rate_app.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\rate_app.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_myorders.xml",
@@ -248,12 +260,20 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\row_itemorder_prossing.xml"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\error_msg_dialog.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\error_msg_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\item_categoryall.xml",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_categoryall.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_rest_ratting_list.xml",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_rest_ratting_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\c_row_review_item.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_review_item.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\row_card_details.xml",
@@ -310,6 +330,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\row_notification_item.xml",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\row_notification_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\pop_select_paymnet_methord.xml",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\pop_select_paymnet_methord.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\popup_doyouwant.xml",

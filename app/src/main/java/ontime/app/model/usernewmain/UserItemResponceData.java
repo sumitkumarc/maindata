@@ -5,6 +5,10 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+import ontime.app.model.usermain.Cart;
+import ontime.app.model.usermain.UserCart;
+import ontime.app.model.usermain.UserCartItem;
+
 public class UserItemResponceData {
     @SerializedName("items")
     @Expose
@@ -18,5 +22,16 @@ public class UserItemResponceData {
         this.itemsa = items;
     }
 
+    @SerializedName("cart")
+    @Expose
+    private UserCartItem cart;
+
+    public UserCartItem getCart() {
+        return cart;
+    }
+
+    public void setCart(UserCartItem cart) {
+        this.cart = cart;
+    }
 
 }

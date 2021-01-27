@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -27,6 +28,9 @@ public abstract class ActivityProfileBinding extends ViewDataBinding {
 
   @NonNull
   public final EditText edPhoneNo;
+
+  @NonNull
+  public final FrameLayout flProfile;
 
   @NonNull
   public final CardView flUpdateProfile;
@@ -65,21 +69,26 @@ public abstract class ActivityProfileBinding extends ViewDataBinding {
   public final TextView txtOrder;
 
   @NonNull
+  public final TextView txtSave;
+
+  @NonNull
   public final TextView txtSignOut;
 
   @NonNull
   public final TextView txtTotalSpend;
 
   protected ActivityProfileBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      LinearLayout back, EditText edName, EditText edPhoneNo, CardView flUpdateProfile,
-      ImageView ivBackArrow, ImageView ivUserProfile, LinearLayout llCancelled, LinearLayout llMain,
-      LinearLayout llOrder, LinearLayout llToolbar, LinearLayout llTotalSpendes,
-      RelativeLayout rlProfile, TextView txtCancelled, TextView txtEdit, TextView txtOrder,
-      TextView txtSignOut, TextView txtTotalSpend) {
+      LinearLayout back, EditText edName, EditText edPhoneNo, FrameLayout flProfile,
+      CardView flUpdateProfile, ImageView ivBackArrow, ImageView ivUserProfile,
+      LinearLayout llCancelled, LinearLayout llMain, LinearLayout llOrder, LinearLayout llToolbar,
+      LinearLayout llTotalSpendes, RelativeLayout rlProfile, TextView txtCancelled,
+      TextView txtEdit, TextView txtOrder, TextView txtSave, TextView txtSignOut,
+      TextView txtTotalSpend) {
     super(_bindingComponent, _root, _localFieldCount);
     this.back = back;
     this.edName = edName;
     this.edPhoneNo = edPhoneNo;
+    this.flProfile = flProfile;
     this.flUpdateProfile = flUpdateProfile;
     this.ivBackArrow = ivBackArrow;
     this.ivUserProfile = ivUserProfile;
@@ -92,6 +101,7 @@ public abstract class ActivityProfileBinding extends ViewDataBinding {
     this.txtCancelled = txtCancelled;
     this.txtEdit = txtEdit;
     this.txtOrder = txtOrder;
+    this.txtSave = txtSave;
     this.txtSignOut = txtSignOut;
     this.txtTotalSpend = txtTotalSpend;
   }

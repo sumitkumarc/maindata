@@ -39,7 +39,8 @@ import ontime.app.databinding.ActivityRestprofileBindingImpl;
 import ontime.app.databinding.ActivitySentrequestBindingImpl;
 import ontime.app.databinding.ActivityVerifyPageBindingImpl;
 import ontime.app.databinding.CRowCategoryListItemBindingImpl;
-import ontime.app.databinding.CRowRequestpendingItemBindingImpl;
+import ontime.app.databinding.CRowRestaurantItemBindingImpl;
+import ontime.app.databinding.PopSelectPaymnetMethordBindingImpl;
 import ontime.app.databinding.RActivityRiderorderdetailsBindingImpl;
 import ontime.app.databinding.RFragmentNewOrderBindingImpl;
 import ontime.app.databinding.RowItemPaymentMethordBindingImpl;
@@ -94,17 +95,19 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_CROWCATEGORYLISTITEM = 24;
 
-  private static final int LAYOUT_CROWREQUESTPENDINGITEM = 25;
+  private static final int LAYOUT_CROWRESTAURANTITEM = 25;
 
-  private static final int LAYOUT_RACTIVITYRIDERORDERDETAILS = 26;
+  private static final int LAYOUT_POPSELECTPAYMNETMETHORD = 26;
 
-  private static final int LAYOUT_RFRAGMENTNEWORDER = 27;
+  private static final int LAYOUT_RACTIVITYRIDERORDERDETAILS = 27;
 
-  private static final int LAYOUT_ROWITEMPAYMENTMETHORD = 28;
+  private static final int LAYOUT_RFRAGMENTNEWORDER = 28;
 
-  private static final int LAYOUT_TABORDERPROCESSING = 29;
+  private static final int LAYOUT_ROWITEMPAYMENTMETHORD = 29;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(29);
+  private static final int LAYOUT_TABORDERPROCESSING = 30;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(30);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.activity_aboutus, LAYOUT_ACTIVITYABOUTUS);
@@ -131,7 +134,8 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.activity_sentrequest, LAYOUT_ACTIVITYSENTREQUEST);
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.activity_verify_page, LAYOUT_ACTIVITYVERIFYPAGE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.c_row_category_list_item, LAYOUT_CROWCATEGORYLISTITEM);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.c_row_requestpending_item, LAYOUT_CROWREQUESTPENDINGITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.c_row_restaurant_item, LAYOUT_CROWRESTAURANTITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.pop_select_paymnet_methord, LAYOUT_POPSELECTPAYMNETMETHORD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.r_activity_riderorderdetails, LAYOUT_RACTIVITYRIDERORDERDETAILS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.r_fragment_new_order, LAYOUT_RFRAGMENTNEWORDER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(ontime.app.R.layout.row_item_payment_methord, LAYOUT_ROWITEMPAYMENTMETHORD);
@@ -291,11 +295,17 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for c_row_category_list_item is invalid. Received: " + tag);
         }
-        case  LAYOUT_CROWREQUESTPENDINGITEM: {
-          if ("layout/c_row_requestpending_item_0".equals(tag)) {
-            return new CRowRequestpendingItemBindingImpl(component, view);
+        case  LAYOUT_CROWRESTAURANTITEM: {
+          if ("layout/c_row_restaurant_item_0".equals(tag)) {
+            return new CRowRestaurantItemBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for c_row_requestpending_item is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for c_row_restaurant_item is invalid. Received: " + tag);
+        }
+        case  LAYOUT_POPSELECTPAYMNETMETHORD: {
+          if ("layout/pop_select_paymnet_methord_0".equals(tag)) {
+            return new PopSelectPaymnetMethordBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for pop_select_paymnet_methord is invalid. Received: " + tag);
         }
         case  LAYOUT_RACTIVITYRIDERORDERDETAILS: {
           if ("layout/r_activity_riderorderdetails_0".equals(tag)) {
@@ -374,7 +384,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(29);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(30);
 
     static {
       sKeys.put("layout/activity_aboutus_0", ontime.app.R.layout.activity_aboutus);
@@ -401,7 +411,8 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/activity_sentrequest_0", ontime.app.R.layout.activity_sentrequest);
       sKeys.put("layout/activity_verify_page_0", ontime.app.R.layout.activity_verify_page);
       sKeys.put("layout/c_row_category_list_item_0", ontime.app.R.layout.c_row_category_list_item);
-      sKeys.put("layout/c_row_requestpending_item_0", ontime.app.R.layout.c_row_requestpending_item);
+      sKeys.put("layout/c_row_restaurant_item_0", ontime.app.R.layout.c_row_restaurant_item);
+      sKeys.put("layout/pop_select_paymnet_methord_0", ontime.app.R.layout.pop_select_paymnet_methord);
       sKeys.put("layout/r_activity_riderorderdetails_0", ontime.app.R.layout.r_activity_riderorderdetails);
       sKeys.put("layout/r_fragment_new_order_0", ontime.app.R.layout.r_fragment_new_order);
       sKeys.put("layout/row_item_payment_methord_0", ontime.app.R.layout.row_item_payment_methord);

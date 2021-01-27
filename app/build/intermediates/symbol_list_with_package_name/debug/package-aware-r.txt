@@ -1044,7 +1044,11 @@ attr yearTodayStyle
 bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
+bool enable_system_alarm_service_default
+bool enable_system_foreground_service_default
+bool enable_system_job_service_default
 bool mtrl_btn_textappearance_all_caps
+bool workmanager_test_configuration
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -1133,7 +1137,6 @@ color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
 color dark_gray
 color darkgray
-color darkred
 color darkwhite
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
@@ -1900,6 +1903,7 @@ drawable backred
 drawable banner
 drawable bariyani
 drawable bg
+drawable border
 drawable border_red_dark
 drawable border_red_light
 drawable bt_ic_amex
@@ -1983,6 +1987,7 @@ drawable circlered
 drawable close
 drawable closeimg
 drawable cod
+drawable color_cursor
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2298,7 +2303,10 @@ drawable ic_arrow_right_normal
 drawable ic_arrow_up_normal
 drawable ic_bill_normal
 drawable ic_checkmark_normal
+drawable ic_close
 drawable ic_graysearch
+drawable ic_launcher_nots
+drawable ic_launcher_playstore
 drawable ic_menu_black
 drawable ic_menu_red
 drawable ic_mtrl_checked_circle
@@ -2308,12 +2316,14 @@ drawable ic_mtrl_chip_close_circle
 drawable icon
 drawable icon_failed
 drawable image_security
+drawable item_order_back_color
 drawable language
 drawable languagered
 drawable layout_main_section_background_shape
 drawable liner_background
 drawable login_bg
 drawable logo_1
+drawable logo_2
 drawable mac
 drawable marketlogo
 drawable marketprofilebg
@@ -2546,7 +2556,6 @@ id addressOnCardContainer
 id addressOnCardLayout
 id addressOnCardRecyclerView
 id addressOnCardTextView
-id addtocart
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2591,10 +2600,12 @@ id bt_delivered
 id bt_expiration_date_sheet
 id bt_expiration_month_grid_view
 id bt_expiration_year_grid_view
+id bt_goto_cart
 id bt_pay_now
 id bt_reOrder
 id bt_send
 id bt_send_request
+id bt_sub_cancel
 id bt_timer_confirm
 id btnContinue
 id btnResendCode
@@ -2713,6 +2724,8 @@ id ed_name_on_card
 id ed_notes
 id ed_password
 id ed_phone_no
+id ed_review_msg
+id ed_search
 id editTitleTextView
 id edit_query
 id email
@@ -2731,7 +2744,6 @@ id etNumberInput
 id etPhoneNumber
 id etSearchCountry
 id etTextInput
-id evsearch
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2746,6 +2758,8 @@ id filled
 id fist
 id fitToContents
 id fixed
+id flProfile
+id fl_addtocart
 id fl_details
 id fl_qty
 id fl_time
@@ -2985,12 +2999,13 @@ id popup_element
 id position
 id postLayout
 id preference_divider_view
-id prefix
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
 id rb_home_pro
+id rb_rate_review
+id rb_rate_review_1
 id rb_ratingbar
 id rb_star
 id realitve
@@ -3086,7 +3101,6 @@ id status_text
 id stop
 id stretch
 id submenuarrow
-id submit
 id submit_area
 id sv_left_header
 id tabLayout
@@ -3185,6 +3199,7 @@ id txt_addition
 id txt_additional_item
 id txt_address
 id txt_amount
+id txt_apple_pay
 id txt_arbic
 id txt_calories
 id txt_cancelled
@@ -3198,6 +3213,7 @@ id txt_cat_name
 id txt_chang_pws
 id txt_contact_us
 id txt_count
+id txt_credit_debit_card
 id txt_date
 id txt_deliver_time
 id txt_details
@@ -3228,6 +3244,7 @@ id txt_order_date
 id txt_order_deliver_type
 id txt_order_id
 id txt_order_item
+id txt_order_pament_type
 id txt_order_pamnet_type
 id txt_order_payment_status
 id txt_order_status
@@ -3251,10 +3268,12 @@ id txt_rest_name
 id txt_rest_qty
 id txt_sFirst
 id txt_sSecond
+id txt_save
 id txt_service_fees
 id txt_service_tax
 id txt_sign_out
 id txt_status
+id txt_submit
 id txt_tax
 id txt_time
 id txt_title
@@ -3539,6 +3558,7 @@ layout pop_add_amount
 layout pop_add_card
 layout pop_addto_cart_success
 layout pop_edit_profile
+layout pop_select_paymnet_methord
 layout popup_doyouwant
 layout r_activity_login
 layout r_activity_riderorderdetails
@@ -3586,6 +3606,7 @@ layout view_wheel_date_picker
 menu menu_search
 mipmap ic_launcher
 mipmap ic_launcher_foreground
+mipmap ic_launcher_nots
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw fragment_shader
@@ -3643,6 +3664,7 @@ string Register
 string Register_msg
 string Reorder
 string Resend
+string Save
 string Search
 string Seconds
 string Set_Delivery_Time

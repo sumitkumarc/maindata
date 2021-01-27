@@ -94,6 +94,9 @@
             android:name=".customer.doneActivity.OrderSummaryActivity"
             android:theme="@style/AppTheme1" />
         <activity
+            android:name=".customer.doneActivity.Dialog_Activity"
+            android:theme="@style/AppTheme1" />
+        <activity
             android:name=".customer.Activity.SentRequestActivity"
             android:theme="@style/AppTheme1" />
         <activity
@@ -104,7 +107,6 @@
             android:theme="@style/AppTheme1">
             <intent-filter>
                 <action android:name="none" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -136,8 +138,6 @@
         <activity
             android:name=".restaurant.ui.Activity.MurchanNotification"
             android:theme="@style/AppTheme1" />
-        <activity android:name=".customer.doneActivity.Dialog_Activity"
-            android:theme="@style/AppTheme1"></activity>
         <activity
             android:name=".restaurant.ui.Activity.SplashActivity"
             android:theme="@style/AppTheme1">
@@ -150,18 +150,14 @@
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@mipmap/ic_launcher" />
-        <!--
- Set color used with incoming notification messages. This is used when no color is set for the incoming
-             notification message. See README(https://goo.gl/6BKBk7) for more.
-        -->
+            android:resource="@drawable/logo_2"/>
+
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@color/colorAccent" /> <!-- [END fcm_default_icon] -->
-        <!-- [START fcm_default_channel] -->
+            android:resource="@color/colorAccent" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
-            android:value="@string/app_name" /> <!-- [END fcm_default_channel] -->
+            android:value="@string/app_name" />
         <service
             android:name=".utils.MyFirebaseMessagingService"
             android:exported="false">

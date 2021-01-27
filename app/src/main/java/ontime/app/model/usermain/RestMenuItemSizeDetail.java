@@ -19,6 +19,9 @@ public class RestMenuItemSizeDetail {
     @SerializedName("size")
     @Expose
     private String size;
+    @SerializedName("price")
+    @Expose
+    private String price;
     @SerializedName("created_at")
     @Expose
     private String createdAt;
@@ -27,8 +30,16 @@ public class RestMenuItemSizeDetail {
         return id;
     }
 
+
     public void setId(Integer id) {
         this.id = id;
+    }
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 
     public Integer getRestaurantId() {

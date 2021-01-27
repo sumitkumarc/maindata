@@ -45,6 +45,7 @@ public class RvRestaurantListAdapter extends RecyclerView.Adapter<RvRestaurantLi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Common.RESTAURANT_ID = mresponceDatumList.get(position).getId();
                 Intent i2 = new Intent(mContext, RestaurantProfileActivity.class);
                 i2.putExtra("RE_NAME", mresponceDatumList.get(position).getName());
                 i2.putExtra("RE_ID", mresponceDatumList.get(position).getId());

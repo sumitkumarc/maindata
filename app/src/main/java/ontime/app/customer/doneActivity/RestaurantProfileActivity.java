@@ -89,14 +89,14 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
         binding.llMain.setVisibility(View.GONE);
 
         if (Common.MERCHANT_TYPE == 1) {
-//            Common.setSystemBarColor(this, R.color.colorAccent);
+            Common.setSystemBarColor(this, R.color.colorAccent);
 //            Common.setSystemBarLight(this);
             binding.rlMain.setBackground(getResources().getDrawable(R.drawable.profilebg));
             binding.llBar.setBackgroundColor(getResources().getColor(R.color.colorAccent));
             binding.ivBackArrow.setColorFilter(getResources().getColor(R.color.colorAccent));
 
         } else {
-//            Common.setSystemBarColor(this, R.color.super_mart);
+            Common.setSystemBarColor(this, R.color.super_mart);
 //            Common.setSystemBarLight(this);
             binding.rlMain.setBackground(getResources().getDrawable(R.drawable.marketprofilebg));
             binding.llBar.setBackgroundColor(getResources().getColor(R.color.super_mart));
@@ -114,8 +114,8 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
         binding.rvFilterList.setLayoutManager(mLayoutManager);
 
         GetAPICallRestaurantProfile(getIntent().getIntExtra("RE_ID", 1));
-        GetAPICallRestaurantMenuitems(getIntent().getIntExtra("RE_ID", 1));
-        GetAPICallRestaurantCartList();
+//        GetAPICallRestaurantMenuitems(getIntent().getIntExtra("RE_ID", 1));
+//        GetAPICallRestaurantCartList();
 
 
     }
@@ -216,6 +216,9 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
         if (operationCode == APIcall.OPERATION_ITEM_BY_CATEGORY) {
             showDialog();
         }
+//        if (operationCode == APIcall.OPERATION_ITEM_BY_CATEGORY) {
+//            showDialog();
+//        }
 
     }
 
@@ -244,9 +247,7 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
                         binding.rvList.setItemAnimator(new DefaultItemAnimator());
                         binding.rvList.setAdapter(menuListAdapter);
                     }
-                    if (Common.MERCHANT_TYPE == 1) {
-                        showDialogDoyouwant();
-                    }
+
 
                 } else {
                     Toast.makeText(RestaurantProfileActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
@@ -305,6 +306,7 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
                 if (exampleUser.getStatus() == 200) {
                     List<UserCart> cartList = exampleUser.getResponceData().getCart();
                     if (cartList.size() != 0) {
+                        DELIVER_TYPE =cartList.get(0).getDeliveryType();
                         Common.newCartItem = new ArrayList<>();
                         for (int i = 0; i < cartList.size(); i++) {
                             if (cartList.get(i).getRestaurantId() == RestaurantId) {
@@ -327,6 +329,13 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
                         Log.d("MAINERROR", ">>>>>" + Common.newCartItem.size());
                         CartItems = Common.newCartItem.size();
                         binding.txtCount.setText(String.valueOf(CartItems));
+
+                        if (Common.MERCHANT_TYPE == 1) {
+                            if(CartItems== 0){
+                                showDialogDoyouwant();
+                            }
+
+                        }
                     } else {
                         binding.txtCount.setVisibility(View.GONE);
                     }

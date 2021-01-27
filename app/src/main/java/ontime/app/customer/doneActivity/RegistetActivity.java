@@ -98,11 +98,11 @@ public class RegistetActivity extends BaseActivity implements View.OnClickListen
 
             @Override
             public void afterTextChanged(Editable s) {
-                if (s.length() == 0) {
-                    binding.prefix.setVisibility(View.VISIBLE);
-                } else {
-                    binding.prefix.setVisibility(View.GONE);
-                }
+//                if (s.length() == 0) {
+//                    binding.prefix.setVisibility(View.VISIBLE);
+//                } else {
+//                    binding.prefix.setVisibility(View.GONE);
+//                }
             }
         });
         binding.edPassword.setOnTouchListener(new View.OnTouchListener() {

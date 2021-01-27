@@ -49,7 +49,7 @@ public class TabOrderFinished extends BaseFragment {
         LinearLayoutManager mLayoutManager1as = new LinearLayoutManager(getContext());
         mLayoutManager1as.setOrientation(LinearLayoutManager.VERTICAL);
         binding.rvDetails.setLayoutManager(mLayoutManager1as);
-        if(MyOrdersListActivity.objProcessing.size() != 0 && MyOrdersListActivity.objProcessing != null ){
+        if(MyOrdersListActivity.objFinished.size() != 0 && MyOrdersListActivity.objFinished != null ){
             binding.rvDetails.setVisibility(View.VISIBLE);
             binding.txtNoData.setVisibility(View.GONE);
             mAdapter = new RvFinishedOrderListAdapter(getContext(), MyOrdersListActivity.objFinished);

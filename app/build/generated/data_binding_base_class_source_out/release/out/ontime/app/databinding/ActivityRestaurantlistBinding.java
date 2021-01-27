@@ -41,7 +41,7 @@ public abstract class ActivityRestaurantlistBinding extends ViewDataBinding {
   public final DrawerLayout drawerLayout;
 
   @NonNull
-  public final EditText evsearch;
+  public final EditText edSearch;
 
   @NonNull
   public final ImageView ivAboutUs;
@@ -163,7 +163,7 @@ public abstract class ActivityRestaurantlistBinding extends ViewDataBinding {
   protected ActivityRestaurantlistBinding(Object _bindingComponent, View _root,
       int _localFieldCount, ImageView AuthorAvatar, TextView AuthorDisplayName,
       TextView AuthorUserName, ImageView close, CardView cvUploadimage, DrawerLayout drawerLayout,
-      EditText evsearch, ImageView ivAboutUs, ImageView ivCart, ImageView ivChangPws,
+      EditText edSearch, ImageView ivAboutUs, ImageView ivCart, ImageView ivChangPws,
       ImageView ivContactUs, ImageView ivFilter, ImageView ivHome, ImageView ivLanguages,
       ImageView ivMenu, ImageView ivMyorder, ImageView ivNotification, ImageView ivPayment,
       ImageView ivSearch, LinearLayout llBack, LinearLayout llChangePws, LinearLayout llMain,
@@ -181,7 +181,7 @@ public abstract class ActivityRestaurantlistBinding extends ViewDataBinding {
     this.close = close;
     this.cvUploadimage = cvUploadimage;
     this.drawerLayout = drawerLayout;
-    this.evsearch = evsearch;
+    this.edSearch = edSearch;
     this.ivAboutUs = ivAboutUs;
     this.ivCart = ivCart;
     this.ivChangPws = ivChangPws;

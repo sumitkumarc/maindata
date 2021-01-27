@@ -4,6 +4,7 @@ package ontime.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -21,24 +22,25 @@ public abstract class ActivitySentrequestBinding extends ViewDataBinding {
   public final LinearLayout back;
 
   @NonNull
+  public final Button btGotoCart;
+
+  @NonNull
   public final ImageView ivRight;
 
   @NonNull
   public final RelativeLayout rly;
 
   @NonNull
-  public final TextView txtCart;
-
-  @NonNull
   public final TextView txtMsg;
 
   protected ActivitySentrequestBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      LinearLayout back, ImageView ivRight, RelativeLayout rly, TextView txtCart, TextView txtMsg) {
+      LinearLayout back, Button btGotoCart, ImageView ivRight, RelativeLayout rly,
+      TextView txtMsg) {
     super(_bindingComponent, _root, _localFieldCount);
     this.back = back;
+    this.btGotoCart = btGotoCart;
     this.ivRight = ivRight;
     this.rly = rly;
-    this.txtCart = txtCart;
     this.txtMsg = txtMsg;
   }
 

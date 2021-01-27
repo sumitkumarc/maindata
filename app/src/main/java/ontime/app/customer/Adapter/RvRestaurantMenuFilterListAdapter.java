@@ -43,11 +43,11 @@ public class RvRestaurantMenuFilterListAdapter extends RecyclerView.Adapter<RvRe
             @Override
             public void onClick(View view) {
                 row_index=position;
-                rvInterface.OnItemClick(position, mCategories.get(position).getId());
                 notifyDataSetChanged();
             }
         });
         if(row_index==position){
+            rvInterface.OnItemClick(position, mCategories.get(position).getId());
             if (Common.MERCHANT_TYPE == 1) {
                 holder.binding.cdMainCard.setCardBackgroundColor(Color.parseColor("#FFFF0015"));
                 holder.binding.txtCatName.setTextColor(Color.parseColor("#ffffff"));

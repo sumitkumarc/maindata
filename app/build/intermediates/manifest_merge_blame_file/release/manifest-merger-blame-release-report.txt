@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="ontime.app"
-4    android:versionCode="1"
-5    android:versionName="1.1" >
+4    android:versionCode="3"
+5    android:versionName="1.1.3" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="17"
@@ -52,642 +52,834 @@
 24    <uses-permission android:name="android.permission.VIBRATE" />
 24-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:15:5-66
 24-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:15:22-63
-25    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-25-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:24:5-68
-25-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:24:22-65
-26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-26-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:26:5-82
-26-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:26:22-79
-27    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-27-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:5-110
-27-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:22-107
-28
-29    <uses-feature
-29-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:12:5-14:36
-30        android:name="android.hardware.camera"
-30-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:13:9-47
-31        android:required="false" />
-31-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:14:9-33
-32    <uses-feature
-32-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:15:5-17:36
-33        android:name="android.hardware.camera.autofocus"
-33-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:16:9-57
-34        android:required="false" />
-34-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:17:9-33
-35
-36    <application
-36-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:18:5-168:19
-37        android:name="androidx.multidex.MultiDexApplication"
-38        android:allowBackup="true"
-38-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:19:9-35
-39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-39-->[androidx.core:core:1.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\cdfea8f3da9d3d8e26bbb73a40c2de98\core-1.3.1\AndroidManifest.xml:24:18-86
-40        android:debuggable="true"
-40-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:20:9-34
-41        android:hardwareAccelerated="true"
-41-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:21:9-43
-42        android:hasCode="true"
-42-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:22:9-31
-43        android:icon="@mipmap/ic_launcher"
-43-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:23:9-43
-44        android:isolatedProcess="true"
-44-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:24:9-39
-45        android:label="@string/app_name"
-45-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:25:9-41
-46        android:largeHeap="true"
-46-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:26:9-33
-47        android:requestLegacyExternalStorage="true"
-47-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:27:9-52
-48        android:roundIcon="@mipmap/ic_launcher_round"
-48-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:28:9-54
-49        android:supportsRtl="true"
-49-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:29:9-35
-50        android:theme="@style/AppTheme"
-50-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:30:9-40
-51        android:usesCleartextTraffic="true" >
-51-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:31:9-44
-52        <activity android:name="ontime.app.customer.doneActivity.RestRattingListActivity" />
-52-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:33:9-92
-52-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:33:19-80
-53        <activity
-53-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:34:9-36:48
-54            android:name="ontime.app.restaurant.ui.Activity.NewOrderItemListActivity"
-54-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:35:13-76
-55            android:theme="@style/AppTheme1" />
-55-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:36:13-45
-56
-57        <provider
-58            android:name="androidx.core.content.FileProvider"
-58-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:39:13-62
-59            android:authorities="ontime.app.provider"
-59-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:40:13-60
-60            android:exported="false"
-60-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:41:13-37
-61            android:grantUriPermissions="true" >
-61-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:42:13-47
-62            <meta-data
-62-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:43:13-45:58
-63                android:name="android.support.FILE_PROVIDER_PATHS"
-63-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:44:17-67
-64                android:resource="@xml/provider_paths" />
-64-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:45:17-55
-65        </provider>
-66
-67        <activity
-67-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:48:9-50:48
-68            android:name="ontime.app.customer.doneActivity.ChangePasswordActivity"
-68-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:49:13-73
-69            android:theme="@style/AppTheme1" />
-69-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:50:13-45
-70        <activity
-70-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:51:9-54:48
-71            android:name="ontime.app.restaurant.ui.Activity.RiderOrderDetails"
-71-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:52:13-69
-72            android:label="@string/title_activity_home"
-72-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:53:13-56
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:25:5-68
+25-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:25:22-65
+26    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+26-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:27:5-81
+26-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:27:22-78
+27    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+27-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:28:5-77
+27-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:28:22-74
+28    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+28-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:26:5-82
+28-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:26:22-79
+29    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+29-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:26:5-110
+29-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:26:22-107
+30
+31    <uses-feature
+31-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:12:5-14:36
+32        android:name="android.hardware.camera"
+32-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:13:9-47
+33        android:required="false" />
+33-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:14:9-33
+34    <uses-feature
+34-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:15:5-17:36
+35        android:name="android.hardware.camera.autofocus"
+35-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:16:9-57
+36        android:required="false" />
+36-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:17:9-33
+37
+38    <application
+38-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:18:5-168:19
+39        android:name="androidx.multidex.MultiDexApplication"
+40        android:allowBackup="true"
+40-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:19:9-35
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\cdfea8f3da9d3d8e26bbb73a40c2de98\core-1.3.1\AndroidManifest.xml:24:18-86
+42        android:debuggable="true"
+42-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:20:9-34
+43        android:hardwareAccelerated="true"
+43-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:21:9-43
+44        android:hasCode="true"
+44-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:22:9-31
+45        android:icon="@mipmap/ic_launcher"
+45-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:23:9-43
+46        android:isolatedProcess="true"
+46-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:24:9-39
+47        android:label="@string/app_name"
+47-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:25:9-41
+48        android:largeHeap="true"
+48-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:26:9-33
+49        android:requestLegacyExternalStorage="true"
+49-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:27:9-52
+50        android:roundIcon="@mipmap/ic_launcher_round"
+50-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:28:9-54
+51        android:supportsRtl="true"
+51-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:29:9-35
+52        android:theme="@style/AppTheme"
+52-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:30:9-40
+53        android:usesCleartextTraffic="true" >
+53-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:31:9-44
+54        <activity
+54-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:34:9-35:47
+55            android:name="ontime.app.customer.doneActivity.RestRattingListActivity"
+55-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:34:19-80
+56            android:theme="@style/AppTheme1" />
+56-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:35:13-45
+57        <activity
+57-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:36:9-38:48
+58            android:name="ontime.app.restaurant.ui.Activity.NewOrderItemListActivity"
+58-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:37:13-76
+59            android:theme="@style/AppTheme1" />
+59-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:38:13-45
+60
+61        <provider
+62            android:name="androidx.core.content.FileProvider"
+62-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:41:13-62
+63            android:authorities="ontime.app.provider"
+63-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:42:13-60
+64            android:exported="false"
+64-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:43:13-37
+65            android:grantUriPermissions="true" >
+65-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:44:13-47
+66            <meta-data
+66-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:45:13-47:58
+67                android:name="android.support.FILE_PROVIDER_PATHS"
+67-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:46:17-67
+68                android:resource="@xml/provider_paths" />
+68-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:47:17-55
+69        </provider>
+70
+71        <activity
+71-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:50:9-52:48
+72            android:name="ontime.app.customer.doneActivity.ChangePasswordActivity"
+72-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:51:13-73
 73            android:theme="@style/AppTheme1" />
-73-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:54:13-45
+73-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:52:13-45
 74        <activity
-74-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:55:9-57:48
-75            android:name="ontime.app.restaurant.ui.Activity.WelcomeActivity"
-75-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:56:13-67
-76            android:theme="@style/AppTheme1" />
-76-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:57:13-45
-77        <activity
-77-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:58:9-60:48
-78            android:name="ontime.app.restaurant.ui.Activity.LoginPage"
-78-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:59:13-61
-79            android:theme="@style/AppTheme1" />
-79-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:60:13-45
-80        <activity
-80-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:61:9-63:48
-81            android:name="ontime.app.customer.doneActivity.ForgotpasswordActivity"
-81-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:62:13-73
-82            android:theme="@style/AppTheme1" />
-82-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:63:13-45
-83        <activity
-83-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:64:9-66:48
-84            android:name="ontime.app.customer.doneActivity.VerificationCodeActivity"
-84-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:65:13-75
-85            android:theme="@style/AppTheme1" />
-85-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:66:13-45
-86        <activity
-86-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:67:9-69:48
-87            android:name="ontime.app.customer.doneActivity.RegistetActivity"
-87-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:68:13-67
-88            android:theme="@style/AppTheme1" />
-88-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:69:13-45
-89        <activity
-89-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:70:9-72:48
-90            android:name="ontime.app.customer.doneActivity.LoginActivity"
-90-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:71:13-64
-91            android:theme="@style/AppTheme1" />
-91-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:72:13-45
-92        <activity
-92-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:73:9-75:48
-93            android:name="ontime.app.customer.doneActivity.UserDashboardActivity"
-93-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:74:13-72
-94            android:theme="@style/AppTheme1" />
-94-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:75:13-45
-95        <activity
-95-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:76:9-78:48
-96            android:name="ontime.app.customer.doneActivity.RestCartPenddingItemActivity"
-96-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:77:13-79
-97            android:theme="@style/AppTheme1" />
-97-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:78:13-45
-98        <activity
-98-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:79:9-81:48
-99            android:name="ontime.app.customer.doneActivity.RestaurantlistActivity"
-99-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:80:13-73
-100            android:theme="@style/AppTheme1" />
-100-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:81:13-45
-101        <activity
-101-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:82:9-84:48
-102            android:name="ontime.app.customer.doneActivity.RestaurantProfileActivity"
-102-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:83:13-76
-103            android:theme="@style/AppTheme1" />
-103-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:84:13-45
-104        <activity
-104-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:85:9-87:48
-105            android:name="ontime.app.customer.doneActivity.RestaurantDetailActivity"
-105-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:86:13-75
-106            android:theme="@style/AppTheme1" />
-106-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:87:13-45
-107        <activity
-107-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:88:9-90:48
-108            android:name="ontime.app.customer.doneActivity.RestCartItemActivity"
-108-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:89:13-71
-109            android:theme="@style/AppTheme1" />
-109-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:90:13-45
-110        <activity
-110-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:91:9-93:48
-111            android:name="ontime.app.customer.doneActivity.OrderSummaryActivity"
-111-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:92:13-71
-112            android:theme="@style/AppTheme1" />
-112-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:93:13-45
-113        <activity
-113-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:94:9-96:48
-114            android:name="ontime.app.customer.Activity.SentRequestActivity"
-114-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:95:13-66
-115            android:theme="@style/AppTheme1" />
-115-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:96:13-45
-116        <activity
-116-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:97:9-99:48
-117            android:name="ontime.app.customer.doneActivity.RequestPendingActivity"
-117-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:98:13-73
-118            android:theme="@style/AppTheme1" />
-118-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:99:13-45
-119        <activity
-119-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:100:9-109:20
-120            android:name="ontime.app.customer.doneActivity.MyOrdersListActivity"
-120-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:101:13-71
-121            android:theme="@style/AppTheme1" >
-121-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:102:13-45
-122            <intent-filter>
-122-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:103:13-108:29
-123                <action android:name="none" />
-123-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:104:17-47
-123-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:104:25-44
-124
-125                <category android:name="android.intent.category.LAUNCHER" />
-125-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:106:17-77
-125-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:106:27-74
-126                <category android:name="android.intent.category.DEFAULT" />
-126-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:17-76
-126-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:27-73
-127            </intent-filter>
-128        </activity>
-129        <activity
-129-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:110:9-112:48
-130            android:name="ontime.app.customer.doneActivity.PaymentActivity"
-130-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:13-66
-131            android:theme="@style/AppTheme1" />
-131-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:112:13-45
-132        <activity
-132-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:113:9-115:48
-133            android:name="ontime.app.customer.doneActivity.NotificationActivity"
-133-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:114:13-71
-134            android:theme="@style/AppTheme1" />
-134-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:115:13-45
-135        <activity
-135-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:116:9-118:48
-136            android:name="ontime.app.customer.doneActivity.ContactusActivity"
-136-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:117:13-68
-137            android:theme="@style/AppTheme1" />
-137-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:118:13-45
-138        <activity
-138-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:119:9-121:48
-139            android:name="ontime.app.customer.doneActivity.LanguageActivity"
-139-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:120:13-67
-140            android:theme="@style/AppTheme1" />
-140-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:121:13-45
-141        <activity
-141-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:122:9-124:48
-142            android:name="ontime.app.customer.doneActivity.AboutusActivity"
-142-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:123:13-66
-143            android:theme="@style/AppTheme1" />
-143-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:124:13-45
-144        <activity
-144-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:125:9-127:48
-145            android:name="ontime.app.customer.doneActivity.UserProfileActivity"
-145-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:126:13-70
-146            android:theme="@style/AppTheme1" />
-146-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:127:13-45
-147        <activity
-147-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:128:9-130:48
-148            android:name="ontime.app.customer.doneActivity.AddCardActivity"
-148-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:129:13-66
-149            android:theme="@style/AppTheme1" />
-149-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:130:13-45
-150        <activity
-150-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:131:9-133:48
-151            android:name="ontime.app.customer.Activity.SentRequestSuper"
-151-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:132:13-63
-152            android:theme="@style/AppTheme1" />
-152-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:133:13-45
-153        <activity
-153-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:134:9-136:48
-154            android:name="ontime.app.restaurant.ui.Activity.MurchanNotification"
-154-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:135:13-71
-155            android:theme="@style/AppTheme1" />
-155-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:136:13-45
-156        <activity
-156-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:137:9-145:20
-157            android:name="ontime.app.restaurant.ui.Activity.SplashActivity"
-157-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:138:13-66
-158            android:theme="@style/AppTheme1" >
-158-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:139:13-45
-159            <intent-filter>
-159-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:140:13-144:29
-160                <action android:name="android.intent.action.MAIN" />
-160-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:141:17-69
-160-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:141:25-66
-161
-162                <category android:name="android.intent.category.LAUNCHER" />
-162-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:106:17-77
-162-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:106:27-74
-163            </intent-filter>
-164        </activity>
-165
-166        <meta-data
-166-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:147:9-149:54
-167            android:name="com.google.firebase.messaging.default_notification_icon"
-167-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:148:13-83
-168            android:resource="@mipmap/ic_launcher" />
-168-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:149:13-51
-169        <!--
-170 Set color used with incoming notification messages. This is used when no color is set for the incoming
-171             notification message. See README(https://goo.gl/6BKBk7) for more.
-172        -->
+74-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:53:9-56:48
+75            android:name="ontime.app.restaurant.ui.Activity.RiderOrderDetails"
+75-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:54:13-69
+76            android:label="@string/title_activity_home"
+76-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:55:13-56
+77            android:theme="@style/AppTheme1" />
+77-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:56:13-45
+78        <activity
+78-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:57:9-59:48
+79            android:name="ontime.app.restaurant.ui.Activity.WelcomeActivity"
+79-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:58:13-67
+80            android:theme="@style/AppTheme1" />
+80-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:59:13-45
+81        <activity
+81-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:60:9-62:48
+82            android:name="ontime.app.restaurant.ui.Activity.LoginPage"
+82-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:61:13-61
+83            android:theme="@style/AppTheme1" />
+83-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:62:13-45
+84        <activity
+84-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:63:9-65:48
+85            android:name="ontime.app.customer.doneActivity.ForgotpasswordActivity"
+85-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:64:13-73
+86            android:theme="@style/AppTheme1" />
+86-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:65:13-45
+87        <activity
+87-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:66:9-68:48
+88            android:name="ontime.app.customer.doneActivity.VerificationCodeActivity"
+88-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:67:13-75
+89            android:theme="@style/AppTheme1" />
+89-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:68:13-45
+90        <activity
+90-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:69:9-71:48
+91            android:name="ontime.app.customer.doneActivity.RegistetActivity"
+91-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:70:13-67
+92            android:theme="@style/AppTheme1" />
+92-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:71:13-45
+93        <activity
+93-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:72:9-74:48
+94            android:name="ontime.app.customer.doneActivity.LoginActivity"
+94-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:73:13-64
+95            android:theme="@style/AppTheme1" />
+95-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:74:13-45
+96        <activity
+96-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:75:9-77:48
+97            android:name="ontime.app.customer.doneActivity.UserDashboardActivity"
+97-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:76:13-72
+98            android:theme="@style/AppTheme1" />
+98-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:77:13-45
+99        <activity
+99-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:78:9-80:48
+100            android:name="ontime.app.customer.doneActivity.RestCartPenddingItemActivity"
+100-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:79:13-79
+101            android:theme="@style/AppTheme1" />
+101-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:80:13-45
+102        <activity
+102-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:81:9-83:48
+103            android:name="ontime.app.customer.doneActivity.RestaurantlistActivity"
+103-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:82:13-73
+104            android:theme="@style/AppTheme1" />
+104-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:83:13-45
+105        <activity
+105-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:84:9-86:48
+106            android:name="ontime.app.customer.doneActivity.RestaurantProfileActivity"
+106-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:85:13-76
+107            android:theme="@style/AppTheme1" />
+107-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:86:13-45
+108        <activity
+108-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:87:9-89:48
+109            android:name="ontime.app.customer.doneActivity.RestaurantDetailActivity"
+109-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:88:13-75
+110            android:theme="@style/AppTheme1" />
+110-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:89:13-45
+111        <activity
+111-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:90:9-92:48
+112            android:name="ontime.app.customer.doneActivity.RestCartItemActivity"
+112-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:91:13-71
+113            android:theme="@style/AppTheme1" />
+113-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:92:13-45
+114        <activity
+114-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:93:9-95:48
+115            android:name="ontime.app.customer.doneActivity.OrderSummaryActivity"
+115-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:94:13-71
+116            android:theme="@style/AppTheme1" />
+116-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:95:13-45
+117        <activity
+117-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:96:9-98:48
+118            android:name="ontime.app.customer.doneActivity.Dialog_Activity"
+118-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:97:13-66
+119            android:theme="@style/AppTheme1" />
+119-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:98:13-45
+120        <activity
+120-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:99:9-101:48
+121            android:name="ontime.app.customer.Activity.SentRequestActivity"
+121-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:100:13-66
+122            android:theme="@style/AppTheme1" />
+122-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:101:13-45
+123        <activity
+123-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:102:9-104:48
+124            android:name="ontime.app.customer.doneActivity.RequestPendingActivity"
+124-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:103:13-73
+125            android:theme="@style/AppTheme1" />
+125-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:104:13-45
+126        <activity
+126-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:105:9-113:20
+127            android:name="ontime.app.customer.doneActivity.MyOrdersListActivity"
+127-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:106:13-71
+128            android:theme="@style/AppTheme1" >
+128-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:13-45
+129            <intent-filter>
+129-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:108:13-112:29
+130                <action android:name="none" />
+130-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:109:17-47
+130-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:109:25-44
+131
+132                <category android:name="android.intent.category.LAUNCHER" />
+132-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:110:17-77
+132-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:110:27-74
+133                <category android:name="android.intent.category.DEFAULT" />
+133-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:17-76
+133-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:27-73
+134            </intent-filter>
+135        </activity>
+136        <activity
+136-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:114:9-116:48
+137            android:name="ontime.app.customer.doneActivity.PaymentActivity"
+137-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:115:13-66
+138            android:theme="@style/AppTheme1" />
+138-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:116:13-45
+139        <activity
+139-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:117:9-119:48
+140            android:name="ontime.app.customer.doneActivity.NotificationActivity"
+140-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:118:13-71
+141            android:theme="@style/AppTheme1" />
+141-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:119:13-45
+142        <activity
+142-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:120:9-122:48
+143            android:name="ontime.app.customer.doneActivity.ContactusActivity"
+143-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:121:13-68
+144            android:theme="@style/AppTheme1" />
+144-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:122:13-45
+145        <activity
+145-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:123:9-125:48
+146            android:name="ontime.app.customer.doneActivity.LanguageActivity"
+146-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:124:13-67
+147            android:theme="@style/AppTheme1" />
+147-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:125:13-45
+148        <activity
+148-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:126:9-128:48
+149            android:name="ontime.app.customer.doneActivity.AboutusActivity"
+149-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:127:13-66
+150            android:theme="@style/AppTheme1" />
+150-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:128:13-45
+151        <activity
+151-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:129:9-131:48
+152            android:name="ontime.app.customer.doneActivity.UserProfileActivity"
+152-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:130:13-70
+153            android:theme="@style/AppTheme1" />
+153-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:131:13-45
+154        <activity
+154-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:132:9-134:48
+155            android:name="ontime.app.customer.doneActivity.AddCardActivity"
+155-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:133:13-66
+156            android:theme="@style/AppTheme1" />
+156-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:134:13-45
+157        <activity
+157-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:135:9-137:48
+158            android:name="ontime.app.customer.Activity.SentRequestSuper"
+158-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:136:13-63
+159            android:theme="@style/AppTheme1" />
+159-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:137:13-45
+160        <activity
+160-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:138:9-140:48
+161            android:name="ontime.app.restaurant.ui.Activity.MurchanNotification"
+161-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:139:13-71
+162            android:theme="@style/AppTheme1" />
+162-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:140:13-45
+163        <activity
+163-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:141:9-149:20
+164            android:name="ontime.app.restaurant.ui.Activity.SplashActivity"
+164-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:142:13-66
+165            android:theme="@style/AppTheme1" >
+165-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:143:13-45
+166            <intent-filter>
+166-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:144:13-148:29
+167                <action android:name="android.intent.action.MAIN" />
+167-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:145:17-69
+167-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:145:25-66
+168
+169                <category android:name="android.intent.category.LAUNCHER" />
+169-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:110:17-77
+169-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:110:27-74
+170            </intent-filter>
+171        </activity>
+172
 173        <meta-data
-173-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:154:9-156:53
-174            android:name="com.google.firebase.messaging.default_notification_color"
-174-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:155:13-84
-175            android:resource="@color/colorAccent" /> <!-- [END fcm_default_icon] -->
-175-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:156:13-50
-176        <!-- [START fcm_default_channel] -->
-177        <meta-data
-177-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:158:9-160:48
-178            android:name="com.google.firebase.messaging.default_notification_channel_id"
-178-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:159:13-89
-179            android:value="@string/app_name" /> <!-- [END fcm_default_channel] -->
-179-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:160:13-45
-180        <service
-180-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:161:9-167:19
-181            android:name="ontime.app.utils.MyFirebaseMessagingService"
-181-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:162:13-61
-182            android:exported="false" >
-182-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:163:13-37
-183            <intent-filter>
-183-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:164:13-166:29
-184                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-184-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:17-78
-184-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:25-75
-185            </intent-filter>
-186        </service>
-187
-188        <activity
-188-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:18:9-21:58
-189            android:name="company.tap.gosellapi.internal.activities.GoSellPaymentActivity"
-189-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:19:13-91
-190            android:theme="@style/TransparentCompat"
-190-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:20:13-53
-191            android:windowSoftInputMode="adjustResize" />
-191-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:21:13-55
-192        <activity
-192-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:22:9-24:56
-193            android:name="company.tap.gosellapi.internal.activities.GoSellCardAddressActivity"
-193-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:23:13-95
-194            android:theme="@style/GoSellSDKAppTheme" />
-194-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:24:13-53
+173-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:151:9-153:50
+174            android:name="com.google.firebase.messaging.default_notification_icon"
+174-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:152:13-83
+175            android:resource="@drawable/logo_2" />
+175-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:153:13-48
+176        <meta-data
+176-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:155:9-157:53
+177            android:name="com.google.firebase.messaging.default_notification_color"
+177-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:156:13-84
+178            android:resource="@color/colorAccent" />
+178-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:157:13-50
+179        <meta-data
+179-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:158:9-160:48
+180            android:name="com.google.firebase.messaging.default_notification_channel_id"
+180-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:159:13-89
+181            android:value="@string/app_name" />
+181-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:160:13-45
+182
+183        <service
+183-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:161:9-167:19
+184            android:name="ontime.app.utils.MyFirebaseMessagingService"
+184-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:162:13-61
+185            android:exported="false" >
+185-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:163:13-37
+186            <intent-filter>
+186-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:164:13-166:29
+187                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+187-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:17-78
+187-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:25-75
+188            </intent-filter>
+189        </service>
+190
+191        <activity
+191-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:18:9-21:58
+192            android:name="company.tap.gosellapi.internal.activities.GoSellPaymentActivity"
+192-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:19:13-91
+193            android:theme="@style/TransparentCompat"
+193-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:20:13-53
+194            android:windowSoftInputMode="adjustResize" />
+194-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:21:13-55
 195        <activity
-195-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:25:9-27:56
-196            android:name="company.tap.gosellapi.internal.activities.CurrenciesActivity"
-196-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:26:13-88
+195-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:22:9-24:56
+196            android:name="company.tap.gosellapi.internal.activities.GoSellCardAddressActivity"
+196-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:23:13-95
 197            android:theme="@style/GoSellSDKAppTheme" />
-197-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:27:13-53
+197-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:24:13-53
 198        <activity
-198-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:28:9-30:56
-199            android:name="company.tap.gosellapi.internal.activities.BaseActionBarActivity"
-199-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:29:13-91
+198-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:25:9-27:56
+199            android:name="company.tap.gosellapi.internal.activities.CurrenciesActivity"
+199-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:26:13-88
 200            android:theme="@style/GoSellSDKAppTheme" />
-200-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:30:13-53
+200-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:27:13-53
 201        <activity
-201-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:31:9-34:56
-202            android:name="company.tap.gosellapi.internal.activities.WebPaymentActivity"
-202-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:32:13-88
-203            android:screenOrientation="portrait"
-203-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:33:13-49
-204            android:theme="@style/GoSellSDKAppTheme" />
-204-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:34:13-53
-205        <activity
-205-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:35:9-37:56
-206            android:name="company.tap.gosellapi.internal.activities.CountriesActivity"
-206-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:36:13-87
+201-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:28:9-30:56
+202            android:name="company.tap.gosellapi.internal.activities.BaseActionBarActivity"
+202-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:29:13-91
+203            android:theme="@style/GoSellSDKAppTheme" />
+203-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:30:13-53
+204        <activity
+204-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:31:9-34:56
+205            android:name="company.tap.gosellapi.internal.activities.WebPaymentActivity"
+205-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:32:13-88
+206            android:screenOrientation="portrait"
+206-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:33:13-49
 207            android:theme="@style/GoSellSDKAppTheme" />
-207-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:37:13-53
+207-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:34:13-53
 208        <activity
-208-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:38:9-40:56
-209            android:name="company.tap.gosellapi.internal.activities.AsynchronousPaymentActivity"
-209-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:39:13-97
-210            android:theme="@style/TransparentCompat" />
-210-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:40:13-53
+208-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:35:9-37:56
+209            android:name="company.tap.gosellapi.internal.activities.CountriesActivity"
+209-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:36:13-87
+210            android:theme="@style/GoSellSDKAppTheme" />
+210-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:37:13-53
 211        <activity
-211-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\release\AndroidManifest.xml:14:9-17:59
-212            android:name="com.phonenumberui.CountryCodeActivity"
-212-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-65
-213            android:screenOrientation="portrait"
-213-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-49
-214            android:theme="@style/AppTheme.NoActionBar" />
-214-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-56
-215        <activity
-215-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:27:9-44:20
-216            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-216-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:28:13-80
-217            android:excludeFromRecents="true"
-217-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:29:13-46
-218            android:exported="true"
-218-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:30:13-36
-219            android:launchMode="singleTask"
-219-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:31:13-44
-220            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-220-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:32:13-72
-221            <intent-filter>
-221-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:33:13-43:29
-222                <action android:name="android.intent.action.VIEW" />
-222-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:17-69
-222-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
-223
-224                <category android:name="android.intent.category.DEFAULT" />
-224-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:17-76
-224-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:27-73
-225                <category android:name="android.intent.category.BROWSABLE" />
-225-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
-225-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
-226
-227                <data
-227-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:39:17-42:51
-228                    android:host="firebase.auth"
-228-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:40:21-49
-229                    android:path="/"
-229-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:41:21-37
-230                    android:scheme="genericidp" />
-230-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:42:21-48
-231            </intent-filter>
-232        </activity>
-233        <activity
-233-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:45:9-62:20
-234            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-234-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:46:13-79
-235            android:excludeFromRecents="true"
-235-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:47:13-46
-236            android:exported="true"
-236-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:48:13-36
-237            android:launchMode="singleTask"
-237-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:49:13-44
-238            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-238-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:50:13-72
-239            <intent-filter>
-239-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:51:13-61:29
-240                <action android:name="android.intent.action.VIEW" />
-240-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:17-69
-240-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
-241
-242                <category android:name="android.intent.category.DEFAULT" />
-242-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:17-76
-242-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:27-73
-243                <category android:name="android.intent.category.BROWSABLE" />
-243-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
-243-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
-244
-245                <data
-245-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:39:17-42:51
-246                    android:host="firebase.auth"
-246-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:40:21-49
-247                    android:path="/"
-247-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:41:21-37
-248                    android:scheme="recaptcha" />
-248-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:42:21-48
-249            </intent-filter>
-250        </activity>
-251
-252        <service
-252-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:64:9-73:19
-253            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-253-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:65:13-101
-254            android:enabled="true"
-254-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:66:13-35
-255            android:exported="false" >
-255-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:67:13-37
-256            <intent-filter>
-256-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:68:13-72:29
-257                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-257-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:69:17-89
-257-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:69:25-86
-258
-259                <category android:name="android.intent.category.DEFAULT" />
-259-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:17-76
-259-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:27-73
-260            </intent-filter>
-261        </service>
-262        <service
-262-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:74:9-80:19
-263            android:name="com.google.firebase.components.ComponentDiscoveryService"
-263-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:75:13-84
-264            android:directBootAware="true"
-264-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:35:13-43
-265            android:exported="false" >
-265-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:76:13-37
-266            <meta-data
-266-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:77:13-79:85
-267                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-267-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:78:17-109
-268                android:value="com.google.firebase.components.ComponentRegistrar" />
-268-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:79:17-82
-269            <meta-data
-269-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:39:13-41:85
-270                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-270-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:40:17-119
-271                android:value="com.google.firebase.components.ComponentRegistrar" />
-271-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:41:17-82
-272            <meta-data
-272-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:32:13-34:85
-273                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-273-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:33:17-96
-274                android:value="com.google.firebase.components.ComponentRegistrar" />
-274-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:34:17-82
-275            <meta-data
-275-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c757708a611d30d65997521c603f91fc\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
-276                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-276-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c757708a611d30d65997521c603f91fc\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
-277                android:value="com.google.firebase.components.ComponentRegistrar" />
-277-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c757708a611d30d65997521c603f91fc\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
-278            <meta-data
-278-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\9001e637591bf99550f9534257e99161\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:30:13-32:85
-279                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-279-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\9001e637591bf99550f9534257e99161\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:31:17-139
-280                android:value="com.google.firebase.components.ComponentRegistrar" />
-280-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\9001e637591bf99550f9534257e99161\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:32:17-82
-281            <meta-data
-281-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\25cc831f1bf7a761536517aab3350bc7\jetified-firebase-installations-16.3.4\AndroidManifest.xml:18:13-20:85
-282                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-282-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\25cc831f1bf7a761536517aab3350bc7\jetified-firebase-installations-16.3.4\AndroidManifest.xml:19:17-127
-283                android:value="com.google.firebase.components.ComponentRegistrar" />
-283-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\25cc831f1bf7a761536517aab3350bc7\jetified-firebase-installations-16.3.4\AndroidManifest.xml:20:17-82
-284        </service>
-285        <!--
-286             FirebaseMessagingService performs security checks at runtime,
-287             but set to not exported to explicitly avoid allowing another app to call it.
-288        -->
-289        <service
-289-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:28:9-35:19
-290            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-290-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:29:13-82
-291            android:directBootAware="true"
-291-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:30:13-43
-292            android:exported="false" >
-292-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:31:13-37
-293            <intent-filter android:priority="-500" >
-293-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:164:13-166:29
-294                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-294-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:17-78
-294-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:25-75
-295            </intent-filter>
-296        </service>
-297
+211-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:38:9-40:56
+212            android:name="company.tap.gosellapi.internal.activities.AsynchronousPaymentActivity"
+212-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:39:13-97
+213            android:theme="@style/TransparentCompat" />
+213-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:40:13-53
+214        <activity
+214-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\release\AndroidManifest.xml:14:9-17:59
+215            android:name="com.phonenumberui.CountryCodeActivity"
+215-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-65
+216            android:screenOrientation="portrait"
+216-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-49
+217            android:theme="@style/AppTheme.NoActionBar" />
+217-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-56
+218
+219        <provider
+219-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:31:9-37:35
+220            android:name="androidx.work.impl.WorkManagerInitializer"
+220-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:32:13-69
+221            android:authorities="ontime.app.workmanager-init"
+221-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:33:13-68
+222            android:directBootAware="false"
+222-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:34:13-44
+223            android:exported="false"
+223-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:35:13-37
+224            android:multiprocess="true" />
+224-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:36:13-40
+225
+226        <service
+226-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:39:9-44:35
+227            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+227-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:40:13-88
+228            android:directBootAware="false"
+228-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:41:13-44
+229            android:enabled="@bool/enable_system_alarm_service_default"
+229-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:42:13-72
+230            android:exported="false" />
+230-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:43:13-37
+231        <service
+231-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:45:9-51:35
+232            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+232-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:46:13-84
+233            android:directBootAware="false"
+233-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:47:13-44
+234            android:enabled="@bool/enable_system_job_service_default"
+234-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:48:13-70
+235            android:exported="true"
+235-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:49:13-36
+236            android:permission="android.permission.BIND_JOB_SERVICE" />
+236-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:50:13-69
+237        <service
+237-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:52:9-57:35
+238            android:name="androidx.work.impl.foreground.SystemForegroundService"
+238-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:53:13-81
+239            android:directBootAware="false"
+239-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:54:13-44
+240            android:enabled="@bool/enable_system_foreground_service_default"
+240-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:55:13-77
+241            android:exported="false" />
+241-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:56:13-37
+242
+243        <receiver
+243-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:59:9-64:35
+244            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+244-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:60:13-88
+245            android:directBootAware="false"
+245-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:61:13-44
+246            android:enabled="true"
+246-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:62:13-35
+247            android:exported="false" />
+247-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:63:13-37
+248        <receiver
+248-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:65:9-75:20
+249            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+249-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:66:13-106
+250            android:directBootAware="false"
+250-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:67:13-44
+251            android:enabled="false"
+251-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:68:13-36
+252            android:exported="false" >
+252-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:69:13-37
+253            <intent-filter>
+253-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:71:13-74:29
+254                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+254-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:72:17-87
+254-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:72:25-84
+255                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+255-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:73:17-90
+255-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:73:25-87
+256            </intent-filter>
+257        </receiver>
+258        <receiver
+258-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:76:9-86:20
+259            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+259-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:77:13-104
+260            android:directBootAware="false"
+260-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:78:13-44
+261            android:enabled="false"
+261-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:79:13-36
+262            android:exported="false" >
+262-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:80:13-37
+263            <intent-filter>
+263-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:82:13-85:29
+264                <action android:name="android.intent.action.BATTERY_OKAY" />
+264-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:83:17-77
+264-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:83:25-74
+265                <action android:name="android.intent.action.BATTERY_LOW" />
+265-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:84:17-76
+265-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:84:25-73
+266            </intent-filter>
+267        </receiver>
+268        <receiver
+268-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:87:9-97:20
+269            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+269-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:88:13-104
+270            android:directBootAware="false"
+270-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:89:13-44
+271            android:enabled="false"
+271-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:90:13-36
+272            android:exported="false" >
+272-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:91:13-37
+273            <intent-filter>
+273-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:93:13-96:29
+274                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+274-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:94:17-83
+274-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:94:25-80
+275                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+275-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:95:17-82
+275-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:95:25-79
+276            </intent-filter>
+277        </receiver>
+278        <receiver
+278-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:98:9-107:20
+279            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+279-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:99:13-103
+280            android:directBootAware="false"
+280-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:100:13-44
+281            android:enabled="false"
+281-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:101:13-36
+282            android:exported="false" >
+282-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:102:13-37
+283            <intent-filter>
+283-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:104:13-106:29
+284                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+284-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:105:17-79
+284-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:105:25-76
+285            </intent-filter>
+286        </receiver>
+287        <receiver
+287-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:108:9-119:20
+288            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+288-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:109:13-88
+289            android:directBootAware="false"
+289-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:110:13-44
+290            android:enabled="false"
+290-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:111:13-36
+291            android:exported="false" >
+291-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:112:13-37
+292            <intent-filter>
+292-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:114:13-118:29
+293                <action android:name="android.intent.action.BOOT_COMPLETED" />
+293-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:115:17-79
+293-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:115:25-76
+294                <action android:name="android.intent.action.TIME_SET" />
+294-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:116:17-73
+294-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:116:25-70
+295                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+295-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:117:17-81
+295-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:117:25-78
+296            </intent-filter>
+297        </receiver>
 298        <receiver
-298-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:37:9-44:20
-299            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-299-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:38:13-78
-300            android:exported="true"
-300-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:39:13-36
-301            android:permission="com.google.android.c2dm.permission.SEND" >
-301-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:40:13-73
-302            <intent-filter>
-302-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:41:13-43:29
-303                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-303-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:42:17-81
-303-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:42:25-78
-304            </intent-filter>
-305        </receiver>
-306
-307        <provider
-307-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:26:9-31:39
-308            android:name="com.google.firebase.provider.FirebaseInitProvider"
-308-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:27:13-77
-309            android:authorities="ontime.app.firebaseinitprovider"
-309-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:28:13-72
-310            android:directBootAware="true"
-310-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:29:13-43
-311            android:exported="false"
-311-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:30:13-37
-312            android:initOrder="100" />
-312-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:31:13-36
-313
-314        <activity
-314-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-315            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-315-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-316            android:exported="false"
-316-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-317            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-317-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-318
-319        <receiver
-319-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:29:9-33:20
-320            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-320-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:30:13-85
-321            android:enabled="true"
-321-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:31:13-35
-322            android:exported="false" >
-322-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:32:13-37
-323        </receiver>
-324
-325        <service
-325-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:35:9-38:40
-326            android:name="com.google.android.gms.measurement.AppMeasurementService"
-326-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:36:13-84
-327            android:enabled="true"
-327-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:37:13-35
-328            android:exported="false" />
-328-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:38:13-37
-329        <service
-329-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:39:9-43:72
-330            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-330-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:40:13-87
-331            android:enabled="true"
-331-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:41:13-35
-332            android:exported="false"
-332-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:42:13-37
-333            android:permission="android.permission.BIND_JOB_SERVICE" />
-333-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:43:13-69
+298-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:120:9-129:20
+299            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+299-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:121:13-99
+300            android:directBootAware="false"
+300-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:122:13-44
+301            android:enabled="@bool/enable_system_alarm_service_default"
+301-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:123:13-72
+302            android:exported="false" >
+302-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:124:13-37
+303            <intent-filter>
+303-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:126:13-128:29
+304                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+304-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:127:17-98
+304-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:127:25-95
+305            </intent-filter>
+306        </receiver>
+307
+308        <activity
+308-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:27:9-44:20
+309            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+309-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:28:13-80
+310            android:excludeFromRecents="true"
+310-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:29:13-46
+311            android:exported="true"
+311-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:30:13-36
+312            android:launchMode="singleTask"
+312-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:31:13-44
+313            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+313-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:32:13-72
+314            <intent-filter>
+314-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:33:13-43:29
+315                <action android:name="android.intent.action.VIEW" />
+315-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:17-69
+315-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
+316
+317                <category android:name="android.intent.category.DEFAULT" />
+317-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:17-76
+317-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:27-73
+318                <category android:name="android.intent.category.BROWSABLE" />
+318-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
+318-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
+319
+320                <data
+320-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:39:17-42:51
+321                    android:host="firebase.auth"
+321-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:40:21-49
+322                    android:path="/"
+322-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:41:21-37
+323                    android:scheme="genericidp" />
+323-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:42:21-48
+324            </intent-filter>
+325        </activity>
+326        <activity
+326-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:45:9-62:20
+327            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+327-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:46:13-79
+328            android:excludeFromRecents="true"
+328-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:47:13-46
+329            android:exported="true"
+329-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:48:13-36
+330            android:launchMode="singleTask"
+330-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:49:13-44
+331            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+331-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:50:13-72
+332            <intent-filter>
+332-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:51:13-61:29
+333                <action android:name="android.intent.action.VIEW" />
+333-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:17-69
+333-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
 334
-335        <meta-data
-335-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c77d530a894c9cdc1e02ae73843c5ba2\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
-336            android:name="com.google.android.gms.version"
-336-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c77d530a894c9cdc1e02ae73843c5ba2\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
-337            android:value="@integer/google_play_services_version" />
-337-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c77d530a894c9cdc1e02ae73843c5ba2\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
-338
-339        <service
-339-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
-340            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-340-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
-341            android:exported="false" >
-341-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
-342            <meta-data
-342-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
-343                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-343-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
-344                android:value="cct" />
-344-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
-345        </service>
-346        <service
-346-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
-347            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-347-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
-348            android:exported="false"
-348-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
-349            android:permission="android.permission.BIND_JOB_SERVICE" >
-349-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
-350        </service>
+335                <category android:name="android.intent.category.DEFAULT" />
+335-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:17-76
+335-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:27-73
+336                <category android:name="android.intent.category.BROWSABLE" />
+336-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
+336-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
+337
+338                <data
+338-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:39:17-42:51
+339                    android:host="firebase.auth"
+339-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:40:21-49
+340                    android:path="/"
+340-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:41:21-37
+341                    android:scheme="recaptcha" />
+341-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:42:21-48
+342            </intent-filter>
+343        </activity>
+344
+345        <service
+345-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:64:9-73:19
+346            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+346-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:65:13-101
+347            android:enabled="true"
+347-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:66:13-35
+348            android:exported="false" >
+348-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:67:13-37
+349            <intent-filter>
+349-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:68:13-72:29
+350                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+350-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:69:17-89
+350-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:69:25-86
 351
-352        <receiver
-352-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
-353            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-353-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
-354            android:exported="false" />
-354-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
-355
-356        <activity
-356-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:20:9-22:66
-357            android:name="io.card.payment.CardIOActivity"
-357-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:21:13-58
-358            android:configChanges="keyboardHidden|orientation" />
-358-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:22:13-63
-359        <activity android:name="io.card.payment.DataEntryActivity" />
-359-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:9-70
-359-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:19-67
-360    </application>
-361
-362</manifest>
+352                <category android:name="android.intent.category.DEFAULT" />
+352-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:17-76
+352-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:27-73
+353            </intent-filter>
+354        </service>
+355        <service
+355-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:74:9-80:19
+356            android:name="com.google.firebase.components.ComponentDiscoveryService"
+356-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:75:13-84
+357            android:directBootAware="true"
+357-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:35:13-43
+358            android:exported="false" >
+358-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:76:13-37
+359            <meta-data
+359-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:77:13-79:85
+360                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+360-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:78:17-109
+361                android:value="com.google.firebase.components.ComponentRegistrar" />
+361-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:79:17-82
+362            <meta-data
+362-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:39:13-41:85
+363                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+363-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:40:17-119
+364                android:value="com.google.firebase.components.ComponentRegistrar" />
+364-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:41:17-82
+365            <meta-data
+365-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:32:13-34:85
+366                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+366-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:33:17-96
+367                android:value="com.google.firebase.components.ComponentRegistrar" />
+367-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:34:17-82
+368            <meta-data
+368-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c757708a611d30d65997521c603f91fc\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+369                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+369-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c757708a611d30d65997521c603f91fc\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+370                android:value="com.google.firebase.components.ComponentRegistrar" />
+370-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c757708a611d30d65997521c603f91fc\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+371            <meta-data
+371-->[com.google.android.gms:play-services-measurement-api:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\95bcf9c64028bb1b18c970f613638f23\jetified-play-services-measurement-api-18.0.1\AndroidManifest.xml:30:13-32:85
+372                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+372-->[com.google.android.gms:play-services-measurement-api:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\95bcf9c64028bb1b18c970f613638f23\jetified-play-services-measurement-api-18.0.1\AndroidManifest.xml:31:17-139
+373                android:value="com.google.firebase.components.ComponentRegistrar" />
+373-->[com.google.android.gms:play-services-measurement-api:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\95bcf9c64028bb1b18c970f613638f23\jetified-play-services-measurement-api-18.0.1\AndroidManifest.xml:32:17-82
+374            <meta-data
+374-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\25cc831f1bf7a761536517aab3350bc7\jetified-firebase-installations-16.3.4\AndroidManifest.xml:18:13-20:85
+375                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+375-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\25cc831f1bf7a761536517aab3350bc7\jetified-firebase-installations-16.3.4\AndroidManifest.xml:19:17-127
+376                android:value="com.google.firebase.components.ComponentRegistrar" />
+376-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\25cc831f1bf7a761536517aab3350bc7\jetified-firebase-installations-16.3.4\AndroidManifest.xml:20:17-82
+377        </service>
+378        <!--
+379             FirebaseMessagingService performs security checks at runtime,
+380             but set to not exported to explicitly avoid allowing another app to call it.
+381        -->
+382        <service
+382-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:28:9-35:19
+383            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+383-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:29:13-82
+384            android:directBootAware="true"
+384-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:30:13-43
+385            android:exported="false" >
+385-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:31:13-37
+386            <intent-filter android:priority="-500" >
+386-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:164:13-166:29
+387                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+387-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:17-78
+387-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:25-75
+388            </intent-filter>
+389        </service>
+390
+391        <receiver
+391-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:37:9-44:20
+392            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+392-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:38:13-78
+393            android:exported="true"
+393-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:39:13-36
+394            android:permission="com.google.android.c2dm.permission.SEND" >
+394-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:40:13-73
+395            <intent-filter>
+395-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:41:13-43:29
+396                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+396-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:42:17-81
+396-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\75ec9d0ae71b4ae67ac9ab96bea34584\jetified-firebase-iid-21.0.0\AndroidManifest.xml:42:25-78
+397            </intent-filter>
+398        </receiver>
+399
+400        <provider
+400-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:26:9-31:39
+401            android:name="com.google.firebase.provider.FirebaseInitProvider"
+401-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:27:13-77
+402            android:authorities="ontime.app.firebaseinitprovider"
+402-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:28:13-72
+403            android:directBootAware="true"
+403-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:29:13-43
+404            android:exported="false"
+404-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:30:13-37
+405            android:initOrder="100" />
+405-->[com.google.firebase:firebase-common:19.4.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:31:13-36
+406
+407        <activity
+407-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+408            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+408-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+409            android:exported="false"
+409-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+410            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+410-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+411
+412        <receiver
+412-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:29:9-33:20
+413            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+413-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:30:13-85
+414            android:enabled="true"
+414-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:31:13-35
+415            android:exported="false" >
+415-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:32:13-37
+416        </receiver>
+417
+418        <service
+418-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:35:9-38:40
+419            android:name="com.google.android.gms.measurement.AppMeasurementService"
+419-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:36:13-84
+420            android:enabled="true"
+420-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:37:13-35
+421            android:exported="false" />
+421-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:38:13-37
+422        <service
+422-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:39:9-43:72
+423            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+423-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:40:13-87
+424            android:enabled="true"
+424-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:41:13-35
+425            android:exported="false"
+425-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:42:13-37
+426            android:permission="android.permission.BIND_JOB_SERVICE" />
+426-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3856f6f4c9513e407b37f033c5ae1615\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:43:13-69
+427
+428        <meta-data
+428-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c77d530a894c9cdc1e02ae73843c5ba2\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+429            android:name="com.google.android.gms.version"
+429-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c77d530a894c9cdc1e02ae73843c5ba2\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+430            android:value="@integer/google_play_services_version" />
+430-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c77d530a894c9cdc1e02ae73843c5ba2\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+431
+432        <service
+432-->[androidx.room:room-runtime:2.2.3] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\81d1a638cbfa4532b9182571e4e7670e\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
+433            android:name="androidx.room.MultiInstanceInvalidationService"
+433-->[androidx.room:room-runtime:2.2.3] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\81d1a638cbfa4532b9182571e4e7670e\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
+434            android:exported="false" />
+434-->[androidx.room:room-runtime:2.2.3] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\81d1a638cbfa4532b9182571e4e7670e\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
+435        <service
+435-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+436            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+436-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+437            android:exported="false" >
+437-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+438            <meta-data
+438-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+439                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+439-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+440                android:value="cct" />
+440-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8bebe705ef0687fee7487ad3898c72b\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+441        </service>
+442        <service
+442-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+443            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+443-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+444            android:exported="false"
+444-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+445            android:permission="android.permission.BIND_JOB_SERVICE" >
+445-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+446        </service>
+447
+448        <receiver
+448-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+449            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+449-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+450            android:exported="false" />
+450-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\513af2d81cb12d386383dd14717874ca\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+451
+452        <activity
+452-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:20:9-22:66
+453            android:name="io.card.payment.CardIOActivity"
+453-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:21:13-58
+454            android:configChanges="keyboardHidden|orientation" />
+454-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:22:13-63
+455        <activity android:name="io.card.payment.DataEntryActivity" />
+455-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:9-70
+455-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:19-67
+456    </application>
+457
+458</manifest>

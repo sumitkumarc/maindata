@@ -27,6 +27,8 @@ ontime/app/databinding/RFragmentProcessingOrderBinding.java
  ontime.app.databinding.RFragmentProcessingOrderBinding
 ontime/app/restaurant/adapte/Itemadapter.java
  ontime.app.restaurant.adapte.Itemadapter
+ontime/app/databinding/CRowReviewItemBinding.java
+ ontime.app.databinding.CRowReviewItemBinding
 ontime/app/model/userprofile/UserProfileData.java
  ontime.app.model.userprofile.UserProfileData
 ontime/app/databinding/ActivityRestdetailBinding.java
@@ -76,6 +78,11 @@ ontime/app/customer/doneActivity/RestaurantDetailActivity.java
  ontime.app.customer.doneActivity.RestaurantDetailActivity$2
  ontime.app.customer.doneActivity.RestaurantDetailActivity$3
  ontime.app.customer.doneActivity.RestaurantDetailActivity$4
+ ontime.app.customer.doneActivity.RestaurantDetailActivity$5
+ontime/app/customer/doneActivity/Dialog_Activity.java
+ ontime.app.customer.doneActivity.Dialog_Activity
+ ontime.app.customer.doneActivity.Dialog_Activity$1
+ ontime.app.customer.doneActivity.Dialog_Activity$2
 ontime/app/databinding/PopAddAmountBinding.java
  ontime.app.databinding.PopAddAmountBinding
 ontime/app/model/usermain/UserContact.java
@@ -132,6 +139,8 @@ ontime/app/BuildConfig.java
  ontime.app.BuildConfig
 ontime/app/customer/doneActivity/RestCartPenddingItemActivity.java
  ontime.app.customer.doneActivity.RestCartPenddingItemActivity
+ontime/app/utils/MyWorker.java
+ ontime.app.utils.MyWorker
 ontime/app/databinding/ActivityPaymentBinding.java
  ontime.app.databinding.ActivityPaymentBinding
 ontime/app/databinding/ActivityWelcomeBinding.java
@@ -162,10 +171,13 @@ ontime/app/databinding/CRowRestaurantItemBinding.java
  ontime.app.databinding.CRowRestaurantItemBinding
 ontime/app/databinding/ItemNivoSliderBinding.java
  ontime.app.databinding.ItemNivoSliderBinding
+ontime/app/databinding/ErrorMsgDialogBinding.java
+ ontime.app.databinding.ErrorMsgDialogBinding
 ontime/app/model/usernewmain/UserItem.java
  ontime.app.model.usernewmain.UserItem
 ontime/app/customer/Adapter/RvFinishedOrderListAdapter.java
  ontime.app.customer.Adapter.RvFinishedOrderListAdapter
+ ontime.app.customer.Adapter.RvFinishedOrderListAdapter$1
  ontime.app.customer.Adapter.RvFinishedOrderListAdapter$MyViewHolder
 ontime/app/customer/Adapter/RvRestaurantMenuListAdapter.java
  ontime.app.customer.Adapter.RvRestaurantMenuListAdapter
@@ -179,6 +191,8 @@ ontime/app/utils/CustomerViewModel.java
  ontime.app.utils.CustomerViewModel
 ontime/app/model/usermain/UserCartItemAdditionId.java
  ontime.app.model.usermain.UserCartItemAdditionId
+ontime/app/model/usermain/Rest_User.java
+ ontime.app.model.usermain.Rest_User
 ontime/app/databinding/ActivityChangePasswordBinding.java
  ontime.app.databinding.ActivityChangePasswordBinding
 ontime/app/model/advertisements/AdvertisementDatum.java
@@ -226,13 +240,14 @@ ontime/app/model/usermain/UserRestaurants.java
  ontime.app.model.usermain.UserRestaurants
 ontime/app/databinding/RowItemorderCancelledBinding.java
  ontime.app.databinding.RowItemorderCancelledBinding
+ontime/app/databinding/PopSelectPaymnetMethordBinding.java
+ ontime.app.databinding.PopSelectPaymnetMethordBinding
 ontime/app/model/advertisements/Advertisement.java
  ontime.app.model.advertisements.Advertisement
 ontime/app/customer/doneActivity/RestaurantProfileActivity.java
  ontime.app.customer.doneActivity.RestaurantProfileActivity
  ontime.app.customer.doneActivity.RestaurantProfileActivity$1
  ontime.app.customer.doneActivity.RestaurantProfileActivity$2
- ontime.app.customer.doneActivity.RestaurantProfileActivity$3
 ontime/app/databinding/PopupDoyouwantBinding.java
  ontime.app.databinding.PopupDoyouwantBinding
 ontime/app/restaurant/adapte/RvItemsDetailsListAdapter.java
@@ -242,6 +257,8 @@ ontime/app/databinding/RRowCancelItemBinding.java
  ontime.app.databinding.RRowCancelItemBinding
 ontime/app/databinding/RRowNeworderItemBinding.java
  ontime.app.databinding.RRowNeworderItemBinding
+ontime/app/databinding/OrderReceivepopupBinding.java
+ ontime.app.databinding.OrderReceivepopupBinding
 ontime/app/databinding/ActivityRequestpendingBinding.java
  ontime.app.databinding.ActivityRequestpendingBinding
 ontime/app/restaurant/model/readerOrder/ReaderProccessing.java
@@ -349,6 +366,9 @@ ontime/app/customer/doneActivity/PaymentActivity.java
  ontime.app.customer.doneActivity.PaymentActivity$2
  ontime.app.customer.doneActivity.PaymentActivity$3
  ontime.app.customer.doneActivity.PaymentActivity$4
+ ontime.app.customer.doneActivity.PaymentActivity$5
+ ontime.app.customer.doneActivity.PaymentActivity$6
+ ontime.app.customer.doneActivity.PaymentActivity$7
 ontime/app/restaurant/adapte/RvCancelledOrderAdapter.java
  ontime.app.restaurant.adapte.RvCancelledOrderAdapter
  ontime.app.restaurant.adapte.RvCancelledOrderAdapter$1
@@ -406,6 +426,8 @@ ontime/app/customer/doneActivity/UserProfileActivity.java
  ontime.app.customer.doneActivity.UserProfileActivity
  ontime.app.customer.doneActivity.UserProfileActivity$1
  ontime.app.customer.doneActivity.UserProfileActivity$2
+ontime/app/databinding/OrderrequestActivityBinding.java
+ ontime.app.databinding.OrderrequestActivityBinding
 ontime/app/customer/doneActivity/RestCartItemActivity.java
  ontime.app.customer.doneActivity.RestCartItemActivity
 ontime/app/customer/Fragment/TabOrderProcessing.java
@@ -420,6 +442,7 @@ ontime/app/restaurant/adapte/RvProcessingOrderAdapter.java
  ontime.app.restaurant.adapte.RvProcessingOrderAdapter
  ontime.app.restaurant.adapte.RvProcessingOrderAdapter$1
  ontime.app.restaurant.adapte.RvProcessingOrderAdapter$2
+ ontime.app.restaurant.adapte.RvProcessingOrderAdapter$3
  ontime.app.restaurant.adapte.RvProcessingOrderAdapter$MyViewHolder
 ontime/app/model/userorder/UserOrderListData.java
  ontime.app.model.userorder.UserOrderListData
@@ -468,6 +491,7 @@ ontime/app/customer/doneActivity/RestaurantlistActivity.java
  ontime.app.customer.doneActivity.RestaurantlistActivity$2
  ontime.app.customer.doneActivity.RestaurantlistActivity$3
  ontime.app.customer.doneActivity.RestaurantlistActivity$4
+ ontime.app.customer.doneActivity.RestaurantlistActivity$5
  ontime.app.customer.doneActivity.RestaurantlistActivity$SliderTimer
  ontime.app.customer.doneActivity.RestaurantlistActivity$SliderTimer$1
 ontime/app/model/usermain/Item.java
@@ -480,9 +504,14 @@ ontime/app/databinding/CRowMyCartItemBinding.java
  ontime.app.databinding.CRowMyCartItemBinding
 ontime/app/sqllight/DBManager.java
  ontime.app.sqllight.DBManager
+ontime/app/customer/Adapter/RvRestRatingListAdapter.java
+ ontime.app.customer.Adapter.RvRestRatingListAdapter
+ ontime.app.customer.Adapter.RvRestRatingListAdapter$MyViewHolder
 ontime/app/customer/doneActivity/MyOrdersListActivity.java
  ontime.app.customer.doneActivity.MyOrdersListActivity
  ontime.app.customer.doneActivity.MyOrdersListActivity$1
+ ontime.app.customer.doneActivity.MyOrdersListActivity$2
+ ontime.app.customer.doneActivity.MyOrdersListActivity$3
 ontime/app/customer/Activity/MainActivity.java
  ontime.app.customer.Activity.MainActivity
  ontime.app.customer.Activity.MainActivity$1
@@ -514,6 +543,8 @@ ontime/app/customer/Adapter/RvPaymnetMethordListAdapter.java
  ontime.app.customer.Adapter.RvPaymnetMethordListAdapter$MyViewHolder
 ontime/app/databinding/CRowMenuDishesBinding.java
  ontime.app.databinding.CRowMenuDishesBinding
+ontime/app/databinding/RateAppBinding.java
+ ontime.app.databinding.RateAppBinding
 ontime/app/restaurant/ui/fragment/CompletedFragment.java
  ontime.app.restaurant.ui.fragment.CompletedFragment
 ontime/app/databinding/ActivitySentrequestBinding.java
@@ -538,6 +569,8 @@ ontime/app/okhttp/AppConstant.java
  ontime.app.okhttp.AppConstant
 ontime/app/restaurant/ui/fragment/CancelledFragment.java
  ontime.app.restaurant.ui.fragment.CancelledFragment
+ontime/app/model/usermain/Rest_Review.java
+ ontime.app.model.usermain.Rest_Review
 ontime/app/model/usermain/Cart.java
  ontime.app.model.usermain.Cart
 ontime/app/model/usermain/UserRestaurantsData.java
@@ -555,6 +588,8 @@ ontime/app/restaurant/model/readerOrder/ReaderData.java
  ontime.app.restaurant.model.readerOrder.ReaderData
 ontime/app/customer/Fragment/BaseFragment.java
  ontime.app.customer.Fragment.BaseFragment
+ontime/app/model/usermain/Rest_Datum.java
+ ontime.app.model.usermain.Rest_Datum
 ontime/app/restaurant/ui/Activity/SplashActivity.java
  ontime.app.restaurant.ui.Activity.SplashActivity
  ontime.app.restaurant.ui.Activity.SplashActivity$1

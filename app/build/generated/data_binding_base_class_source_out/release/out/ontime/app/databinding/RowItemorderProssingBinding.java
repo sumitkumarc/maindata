@@ -43,7 +43,7 @@ public final class RowItemorderProssingBinding implements ViewBinding {
   public final TextView txtOrderId;
 
   @NonNull
-  public final TextView txtOrderPamnetType;
+  public final TextView txtOrderPamentType;
 
   @NonNull
   public final TextView txtOrderPaymentStatus;
@@ -61,7 +61,7 @@ public final class RowItemorderProssingBinding implements ViewBinding {
       @NonNull AppCompatButton btCancelled, @NonNull ImageView ivRestProfileImg,
       @NonNull LinearLayout llMain, @NonNull LinearLayout second, @NonNull TextView txtCancleTime,
       @NonNull TextView txtDeliverTime, @NonNull TextView txtOrderId,
-      @NonNull TextView txtOrderPamnetType, @NonNull TextView txtOrderPaymentStatus,
+      @NonNull TextView txtOrderPamentType, @NonNull TextView txtOrderPaymentStatus,
       @NonNull TextView txtOrderStatus, @NonNull TextView txtTime, @NonNull TextView txtTitle) {
     this.rootView = rootView;
     this.btCancelled = btCancelled;
@@ -71,7 +71,7 @@ public final class RowItemorderProssingBinding implements ViewBinding {
     this.txtCancleTime = txtCancleTime;
     this.txtDeliverTime = txtDeliverTime;
     this.txtOrderId = txtOrderId;
-    this.txtOrderPamnetType = txtOrderPamnetType;
+    this.txtOrderPamentType = txtOrderPamentType;
     this.txtOrderPaymentStatus = txtOrderPaymentStatus;
     this.txtOrderStatus = txtOrderStatus;
     this.txtTime = txtTime;
@@ -147,9 +147,9 @@ public final class RowItemorderProssingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txt_order_pamnet_type;
-      TextView txtOrderPamnetType = rootView.findViewById(id);
-      if (txtOrderPamnetType == null) {
+      id = R.id.txt_order_pament_type;
+      TextView txtOrderPamentType = rootView.findViewById(id);
+      if (txtOrderPamentType == null) {
         break missingId;
       }
 
@@ -178,7 +178,7 @@ public final class RowItemorderProssingBinding implements ViewBinding {
       }
 
       return new RowItemorderProssingBinding((FrameLayout) rootView, btCancelled, ivRestProfileImg,
-          llMain, second, txtCancleTime, txtDeliverTime, txtOrderId, txtOrderPamnetType,
+          llMain, second, txtCancleTime, txtDeliverTime, txtOrderId, txtOrderPamentType,
           txtOrderPaymentStatus, txtOrderStatus, txtTime, txtTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);

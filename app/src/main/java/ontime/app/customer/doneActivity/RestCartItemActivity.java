@@ -75,6 +75,7 @@ public class RestCartItemActivity extends BaseActivity implements View.OnClickLi
     @SuppressLint("UseCompatLoadingForDrawables")
     private void setUpUI() {
         binding.payButtonId.setVisibility(View.GONE);
+
         if (Common.MERCHANT_TYPE == 1) {
             Common.setSystemBarColor(this, R.color.colorAccent);
 //            Common.setSystemBarLight(this);

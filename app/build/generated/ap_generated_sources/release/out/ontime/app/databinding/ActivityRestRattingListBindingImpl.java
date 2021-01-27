@@ -17,10 +17,15 @@ public class ActivityRestRattingListBindingImpl extends ActivityRestRattingListB
         sViewsWithIds.put(R.id.ll_bar, 1);
         sViewsWithIds.put(R.id.ll_back, 2);
         sViewsWithIds.put(R.id.iv_back_arrow, 3);
-        sViewsWithIds.put(R.id.txt_count, 4);
-        sViewsWithIds.put(R.id.rv_filter_list, 5);
-        sViewsWithIds.put(R.id.rv_list, 6);
-        sViewsWithIds.put(R.id.txt_no_item, 7);
+        sViewsWithIds.put(R.id.rl_main, 4);
+        sViewsWithIds.put(R.id.iv_rest_profile_img, 5);
+        sViewsWithIds.put(R.id.txt_res_name, 6);
+        sViewsWithIds.put(R.id.txt_res_barnchname, 7);
+        sViewsWithIds.put(R.id.rb_ratingbar, 8);
+        sViewsWithIds.put(R.id.txt_title, 9);
+        sViewsWithIds.put(R.id.txt_count, 10);
+        sViewsWithIds.put(R.id.rv_filter_list, 11);
+        sViewsWithIds.put(R.id.txt_no_item, 12);
     }
     // views
     @NonNull
@@ -31,17 +36,22 @@ public class ActivityRestRattingListBindingImpl extends ActivityRestRattingListB
     // Inverse Binding Event Handlers
 
     public ActivityRestRattingListBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 13, sIncludes, sViewsWithIds));
     }
     private ActivityRestRattingListBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.ImageView) bindings[3]
+            , (de.hdodenhof.circleimageview.CircleImageView) bindings[5]
             , (android.widget.LinearLayout) bindings[2]
-            , (android.widget.LinearLayout) bindings[1]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[5]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[6]
-            , (android.widget.TextView) bindings[4]
+            , (android.widget.RelativeLayout) bindings[1]
+            , (android.widget.RatingBar) bindings[8]
+            , (android.widget.RelativeLayout) bindings[4]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[11]
+            , (android.widget.TextView) bindings[10]
+            , (android.widget.TextView) bindings[12]
             , (android.widget.TextView) bindings[7]
+            , (android.widget.TextView) bindings[6]
+            , (android.widget.TextView) bindings[9]
             );
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);

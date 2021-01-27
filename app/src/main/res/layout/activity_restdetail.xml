@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        tools:context=".ui.Activity.Dashboard">
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,21 +32,44 @@
                         android:layout_height="35dp"
                         android:background="@drawable/backblack" />
                 </LinearLayout>
-
                 <FrameLayout
-                    android:id="@+id/addtocart"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:id="@+id/fl_addtocart"
+                    android:layout_width="45dp"
                     android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="10dp">
+                    android:layout_height="45dp">
+
+                    <TextView
+                        android:id="@+id/txt_count"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end"
+                        android:background="@drawable/circle_white"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:visibility="gone" />
 
                     <ImageView
+                        android:id="@+id/iv_addtocart"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/cart" />
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/ic_action_shopping"
+                        app:tint="@android:color/black" />
                 </FrameLayout>
+<!--                <FrameLayout-->
+<!--                    android:id="@+id/addtocart"-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginRight="10dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:background="@drawable/cart" />-->
+<!--                </FrameLayout>-->
             </RelativeLayout>
 
             <LinearLayout
@@ -251,19 +271,20 @@
                                         </LinearLayout>
                                     </HorizontalScrollView>
                                 </LinearLayout>
+                                <EditText
+                                    android:id="@+id/ed_notes"
+                                    style="@style/TextAppearance.MaterialComponents.Headline4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/graybg"
+                                    android:maxLines="2"
+                                    android:padding="15dp"
+                                    android:text="Note"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
                             </LinearLayout>
 
-                            <EditText
-                                android:id="@+id/ed_notes"
-                                style="@style/TextAppearance.MaterialComponents.Headline4"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/graybg"
-                                android:maxLines="2"
-                                android:padding="15dp"
-                                android:text="Note: please write here your request changes on existing dish"
-                                android:textColor="@color/black"
-                                android:textSize="12sp" />
+
 
                             <!--                            <LinearLayout-->
                             <!--                                android:id="@+id/ll_ed_edit"-->
@@ -308,15 +329,16 @@
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="100dp">
+                            android:layout_height="60dp">
 
                             <TextView
                                 android:id="@+id/txt_qty"
                                 android:layout_width="40dp"
-                                android:layout_height="70dp"
+                                android:layout_height="50dp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/graycircle"
                                 android:gravity="center"
+                                android:layout_marginBottom="4dp"
                                 android:padding="3dp"
                                 android:text="1"
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
@@ -325,8 +347,8 @@
 
                             <ImageView
                                 android:id="@+id/iv_add"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
                                 android:layout_gravity="center|top"
 
                                 android:src="@drawable/add" />
@@ -335,8 +357,8 @@
 
                         <ImageView
                             android:id="@+id/iv_sub"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
                             android:layout_marginTop="-30dp"
                             android:padding="3dp"
                             android:src="@drawable/minus" />

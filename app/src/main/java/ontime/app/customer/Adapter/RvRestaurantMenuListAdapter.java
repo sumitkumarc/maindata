@@ -68,7 +68,7 @@ public class RvRestaurantMenuListAdapter extends RecyclerView.Adapter<RvRestaura
         tvtake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DELIVER_TYPE = "take away";
+//                DELIVER_TYPE = "take away";
                 Intent i2 = new Intent(mContext, RestaurantDetailActivity.class);
                 i2.putExtra("MENU_ID" , mresponceDatumList.get(position).getMenuId());
                 i2.putExtra("ITEM_ID" , mresponceDatumList.get(position).getId());
@@ -80,7 +80,7 @@ public class RvRestaurantMenuListAdapter extends RecyclerView.Adapter<RvRestaura
         tvdine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DELIVER_TYPE = "dine in";
+//                DELIVER_TYPE = "dine in";
                 Intent i2 = new Intent(mContext, RestaurantDetailActivity.class);
                 i2.putExtra("MENU_ID" , mresponceDatumList.get(position).getMenuId());
                 i2.putExtra("ITEM_ID" , mresponceDatumList.get(position).getId());

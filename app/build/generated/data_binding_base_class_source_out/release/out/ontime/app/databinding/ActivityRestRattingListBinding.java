@@ -6,12 +6,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.Deprecated;
 import java.lang.Object;
 import ontime.app.R;
@@ -21,16 +24,22 @@ public abstract class ActivityRestRattingListBinding extends ViewDataBinding {
   public final ImageView ivBackArrow;
 
   @NonNull
+  public final CircleImageView ivRestProfileImg;
+
+  @NonNull
   public final LinearLayout llBack;
 
   @NonNull
-  public final LinearLayout llBar;
+  public final RelativeLayout llBar;
+
+  @NonNull
+  public final RatingBar rbRatingbar;
+
+  @NonNull
+  public final RelativeLayout rlMain;
 
   @NonNull
   public final RecyclerView rvFilterList;
-
-  @NonNull
-  public final RecyclerView rvList;
 
   @NonNull
   public final TextView txtCount;
@@ -38,17 +47,33 @@ public abstract class ActivityRestRattingListBinding extends ViewDataBinding {
   @NonNull
   public final TextView txtNoItem;
 
+  @NonNull
+  public final TextView txtResBarnchname;
+
+  @NonNull
+  public final TextView txtResName;
+
+  @NonNull
+  public final TextView txtTitle;
+
   protected ActivityRestRattingListBinding(Object _bindingComponent, View _root,
-      int _localFieldCount, ImageView ivBackArrow, LinearLayout llBack, LinearLayout llBar,
-      RecyclerView rvFilterList, RecyclerView rvList, TextView txtCount, TextView txtNoItem) {
+      int _localFieldCount, ImageView ivBackArrow, CircleImageView ivRestProfileImg,
+      LinearLayout llBack, RelativeLayout llBar, RatingBar rbRatingbar, RelativeLayout rlMain,
+      RecyclerView rvFilterList, TextView txtCount, TextView txtNoItem, TextView txtResBarnchname,
+      TextView txtResName, TextView txtTitle) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ivBackArrow = ivBackArrow;
+    this.ivRestProfileImg = ivRestProfileImg;
     this.llBack = llBack;
     this.llBar = llBar;
+    this.rbRatingbar = rbRatingbar;
+    this.rlMain = rlMain;
     this.rvFilterList = rvFilterList;
-    this.rvList = rvList;
     this.txtCount = txtCount;
     this.txtNoItem = txtNoItem;
+    this.txtResBarnchname = txtResBarnchname;
+    this.txtResName = txtResName;
+    this.txtTitle = txtTitle;
   }
 
   @NonNull

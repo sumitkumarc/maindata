@@ -32,24 +32,40 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_myorders.xml"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_super_btn_design.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\super_btn_design.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_item_order_back_color.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\item_order_back_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_whitestar.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\whitestar.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_searchkesari.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\searchkesari.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mac.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\mac.png"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_close.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_close.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_itemorder_cancelled.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\row_itemorder_cancelled.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mac.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\mac.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_close.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_close.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chicken.png.flat",
@@ -60,20 +76,24 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_banner.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\banner.png"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_pop_select_paymnet_methord.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\pop_select_paymnet_methord.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circlecartkesari.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\circlecartkesari.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_shopping.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable-mdpi\\ic_action_shopping.png"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_banner.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\banner.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_menu_red.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_red.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_shopping.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable-mdpi\\ic_action_shopping.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_action_user.png.flat",
@@ -82,6 +102,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_darkhighgray.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\btn_darkhighgray.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fillstar.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\fillstar.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_applebanner.png.flat",
@@ -108,12 +132,12 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\whitecircle.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_delete.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\delete.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_r_liner_background.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\r_liner_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_delete.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\delete.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rb_selected_state.xml.flat",
@@ -168,12 +192,12 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\whitebg.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bariyani.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\bariyani.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_backesari.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\backesari.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bariyani.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\bariyani.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_item_payment_methord.xml.flat",
@@ -188,12 +212,12 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\cart.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_shopping.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_shopping.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_searchkesari.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\searchkesari.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_shopping.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_shopping.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -208,10 +232,6 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\rb_selected.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_search.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\search.png"
     },
@@ -224,12 +244,12 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\edit_photo.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_filter.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\filter.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_dishesmarket.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_dishesmarket.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_filter.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\filter.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_back.png.flat",
@@ -316,12 +336,12 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_order2super.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_r_ic_user.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\r_ic_user.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_c_row_review_item.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_review_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_r_ic_user.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\r_ic_user.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_r_row_processing_order_item.xml.flat",
@@ -404,12 +424,12 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_contactus.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_edit.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\edit.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_back.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\back.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_edit.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\edit.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_payment.xml.flat",
@@ -444,6 +464,10 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_sentrequest.xml"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\border.xml"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_successmarket.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\successmarket.png"
     },
@@ -456,24 +480,24 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\r_circle.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_u_homebg.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\u_homebg.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_delete.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\delete.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_u_homebg.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\u_homebg.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\anim_left_to_right.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\anim\\left_to_right.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_add_shopping_cart_black_24dp.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_add_shopping_cart_black_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_r_ic_pro.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\r_ic_pro.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_add_shopping_cart_black_24dp.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_add_shopping_cart_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_new_order_item_list.xml.flat",
@@ -498,6 +522,14 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_phone.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\phone.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_greystar.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\greystar.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_close.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_close.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\anim_zoom_out.xml.flat",
@@ -544,16 +576,16 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\plus.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_filterkesari.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\filterkesari.png"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_c_row_menu_dishes.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_menu_dishes.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_visared.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\visared.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_c_row_menu_dishes.xml.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_menu_dishes.xml"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_filterkesari.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\filterkesari.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_add_shopping_cart_black_24dp.xml.flat",
@@ -566,6 +598,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_search.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\search.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_close.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_close.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
@@ -584,24 +620,28 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\circlebg.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chickenmachboo.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\chickenmachboo.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_searchkesari.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\searchkesari.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\add.png"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chickenmachboo.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\chickenmachboo.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_close.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_close.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_menu_red.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_menu_red.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_backblack.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\backblack.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_menu_red.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_menu_red.png"
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\add.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_newpwd.png.flat",
@@ -628,12 +668,12 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\bg.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_people.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\people.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_search.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\search.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_people.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\people.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_notification.xml.flat",
@@ -644,6 +684,10 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\register.png"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_nots.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_nots.png"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_welcome.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\welcome.png"
     },
@@ -652,12 +696,12 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\login_bg.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_plus.png.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\plus.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_phone.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\phone.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_plus.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\plus.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_menu_red.png.flat",
@@ -752,6 +796,10 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\menuwhite.png"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_simplestar.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\simplestar.png"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_add_payment.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_add_payment.png"
     },
@@ -774,6 +822,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_add_payment.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_add_payment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_playstore.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\ic_launcher_playstore.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_add_shopping_cart_black_24dp.png.flat",
@@ -812,6 +864,10 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\restuarant.png"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_nots.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_nots.png"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_menu_black.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_black.png"
     },
@@ -820,8 +876,16 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_orderrequest_activity.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\orderrequest_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_edit.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\edit.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_nots.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_nots.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_menukesari.png.flat",
@@ -864,6 +928,10 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\menukesari.png"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_nots.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_nots.png"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_backblack.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\backblack.png"
     },
@@ -882,6 +950,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_notification_item.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\row_notification_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sadpng.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\sadpng.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_up.xml.flat",
@@ -926,6 +998,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\notification.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ratingstars.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\ratingstars.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\anim_layout_animation_up_to_down.xml.flat",
@@ -1030,6 +1106,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_c_row_requestpending_item.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\c_row_requestpending_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ratingstars1.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\ratingstars1.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paymentred.png.flat",
@@ -1164,8 +1244,16 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\anim\\push_up_out.xml"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_error_msg_dialog.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\error_msg_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\anim_center_zoom_out.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\anim\\center_zoom_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_order_receivepopup.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\order_receivepopup.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home.png.flat",
@@ -1178,6 +1266,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_top_kesari.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\btn_top_kesari.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_nots.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_nots.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_graybg.png.flat",
@@ -1194,6 +1286,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_r_back_button.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\r_back_button.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_rate_app.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\rate_app.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_cartpending2.xml.flat",
@@ -1260,6 +1356,10 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\btn_rest_pop.xml"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_color_cursor.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\color_cursor.xml"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_menukesari.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\menukesari.png"
     },
@@ -1292,6 +1392,10 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_nots.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher_nots.png"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registet_page.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_registet_page.xml"
     },
@@ -1302,10 +1406,6 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_tab_order_cancelled.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\tab_order_cancelled.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_wallet.xml.flat",
@@ -1368,6 +1468,10 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\icon.png"
     },
     {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_close.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_close.png"
+    },
+    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dashboard.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
     },
@@ -1390,6 +1494,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_user.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_user.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_close.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_close.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_plus.xml.flat",
@@ -1520,12 +1628,12 @@
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\duration.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_nivo_slider.xml.flat",
-        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_nivo_slider.xml"
-    },
-    {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ordersummary.xml.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\activity_ordersummary.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_nivo_slider.xml.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\layout\\item_nivo_slider.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_back.xml.flat",
@@ -1554,6 +1662,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_r_splsh.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\r_splsh.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_nots.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_nots.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_r_ic_baseline_supervised_user_circle_24.png.flat",
@@ -1614,6 +1726,10 @@
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_wallettype.png.flat",
         "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\wallettype.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo_2.png.flat",
+        "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\src\\main\\res\\drawable\\logo_2.png"
     },
     {
         "merged": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_delete.xml.flat",

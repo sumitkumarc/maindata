@@ -26,9 +26,8 @@ public class ActivityRegistetPageBindingImpl extends ActivityRegistetPageBinding
         sViewsWithIds.put(R.id.ed_phone_no, 10);
         sViewsWithIds.put(R.id.ed_address, 11);
         sViewsWithIds.put(R.id.ed_email_id, 12);
-        sViewsWithIds.put(R.id.prefix, 13);
-        sViewsWithIds.put(R.id.ed_password, 14);
-        sViewsWithIds.put(R.id.register_btn, 15);
+        sViewsWithIds.put(R.id.ed_password, 13);
+        sViewsWithIds.put(R.id.register_btn, 14);
     }
     // views
     // variables
@@ -37,7 +36,7 @@ public class ActivityRegistetPageBindingImpl extends ActivityRegistetPageBinding
     // Inverse Binding Event Handlers
 
     public ActivityRegistetPageBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 16, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 15, sIncludes, sViewsWithIds));
     }
     private ActivityRegistetPageBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
@@ -46,16 +45,15 @@ public class ActivityRegistetPageBindingImpl extends ActivityRegistetPageBinding
             , (android.widget.EditText) bindings[11]
             , (android.widget.EditText) bindings[12]
             , (android.widget.EditText) bindings[6]
-            , (android.widget.EditText) bindings[14]
+            , (android.widget.EditText) bindings[13]
             , (android.widget.EditText) bindings[10]
             , (android.widget.EditText) bindings[9]
             , (android.widget.FrameLayout) bindings[5]
             , (android.widget.ImageView) bindings[8]
             , (android.widget.ImageView) bindings[4]
             , (android.widget.LinearLayout) bindings[7]
-            , (android.widget.TextView) bindings[13]
             , (android.widget.RelativeLayout) bindings[0]
-            , (androidx.appcompat.widget.AppCompatButton) bindings[15]
+            , (androidx.appcompat.widget.AppCompatButton) bindings[14]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[2]
             );
         this.realitve.setTag(null);

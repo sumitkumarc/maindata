@@ -96,14 +96,19 @@ public class RvRestaurantMenuFilterItemListAdapter extends RecyclerView.Adapter<
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialogDoyouwant(position);
-//                Intent i2 = new Intent(mContext, RestaurantDetailActivity.class);
-//                i2.putExtra("MENU_ID" , mresponceDatumList.get(position).getMenuId());
-//                i2.putExtra("ITEM_ID" , mresponceDatumList.get(position).getId());
-//                i2.putExtra("UPDATE_ITEM" , 1);
-//                mContext.startActivity(i2);
+//                showDialogDoyouwant(position);
+                Intent i2 = new Intent(mContext, RestaurantDetailActivity.class);
+                i2.putExtra("MENU_ID" , mresponceDatumList.get(position).getMenuId());
+                i2.putExtra("ITEM_ID" , mresponceDatumList.get(position).getId());
+                i2.putExtra("UPDATE_ITEM" , 1);
+                mContext.startActivity(i2);
             }
         });
+        if (Common.MERCHANT_TYPE == 1) {
+            holder.binding.txtName.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
+        } else {
+            holder.binding.txtName.setTextColor(mContext.getResources().getColor(R.color.super_mart));
+        }
         holder.binding.txtName.setText(Common.isStrempty(mresponceDatumList.get(position).getItemName()));
         holder.binding.txtPrice.setText("SR " +Common.isStrempty(mresponceDatumList.get(position).getPrice()));
         Glide.with(mContext).load(mresponceDatumList.get(position).getImage()).centerCrop().placeholder(R.drawable.people).into(holder.binding.ivRestMenu);

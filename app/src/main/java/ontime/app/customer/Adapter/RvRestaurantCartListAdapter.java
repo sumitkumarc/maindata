@@ -50,13 +50,14 @@ public class RvRestaurantCartListAdapter extends RecyclerView.Adapter<RvRestaura
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Common.MERCHANT_TYPE = mcartList.get(position).getRestaurant().getType();
                 Common.newCartItem = mcartList.get(position).getItems();
                 Intent intent = new Intent(mContext, RestCartPenddingItemActivity.class);
                 intent.putExtra("POSITION", position);
                 mContext.startActivity(intent);
             }
         });
-        if (Common.MERCHANT_TYPE == 1) {
+        if (mcartList.get(position).getRestaurant().getType() == 1) {
             holder.binding.txtName.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
             holder.binding.llDeleteItem.setBackground(mContext.getResources().getDrawable(R.drawable.btn_golden));
             holder.binding.ivRestProfileImg.setBorderColor(mContext.getResources().getColor(R.color.colorAccent));

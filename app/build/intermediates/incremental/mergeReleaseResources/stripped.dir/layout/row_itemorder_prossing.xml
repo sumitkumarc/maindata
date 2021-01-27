@@ -11,7 +11,7 @@
         android:layout_height="230dp"
         android:padding="10dp"
         android:gravity="top"
-        android:background="@drawable/btn_gray"
+        android:background="@drawable/item_order_back_color"
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
@@ -41,7 +41,7 @@
                 android:id="@+id/txt_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
                 android:textColor="@color/red"
                 android:textSize="16sp" />
             <!--            android:text="Order time 12:00"-->
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="Order time || 06.01.2021"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
                 android:textColor="@color/red"
                 android:textSize="14sp" />
             <!--            android:text="Oder No: MB214ZX5"-->
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:text="Order NO :"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
                 android:textColor="@color/darkgray"
                 android:textSize="14sp" />
             <!--            android:text="Paid: SR 117.65"-->
@@ -71,17 +71,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:text="paid SR :550.00"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
                 android:textColor="@color/darkgray"
                 android:textSize="14sp" />
             <!--            android:text="Payment type: Credit card"-->
             <TextView
-                android:id="@+id/txt_order_pamnet_type"
+                android:id="@+id/txt_order_pament_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:text="Paymnet type : Cash On delivr"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
                 android:textColor="@color/darkgray"
                 android:textSize="14sp" />
             <!--            android:text="Status: Pending"-->
@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:text="Status : New"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
                 android:textColor="@color/green"
                 android:textSize="14sp" />
             <!--            android:text="Delivery time: 12:15pm"-->
@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:text="Dilvir time "
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
                 android:textColor="@color/darkgray"
                 android:textSize="14sp" />
             <!--            android:text="Cancel time: Within 2 mins"-->
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:text="Cancel time : within 2 minis"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
                 android:textColor="@color/darkgray"
                 android:textSize="14sp" />
 

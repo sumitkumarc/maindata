@@ -462,7 +462,11 @@
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_allow_stacked_button_bar">false</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="enable_system_alarm_service_default">true</bool>
+    <bool name="enable_system_foreground_service_default">true</bool>
+    <bool name="enable_system_job_service_default">false</bool>
     <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="workmanager_test_configuration">false</bool>
     <color name="abc_decor_view_status_guard">#ff000000</color>
     <color name="abc_decor_view_status_guard_light">#ffffffff</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -1291,6 +1295,7 @@
     <string name="Register_msg">By Clicking Register Button Your Agreed to Our Terms And Condition</string>
     <string name="Reorder">Reorder</string>
     <string name="Resend">Resend</string>
+    <string name="Save">Save</string>
     <string name="Search">Search</string>
     <string name="Seconds">Seconds</string>
     <string name="Set_Delivery_Time">Delivery Time</string>
@@ -6397,6 +6402,16 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:inputType">number</item>
         <item name="android:textColorHint">@color/colorPrimary</item>
+    </style>
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <!--                <item name="android:minHeight">22dip</item>-->
+        <!--                <item name="android:maxHeight">22dip</item>-->
+    </style>
+    <style name="foodRatingBar1" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars1</item>
+        <!--                <item name="android:minHeight">22dip</item>-->
+        <!--                <item name="android:maxHeight">22dip</item>-->
     </style>
     <style name="header_text">
         <item name="android:textColor">@color/greyish_brown</item>

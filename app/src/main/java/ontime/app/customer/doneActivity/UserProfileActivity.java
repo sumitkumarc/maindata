@@ -63,6 +63,8 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
     String user_name = "";
     String user_email = "";
     String user_address = "";
+    String FileName = "";
+    String Filepath = "";
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -104,6 +106,9 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
         binding.llMain.setVisibility(View.GONE);
         binding.edName.setEnabled(false);
         binding.edPhoneNo.setEnabled(false);
+        binding.flProfile.setVisibility(View.GONE);
+
+        binding.txtEdit.setText(getString(R.string.Edit));
 
         Glide.with(getContext()).load(sessionManager.getUserDetails().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(binding.ivUserProfile);
         GetAPICallUserProfile();
@@ -139,7 +144,10 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
                 onBackPressed();
                 break;
             case R.id.txt_edit:
-                showDialogProfileUpdate();
+                showDialogProfileUpdateEdit();
+                break;
+            case R.id.txt_save:
+                showDialogProfileUpdateSave();
                 break;
             case R.id.fl_update_profile:
                 Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -160,6 +168,7 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
         super.setListener();
         binding.txtSignOut.setOnClickListener(this);
         binding.txtEdit.setOnClickListener(this);
+        binding.txtSave.setOnClickListener(this);
         binding.flUpdateProfile.setOnClickListener(this);
         binding.back.setOnClickListener(this);
     }
@@ -342,6 +351,7 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
         ed_fullname.setText(user_name);
         ed_email_id.setText(user_email);
         ed_address.setText(user_address);
+
         dialogsPro.findViewById(R.id.bt_close).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -372,9 +382,41 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
         dialogsPro.show();
     }
 
+    public void showDialogProfileUpdateEdit() {
+        binding.edName.setEnabled(true);
+        binding.edName.requestFocus();
+        binding.flProfile.setVisibility(View.VISIBLE);
+        binding.txtSave.setVisibility(View.VISIBLE);
+        binding.txtEdit.setVisibility(View.GONE);
+    }
+
+    public void showDialogProfileUpdateSave() {
+
+        if (isConnected()) {
+            if (!edvalidateName(binding.edName.getText().toString().trim(), binding.edName, getResources().getString(R.string.v_enter_full_name))) {
+                return;
+            }
+
+            if (imageUploadpath.equals("")) {
+                Toast.makeText(UserProfileActivity.this, getResources().getString(R.string.v_select_profile_image), Toast.LENGTH_SHORT).show();
+                return;
+            }
+            GetAPICallUpdateProfile(binding.edName.getText().toString(), user_email, user_address);
+            binding.edName.setEnabled(false);
+            binding.flProfile.setVisibility(View.GONE);
+            binding.txtSave.setVisibility(View.GONE);
+            binding.txtEdit.setVisibility(View.VISIBLE);
+        }
+    }
+
     private void GetAPICallUpdateProfile(String fullname, String email_id, String address) {
         JSONObject jsonObject = new JSONObject();
         try {
+            RequestBody body = new MultipartBody.Builder()
+                    .setType(MultipartBody.FORM)
+                    .addFormDataPart("image", FileName,
+                            RequestBody.create(new File(Filepath), MEDIA_TYPE_PNG))
+                    .build();
             jsonObject.put("full_name", fullname);
             jsonObject.put("address", address);
             jsonObject.put("email", email_id);
@@ -400,8 +442,10 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
                     File N_file = Common.getCompressed(UserProfileActivity.this, imageUploadpath);
                     imageUploadpath = N_file.getPath();
                     String imageUploadFileName = new File(imageUploadpath).getName();
+                    FileName = imageUploadFileName;
+                    Filepath =  imageUploadpath;
                     Glide.with(UserProfileActivity.this).load(imageUploadpath).centerCrop().placeholder(R.drawable.ic_action_user).into(binding.ivUserProfile);
-                    GetAPICallUploadUserImage(imageUploadFileName, imageUploadpath);
+//                    GetAPICallUploadUserImage(imageUploadFileName, imageUploadpath);
                 } catch (Exception e) {
                     Log.d("SUMITPATEL", "EROOR" + e.toString());
                 }

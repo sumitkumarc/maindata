@@ -12,11 +12,7 @@ public class ActivityRequestpendingBindingImpl extends ActivityRequestpendingBin
     @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
-        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(15);
-        sIncludes.setIncludes(1, 
-            new String[] {"c_row_requestpending_item"},
-            new int[] {2},
-            new int[] {ontime.app.R.layout.c_row_requestpending_item});
+        sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.rly, 3);
         sViewsWithIds.put(R.id.back, 4);
@@ -65,8 +61,7 @@ public class ActivityRequestpendingBindingImpl extends ActivityRequestpendingBin
         this.mboundView0.setTag(null);
         this.mboundView1 = (android.widget.LinearLayout) bindings[1];
         this.mboundView1.setTag(null);
-        this.mboundView11 = (ontime.app.databinding.CRowRequestpendingItemBinding) bindings[2];
-        setContainedBinding(this.mboundView11);
+        this.mboundView11 = (bindings[2] != null) ? ontime.app.databinding.CRowRequestpendingItemBinding.bind((android.view.View) bindings[2]) : null;
         setRootTag(root);
         // listeners
         invalidateAll();
@@ -77,7 +72,6 @@ public class ActivityRequestpendingBindingImpl extends ActivityRequestpendingBin
         synchronized(this) {
                 mDirtyFlags = 0x1L;
         }
-        mboundView11.invalidateAll();
         requestRebind();
     }
 
@@ -88,9 +82,6 @@ public class ActivityRequestpendingBindingImpl extends ActivityRequestpendingBin
                 return true;
             }
         }
-        if (mboundView11.hasPendingBindings()) {
-            return true;
-        }
         return false;
     }
 
@@ -98,12 +89,6 @@ public class ActivityRequestpendingBindingImpl extends ActivityRequestpendingBin
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
             return variableSet;
-    }
-
-    @Override
-    public void setLifecycleOwner(@Nullable androidx.lifecycle.LifecycleOwner lifecycleOwner) {
-        super.setLifecycleOwner(lifecycleOwner);
-        mboundView11.setLifecycleOwner(lifecycleOwner);
     }
 
     @Override
@@ -121,7 +106,6 @@ public class ActivityRequestpendingBindingImpl extends ActivityRequestpendingBin
             mDirtyFlags = 0;
         }
         // batch finished
-        executeBindingsOn(mboundView11);
     }
     // Listener Stub Implementations
     // callback impls

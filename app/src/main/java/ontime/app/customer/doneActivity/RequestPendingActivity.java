@@ -33,7 +33,7 @@ import ontime.app.okhttp.AppConstant;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
 
-public class RequestPendingActivity  extends BaseActivity implements View.OnClickListener, APIcall.ApiCallListner  {
+public class RequestPendingActivity extends BaseActivity implements View.OnClickListener, APIcall.ApiCallListner {
 
     public static String timeLeftFormatted;
     ProgressDialog dialog;
@@ -44,6 +44,8 @@ public class RequestPendingActivity  extends BaseActivity implements View.OnClic
     private String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
     Date event_date;
+    Date c_cancle_date;
+
     @Override
     protected void initView() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_requestpending);
@@ -64,17 +66,24 @@ public class RequestPendingActivity  extends BaseActivity implements View.OnClic
                 onBackPressed();
                 break;
             case R.id.bt_cancel:
-                if(isConnected()){
-                    APICallUserCancleOrder(Common.ORDERPROCCESSING_ORDER.getId());
+                if (isConnected()) {
+                    Date current_dateas = new Date();
+                    if (!current_dateas.after(c_cancle_date)) {
+                        APICallUserCancleOrder(Common.ORDERPROCCESSING_ORDER.getId());
+                    } else {
+                        Toast.makeText(this, "Time out for order cancel", Toast.LENGTH_SHORT).show();
+                    }
+
                 }
                 break;
             case R.id.bt_pay_now:
-                if(isConnected()){
+                if (isConnected()) {
 
                 }
                 break;
         }
     }
+
     public void APICallUserCancleOrder(int order_id) {
         JSONObject jsonObject = new JSONObject();
         try {
@@ -89,17 +98,17 @@ public class RequestPendingActivity  extends BaseActivity implements View.OnClic
         apIcall.setBody(body);
         apIcall.execute(url, APIcall.OPERATION_USER_CANCEL_ORDER, this);
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
 
         LinearLayoutManager mLayoutManager1as = new LinearLayoutManager(getContext());
         mLayoutManager1as.setOrientation(LinearLayoutManager.VERTICAL);
         binding.rvList.setLayoutManager(mLayoutManager1as);
 
-        RvRestPenddingListAdapter mMAdapter = new RvRestPenddingListAdapter(getContext(), Common.ORDERPROCCESSING_ORDER.getOrderDetail(),Common.ORDERPROCCESSING_ORDER);
+        RvRestPenddingListAdapter mMAdapter = new RvRestPenddingListAdapter(getContext(), Common.ORDERPROCCESSING_ORDER.getOrderDetail(), Common.ORDERPROCCESSING_ORDER);
         binding.rvList.setItemAnimator(new DefaultItemAnimator());
         binding.rvList.setAdapter(mMAdapter);
 
@@ -120,6 +129,22 @@ public class RequestPendingActivity  extends BaseActivity implements View.OnClic
             e.printStackTrace();
         }
         GetCountDownStart();
+
+        Calendar c_cancle = Calendar.getInstance();
+        dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+        Date date_cancel = new Date();
+        try {
+//            mreaderProccessings.get(position).getCountdownTime()
+            date_cancel = dateFormat.parse(Common.ORDERPROCCESSING_ORDER.getCreatedAt());
+            c_cancle.setTime(date_cancel);
+//            mreaderProccessings.get(position).getDeliveryTime()
+            c_cancle.add(Calendar.SECOND, 120);
+            c_cancle_date = new Date();
+            dateFormat.setTimeZone(TimeZone.getDefault());
+            c_cancle_date = c_cancle.getTime();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -229,6 +254,7 @@ public class RequestPendingActivity  extends BaseActivity implements View.OnClic
         };
         handler.postDelayed(runnable, 0);
     }
+
     private void showDialog() {
         dialog = new ProgressDialog(RequestPendingActivity.this);
         dialog.setMessage(getResources().getString(R.string.Please_wait));
@@ -240,6 +266,7 @@ public class RequestPendingActivity  extends BaseActivity implements View.OnClic
         if (dialog != null && dialog.isShowing())
             dialog.dismiss();
     }
+
     @Override
     public void onStartLoading(int operationCode) {
         if (operationCode == APIcall.OPERATION_USER_CANCEL_ORDER) {

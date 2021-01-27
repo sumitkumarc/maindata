@@ -20,7 +20,7 @@ public class ActivityRestaurantlistBindingImpl extends ActivityRestaurantlistBin
         sViewsWithIds.put(R.id.txt_top, 4);
         sViewsWithIds.put(R.id.txt_near_me, 5);
         sViewsWithIds.put(R.id.iv_filter, 6);
-        sViewsWithIds.put(R.id.evsearch, 7);
+        sViewsWithIds.put(R.id.ed_search, 7);
         sViewsWithIds.put(R.id.iv_menu, 8);
         sViewsWithIds.put(R.id.vp_banner, 9);
         sViewsWithIds.put(R.id.rv_list, 10);

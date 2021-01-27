@@ -18,7 +18,7 @@ public class ActivitySentrequestBindingImpl extends ActivitySentrequestBinding  
         sViewsWithIds.put(R.id.back, 2);
         sViewsWithIds.put(R.id.iv_right, 3);
         sViewsWithIds.put(R.id.txt_msg, 4);
-        sViewsWithIds.put(R.id.txt_cart, 5);
+        sViewsWithIds.put(R.id.bt_goto_cart, 5);
     }
     // views
     @NonNull
@@ -34,9 +34,9 @@ public class ActivitySentrequestBindingImpl extends ActivitySentrequestBinding  
     private ActivitySentrequestBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.LinearLayout) bindings[2]
+            , (android.widget.Button) bindings[5]
             , (android.widget.ImageView) bindings[3]
             , (android.widget.RelativeLayout) bindings[1]
-            , (android.widget.TextView) bindings[5]
             , (android.widget.TextView) bindings[4]
             );
         this.mboundView0 = (androidx.appcompat.widget.LinearLayoutCompat) bindings[0];

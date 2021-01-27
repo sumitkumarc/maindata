@@ -28,6 +28,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import ontime.app.R;
 import ontime.app.model.usermain.OrderProccessing;
+import ontime.app.model.usermain.UserCart;
 import ontime.app.model.usermain.UserCartItem;
 import ontime.app.model.usernewmain.UserItem;
 import ontime.app.restaurant.model.readerOrder.OrderDetail;
@@ -67,6 +68,7 @@ public class Common {
     private static final String TAG = "xcellenceit";
     public static List<UserCartItem> newCartItem;
     public static UserCartItem UpdateCart;
+    public static UserCart MUserCart;
     public static  ReaderNewOrder READERNEWORDER;
     public static OrderProccessing ORDERPROCCESSING_ORDER;
     public static List<UserItem> newUserCart;
@@ -74,6 +76,7 @@ public class Common {
     public static int PAYMENT_TYPE = 4;
     public static String NOTE = "type note here...";
     public static int FILTER_TYPE = 0;
+    public static int RESTAURANT_ID = 0;
 
     public static void setSystemBarColor(Activity act, @ColorRes int color) {
         if (Build.VERSION.SDK_INT >= 21) {
