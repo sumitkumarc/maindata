@@ -72,13 +72,8 @@ ontime/app/restaurant/adapte/RvNewOrderAdapter.java
  ontime.app.restaurant.adapte.RvNewOrderAdapter$MyViewHolder
 ontime/app/databinding/PopAddtoCartSuccessBinding.java
  ontime.app.databinding.PopAddtoCartSuccessBinding
-ontime/app/customer/doneActivity/RestaurantDetailActivity.java
- ontime.app.customer.doneActivity.RestaurantDetailActivity
- ontime.app.customer.doneActivity.RestaurantDetailActivity$1
- ontime.app.customer.doneActivity.RestaurantDetailActivity$2
- ontime.app.customer.doneActivity.RestaurantDetailActivity$3
- ontime.app.customer.doneActivity.RestaurantDetailActivity$4
- ontime.app.customer.doneActivity.RestaurantDetailActivity$5
+ontime/app/customer/doneActivity/RestRattingListActivity.java
+ ontime.app.customer.doneActivity.RestRattingListActivity
 ontime/app/customer/doneActivity/Dialog_Activity.java
  ontime.app.customer.doneActivity.Dialog_Activity
  ontime.app.customer.doneActivity.Dialog_Activity$1
@@ -179,12 +174,8 @@ ontime/app/customer/Adapter/RvFinishedOrderListAdapter.java
  ontime.app.customer.Adapter.RvFinishedOrderListAdapter
  ontime.app.customer.Adapter.RvFinishedOrderListAdapter$1
  ontime.app.customer.Adapter.RvFinishedOrderListAdapter$MyViewHolder
-ontime/app/customer/Adapter/RvRestaurantMenuListAdapter.java
- ontime.app.customer.Adapter.RvRestaurantMenuListAdapter
- ontime.app.customer.Adapter.RvRestaurantMenuListAdapter$1
- ontime.app.customer.Adapter.RvRestaurantMenuListAdapter$2
- ontime.app.customer.Adapter.RvRestaurantMenuListAdapter$3
- ontime.app.customer.Adapter.RvRestaurantMenuListAdapter$MyViewHolder
+ontime/app/databinding/ActivityRestaurantlistBinding.java
+ ontime.app.databinding.ActivityRestaurantlistBinding
 ontime/app/customer/doneActivity/ContactusActivity.java
  ontime.app.customer.doneActivity.ContactusActivity
 ontime/app/utils/CustomerViewModel.java
@@ -328,13 +319,8 @@ ontime/app/okhttp/APIcall.java
  ontime.app.okhttp.APIcall$CallApiExecute
 ontime/app/restaurant/ui/fragment/NewOrderFragment.java
  ontime.app.restaurant.ui.fragment.NewOrderFragment
-ontime/app/customer/Adapter/RvRestaurantCartPenddingListAdapter.java
- ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter
- ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter$1
- ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter$2
- ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter$3
- ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter$4
- ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter$MyViewHolder
+ontime/app/utils/LanguageManager.java
+ ontime.app.utils.LanguageManager
 ontime/app/databinding/ItemMacBinding.java
  ontime.app.databinding.ItemMacBinding
 ontime/app/model/usermain/RestMenuItemRemovalDetail.java
@@ -527,12 +513,8 @@ ontime/app/databinding/ActivityNewOrderItemListBinding.java
  ontime.app.databinding.ActivityNewOrderItemListBinding
 ontime/app/customer/Fragment/TabOrderCancelled.java
  ontime.app.customer.Fragment.TabOrderCancelled
-ontime/app/customer/Adapter/RvRestaurantMenuFilterItemListAdapter.java
- ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter
- ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter$1
- ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter$2
- ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter$3
- ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter$MyViewHolder
+ontime/app/model/usermain/OrderProccessing.java
+ ontime.app.model.usermain.OrderProccessing
 ontime/app/databinding/PopAddCardBinding.java
  ontime.app.databinding.PopAddCardBinding
 ontime/app/databinding/ActivityHomeBinding.java
@@ -619,11 +601,30 @@ ontime/app/databinding/RRowItemDetailsBinding.java
  ontime.app.databinding.RRowItemDetailsBinding
 ontime/app/model/usermain/UserRestaurantPro.java
  ontime.app.model.usermain.UserRestaurantPro
-ontime/app/databinding/ActivityRestaurantlistBinding.java
- ontime.app.databinding.ActivityRestaurantlistBinding
-ontime/app/customer/doneActivity/RestRattingListActivity.java
- ontime.app.customer.doneActivity.RestRattingListActivity
-ontime/app/utils/LanguageManager.java
- ontime.app.utils.LanguageManager
-ontime/app/model/usermain/OrderProccessing.java
- ontime.app.model.usermain.OrderProccessing
+ontime/app/customer/Adapter/RvRestaurantMenuFilterItemListAdapter.java
+ ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter
+ ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter$1
+ ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter$2
+ ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter$3
+ ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter$MyViewHolder
+ontime/app/customer/Adapter/RvRestaurantCartPenddingListAdapter.java
+ ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter
+ ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter$1
+ ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter$2
+ ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter$3
+ ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter$4
+ ontime.app.customer.Adapter.RvRestaurantCartPenddingListAdapter$MyViewHolder
+ontime/app/customer/doneActivity/RestaurantDetailActivity.java
+ ontime.app.customer.doneActivity.RestaurantDetailActivity
+ ontime.app.customer.doneActivity.RestaurantDetailActivity$1
+ ontime.app.customer.doneActivity.RestaurantDetailActivity$2
+ ontime.app.customer.doneActivity.RestaurantDetailActivity$3
+ ontime.app.customer.doneActivity.RestaurantDetailActivity$4
+ ontime.app.customer.doneActivity.RestaurantDetailActivity$5
+ ontime.app.customer.doneActivity.RestaurantDetailActivity$6
+ontime/app/customer/Adapter/RvRestaurantMenuListAdapter.java
+ ontime.app.customer.Adapter.RvRestaurantMenuListAdapter
+ ontime.app.customer.Adapter.RvRestaurantMenuListAdapter$1
+ ontime.app.customer.Adapter.RvRestaurantMenuListAdapter$2
+ ontime.app.customer.Adapter.RvRestaurantMenuListAdapter$3
+ ontime.app.customer.Adapter.RvRestaurantMenuListAdapter$MyViewHolder

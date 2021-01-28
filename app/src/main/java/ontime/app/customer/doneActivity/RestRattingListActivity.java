@@ -76,7 +76,7 @@ public class RestRattingListActivity extends BaseActivity implements View.OnClic
     private void GetAPICallRestaurantReviewList() {
         JSONObject jsonObject = new JSONObject();
         try {
-            jsonObject.put("merchant_id", Common.MERCHANT_TYPE);
+            jsonObject.put("merchant_id", Common.RESTAURANT_ID);
         } catch (JSONException e) {
             e.printStackTrace();
         }

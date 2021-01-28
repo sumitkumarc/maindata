@@ -31,14 +31,14 @@ public class SentRequestActivity extends BaseActivity implements View.OnClickLis
             binding.ivRight.setColorFilter(getResources().getColor(R.color.colorAccent));
             binding.txtMsg.setTextColor(getResources().getColor(R.color.colorAccent));
             binding.btGotoCart.setBackground(getResources().getDrawable(R.drawable.btn_goldenrect));
-            binding.txtMsg.setText("Request sent to\\nthe restaurant");
+            binding.txtMsg.setText("Request sent to \nthe restaurant");
         } else {
             Common.setSystemBarColor(this, R.color.super_mart);
 //            Common.setSystemBarLight(this);
             binding.ivRight.setColorFilter(getResources().getColor(R.color.super_mart));
             binding.txtMsg.setTextColor(getResources().getColor(R.color.super_mart));
             binding.btGotoCart.setBackground(getResources().getDrawable(R.drawable.btn_goldenrectorange));
-            binding.txtMsg.setText("Request sent to\\nthe supermart");
+            binding.txtMsg.setText("Request sent to \nthe supermart");
         }
 
 

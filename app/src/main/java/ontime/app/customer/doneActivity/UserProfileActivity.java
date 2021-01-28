@@ -416,19 +416,23 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
                     .setType(MultipartBody.FORM)
                     .addFormDataPart("image", FileName,
                             RequestBody.create(new File(Filepath), MEDIA_TYPE_PNG))
+                    .addFormDataPart("full_name", fullname)
+                    .addFormDataPart("address", address)
+                    .addFormDataPart("email", email_id)
                     .build();
-            jsonObject.put("full_name", fullname);
-            jsonObject.put("address", address);
-            jsonObject.put("email", email_id);
-        } catch (JSONException e) {
+//            jsonObject.put("full_name", fullname);
+//            jsonObject.put("address", address);
+//            jsonObject.put("email", email_id);
+
+//        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
+            String url = AppConstant.GET_USER_UPDATE_PROFILE;
+            APIcall apIcall = new APIcall(getApplicationContext());
+            apIcall.isPost(true);
+            apIcall.setBody(body);
+            apIcall.execute(url, APIcall.OPERATION_USER_UPDATE_PROFILE, this);
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
-        String url = AppConstant.GET_USER_UPDATE_PROFILE;
-        APIcall apIcall = new APIcall(getApplicationContext());
-        apIcall.isPost(true);
-        apIcall.setBody(body);
-        apIcall.execute(url, APIcall.OPERATION_USER_UPDATE_PROFILE, this);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
@@ -443,7 +447,7 @@ public class UserProfileActivity extends BaseActivity implements View.OnClickLis
                     imageUploadpath = N_file.getPath();
                     String imageUploadFileName = new File(imageUploadpath).getName();
                     FileName = imageUploadFileName;
-                    Filepath =  imageUploadpath;
+                    Filepath = imageUploadpath;
                     Glide.with(UserProfileActivity.this).load(imageUploadpath).centerCrop().placeholder(R.drawable.ic_action_user).into(binding.ivUserProfile);
 //                    GetAPICallUploadUserImage(imageUploadFileName, imageUploadpath);
                 } catch (Exception e) {

@@ -15,6 +15,7 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -497,7 +498,7 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                     for (int i = 0; i < sizeDetails.size(); i++) {
                         RadioButton rdbtn = new RadioButton(getContext());
                         rdbtn.setId(i);
-                        rdbtn.setText(sizeDetails.get(i).getSize());
+                        rdbtn.setText(sizeDetails.get(i).getSize() + " SR " + Common.isStrempty(sizeDetails.get(i).getPrice()));
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                             rdbtn.setButtonTintList(colorStateList);
                         }
@@ -543,7 +544,7 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                     for (int i = 0; i < additionDetail.size(); i++) {
                         RadioButton rdbtn = new RadioButton(getContext());
                         rdbtn.setId(i);
-                        rdbtn.setText(additionDetail.get(i).getAdidtionItem() + " " + additionDetail.get(i).getPrice());
+                        rdbtn.setText(additionDetail.get(i).getAdidtionItem() + " SR " + additionDetail.get(i).getPrice());
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                             rdbtn.setButtonTintList(colorStateList);
                         }
@@ -567,25 +568,39 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                         }
                         binding.rgCDs.addView(rdbtn);
                         final int finalI = i;
-                        rdbtn.setOnClickListener(new View.OnClickListener() {
+                        rdbtn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                             @Override
-                            public void onClick(View view) {
-                                addition_id = additionDetail.get(finalI).getId();
-                                try {
-                                    if (additionDetail.get(finalI).getPrice() == null) {
-                                        addition_price = 0;
-                                    } else {
-                                        addition_price = Double.parseDouble(additionDetail.get(finalI).getPrice());
-                                    }
-                                } catch (Exception e) {
-                                    addition_price = 0;
+                            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                if (isChecked) {
+                                    rdbtn.setChecked(false);
                                 }
+                                if (isChecked) {
+                                    addition_id = additionDetail.get(finalI).getId();
+                                    try {
+                                        if (additionDetail.get(finalI).getPrice() == null) {
+                                            addition_price = 0;
+                                        } else {
+                                            addition_price = Double.parseDouble(additionDetail.get(finalI).getPrice());
+                                        }
+                                    } catch (Exception e) {
+                                        addition_price = 0;
+                                    }
 //                                if (!Common.isStrempty(additionDetail.get(finalI).getPrice()).equals("")) {
 //                                    addition_price = Double.parseDouble(additionDetail.get(finalI).getPrice());
 //                                } else {
 //                                    addition_price = 0;
 //                                }
+                                } else {
+                                    addition_id = 0;
+                                }
+
                                 showTotal();
+                            }
+                        });
+                        rdbtn.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+
                             }
                         });
                     }
