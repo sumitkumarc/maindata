@@ -125,6 +125,9 @@ public abstract class ActivityRestaurantlistBinding extends ViewDataBinding {
   public final LinearLayout svLeftHeader;
 
   @NonNull
+  public final TextView tvNodata;
+
+  @NonNull
   public final TextView txtAboutUs;
 
   @NonNull
@@ -158,6 +161,9 @@ public abstract class ActivityRestaurantlistBinding extends ViewDataBinding {
   public final TextView txtTop;
 
   @NonNull
+  public final TextView txtWorning;
+
+  @NonNull
   public final ViewPager vpBanner;
 
   protected ActivityRestaurantlistBinding(Object _bindingComponent, View _root,
@@ -170,10 +176,10 @@ public abstract class ActivityRestaurantlistBinding extends ViewDataBinding {
       LinearLayout llabout, LinearLayout llangages, LinearLayout llcart, LinearLayout llcontact,
       LinearLayout llhome, LinearLayout llmyorder, LinearLayout llnotifi, LinearLayout llpaymet,
       LinearLayout llprofile, NavigationView navView, RecyclerView rvList,
-      LinearLayout svLeftHeader, TextView txtAboutUs, TextView txtCart, TextView txtChangPws,
-      TextView txtContactUs, TextView txtHome, TextView txtLanguages, TextView txtMyorder,
-      TextView txtNearMe, TextView txtNotification, TextView txtPayment, TextView txtTop,
-      ViewPager vpBanner) {
+      LinearLayout svLeftHeader, TextView tvNodata, TextView txtAboutUs, TextView txtCart,
+      TextView txtChangPws, TextView txtContactUs, TextView txtHome, TextView txtLanguages,
+      TextView txtMyorder, TextView txtNearMe, TextView txtNotification, TextView txtPayment,
+      TextView txtTop, TextView txtWorning, ViewPager vpBanner) {
     super(_bindingComponent, _root, _localFieldCount);
     this.AuthorAvatar = AuthorAvatar;
     this.AuthorDisplayName = AuthorDisplayName;
@@ -209,6 +215,7 @@ public abstract class ActivityRestaurantlistBinding extends ViewDataBinding {
     this.navView = navView;
     this.rvList = rvList;
     this.svLeftHeader = svLeftHeader;
+    this.tvNodata = tvNodata;
     this.txtAboutUs = txtAboutUs;
     this.txtCart = txtCart;
     this.txtChangPws = txtChangPws;
@@ -220,6 +227,7 @@ public abstract class ActivityRestaurantlistBinding extends ViewDataBinding {
     this.txtNotification = txtNotification;
     this.txtPayment = txtPayment;
     this.txtTop = txtTop;
+    this.txtWorning = txtWorning;
     this.vpBanner = vpBanner;
   }
 

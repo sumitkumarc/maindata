@@ -17,13 +17,14 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="150dp"
             android:layout_marginLeft="@dimen/font_size_20sp"
             android:layout_marginTop="@dimen/font_size_20sp"
             android:layout_marginRight="@dimen/font_size_20sp"
             app:cardCornerRadius="@dimen/margin_basic_10dp">
 
             <ImageView
+                android:id="@+id/iv_rest_img"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
@@ -35,6 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:gravity="center"
+            android:visibility="gone"
             android:text="Chicken Machboos is ready !"
             android:textColor="@color/gray"
             android:textSize="@dimen/font_size_12sp"/>

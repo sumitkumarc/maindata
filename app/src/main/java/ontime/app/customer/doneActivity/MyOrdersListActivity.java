@@ -17,17 +17,21 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.databinding.DataBindingUtil;
 import androidx.viewpager.widget.ViewPager;
+
 import ontime.app.R;
 import ontime.app.customer.Adapter.Pager_tab;
 import ontime.app.customer.Fragment.TabOrderCancelled;
 import ontime.app.customer.Fragment.TabOrderFinished;
 import ontime.app.customer.Fragment.TabOrderProcessing;
 import ontime.app.databinding.ActivityMyordersBinding;
+import ontime.app.model.restaurantlist.RestaurantExample;
 import ontime.app.model.usermain.OrderCancelled;
 import ontime.app.model.usermain.OrderFinished;
 import ontime.app.model.usermain.OrderProccessing;
+import ontime.app.model.usermain.Restaurant;
 import ontime.app.model.userorder.UserOrderList;
 import ontime.app.okhttp.APIcall;
 import ontime.app.okhttp.AppConstant;
@@ -36,6 +40,8 @@ import ontime.app.restaurant.ui.Activity.SplashActivity;
 import ontime.app.restaurant.ui.Activity.WelcomeActivity;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
+
+import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 
 import org.json.JSONException;
@@ -56,13 +62,15 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
     Pager_tab adapter;
     public static Dialog dialogm;
     boolean temp;
+    int REST_ID = 0;
+    int ORDER_ID = 0;
 
     @Override
     protected void initView() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_myorders);
     }
 
-    private void showcustomedialog(int order_id) {
+    private void showcustomedialog(int order_id, Restaurant restaurant) {
         dialogm = new Dialog(this);
         dialogm.setCancelable(true);
         dialogm.setContentView(R.layout.orderrequest_activity);
@@ -76,13 +84,17 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
         dialogm.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
         TextView yesbtn = (TextView) dialogm.findViewById(R.id.yes);
+        ImageView iv_rest_img = (ImageView) dialogm.findViewById(R.id.iv_rest_img);
+        Glide.with(this).load(restaurant.getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(iv_rest_img);
         TextView nobtn = (TextView) dialogm.findViewById(R.id.no);
         yesbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isConnected()) {
+                if (isConnected()) {
                     temp = true;
-                    GetAPICallOrderrequestuser("Order received",order_id);
+                    REST_ID=restaurant.getId();
+                    ORDER_ID=order_id;
+                    GetAPICallOrderrequestuser("Order received", order_id);
                 }
             }
         });
@@ -90,9 +102,10 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
         nobtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isConnected()) {
+                if (isConnected()) {
                     temp = false;
-                    GetAPICallOrderrequestuser("Order not received",order_id);
+                    REST_ID=restaurant.getId();
+                    GetAPICallOrderrequestuser("Order not received", order_id);
                 }
             }
         });
@@ -123,12 +136,15 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
 //            Common.setSystemBarLight(this);
             binding.ivBack.setColorFilter(getResources().getColor(R.color.super_mart));
         }
+
         try {
             Bundle b = getIntent().getExtras();
             if (b != null) {
-                int  order_id = Integer.parseInt(b.getString("order_id"));
+                int order_id = Integer.parseInt(b.getString("order_id"));
                 int noty_type = Integer.parseInt(b.getString("noty_type"));
-                showcustomedialog(order_id);
+                if (noty_type == 5) {
+                    GetAPICallOrderDetails(order_id);
+                }
             }
         } catch (Exception e) {
             // cat_id = getIntent().getIntExtra("CatId", 1);
@@ -137,6 +153,24 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
         GetAPICallOrderList();
 
 
+    }
+
+    private void GetAPICallOrderDetails(int order_id) {
+        Common.hideKeyboard(getActivity());
+        JSONObject jsonObject = new JSONObject();
+
+        try {
+            jsonObject.put("order_id", order_id);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
+        String url = AppConstant.GET_USER_ORDERDETAIL;
+        APIcall apIcall = new APIcall(getApplicationContext());
+        apIcall.isPost(true);
+        apIcall.setBody(body);
+        apIcall.execute(url, APIcall.OPERATION_USER_ORDERDETAIL, this);
     }
 
     private void GetAPICallOrderList() {
@@ -150,7 +184,7 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
         apIcall.execute(url, APIcall.OPERATION_ORDER_LIST, this);
     }
 
-    private void GetAPICallOrderrequestuser(String order_received,int order_id) {
+    private void GetAPICallOrderrequestuser(String order_received, int order_id) {
         Common.hideKeyboard(getActivity());
         JSONObject jsonObject = new JSONObject();
 
@@ -193,7 +227,7 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
         if (operationCode == APIcall.OPERATION_USER_MSG) {
             showDialog();
         }
-//        if (operationCode == APIcall.OPERATION_ORDER_LIST) {
+//        if (operationCode == APIcall.OPERATION_USER_ORDERDETAIL) {
 //            showDialog();
 //        }
 
@@ -246,6 +280,18 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
                 Log.d("SUMITPATEL", "MAINRL" + e.getMessage());
             }
         }
+        if (operationCode == APIcall.OPERATION_USER_ORDERDETAIL) {
+            hideDialog();
+            try {
+                Gson gson = new Gson();
+                RestaurantExample exampleUser = gson.fromJson(response, RestaurantExample.class);
+                if(exampleUser.getStatus() == 200){
+                    showcustomedialog(exampleUser.getResponceData().get(0).getRestaurant().getId(),exampleUser.getResponceData().get(0).getRestaurant());
+                }
+            } catch (Exception e) {
+
+            }
+        }
 
         if (operationCode == APIcall.OPERATION_USER_MSG) {
             hideDialog();
@@ -254,15 +300,15 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
                 UserOrderList exampleUser = gson.fromJson(response, UserOrderList.class);
                 if (exampleUser.getStatus() == 400) {
 
-                    if(temp)
-                    {
-                        Intent intent=new Intent(MyOrdersListActivity.this,Dialog_Activity.class);
-                        intent.putExtra("YES","yes");
+                    if (temp) {
+                        Intent intent = new Intent(MyOrdersListActivity.this, Dialog_Activity.class);
+                        intent.putExtra("YES", "yes");
+                        intent.putExtra("REST_ID", REST_ID);
+                        intent.putExtra("ORDER_ID", ORDER_ID);
                         startActivity(intent);
-                    }else
-                    {
-                        Intent intent=new Intent(MyOrdersListActivity.this,Dialog_Activity.class);
-                        intent.putExtra("YES","no");
+                    } else {
+                        Intent intent = new Intent(MyOrdersListActivity.this, Dialog_Activity.class);
+                        intent.putExtra("YES", "no");
                         startActivity(intent);
 //                        dialogm.dismiss();
                     }

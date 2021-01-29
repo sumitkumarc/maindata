@@ -12,7 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-import androidx.recyclerview.widget.RecyclerView;
 import java.lang.Deprecated;
 import java.lang.Object;
 import ontime.app.R;
@@ -31,10 +30,13 @@ public abstract class ActivityRequestpendingBinding extends ViewDataBinding {
   public final LinearLayout llbotom;
 
   @NonNull
+  public final LinearLayout lllist;
+
+  @NonNull
   public final RelativeLayout rly;
 
   @NonNull
-  public final RecyclerView rvList;
+  public final LinearLayout second;
 
   @NonNull
   public final TextView txtHfirst;
@@ -49,29 +51,47 @@ public abstract class ActivityRequestpendingBinding extends ViewDataBinding {
   public final TextView txtMfirst;
 
   @NonNull
+  public final TextView txtName;
+
+  @NonNull
+  public final TextView txtOrderStatus;
+
+  @NonNull
+  public final TextView txtQty;
+
+  @NonNull
   public final TextView txtSFirst;
 
   @NonNull
   public final TextView txtSSecond;
 
+  @NonNull
+  public final TextView txtTotal;
+
   protected ActivityRequestpendingBinding(Object _bindingComponent, View _root,
       int _localFieldCount, LinearLayout back, Button btCancel, Button btPayNow,
-      LinearLayout llbotom, RelativeLayout rly, RecyclerView rvList, TextView txtHfirst,
-      TextView txtHfsecond, TextView txtMSecond, TextView txtMfirst, TextView txtSFirst,
-      TextView txtSSecond) {
+      LinearLayout llbotom, LinearLayout lllist, RelativeLayout rly, LinearLayout second,
+      TextView txtHfirst, TextView txtHfsecond, TextView txtMSecond, TextView txtMfirst,
+      TextView txtName, TextView txtOrderStatus, TextView txtQty, TextView txtSFirst,
+      TextView txtSSecond, TextView txtTotal) {
     super(_bindingComponent, _root, _localFieldCount);
     this.back = back;
     this.btCancel = btCancel;
     this.btPayNow = btPayNow;
     this.llbotom = llbotom;
+    this.lllist = lllist;
     this.rly = rly;
-    this.rvList = rvList;
+    this.second = second;
     this.txtHfirst = txtHfirst;
     this.txtHfsecond = txtHfsecond;
     this.txtMSecond = txtMSecond;
     this.txtMfirst = txtMfirst;
+    this.txtName = txtName;
+    this.txtOrderStatus = txtOrderStatus;
+    this.txtQty = txtQty;
     this.txtSFirst = txtSFirst;
     this.txtSSecond = txtSSecond;
+    this.txtTotal = txtTotal;
   }
 
   @NonNull

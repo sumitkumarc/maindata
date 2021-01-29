@@ -54,14 +54,12 @@ public class RvRestaurantListAdapter extends RecyclerView.Adapter<RvRestaurantLi
             }
         });
         try {
-            holder.binding.rbStar.setRating(Integer.parseInt(mresponceDatumList.get(position).getAvgRate()));
+//            float d= (float) ((Integer.parseInt(mresponceDatumList.get(position).getAvgRate())*5) /100);
+            holder.binding.rbStar.setRating((float) Float.parseFloat(mresponceDatumList.get(position).getAvgRate()));
+//            holder.binding.rbStar.setRating(Float.parseFloat(mresponceDatumList.get(position).getAvgRate()));
         } catch (Exception e) {
         }
 
-        holder.binding.rbStar.setIsIndicator(false);
-        holder.binding.rbStar.setEnabled(false);
-        holder.binding.rbStar.setClickable(false);
-        holder.binding.rbStar.setActivated(false);
         holder.binding.txtName.setText(Common.isStrempty(mresponceDatumList.get(position).getName()));
         holder.binding.txtAddress.setText(Common.isStrempty(mresponceDatumList.get(position).getBranchName()));
         Glide.with(mContext).load(mresponceDatumList.get(position).getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivRestImg);

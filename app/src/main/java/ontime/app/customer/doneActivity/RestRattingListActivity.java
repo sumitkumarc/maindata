@@ -40,11 +40,28 @@ public class RestRattingListActivity extends BaseActivity implements View.OnClic
             binding.rvFilterList.setItemAnimator(new DefaultItemAnimator());
             binding.rvFilterList.setVisibility(View.GONE);
             binding.txtNoItem.setVisibility(View.GONE);
+
+            if (Common.MERCHANT_TYPE == 1) {
+                Common.setSystemBarColor(this, R.color.colorAccent);
+//            Common.setSystemBarLight(this);
+                binding.llBar.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+                binding.txtResName.setTextColor(getResources().getColor(R.color.colorAccent));
+                binding.ivBackArrow.setColorFilter(getResources().getColor(R.color.colorAccent));
+                binding.ivRestProfileImg.setBorderColor(getResources().getColor(R.color.colorAccent));
+
+            } else {
+                Common.setSystemBarColor(this, R.color.super_mart);
+//            Common.setSystemBarLight(this);
+                binding.txtResName.setTextColor(getResources().getColor(R.color.super_mart));
+                binding.llBar.setBackgroundColor(getResources().getColor(R.color.super_mart));
+                binding.ivBackArrow.setColorFilter(getResources().getColor(R.color.super_mart));
+                binding.ivRestProfileImg.setBorderColor(getResources().getColor(R.color.super_mart));
+            }
             try {
                 Glide.with(getContext()).load(getIntent().getStringExtra("REST_IMAGE")).centerCrop().into(binding.ivRestProfileImg);
                 binding.txtResName.setText(Common.isStrempty(getIntent().getStringExtra("REST_NAME")));
                 binding.txtResBarnchname.setText(Common.isStrempty(getIntent().getStringExtra("REST_NAME_BARNCH")));
-                binding.rbRatingbar.setRating(getIntent().getIntExtra("REST_RATING", 0));
+                binding.rbRatingbar.setRating((float) Float.parseFloat(Common.isStrempty(getIntent().getStringExtra("REST_RATING"))));
             } catch (Exception e) {
             }
             GetAPICallRestaurantReviewList();

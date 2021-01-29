@@ -28,6 +28,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
@@ -59,6 +60,7 @@ import com.google.gson.Gson;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Timer;
@@ -82,6 +84,9 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
     String Latitude = "";
     String Langtitude = "";
     int PERMISSION_ID = 101;
+    private int pageCount = 1;
+    List<UserRestaurantsData> userRestaurantsData = new ArrayList<>();
+    private boolean isLoading = false;
 
     @Override
     protected void initView() {
@@ -223,10 +228,31 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
         }
 
         binding.llMain.setVisibility(View.GONE);
+        CAT_TYPE = getIntent().getIntExtra("CAT_TYPE", 1);
         LinearLayoutManager mLayoutManager1as = new LinearLayoutManager(getContext());
         mLayoutManager1as.setOrientation(LinearLayoutManager.VERTICAL);
         binding.rvList.setLayoutManager(mLayoutManager1as);
-        CAT_TYPE = getIntent().getIntExtra("CAT_TYPE", 1);
+        binding.rvList.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+                if (dy > 0) {
+                    int visibleItemCount = mLayoutManager1as.getChildCount();
+                    int totalItemCount = mLayoutManager1as.getItemCount();
+                    int firstVisibleItemPosition = mLayoutManager1as.findFirstVisibleItemPosition();
+                    if (isLoading) {
+                        if ((visibleItemCount + firstVisibleItemPosition) >= totalItemCount && firstVisibleItemPosition >= 0) {
+                            isLoading = false;
+                            pageCount++;
+                            recyclerView.scrollToPosition(userRestaurantsData.size() - 1);
+                            GetAPICallRestaurantList(CAT_TYPE);
+//                            ApiGetProductByCategoryList(getContext());
+                        }
+                    }
+                }
+            }
+        });
+
         binding.AuthorUserName.setText(Common.isStrempty(userData.getFullName()));
         Glide.with(this).load(Common.isStrempty(userData.getImage())).centerCrop().placeholder(R.drawable.ic_action_user).into(binding.AuthorAvatar);
         GetAPICallBannerList();
@@ -535,7 +561,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
         JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("marchent_type", CatTpe);
-            jsonObject.put("page", "1");
+            jsonObject.put("page", pageCount);
             jsonObject.put("no_of_rows", "12");
             jsonObject.put("latitude", Latitude);
             jsonObject.put("longitude", Langtitude);
@@ -591,6 +617,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
         if (operationCode == APIcall.OPERATION_ADVERTISEMENTS) {
             hideDialog();
             binding.llMain.setVisibility(View.VISIBLE);
+            binding.txtWorning.setVisibility(View.GONE);
             Gson gson = new Gson();
             AdvertisementsExample exampleUser = gson.fromJson(response, AdvertisementsExample.class);
             if (exampleUser.getStatus() == 200) {
@@ -599,35 +626,70 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
                 binding.vpBanner.setAdapter(vpNivoSliderAdapter);
                 Timer timer = new Timer();
                 timer.scheduleAtFixedRate(new SliderTimer(), 4000, 6000);
-            } else {
+            } else  if (exampleUser.getStatus() == 401){
+                binding.llMain.setVisibility(View.GONE);
+                binding.txtWorning.setVisibility(View.VISIBLE);
+                binding.txtWorning.setText(Common.isStrempty(exampleUser.getMessage()));
+            }else {
                 Toast.makeText(RestaurantlistActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }else
         if (operationCode == APIcall.OPERATION_RESTAURANT_LIST) {
             hideDialog();
             binding.llMain.setVisibility(View.VISIBLE);
+            binding.txtWorning.setVisibility(View.GONE);
             Gson gson = new Gson();
             ExampleUser exampleUser = gson.fromJson(response, ExampleUser.class);
             if (exampleUser.getStatus() == 200) {
-                List<UserRestaurantsData> userRestaurantsData = exampleUser.getResponceData().getRestaurants().getData();
-                mAdapter = new RvRestaurantListAdapter(getContext(), userRestaurantsData);
-                binding.rvList.setItemAnimator(new DefaultItemAnimator());
-                binding.rvList.setAdapter(mAdapter);
-            } else {
+                userRestaurantsData = exampleUser.getResponceData().getRestaurants().getData();
+                if (pageCount == exampleUser.getResponceData().getRestaurants().getLastPage()) {
+                    isLoading = false;
+                } else {
+                    isLoading = true;
+                }
+                if(userRestaurantsData.size() != 0) {
+                    binding.rvList.setVisibility(View.VISIBLE);
+                    binding.tvNodata.setVisibility(View.GONE);
+                    mAdapter = new RvRestaurantListAdapter(getContext(), userRestaurantsData);
+                    binding.rvList.setItemAnimator(new DefaultItemAnimator());
+                    binding.rvList.setAdapter(mAdapter);
+                }else {
+                    binding.rvList.setVisibility(View.GONE);
+                    binding.tvNodata.setVisibility(View.VISIBLE);
+                }
+            } else  if (exampleUser.getStatus() == 401){
+                binding.llMain.setVisibility(View.GONE);
+                binding.txtWorning.setVisibility(View.VISIBLE);
+                binding.txtWorning.setText(Common.isStrempty(exampleUser.getMessage()));
+            }else {
                 Toast.makeText(RestaurantlistActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }else
         if (operationCode == APIcall.OPERATION_USER_SERRCH_RESRAURANTS) {
             hideDialog();
             binding.llMain.setVisibility(View.VISIBLE);
+            binding.txtWorning.setVisibility(View.GONE);
             Gson gson = new Gson();
             ExampleUser exampleUser = gson.fromJson(response, ExampleUser.class);
             if (exampleUser.getStatus() == 200) {
                 List<UserRestaurantsData> userRestaurantsData = exampleUser.getResponceData().getRestaurants().getData();
-                mAdapter = new RvRestaurantListAdapter(getContext(), userRestaurantsData);
-                binding.rvList.setItemAnimator(new DefaultItemAnimator());
-                binding.rvList.setAdapter(mAdapter);
-            } else {
+               if(userRestaurantsData.size() != 0){
+                   binding.rvList.setVisibility(View.VISIBLE);
+                   binding.tvNodata.setVisibility(View.GONE);
+                   mAdapter = new RvRestaurantListAdapter(getContext(), userRestaurantsData);
+                   binding.rvList.setItemAnimator(new DefaultItemAnimator());
+                   binding.rvList.setAdapter(mAdapter);
+               }else {
+                   binding.rvList.setVisibility(View.GONE);
+                   binding.tvNodata.setVisibility(View.VISIBLE);
+               }
+
+            } else  if (exampleUser.getStatus() == 401){
+                binding.llMain.setVisibility(View.GONE);
+                binding.txtWorning.setVisibility(View.VISIBLE);
+                binding.txtWorning.setText(Common.isStrempty(exampleUser.getMessage()));
+            //    Toast.makeText(RestaurantlistActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+            }else {
                 Toast.makeText(RestaurantlistActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }

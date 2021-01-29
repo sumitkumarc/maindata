@@ -33,6 +33,8 @@ public class Dialog_Activity extends AppCompatActivity implements View.OnClickLi
     String str;
     private Dialog customdialog;
     private ProgressDialog dialog;
+    int REST_ID = 0;
+    int ORDER_ID = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +45,12 @@ public class Dialog_Activity extends AppCompatActivity implements View.OnClickLi
 
         MyOrdersListActivity.dialogm.dismiss();
         str = getIntent().getStringExtra("YES");
+
         if (str.equals("yes")) {
+
             setContentView(R.layout.order_receivepopup);
+            REST_ID =getIntent().getIntExtra("REST_ID",0);
+            ORDER_ID =getIntent().getIntExtra("ORDER_ID",0);
         } else {
             setContentView(R.layout.error_msg_dialog);
         }
@@ -90,8 +96,8 @@ public class Dialog_Activity extends AppCompatActivity implements View.OnClickLi
             jsonObject.put("rate", strRateReview);
             jsonObject.put("review", msg);
             jsonObject.put("merchant_id", Common.MERCHANT_TYPE);
-            jsonObject.put("rate_type", 2);
-            jsonObject.put("order_id", 2);
+            jsonObject.put("rate_type", REST_ID);
+            jsonObject.put("order_id", ORDER_ID);
 
         } catch (JSONException e) {
             e.printStackTrace();

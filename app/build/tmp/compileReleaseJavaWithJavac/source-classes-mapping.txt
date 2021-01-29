@@ -269,6 +269,8 @@ ontime/app/restaurant/model/CircleImageView.java
  ontime.app.restaurant.model.CircleImageView
  ontime.app.restaurant.model.CircleImageView$1
  ontime.app.restaurant.model.CircleImageView$OutlineProvider
+ontime/app/model/usermain/UserReview.java
+ ontime.app.model.usermain.UserReview
 ontime/app/customer/doneActivity/VerificationCodeActivity.java
  ontime.app.customer.doneActivity.VerificationCodeActivity
  ontime.app.customer.doneActivity.VerificationCodeActivity$1
@@ -492,6 +494,7 @@ ontime/app/customer/doneActivity/RestaurantlistActivity.java
  ontime.app.customer.doneActivity.RestaurantlistActivity$3
  ontime.app.customer.doneActivity.RestaurantlistActivity$4
  ontime.app.customer.doneActivity.RestaurantlistActivity$5
+ ontime.app.customer.doneActivity.RestaurantlistActivity$6
  ontime.app.customer.doneActivity.RestaurantlistActivity$SliderTimer
  ontime.app.customer.doneActivity.RestaurantlistActivity$SliderTimer$1
 ontime/app/model/usermain/Item.java

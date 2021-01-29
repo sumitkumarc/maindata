@@ -644,6 +644,7 @@ public class VerificationCodeActivity extends BaseActivity implements View.OnCli
                 .addFormDataPart("email", Common.isStrempty(strEmailID))
                 .addFormDataPart("contact_number", strPhoneNumber)
                 .addFormDataPart("password", strPassword)
+                .addFormDataPart("device_type", "android")
                 .addFormDataPart("image", strFilename,
                         RequestBody.create(new File(strFileParth), MEDIA_TYPE_PNG))
                 .build();

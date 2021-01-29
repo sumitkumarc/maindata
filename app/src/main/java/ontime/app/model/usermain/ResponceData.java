@@ -108,7 +108,7 @@ public class ResponceData {
     private Integer totalOrder;
     @SerializedName("total_spend")
     @Expose
-    private Integer totalSpend;
+    private String totalSpend;
     @SerializedName("cancelled")
     @Expose
     private Integer cancelled;
@@ -121,11 +121,11 @@ public class ResponceData {
         this.totalOrder = totalOrder;
     }
 
-    public Integer getTotalSpend() {
+    public String getTotalSpend() {
         return totalSpend;
     }
 
-    public void setTotalSpend(Integer totalSpend) {
+    public void setTotalSpend(String totalSpend) {
         this.totalSpend = totalSpend;
     }
 

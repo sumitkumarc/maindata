@@ -1,20 +1,20 @@
 apply plugin: 'com.android.application'
 
 android {
-//    signingConfigs {
-////        debug {
-////            keyAlias 'myrestaurantapp'
-////            storeFile file('C:\\Users\\Dell\\Downloads\\MyRestaurantApp13102020\\Restuarant_App\\MyRestaurantApp.jks')
-////            storePassword 'MyRestaurantApp'
-////            keyPassword 'MyRestaurantApp'
-////        }
-////        release {
-////            storeFile file('C:\\Users\\Dell\\Downloads\\MyRestaurantApp13102020\\Restuarant_App\\MyRestaurantApp.jks')
-////            storePassword 'MyRestaurantApp'
-////            keyPassword 'MyRestaurantApp'
-////            keyAlias 'myrestaurantapp'
-////        }
-//    }
+    signingConfigs {
+        debug {
+            keyAlias 'myrestaurantapp'
+            storeFile file('C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\MyRestaurantApp.jks')
+            storePassword 'MyRestaurantApp'
+            keyPassword 'MyRestaurantApp'
+        }
+        release {
+            storeFile file('C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\MyRestaurantApp.jks')
+            storePassword 'MyRestaurantApp'
+            keyPassword 'MyRestaurantApp'
+            keyAlias 'myrestaurantapp'
+        }
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
 
@@ -26,6 +26,7 @@ android {
         versionName "1.1.3"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
+        signingConfig signingConfigs.release
     }
 
     buildTypes {

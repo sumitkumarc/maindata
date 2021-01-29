@@ -87,6 +87,7 @@ public class UserDashboardActivity extends BaseActivity implements View.OnClickL
     @Override
     public void onResume() {
         super.onResume();
+        userData = sessionManager.getUserDetails();
         setUpUI();
         //will be executed onResume
     }

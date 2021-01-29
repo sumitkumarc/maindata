@@ -14,54 +14,57 @@ public class ActivityRequestpendingBindingImpl extends ActivityRequestpendingBin
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.rly, 3);
-        sViewsWithIds.put(R.id.back, 4);
-        sViewsWithIds.put(R.id.rv_list, 5);
-        sViewsWithIds.put(R.id.txt_hfirst, 6);
-        sViewsWithIds.put(R.id.txt_hfsecond, 7);
-        sViewsWithIds.put(R.id.txt_mfirst, 8);
-        sViewsWithIds.put(R.id.txt_mSecond, 9);
-        sViewsWithIds.put(R.id.txt_sFirst, 10);
-        sViewsWithIds.put(R.id.txt_sSecond, 11);
-        sViewsWithIds.put(R.id.llbotom, 12);
-        sViewsWithIds.put(R.id.bt_cancel, 13);
-        sViewsWithIds.put(R.id.bt_pay_now, 14);
+        sViewsWithIds.put(R.id.rly, 1);
+        sViewsWithIds.put(R.id.back, 2);
+        sViewsWithIds.put(R.id.lllist, 3);
+        sViewsWithIds.put(R.id.second, 4);
+        sViewsWithIds.put(R.id.txt_name, 5);
+        sViewsWithIds.put(R.id.txt_total, 6);
+        sViewsWithIds.put(R.id.txt_order_status, 7);
+        sViewsWithIds.put(R.id.txt_qty, 8);
+        sViewsWithIds.put(R.id.txt_hfirst, 9);
+        sViewsWithIds.put(R.id.txt_hfsecond, 10);
+        sViewsWithIds.put(R.id.txt_mfirst, 11);
+        sViewsWithIds.put(R.id.txt_mSecond, 12);
+        sViewsWithIds.put(R.id.txt_sFirst, 13);
+        sViewsWithIds.put(R.id.txt_sSecond, 14);
+        sViewsWithIds.put(R.id.llbotom, 15);
+        sViewsWithIds.put(R.id.bt_cancel, 16);
+        sViewsWithIds.put(R.id.bt_pay_now, 17);
     }
     // views
     @NonNull
-    private final androidx.appcompat.widget.LinearLayoutCompat mboundView0;
-    @NonNull
-    private final android.widget.LinearLayout mboundView1;
-    @Nullable
-    private final ontime.app.databinding.CRowRequestpendingItemBinding mboundView11;
+    private final android.widget.LinearLayout mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public ActivityRequestpendingBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 15, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 18, sIncludes, sViewsWithIds));
     }
     private ActivityRequestpendingBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.LinearLayout) bindings[2]
+            , (android.widget.Button) bindings[16]
+            , (android.widget.Button) bindings[17]
+            , (android.widget.LinearLayout) bindings[15]
+            , (android.widget.LinearLayout) bindings[3]
+            , (android.widget.RelativeLayout) bindings[1]
             , (android.widget.LinearLayout) bindings[4]
-            , (android.widget.Button) bindings[13]
-            , (android.widget.Button) bindings[14]
-            , (android.widget.LinearLayout) bindings[12]
-            , (android.widget.RelativeLayout) bindings[3]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[5]
-            , (android.widget.TextView) bindings[6]
-            , (android.widget.TextView) bindings[7]
             , (android.widget.TextView) bindings[9]
-            , (android.widget.TextView) bindings[8]
             , (android.widget.TextView) bindings[10]
+            , (android.widget.TextView) bindings[12]
             , (android.widget.TextView) bindings[11]
+            , (android.widget.TextView) bindings[5]
+            , (android.widget.TextView) bindings[7]
+            , (android.widget.TextView) bindings[8]
+            , (android.widget.TextView) bindings[13]
+            , (android.widget.TextView) bindings[14]
+            , (android.widget.TextView) bindings[6]
             );
-        this.mboundView0 = (androidx.appcompat.widget.LinearLayoutCompat) bindings[0];
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);
-        this.mboundView1 = (android.widget.LinearLayout) bindings[1];
-        this.mboundView1.setTag(null);
-        this.mboundView11 = (bindings[2] != null) ? ontime.app.databinding.CRowRequestpendingItemBinding.bind((android.view.View) bindings[2]) : null;
         setRootTag(root);
         // listeners
         invalidateAll();

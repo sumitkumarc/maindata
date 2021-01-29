@@ -40,6 +40,7 @@ public class AppConstant {
     public static final String GET_USER_NOTIFICATION = BASE_URL_NEW +"getNotification";
     public static final String GET_UPDATE_DEVICE_TOKEN = BASE_URL_NEW +"updateDeviceToken";
     public static final String GET_READER_ORDERDETAIL = BASE_URL_READER +"getOrders";
+
     public static final String GET_READER_ORDER_ACCEPT = BASE_URL_READER +"acceptOrder";
     public static final String GET_READER_ORDER_REJECT = BASE_URL_READER +"rejectOrder";
     public static final String GET_READER_ORDER_COMPLETE = BASE_URL_READER +"completeOrder";
@@ -58,7 +59,7 @@ public class AppConstant {
 
     public static final String GET_ADD_TO_CART_SUPER = BASE_URL_NEW +"addCartSuper";
     public static final String GET_SUPER_MENU_ITEM_UPDATE_DETAIL = BASE_URL_NEW +"updateCartItemSp";
-
+    public static final String GET_USER_ORDERDETAIL = BASE_URL_NEW +"orderDetail";
 
 
 

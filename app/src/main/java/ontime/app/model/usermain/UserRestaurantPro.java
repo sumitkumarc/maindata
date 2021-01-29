@@ -356,4 +356,76 @@ public class UserRestaurantPro {
     }
 
 
+    @SerializedName("user_type")
+    @Expose
+    private String userType;
+    @SerializedName("contract")
+    @Expose
+    private String contract;
+    @SerializedName("full_address")
+    @Expose
+    private String fullAddress;
+    @SerializedName("avg_rate")
+    @Expose
+    private String avgRate;
+    @SerializedName("is_banned")
+    @Expose
+    private Integer isBanned;
+    @SerializedName("resource")
+    @Expose
+    private Object resource;
+
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
+    }
+
+    public String getContract() {
+        return contract;
+    }
+
+    public void setContract(String contract) {
+        this.contract = contract;
+    }
+
+    public String getFullAddress() {
+        return fullAddress;
+    }
+
+    public void setFullAddress(String fullAddress) {
+        this.fullAddress = fullAddress;
+    }
+
+    public String getAvgRate() {
+        return avgRate;
+    }
+
+    public void setAvgRate(String avgRate) {
+        this.avgRate = avgRate;
+    }
+
+    public Integer getIsBanned() {
+        return isBanned;
+    }
+
+    public void setIsBanned(Integer isBanned) {
+        this.isBanned = isBanned;
+    }
+
+    public Object getResource() {
+        return resource;
+    }
+
+    public void setResource(Object resource) {
+        this.resource = resource;
+    }
+
+
+
+
+
 }

@@ -66,8 +66,8 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
     String REST_IMAGE = "";
     String REST_NAME = "";
     String REST_NAME_BARNCH = "";
-    Integer REST_RATING = 0;
-
+    String REST_RATING = "";
+     Dialog dialogsDoyouwant;
 
     @Override
     protected void initView() {
@@ -103,7 +103,7 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
             binding.ivBackArrow.setColorFilter(getResources().getColor(R.color.super_mart));
         }
 
-        binding.rbRatingbar.setEnabled(false);
+//        binding.rbRatingbar.setEnabled(false);
         LinearLayoutManager mLayoutManager1as = new LinearLayoutManager(getContext());
         mLayoutManager1as.setOrientation(LinearLayoutManager.VERTICAL);
         binding.rvList.setLayoutManager(mLayoutManager1as);
@@ -113,7 +113,7 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
         mLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         binding.rvFilterList.setLayoutManager(mLayoutManager);
 
-        GetAPICallRestaurantProfile(getIntent().getIntExtra("RE_ID", 1));
+        GetAPICallRestaurantProfile(Common.RESTAURANT_ID);
 //        GetAPICallRestaurantMenuitems(getIntent().getIntExtra("RE_ID", 1));
 //        GetAPICallRestaurantCartList();
 
@@ -173,12 +173,12 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
             dialog.dismiss();
     }
 
-    private void GetAPICallRestaurantMenuitems(int rest_id) {
+    private void GetAPICallRestaurantMenuitems(int menu_id) {
         Common.hideKeyboard(getActivity());
         JSONObject jsonObject = new JSONObject();
         try {
-            jsonObject.put("restaurant_id", rest_id);
-            jsonObject.put("menu_id", 1);
+            jsonObject.put("restaurant_id", Common.RESTAURANT_ID);
+            jsonObject.put("menu_id", menu_id);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -229,7 +229,7 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
 
     @Override
     public void onSuccess(int operationCode, String response, Object customData) {
-        try {
+//        try {
             if (operationCode == APIcall.OPERATION_RESTAURANT_MENU_ITEM) {
                 hideDialog();
                 binding.llMain.setVisibility(View.VISIBLE);
@@ -263,13 +263,14 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
                 if (exampleUser.getStatus() == 200) {
                     List<UserRestaurantProCategory> userRestaurantProCategories = exampleUser.getResponceData().getRestaurant().getCategories();
                     RestaurantId = exampleUser.getResponceData().getRestaurant().getId();
-                    REST_RATING = exampleUser.getResponceData().getRestaurant().getAvag_rating();
+                    REST_RATING = exampleUser.getResponceData().getRestaurant().getAvgRate();
                     REST_NAME = Common.isStrempty(exampleUser.getResponceData().getRestaurant().getName());
                     REST_NAME_BARNCH = Common.isStrempty(exampleUser.getResponceData().getRestaurant().getBranchName());
                     REST_IMAGE = exampleUser.getResponceData().getRestaurant().getImage();
                     binding.txtResName.setText(Common.isStrempty(exampleUser.getResponceData().getRestaurant().getName()));
                     binding.txtResBarnchname.setText(Common.isStrempty(exampleUser.getResponceData().getRestaurant().getBranchName()));
-                    binding.rbRatingbar.setRating(exampleUser.getResponceData().getRestaurant().getAvag_rating());
+//                    binding.rbRatingbar.setRating(exampleUser.getResponceData().getRestaurant().getAvag_rating());
+                    binding.rbRatingbar.setRating((float) Float.parseFloat(exampleUser.getResponceData().getRestaurant().getAvgRate()));
                     Glide.with(getContext()).load(exampleUser.getResponceData().getRestaurant().getImage()).centerCrop().into(binding.ivRestProfileImg);
                     menuFilterListAdapter = new RvRestaurantMenuFilterListAdapter(getContext(), userRestaurantProCategories);
                     binding.rvFilterList.setItemAnimator(new DefaultItemAnimator());
@@ -332,6 +333,8 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
 
                         if (Common.MERCHANT_TYPE == 1) {
                             if(CartItems== 0){
+                                if (dialogsDoyouwant != null && dialogsDoyouwant.isShowing())
+                                    dialogsDoyouwant.dismiss();
                                 showDialogDoyouwant();
                             }
 
@@ -344,9 +347,9 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
             }
 
             hideDialog();
-        } catch (Exception e) {
-
-        }
+//        } catch (Exception e) {
+//
+//        }
 
     }
 
@@ -358,7 +361,8 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
     @Override
     public void OnItemClick(Integer id, int item_id) {
         binding.rvList.setVisibility(View.GONE);
-        GetAPICallRest(item_id);
+//        GetAPICallRest(item_id);
+        GetAPICallRestaurantMenuitems(item_id);
     }
 
     @Override
@@ -400,20 +404,20 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
     }
 
     public void showDialogDoyouwant() {
-        final Dialog dialogs = new Dialog(this);
-        dialogs.setCancelable(false);
-        dialogs.setContentView(R.layout.popup_doyouwant);
+        dialogsDoyouwant = new Dialog(this);
+        dialogsDoyouwant.setCancelable(false);
+        dialogsDoyouwant.setContentView(R.layout.popup_doyouwant);
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
-        lp.copyFrom(dialogs.getWindow().getAttributes());
+        lp.copyFrom(dialogsDoyouwant.getWindow().getAttributes());
         lp.width = WindowManager.LayoutParams.MATCH_PARENT;
         lp.height = WindowManager.LayoutParams.MATCH_PARENT;
         lp.gravity = Gravity.CENTER;
-        dialogs.getWindow().setAttributes(lp);
-        dialogs.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
-        dialogs.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-        TextView tvtake = dialogs.findViewById(R.id.tvtake);
+        dialogsDoyouwant.getWindow().setAttributes(lp);
+        dialogsDoyouwant.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+        dialogsDoyouwant.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        TextView tvtake = dialogsDoyouwant.findViewById(R.id.tvtake);
 
-        TextView tvdine = dialogs.findViewById(R.id.tvdine);
+        TextView tvdine = dialogsDoyouwant.findViewById(R.id.tvdine);
 
         if (Common.MERCHANT_TYPE == 1) {
             tvtake.setBackground(this.getResources().getDrawable(R.drawable.btn_rest_pop));
@@ -431,7 +435,7 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
 //                i2.putExtra("ITEM_ID" , mresponceDatumList.get(position).getId());
 //                i2.putExtra("UPDATE_ITEM", 1);
 //                mContext.startActivity(i2);
-                dialogs.dismiss();
+                dialogsDoyouwant.dismiss();
             }
         });
         tvdine.setOnClickListener(new View.OnClickListener() {
@@ -443,9 +447,9 @@ public class RestaurantProfileActivity extends BaseActivity implements View.OnCl
 //                i2.putExtra("ITEM_ID" , mresponceDatumList.get(position).getId());
 //                i2.putExtra("UPDATE_ITEM", 1);
 //                mContext.startActivity(i2);
-                dialogs.dismiss();
+                dialogsDoyouwant.dismiss();
             }
         });
-        dialogs.show();
+        dialogsDoyouwant.show();
     }
 }

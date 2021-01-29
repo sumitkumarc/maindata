@@ -17,7 +17,6 @@
 
     <application
         android:allowBackup="true"
-        android:debuggable="true"
         android:hardwareAccelerated="true"
         android:hasCode="true"
         android:icon="@mipmap/ic_launcher"

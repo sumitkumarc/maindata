@@ -4,6 +4,7 @@ package ontime.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,14 +20,18 @@ public final class OrderrequestActivityBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final ImageView ivRestImg;
+
+  @NonNull
   public final TextView no;
 
   @NonNull
   public final TextView yes;
 
-  private OrderrequestActivityBinding(@NonNull CardView rootView, @NonNull TextView no,
-      @NonNull TextView yes) {
+  private OrderrequestActivityBinding(@NonNull CardView rootView, @NonNull ImageView ivRestImg,
+      @NonNull TextView no, @NonNull TextView yes) {
     this.rootView = rootView;
+    this.ivRestImg = ivRestImg;
     this.no = no;
     this.yes = yes;
   }
@@ -58,6 +63,12 @@ public final class OrderrequestActivityBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.iv_rest_img;
+      ImageView ivRestImg = rootView.findViewById(id);
+      if (ivRestImg == null) {
+        break missingId;
+      }
+
       id = R.id.no;
       TextView no = rootView.findViewById(id);
       if (no == null) {
@@ -70,7 +81,7 @@ public final class OrderrequestActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new OrderrequestActivityBinding((CardView) rootView, no, yes);
+      return new OrderrequestActivityBinding((CardView) rootView, ivRestImg, no, yes);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

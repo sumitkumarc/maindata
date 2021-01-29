@@ -60,6 +60,17 @@ public class OrderFinished {
     @SerializedName("created_at")
     @Expose
     private String createdAt;
+    @SerializedName("review")
+    @Expose
+    private UserReview review;
+
+    public UserReview getReview() {
+        return review;
+    }
+
+    public void setReview(UserReview review) {
+        this.review = review;
+    }
     @SerializedName("order_detail")
     @Expose
     private List<UserCartItemDetail> orderDetail = null;

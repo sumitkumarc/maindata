@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+
 import ontime.app.R;
 import ontime.app.databinding.CRowCategoryListItemBinding;
 import ontime.app.model.usermain.UserRestaurantProCategory;
@@ -42,11 +43,11 @@ public class RvRestaurantMenuFilterListAdapter extends RecyclerView.Adapter<RvRe
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                row_index=position;
+                row_index = position;
                 notifyDataSetChanged();
             }
         });
-        if(row_index==position){
+        if (row_index == position) {
             rvInterface.OnItemClick(position, mCategories.get(position).getId());
             if (Common.MERCHANT_TYPE == 1) {
                 holder.binding.cdMainCard.setCardBackgroundColor(Color.parseColor("#FFFF0015"));
@@ -55,20 +56,24 @@ public class RvRestaurantMenuFilterListAdapter extends RecyclerView.Adapter<RvRe
             } else {
                 holder.binding.cdMainCard.setCardBackgroundColor(Color.parseColor("#FE8B00"));
                 holder.binding.txtCatName.setTextColor(Color.parseColor("#ffffff"));
-                holder.binding.ivCatImag.setColorFilter(Color.parseColor("#ffffff"));
+                //  holder.binding.ivCatImag.setColorFilter(Color.parseColor("#ffffff"));
             }
 
-        }
-        else
-        {
-            holder.binding.cdMainCard.setCardBackgroundColor(Color.parseColor("#ffffff"));
-            holder.binding.txtCatName.setTextColor(Color.parseColor("#000000"));
-            holder.binding.ivCatImag.setColorFilter(Color.parseColor("#000000"));
+        } else {
+            if (Common.MERCHANT_TYPE == 1) {
+                holder.binding.cdMainCard.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                holder.binding.txtCatName.setTextColor(Color.parseColor("#000000"));
+                holder.binding.ivCatImag.setColorFilter(Color.parseColor("#000000"));
+            }else {
+                holder.binding.cdMainCard.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                holder.binding.txtCatName.setTextColor(Color.parseColor("#000000"));
+            }
         }
         holder.binding.txtCatName.setText(mCategories.get(position).getName());
         Glide.with(mContext).load(mCategories.get(position).getIcon()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivCatImag);
     }
-    public void setOnItemClickListener(rv_interface rvsInterface){
+
+    public void setOnItemClickListener(rv_interface rvsInterface) {
         rvInterface = rvsInterface;
 
     }

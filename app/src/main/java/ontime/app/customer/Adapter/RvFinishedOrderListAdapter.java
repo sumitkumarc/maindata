@@ -119,6 +119,13 @@ public class RvFinishedOrderListAdapter extends BaseAdapter<RvFinishedOrderListA
         } catch (Exception e) {
             holder.binding.txtOrderPaymentStatus.setVisibility(View.GONE);
         }
+        if(mOrderFinisheds.get(position).getReview() == null){
+            holder.binding.btReOrder.setVisibility(View.VISIBLE);
+        }else {
+            holder.binding.btReOrder.setVisibility(View.GONE);
+            holder.binding.edReviewMsg.setText(mOrderFinisheds.get(position).getReview().getReview());
+            holder.binding.rbRateReview.setRating((float) Float.parseFloat(mOrderFinisheds.get(position).getReview().getRate()));
+        }
 
         holder.binding.btReOrder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,14 +133,14 @@ public class RvFinishedOrderListAdapter extends BaseAdapter<RvFinishedOrderListA
                 if (isConnected()) {
                     String rating = String.valueOf(holder.binding.rbRateReview.getRating());
                     if (rating == null) {
-                        Toast.makeText(mContext, "retting add", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, "Please add rating.", Toast.LENGTH_SHORT).show();
                         return;
                     }
                     if (holder.binding.edReviewMsg.getText().toString().equals("")) {
-                        Toast.makeText(mContext, "Enter review msg.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, "Enter your review message.", Toast.LENGTH_SHORT).show();
                         return;
                     }
-                    APICallUserOrderReview(mOrderFinisheds.get(position).getId(),holder.binding.edReviewMsg.getText().toString(),rating);
+                    APICallUserOrderReview(mOrderFinisheds.get(position).getId(),holder.binding.edReviewMsg.getText().toString(),rating,mOrderFinisheds.get(position).getRestaurantId());
                 }
             }
         });
@@ -144,12 +151,12 @@ public class RvFinishedOrderListAdapter extends BaseAdapter<RvFinishedOrderListA
         return mOrderFinisheds.size();
     }
 
-    public void APICallUserOrderReview( int order_id, String msg, String rating) {
+    public void APICallUserOrderReview(int order_id, String msg, String rating, Integer restaurantId) {
         JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("rate", rating);
             jsonObject.put("review", msg);
-            jsonObject.put("merchant_id", Common.MERCHANT_TYPE);
+            jsonObject.put("merchant_id", restaurantId);
             jsonObject.put("rate_type", 2);
             jsonObject.put("order_id", order_id);
         } catch (JSONException e) {

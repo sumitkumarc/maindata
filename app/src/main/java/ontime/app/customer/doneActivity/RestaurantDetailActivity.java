@@ -8,14 +8,11 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -23,12 +20,19 @@ import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.widget.AppCompatButton;
-import androidx.core.content.ContextCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.bumptech.glide.Glide;
+import com.google.gson.Gson;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.text.DecimalFormat;
+import java.util.List;
+
+import okhttp3.RequestBody;
 import ontime.app.R;
 import ontime.app.databinding.ActivityRestdetailBinding;
 import ontime.app.model.usermain.ExampleUser;
@@ -42,18 +46,8 @@ import ontime.app.okhttp.AppConstant;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
 
-import com.google.gson.Gson;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.List;
-
-import okhttp3.RequestBody;
-
 import static ontime.app.okhttp.APIcall.OPERATION_ADD_TO_CART;
 import static ontime.app.utils.Common.DELIVER_TYPE;
-import static ontime.app.utils.Common.NOTE;
 
 public class RestaurantDetailActivity extends BaseActivity implements View.OnClickListener, APIcall.ApiCallListner {
 
@@ -70,6 +64,7 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
     int restaurant_id = 0;
     int CART_ITEM_ID = 0;
     int CART_ITEM_SIZE = 0;
+    int CART_ITEM_POSITION = 0;
     int Counter = 1;
     double total_int = 0;
     double finaltotal = 0;
@@ -92,6 +87,7 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
         ITEM_ID = getIntent().getIntExtra("ITEM_ID", 0);
         CART_ITEM_ID = getIntent().getIntExtra("CART_ITEM_ID", 0);
         CART_ITEM_SIZE = getIntent().getIntExtra("CART_ITEM_SIZE", 0);
+        CART_ITEM_POSITION = getIntent().getIntExtra("CART_ITEM_POSITION", 0);
         restaurant_id = getIntent().getIntExtra("restaurant_id", 0);
         UPDATE_ITEM = getIntent().getIntExtra("UPDATE_ITEM", 0);
         setUpUI();
@@ -141,6 +137,7 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
         if (UPDATE_ITEM == 0) {
             binding.btAddtocart.setText("Update Cart");
             Counter = Common.UpdateCart.getQuantity();
+            CART_ITEM_POSITION = 0;
 //            size_price = Common.UpdateCart.
 //            showTotal();
         } else {
@@ -161,7 +158,7 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
     }
 
     private void showDialog() {
-        dialog = new ProgressDialog(RestaurantDetailActivity.this);
+        dialog = new ProgressDialog(ontime.app.customer.doneActivity.RestaurantDetailActivity.this);
         dialog.setMessage(getResources().getString(R.string.Please_wait));
         dialog.setCancelable(false);
         dialog.show();
@@ -231,7 +228,7 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                 if (CART_ITEM_SIZE == 0) {
                     Toast.makeText(this, "No data from item cart.", Toast.LENGTH_SHORT).show();
                 } else {
-                    Intent i2s = new Intent(RestaurantDetailActivity.this, RestCartItemActivity.class);
+                    Intent i2s = new Intent(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, RestCartItemActivity.class);
                     startActivity(i2s);
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 }
@@ -287,7 +284,8 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
         total_int = size_price + addition_price + unit_price;
         finaltotal = 0;
         finaltotal = total_int * Counter;
-        binding.txtProPrice.setText("SR " + String.valueOf(finaltotal));
+        DecimalFormat form = new DecimalFormat("0.00");
+        binding.txtProPrice.setText("SR " + form.format(finaltotal));
     }
 
     private void GetAPICallRestaurantUpdateItemDetails(int MENU_ID, int ITEM_ID) {
@@ -390,7 +388,7 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
         lp.gravity = Gravity.CENTER;
         dialogm.getWindow().setAttributes(lp);
         dialogm.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
-        dialogm.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialogm.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         AppCompatButton bt_addtocart = dialogm.findViewById(R.id.bt_addtocart);
         ImageView iv_check = dialogm.findViewById(R.id.iv_check);
         TextView txt_name = dialogm.findViewById(R.id.txt_name);
@@ -406,7 +404,7 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
         bt_addtocart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i2s = new Intent(RestaurantDetailActivity.this, RestaurantProfileActivity.class);
+                Intent i2s = new Intent(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, RestaurantProfileActivity.class);
                 startActivity(i2s);
                 finish();
                 dialogm.dismiss();
@@ -446,12 +444,26 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                 Gson gson = new Gson();
                 ExampleUserItem exampleUser = gson.fromJson(response, ExampleUserItem.class);
                 if (exampleUser.getStatus() == 200) {
-                    Intent i2s = new Intent(RestaurantDetailActivity.this, RestaurantProfileActivity.class);
-                    startActivity(i2s);
+//                    Common.UpdateCart.setAdditionId(exampleUser.getResponceData().getCart().getAdditionId());
+//                    Common.UpdateCart.setCartId(exampleUser.getResponceData().getCart().getCartId());
+//                    Common.UpdateCart.setCreatedAt(exampleUser.getResponceData().getCart().getCreatedAt());
+//                    Common.UpdateCart.setId(exampleUser.getResponceData().getCart().getId());
+//                    Common.UpdateCart.setItemDetail(exampleUser.getResponceData().getCart().getItemDetail());
+//                    Common.UpdateCart.setItemId(exampleUser.getResponceData().getCart().getItemId());
+//                    Common.UpdateCart.setMenuId(exampleUser.getResponceData().getCart().getMenuId());
+//                    Common.UpdateCart.setQuantity(exampleUser.getResponceData().getCart().getQuantity());
+//                    Common.UpdateCart.setRemovalId(exampleUser.getResponceData().getCart().getRemovalId());
+//                    Common.UpdateCart.setRestaurantId(exampleUser.getResponceData().getCart().getRestaurantId());
+//                    Common.UpdateCart.setSizeId(exampleUser.getResponceData().getCart().getSizeId());
+//                    Common.UpdateCart.setTotalPrice(exampleUser.getResponceData().getCart().getTotalPrice());
+//                    Common.UpdateCart.setType(exampleUser.getResponceData().getCart().getType());
+//                    Common.UpdateCart.setUnitPrice(exampleUser.getResponceData().getCart().getUnitPrice());
+//                    Common.UpdateCart.setUserId(exampleUser.getResponceData().getCart().getUserId());
+                    onBackPressed();
                     finish();
-                    Toast.makeText(RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
             if (operationCode == APIcall.OPERATION_SUPER_MENU_ITEM_UPDATE_DETAIL) {
@@ -460,12 +472,12 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                 Gson gson = new Gson();
                 ExampleUserItem exampleUser = gson.fromJson(response, ExampleUserItem.class);
                 if (exampleUser.getStatus() == 200) {
-                    Intent i2s = new Intent(RestaurantDetailActivity.this, RestaurantProfileActivity.class);
+                    Intent i2s = new Intent(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, RestaurantProfileActivity.class);
                     startActivity(i2s);
                     finish();
-                    Toast.makeText(RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
             if (operationCode == APIcall.OPERATION_RESTAURANT_MENU_ITEM_DETAIL) {
@@ -568,13 +580,12 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                         }
                         binding.rgCDs.addView(rdbtn);
                         final int finalI = i;
-                        rdbtn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                        rdbtn.setOnClickListener(new View.OnClickListener() {
                             @Override
-                            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                                if (isChecked) {
-                                    rdbtn.setChecked(false);
-                                }
-                                if (isChecked) {
+                            public void onClick(View v) {
+                                if (!rdbtn.isSelected()) {
+                                    rdbtn.setChecked(true);
+                                    rdbtn.setSelected(true);
                                     addition_id = additionDetail.get(finalI).getId();
                                     try {
                                         if (additionDetail.get(finalI).getPrice() == null) {
@@ -584,23 +595,15 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                                         }
                                     } catch (Exception e) {
                                         addition_price = 0;
+
                                     }
-//                                if (!Common.isStrempty(additionDetail.get(finalI).getPrice()).equals("")) {
-//                                    addition_price = Double.parseDouble(additionDetail.get(finalI).getPrice());
-//                                } else {
-//                                    addition_price = 0;
-//                                }
                                 } else {
+                                    rdbtn.setChecked(false);
+                                    rdbtn.setSelected(false);
                                     addition_id = 0;
+                                    addition_price = 0;
                                 }
-
                                 showTotal();
-                            }
-                        });
-                        rdbtn.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-
                             }
                         });
                     }
@@ -630,7 +633,7 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                         });
                     }
                 } else {
-                    Toast.makeText(RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
             if (operationCode == OPERATION_ADD_TO_CART) {
@@ -641,9 +644,9 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                 if (exampleUser.getStatus() == 200) {
                     onBackPressed();
                     finish();
-                    Toast.makeText(RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
             if (operationCode == APIcall.OPERATION_ADD_TO_CART_SUPER) {
@@ -654,13 +657,13 @@ public class RestaurantDetailActivity extends BaseActivity implements View.OnCli
                 if (exampleUser.getStatus() == 200) {
                     onBackPressed();
                     finish();
-                    Toast.makeText(RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ontime.app.customer.doneActivity.RestaurantDetailActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
             hideDialog();
-        } catch (Exception e) {
+        }catch (Exception e){
 
         }
     }
