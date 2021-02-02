@@ -1,6 +1,8 @@
 package ontime.app.customer.doneActivity;
 
+import android.app.ActivityOptions;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +11,10 @@ import androidx.databinding.DataBindingUtil;
 
 import ontime.app.R;
 import ontime.app.databinding.ActivityLanguageBinding;
+import ontime.app.model.usermain.Userdate;
 import ontime.app.okhttp.SharedPreferenceManagerFile;
+import ontime.app.restaurant.ui.Activity.RiderOrderDetails;
+import ontime.app.restaurant.ui.Activity.SplashActivity;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
 import ontime.app.utils.LanguageManager;
@@ -22,11 +27,17 @@ public class LanguageActivity extends BaseActivity implements View.OnClickListen
     ActivityLanguageBinding binding;
     private ProgressDialog dialog;
     private SharedPreferenceManagerFile sharedPref;
+    Userdate userData;
+    SessionManager sessionManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         sharedPref = new SharedPreferenceManagerFile(LanguageActivity.this);
+
+        sessionManager = new SessionManager(LanguageActivity.this);
+        userData = sessionManager.getUserDetails();
+
         Locale locale;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             locale = getResources().getConfiguration().getLocales().get(0);
@@ -84,16 +95,38 @@ public class LanguageActivity extends BaseActivity implements View.OnClickListen
                 onBackPressed();
                 break;
             case R.id.txt_arbic:
-				sharedPref.setStringSharedPreference(this, LanguageManager.LANGUAGE_KEY, LanguageManager.LANGUAGE_KEY_ARABIC);
+                sharedPref.setStringSharedPreference(this, LanguageManager.LANGUAGE_KEY, LanguageManager.LANGUAGE_KEY_ARABIC);
                 LanguageManager.setNewLocale(this, LanguageManager.LANGUAGE_KEY_ARABIC);
+                if (userData.getUserType().equals("user")) {
+                    Intent i = new Intent(LanguageActivity.this, UserDashboardActivity.class);
+                    ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(LanguageActivity.this);
+                    startActivity(i, transitionActivityOptions.toBundle());
+                    finish();
+                } else {
+                    Intent i = new Intent(LanguageActivity.this, RiderOrderDetails.class);
+                    ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(LanguageActivity.this);
+                    startActivity(i, transitionActivityOptions.toBundle());
+                    finish();
+                }
                 onBackPressed();
-                finish();
+                //finish();
                 break;
             case R.id.txt_english:
-				sharedPref.setStringSharedPreference(this, LanguageManager.LANGUAGE_KEY, LanguageManager.LANGUAGE_KEY_ENGLISH);
+                sharedPref.setStringSharedPreference(this, LanguageManager.LANGUAGE_KEY, LanguageManager.LANGUAGE_KEY_ENGLISH);
                 LanguageManager.setNewLocale(this, LanguageManager.LANGUAGE_KEY_ENGLISH);
                 onBackPressed();
-                finish();
+                if (userData.getUserType().equals("user")) {
+                    Intent i = new Intent(LanguageActivity.this, UserDashboardActivity.class);
+                    ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(LanguageActivity.this);
+                    startActivity(i, transitionActivityOptions.toBundle());
+                    finish();
+                } else {
+                    Intent i = new Intent(LanguageActivity.this, RiderOrderDetails.class);
+                    ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(LanguageActivity.this);
+                    startActivity(i, transitionActivityOptions.toBundle());
+                    finish();
+                }
+                // finish();
                 break;
 
         }

@@ -6,43 +6,43 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="17"
-8-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
+8-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml
+9-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-11-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:6:5-79
-11-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:6:22-76
+11-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:6:5-79
+11-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:6:22-76
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:7:5-67
-12-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:7:22-64
+12-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:7:5-67
+12-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:7:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:8:5-76
-13-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:8:22-73
+13-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:8:5-76
+13-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:8:22-73
 14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:6:5-79
-14-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:6:22-76
+14-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:6:5-79
+14-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:6:22-76
 15    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-15-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:10:5-70
-15-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:10:22-67
+15-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:10:5-70
+15-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:10:22-67
 16    <uses-permission android:name="android.permission.READ_SMS" />
-16-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:11:5-67
-16-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:11:22-64
+16-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:11:5-67
+16-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:11:22-64
 17    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-17-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:12:5-75
-17-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:12:22-72
+17-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:12:5-75
+17-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:12:22-72
 18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-18-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:13:5-80
-18-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:13:22-77
+18-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:13:5-80
+18-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:13:22-77
 19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-19-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:14:5-81
-19-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:14:22-78
+19-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:14:5-81
+19-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:14:22-78
 20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-20-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:15:5-79
-20-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:15:22-76
+20-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:15:5-79
+20-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:15:22-76
 21    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
-21-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:16:5-82
-21-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:16:22-79
+21-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:16:5-82
+21-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:16:22-79
 22    <uses-permission android:name="android.permission.CAMERA" />
 22-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:13:5-65
 22-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:13:22-62
@@ -82,299 +82,298 @@
 36-->[io.card:android-sdk:5.5.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\472d443b33a5b46d303143d0aa163a03\jetified-android-sdk-5.5.1\AndroidManifest.xml:17:9-33
 37
 38    <application
-38-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:18:5-168:19
+38-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:18:5-167:19
 39        android:name="androidx.multidex.MultiDexApplication"
 40        android:allowBackup="true"
-40-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:19:9-35
+40-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:19:9-35
 41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 41-->[androidx.core:core:1.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\cdfea8f3da9d3d8e26bbb73a40c2de98\core-1.3.1\AndroidManifest.xml:24:18-86
 42        android:debuggable="true"
-42-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:20:9-34
 43        android:hardwareAccelerated="true"
-43-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:21:9-43
+43-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:20:9-43
 44        android:hasCode="true"
-44-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:22:9-31
+44-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:21:9-31
 45        android:icon="@mipmap/ic_launcher"
-45-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:23:9-43
+45-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:22:9-43
 46        android:isolatedProcess="true"
-46-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:24:9-39
+46-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:23:9-39
 47        android:label="@string/app_name"
-47-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:25:9-41
+47-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:24:9-41
 48        android:largeHeap="true"
-48-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:26:9-33
+48-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:25:9-33
 49        android:requestLegacyExternalStorage="true"
-49-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:27:9-52
+49-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:26:9-52
 50        android:roundIcon="@mipmap/ic_launcher_round"
-50-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:28:9-54
+50-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:27:9-54
 51        android:supportsRtl="true"
-51-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:29:9-35
+51-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:28:9-35
 52        android:testOnly="true"
 53        android:theme="@style/AppTheme"
-53-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:30:9-40
+53-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:29:9-40
 54        android:usesCleartextTraffic="true" >
-54-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:31:9-44
+54-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:30:9-44
 55        <activity
-55-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:34:9-35:47
+55-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:33:9-34:47
 56            android:name="ontime.app.customer.doneActivity.RestRattingListActivity"
-56-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:34:19-80
+56-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:33:19-80
 57            android:theme="@style/AppTheme1" />
-57-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:35:13-45
+57-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:34:13-45
 58        <activity
-58-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:36:9-38:48
+58-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:35:9-37:48
 59            android:name="ontime.app.restaurant.ui.Activity.NewOrderItemListActivity"
-59-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:37:13-76
+59-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:36:13-76
 60            android:theme="@style/AppTheme1" />
-60-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:38:13-45
+60-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:37:13-45
 61
 62        <provider
 63            android:name="androidx.core.content.FileProvider"
-63-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:41:13-62
+63-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:40:13-62
 64            android:authorities="ontime.app.provider"
-64-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:42:13-60
+64-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:41:13-60
 65            android:exported="false"
-65-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:43:13-37
+65-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:42:13-37
 66            android:grantUriPermissions="true" >
-66-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:44:13-47
+66-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:43:13-47
 67            <meta-data
-67-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:45:13-47:58
+67-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:44:13-46:58
 68                android:name="android.support.FILE_PROVIDER_PATHS"
-68-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:46:17-67
+68-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:45:17-67
 69                android:resource="@xml/provider_paths" />
-69-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:47:17-55
+69-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:46:17-55
 70        </provider>
 71
 72        <activity
-72-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:50:9-52:48
+72-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:49:9-51:48
 73            android:name="ontime.app.customer.doneActivity.ChangePasswordActivity"
-73-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:51:13-73
+73-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:50:13-73
 74            android:theme="@style/AppTheme1" />
-74-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:52:13-45
+74-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:51:13-45
 75        <activity
-75-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:53:9-56:48
+75-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:52:9-55:48
 76            android:name="ontime.app.restaurant.ui.Activity.RiderOrderDetails"
-76-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:54:13-69
+76-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:53:13-69
 77            android:label="@string/title_activity_home"
-77-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:55:13-56
+77-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:54:13-56
 78            android:theme="@style/AppTheme1" />
-78-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:56:13-45
+78-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:55:13-45
 79        <activity
-79-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:57:9-59:48
+79-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:56:9-58:48
 80            android:name="ontime.app.restaurant.ui.Activity.WelcomeActivity"
-80-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:58:13-67
+80-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:57:13-67
 81            android:theme="@style/AppTheme1" />
-81-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:59:13-45
+81-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:58:13-45
 82        <activity
-82-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:60:9-62:48
+82-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:59:9-61:48
 83            android:name="ontime.app.restaurant.ui.Activity.LoginPage"
-83-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:61:13-61
+83-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:60:13-61
 84            android:theme="@style/AppTheme1" />
-84-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:62:13-45
+84-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:61:13-45
 85        <activity
-85-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:63:9-65:48
+85-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:62:9-64:48
 86            android:name="ontime.app.customer.doneActivity.ForgotpasswordActivity"
-86-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:64:13-73
+86-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:63:13-73
 87            android:theme="@style/AppTheme1" />
-87-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:65:13-45
+87-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:64:13-45
 88        <activity
-88-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:66:9-68:48
+88-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:65:9-67:48
 89            android:name="ontime.app.customer.doneActivity.VerificationCodeActivity"
-89-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:67:13-75
+89-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:66:13-75
 90            android:theme="@style/AppTheme1" />
-90-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:68:13-45
+90-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:67:13-45
 91        <activity
-91-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:69:9-71:48
+91-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:68:9-70:48
 92            android:name="ontime.app.customer.doneActivity.RegistetActivity"
-92-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:70:13-67
+92-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:69:13-67
 93            android:theme="@style/AppTheme1" />
-93-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:71:13-45
+93-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:70:13-45
 94        <activity
-94-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:72:9-74:48
+94-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:71:9-73:48
 95            android:name="ontime.app.customer.doneActivity.LoginActivity"
-95-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:73:13-64
+95-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:72:13-64
 96            android:theme="@style/AppTheme1" />
-96-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:74:13-45
+96-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:73:13-45
 97        <activity
-97-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:75:9-77:48
+97-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:74:9-76:48
 98            android:name="ontime.app.customer.doneActivity.UserDashboardActivity"
-98-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:76:13-72
+98-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:75:13-72
 99            android:theme="@style/AppTheme1" />
-99-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:77:13-45
+99-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:76:13-45
 100        <activity
-100-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:78:9-80:48
+100-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:77:9-79:48
 101            android:name="ontime.app.customer.doneActivity.RestCartPenddingItemActivity"
-101-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:79:13-79
+101-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:78:13-79
 102            android:theme="@style/AppTheme1" />
-102-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:80:13-45
+102-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:79:13-45
 103        <activity
-103-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:81:9-83:48
+103-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:80:9-82:48
 104            android:name="ontime.app.customer.doneActivity.RestaurantlistActivity"
-104-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:82:13-73
+104-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:81:13-73
 105            android:theme="@style/AppTheme1" />
-105-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:83:13-45
+105-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:82:13-45
 106        <activity
-106-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:84:9-86:48
+106-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:83:9-85:48
 107            android:name="ontime.app.customer.doneActivity.RestaurantProfileActivity"
-107-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:85:13-76
+107-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:84:13-76
 108            android:theme="@style/AppTheme1" />
-108-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:86:13-45
+108-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:85:13-45
 109        <activity
-109-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:87:9-89:48
+109-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:86:9-88:48
 110            android:name="ontime.app.customer.doneActivity.RestaurantDetailActivity"
-110-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:88:13-75
+110-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:87:13-75
 111            android:theme="@style/AppTheme1" />
-111-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:89:13-45
+111-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:88:13-45
 112        <activity
-112-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:90:9-92:48
+112-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:89:9-91:48
 113            android:name="ontime.app.customer.doneActivity.RestCartItemActivity"
-113-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:91:13-71
+113-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:90:13-71
 114            android:theme="@style/AppTheme1" />
-114-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:92:13-45
+114-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:91:13-45
 115        <activity
-115-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:93:9-95:48
+115-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:92:9-94:48
 116            android:name="ontime.app.customer.doneActivity.OrderSummaryActivity"
-116-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:94:13-71
+116-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:93:13-71
 117            android:theme="@style/AppTheme1" />
-117-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:95:13-45
+117-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:94:13-45
 118        <activity
-118-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:96:9-98:48
+118-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:95:9-97:48
 119            android:name="ontime.app.customer.doneActivity.Dialog_Activity"
-119-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:97:13-66
+119-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:96:13-66
 120            android:theme="@style/AppTheme1" />
-120-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:98:13-45
+120-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:97:13-45
 121        <activity
-121-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:99:9-101:48
+121-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:98:9-100:48
 122            android:name="ontime.app.customer.Activity.SentRequestActivity"
-122-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:100:13-66
+122-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:99:13-66
 123            android:theme="@style/AppTheme1" />
-123-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:101:13-45
+123-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:100:13-45
 124        <activity
-124-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:102:9-104:48
+124-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:101:9-103:48
 125            android:name="ontime.app.customer.doneActivity.RequestPendingActivity"
-125-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:103:13-73
+125-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:102:13-73
 126            android:theme="@style/AppTheme1" />
-126-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:104:13-45
+126-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:103:13-45
 127        <activity
-127-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:105:9-113:20
+127-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:104:9-112:20
 128            android:name="ontime.app.customer.doneActivity.MyOrdersListActivity"
-128-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:106:13-71
+128-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:105:13-71
 129            android:theme="@style/AppTheme1" >
-129-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:107:13-45
+129-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:106:13-45
 130            <intent-filter>
-130-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:108:13-112:29
+130-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:107:13-111:29
 131                <action android:name="none" />
-131-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:109:17-47
-131-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:109:25-44
+131-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:108:17-47
+131-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:108:25-44
 132
 133                <category android:name="android.intent.category.LAUNCHER" />
-133-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:110:17-77
-133-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:110:27-74
+133-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:109:17-77
+133-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:109:27-74
 134                <category android:name="android.intent.category.DEFAULT" />
-134-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:17-76
-134-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:27-73
+134-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:110:17-76
+134-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:110:27-73
 135            </intent-filter>
 136        </activity>
 137        <activity
-137-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:114:9-116:48
+137-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:113:9-115:48
 138            android:name="ontime.app.customer.doneActivity.PaymentActivity"
-138-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:115:13-66
+138-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:114:13-66
 139            android:theme="@style/AppTheme1" />
-139-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:116:13-45
+139-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:115:13-45
 140        <activity
-140-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:117:9-119:48
+140-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:116:9-118:48
 141            android:name="ontime.app.customer.doneActivity.NotificationActivity"
-141-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:118:13-71
+141-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:117:13-71
 142            android:theme="@style/AppTheme1" />
-142-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:119:13-45
+142-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:118:13-45
 143        <activity
-143-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:120:9-122:48
+143-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:119:9-121:48
 144            android:name="ontime.app.customer.doneActivity.ContactusActivity"
-144-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:121:13-68
+144-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:120:13-68
 145            android:theme="@style/AppTheme1" />
-145-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:122:13-45
+145-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:121:13-45
 146        <activity
-146-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:123:9-125:48
+146-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:122:9-124:48
 147            android:name="ontime.app.customer.doneActivity.LanguageActivity"
-147-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:124:13-67
+147-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:123:13-67
 148            android:theme="@style/AppTheme1" />
-148-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:125:13-45
+148-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:124:13-45
 149        <activity
-149-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:126:9-128:48
+149-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:125:9-127:48
 150            android:name="ontime.app.customer.doneActivity.AboutusActivity"
-150-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:127:13-66
+150-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:126:13-66
 151            android:theme="@style/AppTheme1" />
-151-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:128:13-45
+151-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:127:13-45
 152        <activity
-152-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:129:9-131:48
+152-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:128:9-130:48
 153            android:name="ontime.app.customer.doneActivity.UserProfileActivity"
-153-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:130:13-70
+153-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:129:13-70
 154            android:theme="@style/AppTheme1" />
-154-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:131:13-45
+154-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:130:13-45
 155        <activity
-155-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:132:9-134:48
+155-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:131:9-133:48
 156            android:name="ontime.app.customer.doneActivity.AddCardActivity"
-156-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:133:13-66
+156-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:132:13-66
 157            android:theme="@style/AppTheme1" />
-157-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:134:13-45
+157-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:133:13-45
 158        <activity
-158-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:135:9-137:48
+158-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:134:9-136:48
 159            android:name="ontime.app.customer.Activity.SentRequestSuper"
-159-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:136:13-63
+159-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:135:13-63
 160            android:theme="@style/AppTheme1" />
-160-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:137:13-45
+160-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:136:13-45
 161        <activity
-161-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:138:9-140:48
+161-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:137:9-139:48
 162            android:name="ontime.app.restaurant.ui.Activity.MurchanNotification"
-162-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:139:13-71
+162-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:138:13-71
 163            android:theme="@style/AppTheme1" />
-163-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:140:13-45
+163-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:139:13-45
 164        <activity
-164-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:141:9-149:20
+164-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:140:9-148:20
 165            android:name="ontime.app.restaurant.ui.Activity.SplashActivity"
-165-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:142:13-66
+165-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:141:13-66
 166            android:theme="@style/AppTheme1" >
-166-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:143:13-45
+166-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:142:13-45
 167            <intent-filter>
-167-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:144:13-148:29
+167-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:143:13-147:29
 168                <action android:name="android.intent.action.MAIN" />
-168-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:145:17-69
-168-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:145:25-66
+168-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:144:17-69
+168-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:144:25-66
 169
 170                <category android:name="android.intent.category.LAUNCHER" />
-170-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:110:17-77
-170-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:110:27-74
+170-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:109:17-77
+170-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:109:27-74
 171            </intent-filter>
 172        </activity>
 173
 174        <meta-data
-174-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:151:9-153:50
+174-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:150:9-152:50
 175            android:name="com.google.firebase.messaging.default_notification_icon"
-175-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:152:13-83
+175-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:151:13-83
 176            android:resource="@drawable/logo_2" />
-176-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:153:13-48
+176-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:152:13-48
 177        <meta-data
-177-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:155:9-157:53
+177-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:154:9-156:53
 178            android:name="com.google.firebase.messaging.default_notification_color"
-178-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:156:13-84
+178-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:155:13-84
 179            android:resource="@color/colorAccent" />
-179-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:157:13-50
+179-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:156:13-50
 180        <meta-data
-180-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:158:9-160:48
+180-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:157:9-159:48
 181            android:name="com.google.firebase.messaging.default_notification_channel_id"
-181-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:159:13-89
+181-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:158:13-89
 182            android:value="@string/app_name" />
-182-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:160:13-45
+182-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:159:13-45
 183
 184        <service
-184-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:161:9-167:19
+184-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:160:9-166:19
 185            android:name="ontime.app.utils.MyFirebaseMessagingService"
-185-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:162:13-61
+185-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:161:13-61
 186            android:exported="false" >
-186-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:163:13-37
+186-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:162:13-37
 187            <intent-filter>
-187-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:164:13-166:29
+187-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:163:13-165:29
 188                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-188-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:17-78
-188-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:25-75
+188-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:164:17-78
+188-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:164:25-75
 189            </intent-filter>
 190        </service>
 191
@@ -425,13 +424,13 @@
 214            android:theme="@style/TransparentCompat" />
 214-->[com.github.Tap-Payments:goSellSDK-AndroidX:3.11.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2feafffb83d237e9bd6bc0ee641d3d51\jetified-goSellSDK-AndroidX-3.11.2\AndroidManifest.xml:40:13-53
 215        <activity
-215-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-17:59
+215-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\PhoneVerification\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-17:59
 216            android:name="com.phonenumberui.CountryCodeActivity"
-216-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-65
+216-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\PhoneVerification\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-65
 217            android:screenOrientation="portrait"
-217-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-49
+217-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\PhoneVerification\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-49
 218            android:theme="@style/AppTheme.NoActionBar" />
-218-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\OntimeNew\PhoneVerification\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-56
+218-->[:PhoneVerification] C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\PhoneVerification\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-56
 219
 220        <provider
 220-->[androidx.work:work-runtime:2.3.4] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\c63e7d1e829020fc541932f11af7d2a7\work-runtime-2.3.4\AndroidManifest.xml:31:9-37:35
@@ -626,8 +625,8 @@
 316-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
 317
 318                <category android:name="android.intent.category.DEFAULT" />
-318-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:17-76
-318-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:27-73
+318-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:110:17-76
+318-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:110:27-73
 319                <category android:name="android.intent.category.BROWSABLE" />
 319-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
 319-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
@@ -661,8 +660,8 @@
 334-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
 335
 336                <category android:name="android.intent.category.DEFAULT" />
-336-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:17-76
-336-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:27-73
+336-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:110:17-76
+336-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:110:27-73
 337                <category android:name="android.intent.category.BROWSABLE" />
 337-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
 337-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
@@ -693,8 +692,8 @@
 351-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:69:25-86
 352
 353                <category android:name="android.intent.category.DEFAULT" />
-353-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:17-76
-353-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:111:27-73
+353-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:110:17-76
+353-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:110:27-73
 354            </intent-filter>
 355        </service>
 356        <service
@@ -755,10 +754,10 @@
 386            android:exported="false" >
 386-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\0ef514cb9c6783fd4e104bc1487eb9d0\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:31:13-37
 387            <intent-filter android:priority="-500" >
-387-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:164:13-166:29
+387-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:163:13-165:29
 388                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-388-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:17-78
-388-->C:\Users\Dell\Documents\GitHub\OntimeNew\app\src\main\AndroidManifest.xml:165:25-75
+388-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:164:17-78
+388-->C:\Users\Dell\Documents\GitHub\new_ontime\ontime_final_commit\app\src\main\AndroidManifest.xml:164:25-75
 389            </intent-filter>
 390        </service>
 391

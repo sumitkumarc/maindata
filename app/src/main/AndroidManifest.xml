@@ -30,10 +30,13 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode">
 
-        <activity android:name=".customer.doneActivity.RestRattingListActivity"
-            android:theme="@style/AppTheme1"/>
+        <activity
+            android:name=".customer.doneActivity.RestRattingListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
         <activity
             android:name=".restaurant.ui.Activity.NewOrderItemListActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
 
         <provider
@@ -48,97 +51,127 @@
 
         <activity
             android:name=".customer.doneActivity.ChangePasswordActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".restaurant.ui.Activity.RiderOrderDetails"
             android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".restaurant.ui.Activity.WelcomeActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".restaurant.ui.Activity.LoginPage"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.ForgotpasswordActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.VerificationCodeActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.RegistetActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.LoginActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.UserDashboardActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.RestCartPenddingItemActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.RestaurantlistActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.RestaurantProfileActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.RestaurantDetailActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.RestCartItemActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.OrderSummaryActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.Dialog_Activity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.Activity.SentRequestActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.RequestPendingActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.MyOrdersListActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1">
             <intent-filter>
                 <action android:name="none" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".customer.doneActivity.PaymentActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.NotificationActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.ContactusActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.LanguageActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.AboutusActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.UserProfileActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.doneActivity.AddCardActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".customer.Activity.SentRequestSuper"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".restaurant.ui.Activity.MurchanNotification"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".restaurant.ui.Activity.SplashActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -149,7 +182,7 @@
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/logo_2"/>
+            android:resource="@drawable/logo_2" />
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
@@ -157,6 +190,7 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/app_name" />
+
         <service
             android:name=".utils.MyFirebaseMessagingService"
             android:exported="false">

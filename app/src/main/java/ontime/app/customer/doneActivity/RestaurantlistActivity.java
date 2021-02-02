@@ -68,18 +68,19 @@ import java.util.TimerTask;
 
 import okhttp3.RequestBody;
 
+import static ontime.app.utils.Common.DELIVER_TYPE;
 import static ontime.app.utils.Common.MERCHANT_TYPE;
 
 public class RestaurantlistActivity extends BaseActivity implements View.OnClickListener, APIcall.ApiCallListner {
 
     ActivityRestaurantlistBinding binding;
-     ProgressDialog dialog;
+    ProgressDialog dialog;
     RvRestaurantListAdapter mAdapter;
     SessionManager sessionManager;
     Userdate userData;
     private SharedPreferenceManagerFile sharedPref;
     int CAT_TYPE = 1;
-    List<AdvertisementDatum> advertisementData;
+    ArrayList<AdvertisementDatum> advertisementData = new ArrayList<>();
     FusedLocationProviderClient mFusedLocationClient;
     String Latitude = "";
     String Langtitude = "";
@@ -144,7 +145,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
 
         setUpUI();
     }
-  
+
 
     private void filter(String text) {
         JSONObject jsonObject = new JSONObject();
@@ -477,6 +478,7 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
     public void onResume() {
         super.onResume();
         setUpUI();
+        DELIVER_TYPE = "";
         if (checkPermissions()) {
             getLastLocation();
         }
@@ -621,20 +623,24 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
             Gson gson = new Gson();
             AdvertisementsExample exampleUser = gson.fromJson(response, AdvertisementsExample.class);
             if (exampleUser.getStatus() == 200) {
-                advertisementData = exampleUser.getResponceData().getAdvertisement().getData();
+                advertisementData.clear();
+                for (int i = 0; i < exampleUser.getResponceData().getAdvertisement().getData().size(); i++) {
+                    if (exampleUser.getResponceData().getAdvertisement().getData().get(i).getType() == MERCHANT_TYPE) {
+                        advertisementData.add(exampleUser.getResponceData().getAdvertisement().getData().get(i));
+                    }
+                }
                 VpNivoSliderAdapter vpNivoSliderAdapter = new VpNivoSliderAdapter(getContext(), advertisementData);
                 binding.vpBanner.setAdapter(vpNivoSliderAdapter);
                 Timer timer = new Timer();
                 timer.scheduleAtFixedRate(new SliderTimer(), 4000, 6000);
-            } else  if (exampleUser.getStatus() == 401){
+            } else if (exampleUser.getStatus() == 401) {
                 binding.llMain.setVisibility(View.GONE);
                 binding.txtWorning.setVisibility(View.VISIBLE);
                 binding.txtWorning.setText(Common.isStrempty(exampleUser.getMessage()));
-            }else {
+            } else {
                 Toast.makeText(RestaurantlistActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
             }
-        }else
-        if (operationCode == APIcall.OPERATION_RESTAURANT_LIST) {
+        } else if (operationCode == APIcall.OPERATION_RESTAURANT_LIST) {
             hideDialog();
             binding.llMain.setVisibility(View.VISIBLE);
             binding.txtWorning.setVisibility(View.GONE);
@@ -642,30 +648,32 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
             ExampleUser exampleUser = gson.fromJson(response, ExampleUser.class);
             if (exampleUser.getStatus() == 200) {
                 userRestaurantsData = exampleUser.getResponceData().getRestaurants().getData();
-                if (pageCount == exampleUser.getResponceData().getRestaurants().getLastPage()) {
-                    isLoading = false;
-                } else {
-                    isLoading = true;
+                if (exampleUser.getResponceData().getRestaurants().getLastPage() != null) {
+                    if (pageCount == exampleUser.getResponceData().getRestaurants().getLastPage()) {
+                        isLoading = false;
+                    } else {
+                        isLoading = true;
+                    }
                 }
-                if(userRestaurantsData.size() != 0) {
+
+                if (userRestaurantsData.size() != 0) {
                     binding.rvList.setVisibility(View.VISIBLE);
                     binding.tvNodata.setVisibility(View.GONE);
                     mAdapter = new RvRestaurantListAdapter(getContext(), userRestaurantsData);
                     binding.rvList.setItemAnimator(new DefaultItemAnimator());
                     binding.rvList.setAdapter(mAdapter);
-                }else {
+                } else {
                     binding.rvList.setVisibility(View.GONE);
                     binding.tvNodata.setVisibility(View.VISIBLE);
                 }
-            } else  if (exampleUser.getStatus() == 401){
+            } else if (exampleUser.getStatus() == 401) {
                 binding.llMain.setVisibility(View.GONE);
                 binding.txtWorning.setVisibility(View.VISIBLE);
                 binding.txtWorning.setText(Common.isStrempty(exampleUser.getMessage()));
-            }else {
+            } else {
                 Toast.makeText(RestaurantlistActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
             }
-        }else
-        if (operationCode == APIcall.OPERATION_USER_SERRCH_RESRAURANTS) {
+        } else if (operationCode == APIcall.OPERATION_USER_SERRCH_RESRAURANTS) {
             hideDialog();
             binding.llMain.setVisibility(View.VISIBLE);
             binding.txtWorning.setVisibility(View.GONE);
@@ -673,23 +681,23 @@ public class RestaurantlistActivity extends BaseActivity implements View.OnClick
             ExampleUser exampleUser = gson.fromJson(response, ExampleUser.class);
             if (exampleUser.getStatus() == 200) {
                 List<UserRestaurantsData> userRestaurantsData = exampleUser.getResponceData().getRestaurants().getData();
-               if(userRestaurantsData.size() != 0){
-                   binding.rvList.setVisibility(View.VISIBLE);
-                   binding.tvNodata.setVisibility(View.GONE);
-                   mAdapter = new RvRestaurantListAdapter(getContext(), userRestaurantsData);
-                   binding.rvList.setItemAnimator(new DefaultItemAnimator());
-                   binding.rvList.setAdapter(mAdapter);
-               }else {
-                   binding.rvList.setVisibility(View.GONE);
-                   binding.tvNodata.setVisibility(View.VISIBLE);
-               }
+                if (userRestaurantsData.size() != 0) {
+                    binding.rvList.setVisibility(View.VISIBLE);
+                    binding.tvNodata.setVisibility(View.GONE);
+                    mAdapter = new RvRestaurantListAdapter(getContext(), userRestaurantsData);
+                    binding.rvList.setItemAnimator(new DefaultItemAnimator());
+                    binding.rvList.setAdapter(mAdapter);
+                } else {
+                    binding.rvList.setVisibility(View.GONE);
+                    binding.tvNodata.setVisibility(View.VISIBLE);
+                }
 
-            } else  if (exampleUser.getStatus() == 401){
+            } else if (exampleUser.getStatus() == 401) {
                 binding.llMain.setVisibility(View.GONE);
                 binding.txtWorning.setVisibility(View.VISIBLE);
                 binding.txtWorning.setText(Common.isStrempty(exampleUser.getMessage()));
-            //    Toast.makeText(RestaurantlistActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
-            }else {
+                //    Toast.makeText(RestaurantlistActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+            } else {
                 Toast.makeText(RestaurantlistActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }

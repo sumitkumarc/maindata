@@ -7,8 +7,8 @@
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
         android:fitsSystemWindows="true"
+        android:layoutDirection="locale"
         tools:openDrawer="start">
 
         <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -26,17 +26,14 @@
 
                 <RelativeLayout
                     android:id="@+id/rly"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:layout_alignParentTop="true"
                     android:padding="10dp">
 
                     <ImageView
                         android:id="@+id/menu"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
                         android:background="@drawable/ic_menu_red" />
                 </RelativeLayout>
 
@@ -162,8 +159,8 @@
                             android:layout_height="120dp"
                             android:background="@android:color/white"
                             android:orientation="vertical"
-                            android:paddingEnd="20dp"
-                            android:paddingStart="20dp">
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp">
 
 
                             <LinearLayout
@@ -332,8 +329,8 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:orientation="vertical"
-                                        android:paddingEnd="25dp"
-                                        android:paddingStart="25dp">
+                                        android:paddingStart="25dp"
+                                        android:paddingEnd="25dp">
 
                                         <TextView
                                             android:layout_width="wrap_content"
@@ -364,8 +361,8 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:orientation="vertical"
-                                        android:paddingEnd="25dp"
-                                        android:paddingStart="25dp">
+                                        android:paddingStart="25dp"
+                                        android:paddingEnd="25dp">
 
                                         <TextView
                                             android:layout_width="wrap_content"
@@ -398,8 +395,8 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:orientation="vertical"
-                                        android:paddingEnd="25dp"
-                                        android:paddingStart="25dp">
+                                        android:paddingStart="25dp"
+                                        android:paddingEnd="25dp">
 
                                         <TextView
                                             android:layout_width="wrap_content"
@@ -431,8 +428,8 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:orientation="vertical"
-                                        android:paddingEnd="25dp"
-                                        android:paddingStart="25dp">
+                                        android:paddingStart="25dp"
+                                        android:paddingEnd="25dp">
 
                                         <TextView
                                             android:layout_width="wrap_content"
@@ -464,8 +461,8 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:orientation="vertical"
-                                        android:paddingEnd="25dp"
-                                        android:paddingStart="25dp">
+                                        android:paddingStart="25dp"
+                                        android:paddingEnd="25dp">
 
                                         <TextView
                                             android:layout_width="wrap_content"

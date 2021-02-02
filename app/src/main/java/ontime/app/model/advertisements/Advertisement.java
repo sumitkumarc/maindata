@@ -3,6 +3,7 @@ package ontime.app.model.advertisements;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Advertisement {
@@ -11,7 +12,7 @@ public class Advertisement {
     private Integer currentPage;
     @SerializedName("data")
     @Expose
-    private List<AdvertisementDatum> data = null;
+    private ArrayList<AdvertisementDatum> data = null;
     @SerializedName("first_page_url")
     @Expose
     private String firstPageUrl;
@@ -51,11 +52,11 @@ public class Advertisement {
         this.currentPage = currentPage;
     }
 
-    public List<AdvertisementDatum> getData() {
+    public ArrayList<AdvertisementDatum> getData() {
         return data;
     }
 
-    public void setData(List<AdvertisementDatum> data) {
+    public void setData(ArrayList<AdvertisementDatum> data) {
         this.data = data;
     }
 

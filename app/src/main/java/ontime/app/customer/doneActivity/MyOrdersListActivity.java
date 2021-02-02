@@ -3,7 +3,10 @@ package ontime.app.customer.doneActivity;
 import android.app.ActivityOptions;
 import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -56,7 +59,7 @@ import ontime.app.utils.SessionManager;
 public class MyOrdersListActivity extends BaseActivity implements View.OnClickListener, APIcall.ApiCallListner {
     ActivityMyordersBinding binding;
     private ProgressDialog dialog;
-    public static List<OrderProccessing> objProcessing = new ArrayList<>();
+    public static ArrayList<OrderProccessing> objProcessing = new ArrayList<>();
     public static List<OrderFinished> objFinished = new ArrayList<>();
     public static List<OrderCancelled> objCancelled = new ArrayList<>();
     Pager_tab adapter;
@@ -64,10 +67,12 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
     boolean temp;
     int REST_ID = 0;
     int ORDER_ID = 0;
+    private BroadcastReceiver broadcastReceiver;
 
     @Override
     protected void initView() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_myorders);
+
     }
 
     private void showcustomedialog(int order_id, Restaurant restaurant) {
@@ -92,8 +97,8 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
             public void onClick(View v) {
                 if (isConnected()) {
                     temp = true;
-                    REST_ID=restaurant.getId();
-                    ORDER_ID=order_id;
+                    REST_ID = restaurant.getId();
+                    ORDER_ID = order_id;
                     GetAPICallOrderrequestuser("Order received", order_id);
                 }
             }
@@ -104,12 +109,42 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
             public void onClick(View v) {
                 if (isConnected()) {
                     temp = false;
-                    REST_ID=restaurant.getId();
+                    REST_ID = restaurant.getId();
                     GetAPICallOrderrequestuser("Order not received", order_id);
                 }
             }
         });
         dialogm.show();
+    }
+
+    public void register() {
+        IntentFilter intentFilter = new IntentFilter("ACTION_REFRESH_USER.intent.MAIN");
+        broadcastReceiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                GetAPICallOrderList();
+
+            }
+        };
+        registerReceiver(broadcastReceiver, intentFilter);
+
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unRegister();
+    }
+
+
+    public void unRegister() {
+        try {
+            unregisterReceiver(broadcastReceiver);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void showDialog() {
@@ -127,6 +162,7 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        register();
         if (Common.MERCHANT_TYPE == 1) {
             Common.setSystemBarColor(this, R.color.colorAccent);
 //            Common.setSystemBarLight(this);
@@ -285,8 +321,8 @@ public class MyOrdersListActivity extends BaseActivity implements View.OnClickLi
             try {
                 Gson gson = new Gson();
                 RestaurantExample exampleUser = gson.fromJson(response, RestaurantExample.class);
-                if(exampleUser.getStatus() == 200){
-                    showcustomedialog(exampleUser.getResponceData().get(0).getRestaurant().getId(),exampleUser.getResponceData().get(0).getRestaurant());
+                if (exampleUser.getStatus() == 200) {
+                    showcustomedialog(exampleUser.getResponceData().get(0).getRestaurant().getId(), exampleUser.getResponceData().get(0).getRestaurant());
                 }
             } catch (Exception e) {
 

@@ -41,7 +41,13 @@ public class RvNotificationListAdapter extends RecyclerView.Adapter<RvNotificati
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
+        if (Common.MERCHANT_TYPE == 1) {
+            holder.binding.txtName.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
+        } else {
+            holder.binding.txtName.setTextColor(mContext.getResources().getColor(R.color.super_mart));
+        }
         try {
+            holder.binding.txtName.setText(Common.isStrempty(mResponceData.get(position).getRestaurant().getName()));
             holder.binding.txtDetails1.setText("" + Common.isStrempty(mResponceData.get(position).getMessage()));
             if (mResponceData.get(position).getRestaurant().getImage() != null) {
                 Glide.with(mContext).load(mResponceData.get(position).getRestaurant().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivProfile);

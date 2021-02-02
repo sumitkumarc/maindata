@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.text.TextUtils;
 import android.util.Log;
 
+import okhttp3.logging.HttpLoggingInterceptor;
 import ontime.app.utils.Common;
 
 import java.io.IOException;
@@ -162,10 +163,13 @@ public class APIcall {
                 sharedPreferenceManagerFile = new SharedPreferenceManagerFile(moContext);
                 String userAgent = System.getProperty("http.agent");
                 Log.i("userAgent", "userAgent:::" + userAgent);
+                HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+                interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
                 OkHttpClient.Builder okHttpBuilder = new OkHttpClient.Builder();
                 okHttpBuilder.connectTimeout(60000, TimeUnit.MILLISECONDS);
                 okHttpBuilder.readTimeout(60000, TimeUnit.MILLISECONDS);
                 OkHttpClient client = okHttpBuilder.build();
+               // okHttpBuilder.addInterceptor(interceptor);
                 FormBody formBody = null;
                 Request request;
                 if (isPost && postBuilder != null) {

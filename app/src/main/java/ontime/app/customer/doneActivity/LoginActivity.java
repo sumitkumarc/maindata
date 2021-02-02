@@ -196,7 +196,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                             !edvalidateName(binding.edPassword.getText().toString().trim(), binding.edPassword, getResources().getString(R.string.v_enter_password))) {
                         return;
                     }
-                    GetAPICallLoginUser(binding.edPhoneNo.getText().toString(),binding.edPassword.getText().toString());
+                    GetAPICallLoginUser(binding.edPhoneNo.getText().toString(), binding.edPassword.getText().toString());
                 } else {
                     Toast.makeText(this, getResources().getString(R.string.v_check_internet_connnection), Toast.LENGTH_SHORT).show();
                 }
@@ -224,7 +224,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                             Country country = (Country) data.getSerializableExtra("COUNTRY");
                             this.mSelectedCountry = country;
 //                            setPhoneNumberHint();
-                             country_code = "+" + country.getPhoneCode();
+                            country_code = "+" + country.getPhoneCode();
                             binding.etCountryCode.setText("+" + country.getPhoneCode() + "");
                             binding.flagImv.setImageResource(CountryUtils.getFlagDrawableResId(country.getIso()));
                         }
@@ -240,7 +240,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         try {
             jsonObject.put("contact_number", PhoneNo);
             jsonObject.put("password", Password);
-            jsonObject.put("country_code", "+"+mSelectedCountry.getPhoneCode());
+            jsonObject.put("country_code", "+" + mSelectedCountry.getPhoneCode());
             jsonObject.put("device_type", "android");
             jsonObject.put("device_token", token);
         } catch (JSONException e) {
@@ -294,8 +294,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                 sessionManager.setBooleanData(SessionManager.LOGIN, false);
                 Toast.makeText(LoginActivity.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
             }
-        }catch (Exception e){
-        Log.d("MAINERROR",">>>>>>" + e.getMessage());
+        } catch (Exception e) {
+            Log.d("MAINERROR", ">>>>>>" + e.getMessage());
         }
     }
 

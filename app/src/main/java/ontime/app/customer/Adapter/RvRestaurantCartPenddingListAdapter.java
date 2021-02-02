@@ -11,9 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+
 import ontime.app.R;
 import ontime.app.customer.doneActivity.RestaurantDetailActivity;
 import ontime.app.databinding.CRowMyCartItemBinding;
+import ontime.app.databinding.RowItemorderFinisedBinding;
 import ontime.app.model.usermain.UserCartItem;
 import ontime.app.rv_interface;
 import ontime.app.utils.Common;
@@ -26,6 +28,7 @@ public class RvRestaurantCartPenddingListAdapter extends RecyclerView.Adapter<Rv
     rv_interface rvInterface;
     int Counter = 1;
     Boolean mABoolean;
+    OnClick onClick;
 //    UserCartItem userCartItem= new UserCartItem();
 
     public RvRestaurantCartPenddingListAdapter(Context context, List<UserCartItem> responceData, boolean mBoolean) {
@@ -49,7 +52,7 @@ public class RvRestaurantCartPenddingListAdapter extends RecyclerView.Adapter<Rv
             @Override
             public void onClick(View view) {
                 rvInterface.OnItemClick(position, userCartItem.getId());
-                removeAt(position);
+                //  removeAt(position);
             }
         });
 
@@ -112,15 +115,10 @@ public class RvRestaurantCartPenddingListAdapter extends RecyclerView.Adapter<Rv
                 holder.binding.llEdit.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Common.UpdateCart = mresponceDatumList.get(position);
-                        Intent i2 = new Intent(mContext, RestaurantDetailActivity.class);
-                        i2.putExtra("MENU_ID", userCartItem.getItemDetail().getMenuId());
-                        i2.putExtra("ITEM_ID", userCartItem.getItemDetail().getId());
-                        i2.putExtra("CART_ITEM_ID", userCartItem.getId());
-                        i2.putExtra("CART_ITEM_SIZE", mresponceDatumList.size());
-                        i2.putExtra("restaurant_id", userCartItem.getItemDetail().getRestaurantId());
-                        i2.putExtra("UPDATE_ITEM", 0);
-                        mContext.startActivity(i2);
+                        if (onClick != null) {
+                            onClick.OnItemClick(v, position);
+                        }
+
                     }
                 });
             } catch (Exception e) {
@@ -138,6 +136,16 @@ public class RvRestaurantCartPenddingListAdapter extends RecyclerView.Adapter<Rv
         rvInterface = rvsInterface;
 
     }
+
+    public interface OnClick {
+        void OnItemClick(View view, int position);
+    }
+
+    public void setOnClick(OnClick onClick) {
+        this.onClick = onClick;
+
+    }
+
     public void removeAt(int position) {
         mresponceDatumList.remove(position);
         notifyItemRemoved(position);

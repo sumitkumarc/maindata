@@ -3283,6 +3283,7 @@ id txt_total_spend
 id txt_total_tax
 id txt_user_name
 id txt_wallet
+id txt_worning
 id unchecked
 id uniform
 id unlabeled

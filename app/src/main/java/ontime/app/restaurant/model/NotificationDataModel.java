@@ -46,6 +46,16 @@ public class NotificationDataModel {
     @SerializedName("restaurant")
     @Expose
     private Restaurant restaurant;
+    @SerializedName("user")
+    @Expose
+    private MerchantUser user;
+    public MerchantUser getUser() {
+        return user;
+    }
+
+    public void setUser(MerchantUser user) {
+        this.user = user;
+    }
 
     public Integer getId() {
         return id;

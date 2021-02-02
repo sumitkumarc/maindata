@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\Dell\\Documents\\GitHub\\new_ontime\\ontime_final_commit\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\47d555dff7ddc86730e946ae440446f5\\jetified-core-0.9.6.0\\res\\values-v21\\values-v21.xml",
@@ -20,6 +20,25 @@
                         "endLines": "302,313",
                         "endColumns": "10,10",
                         "endOffsets": "22442,23159"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dell\\Documents\\GitHub\\new_ontime\\ontime_final_commit\\PhoneVerification\\build\\intermediates\\packaged_res\\release\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "16",
+                        "endColumns": "12",
+                        "endOffsets": "857"
+                    },
+                    "to": {
+                        "startLines": "461",
+                        "startColumns": "4",
+                        "startOffsets": "33290",
+                        "endLines": "475",
+                        "endColumns": "12",
+                        "endOffsets": "34092"
                     }
                 },
                 {
@@ -115,25 +134,6 @@
                         "endLines": "2,16,17,18,376,377,384,388,444,449",
                         "endColumns": "117,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "213,1275,1342,1406,27533,27659,28116,28412,32256,32608"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\PhoneVerification\\build\\intermediates\\packaged_res\\release\\values-v21\\values-v21.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "16",
-                        "endColumns": "12",
-                        "endOffsets": "857"
-                    },
-                    "to": {
-                        "startLines": "461",
-                        "startColumns": "4",
-                        "startOffsets": "33290",
-                        "endLines": "475",
-                        "endColumns": "12",
-                        "endOffsets": "34092"
                     }
                 }
             ]

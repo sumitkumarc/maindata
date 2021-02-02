@@ -42,20 +42,21 @@ public class MurchanNotification extends BaseActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (Common.MERCHANT_TYPE == 1) {
-            Common.setSystemBarColor(this, R.color.colorAccent);
-            Common.setSystemBarLight(this);
-            binding.ivLogo.setColorFilter(getResources().getColor(R.color.colorAccent));
-            binding.ivBack.setColorFilter(getResources().getColor(R.color.colorAccent));
-            binding.txtTitle.setTextColor(getResources().getColor(R.color.colorAccent));
+        Common.setSystemBarColor(this, R.color.colorAccent);
+//        Common.setSystemBarLight(this);
+        binding.ivLogo.setColorFilter(getResources().getColor(R.color.colorAccent));
+        binding.ivBack.setColorFilter(getResources().getColor(R.color.colorAccent));
+        binding.txtTitle.setTextColor(getResources().getColor(R.color.colorAccent));
 
-        } else {
-            setSystemBarColor(this, R.color.super_mart);
-            Common.setSystemBarLight(this);
-            binding.ivLogo.setColorFilter(getResources().getColor(R.color.super_mart));
-            binding.ivBack.setColorFilter(getResources().getColor(R.color.super_mart));
-            binding.txtTitle.setTextColor(getResources().getColor(R.color.super_mart));
-        }
+//        if (Common.MERCHANT_TYPE == 1) {
+//
+//        } else {
+//            setSystemBarColor(this, R.color.super_mart);
+//            Common.setSystemBarLight(this);
+//            binding.ivLogo.setColorFilter(getResources().getColor(R.color.super_mart));
+//            binding.ivBack.setColorFilter(getResources().getColor(R.color.super_mart));
+//            binding.txtTitle.setTextColor(getResources().getColor(R.color.super_mart));
+//        }
         LinearLayoutManager mLayoutManager1as = new LinearLayoutManager(getContext());
         mLayoutManager1as.setOrientation(LinearLayoutManager.VERTICAL);
         binding.rvList.setLayoutManager(mLayoutManager1as);
@@ -149,14 +150,13 @@ public class MurchanNotification extends BaseActivity implements View.OnClickLis
                 Gson gson = new Gson();
                 NotificationExample exampleUser = gson.fromJson(response, NotificationExample.class);
                 if (exampleUser.getStatus() == 200) {
-                    if (exampleUser.getResponceData().size() == 0) {
+                    if (exampleUser.getResponceData().size() != 0) {
                         binding.llDelete.setVisibility(View.VISIBLE);
                         binding.rvList.setVisibility(View.VISIBLE);
                         binding.txtNoItem.setVisibility(View.GONE);
                         madapter = new MutchantNotificationListAdapter(getContext(), exampleUser.getResponceData());
                         binding.rvList.setItemAnimator(new DefaultItemAnimator());
                         binding.rvList.setAdapter(madapter);
-                        Toast.makeText(MurchanNotification.this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                     } else {
                         binding.llDelete.setVisibility(View.GONE);
                         binding.rvList.setVisibility(View.GONE);

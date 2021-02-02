@@ -29,6 +29,15 @@ public class UserReview {
     @Expose
     private String createdAt;
 
+    private Boolean asReview =true;
+
+    public Boolean getAsReview() {
+        return asReview;
+    }
+
+    public void setAsReview(Boolean asReview) {
+        this.asReview = asReview;
+    }
     public Integer getId() {
         return id;
     }

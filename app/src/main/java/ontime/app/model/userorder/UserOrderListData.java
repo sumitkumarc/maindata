@@ -9,13 +9,14 @@ import ontime.app.restaurant.model.readerOrder.OrderDetail;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserOrderListData {
 
     @SerializedName("proccessing")
     @Expose
-    private List<OrderProccessing> proccessing = null;
+    private ArrayList<OrderProccessing> proccessing = null;
     @SerializedName("finished")
     @Expose
     private List<OrderFinished> finished = null;
@@ -38,11 +39,11 @@ public class UserOrderListData {
     public void setFinished(List<OrderFinished> finished) {
         this.finished = finished;
     }
-    public List<OrderProccessing> getProccessing() {
+    public ArrayList<OrderProccessing> getProccessing() {
         return proccessing;
     }
 
-    public void setProccessing(List<OrderProccessing> proccessing) {
+    public void setProccessing(ArrayList<OrderProccessing> proccessing) {
         this.proccessing = proccessing;
     }
 

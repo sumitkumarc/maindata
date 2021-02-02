@@ -1,10 +1,12 @@
 package ontime.app.utils;
 
 import android.annotation.SuppressLint;
+import android.app.ActivityManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -22,9 +24,14 @@ import androidx.work.WorkManager;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.List;
+import java.util.Map;
 
 import ontime.app.R;
 import ontime.app.customer.Activity.MainActivity;
@@ -44,7 +51,37 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 //        bitmap = getBitmapfromUrl(imageUri);
         if (remoteMessage.getData().size() > 0) {
             Log.d(TAG, "Message data payload: " + remoteMessage.getData());
-            sendNotification(bitmap, remoteMessage);
+            Map<String, String> mapNotification = remoteMessage.getData();
+            JSONObject jsonObject = null;
+            try {
+                jsonObject = new JSONObject(remoteMessage.getData().toString());
+                JSONObject jsonObject1 = jsonObject.optJSONObject("message");
+                if (!isAppIsInBackground(getApplicationContext())) {
+                    Intent request_accept_intent = new Intent("ACTION_REFRESH_USER.intent.MAIN");
+                    if (jsonObject1.optInt("noty_type") == 4) {
+                        ActivityManager am = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+                        ComponentName cn = am.getRunningTasks(1).get(0).topActivity;
+                        System.out.println("=======" + cn.getClassName());
+                        if (cn.getClassName().equals("ontime.app.customer.doneActivity.MyOrdersListActivity")) {
+                            request_accept_intent.putExtra("REFRESH", "REFRESH");
+                            request_accept_intent.putExtra("ORDER_ID", jsonObject1.optString("order_id"));
+                            sendBroadcast(request_accept_intent);
+                        } else {
+                            sendNotification(bitmap, jsonObject1);
+                        }
+                    } else {
+                        sendNotification(bitmap, jsonObject1);
+                    }
+                } else {
+                    sendNotification(bitmap, jsonObject1);
+                }
+
+                /*String zcxc = jsonObject.optString("noty_type");
+                Log.e("", "" + zcxc);*/
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
         }
         if (remoteMessage.getNotification() != null) {
             Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
@@ -71,32 +108,50 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     }
 
-    Intent intent;
+    Intent intent = null;
 
-    private void sendNotification(Bitmap bitmap, RemoteMessage remoteMessage) {
-        try{
-            if (remoteMessage.getData().get("noty_type").equals("2") || remoteMessage.getData().get("noty_type").equals("4")|| remoteMessage.getData().get("noty_type").equals("5")) {
+    private void sendNotification(Bitmap bitmap, JSONObject remoteMessage) {
+        try {
+
+            if (remoteMessage.optInt("noty_type") == 2) {
                 intent = new Intent(this, MyOrdersListActivity.class);
-                intent.putExtra("order_id", remoteMessage.getData().get("order_id"));
-                intent.putExtra("noty_type", remoteMessage.getData().get("noty_type"));
-            } else if (remoteMessage.getData().get("noty_type").equals("1") || remoteMessage.getData().get("noty_type").equals("3")) {
+                intent.putExtra("order_id", remoteMessage.optString("order_id"));
+                intent.putExtra("noty_type", remoteMessage.optString("noty_type"));
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            } else if (remoteMessage.optInt("noty_type") == 4) {
+                intent = new Intent(this, MyOrdersListActivity.class);
+                intent.putExtra("order_id", remoteMessage.optString("order_id"));
+                intent.putExtra("noty_type", remoteMessage.optString("noty_type"));
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            } else if (remoteMessage.optInt("noty_type") == 5) {
+                intent = new Intent(this, MyOrdersListActivity.class);
+                intent.putExtra("order_id", remoteMessage.optString("order_id"));
+                intent.putExtra("noty_type", remoteMessage.optString("noty_type"));
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            } else if (remoteMessage.optInt("noty_type") == 1) {
                 intent = new Intent(this, RiderOrderDetails.class);
-                intent.putExtra("order_id", remoteMessage.getData().get("order_id"));
-                intent.putExtra("noty_type", remoteMessage.getData().get("noty_type"));
+                intent.putExtra("order_id", remoteMessage.optString("order_id"));
+                intent.putExtra("noty_type", remoteMessage.optString("noty_type"));
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            } else if (remoteMessage.optInt("noty_type") == 3) {
+                intent = new Intent(this, RiderOrderDetails.class);
+                intent.putExtra("order_id", remoteMessage.optString("order_id"));
+                intent.putExtra("noty_type", remoteMessage.optString("noty_type"));
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
             }
-            intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
                     PendingIntent.FLAG_UPDATE_CURRENT);
             String channelId = getString(R.string.app_name);
             Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
             NotificationCompat.Builder notificationBuilder =
                     new NotificationCompat.Builder(this, channelId)
-//                        .setLargeIcon(bitmap)
-//                        .setStyle(new NotificationCompat.BigPictureStyle()
-//                                .bigPicture(bitmap))/*Notification with Image*/
+                            .setLargeIcon(bitmap)
+                            .setStyle(new NotificationCompat.BigPictureStyle()
+                                    .bigPicture(bitmap))/*Notification with Image*/
                             .setSmallIcon(R.drawable.logo_2)
                             .setContentTitle(getString(R.string.app_name))
-                            .setContentText(remoteMessage.getData().get("title"))
+                            .setContentText(remoteMessage.optString("title"))
                             .setAutoCancel(true)
                             .setSound(defaultSoundUri)
                             .setContentIntent(pendingIntent);
@@ -112,6 +167,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
             notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
         } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -131,6 +187,31 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             return null;
 
         }
+    }
+
+    private boolean isAppIsInBackground(Context context) {
+        boolean isInBackground = true;
+        ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT_WATCH) {
+            List<ActivityManager.RunningAppProcessInfo> runningProcesses = am.getRunningAppProcesses();
+            for (ActivityManager.RunningAppProcessInfo processInfo : runningProcesses) {
+                if (processInfo.importance == ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND) {
+                    for (String activeProcess : processInfo.pkgList) {
+                        if (activeProcess.equals(context.getPackageName())) {
+                            isInBackground = false;
+                        }
+                    }
+                }
+            }
+        } else {
+            List<ActivityManager.RunningTaskInfo> taskInfo = am.getRunningTasks(1);
+            ComponentName componentInfo = taskInfo.get(0).topActivity;
+            if (componentInfo.getPackageName().equals(context.getPackageName())) {
+                isInBackground = false;
+            }
+        }
+
+        return isInBackground;
     }
 
 

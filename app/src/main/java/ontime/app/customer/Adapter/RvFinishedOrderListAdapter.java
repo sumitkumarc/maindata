@@ -1,9 +1,12 @@
 package ontime.app.customer.Adapter;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.text.InputType;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +25,7 @@ import ontime.app.R;
 import ontime.app.databinding.RowItemorderFinisedBinding;
 import ontime.app.databinding.RowNotificationItemBinding;
 import ontime.app.model.usermain.OrderFinished;
+import ontime.app.model.usermain.UserReview;
 import ontime.app.okhttp.APIcall;
 import ontime.app.okhttp.AppConstant;
 import ontime.app.restaurant.ui.Activity.RiderOrderDetails;
@@ -31,10 +35,18 @@ import ontime.app.utils.Common;
 
 import java.util.List;
 
-public class RvFinishedOrderListAdapter extends BaseAdapter<RvFinishedOrderListAdapter.MyViewHolder> implements APIcall.ApiCallListner {
+public class RvFinishedOrderListAdapter extends BaseAdapter<RvFinishedOrderListAdapter.MyViewHolder> {
     Context mContext;
     List<OrderFinished> mOrderFinisheds;
-    ProgressDialog dialog;
+
+    UserReview mUserReview;
+    OrderFinished orderFinished;
+    String ORDER_REVIEW = "";
+    String ORDER_RATE = "";
+    MyViewHolder holderNew;
+    OnClick onClick;
+
+    int pos;
 
     public RvFinishedOrderListAdapter(Context context, List<OrderFinished> objFinished) {
         mContext = context;
@@ -46,17 +58,6 @@ public class RvFinishedOrderListAdapter extends BaseAdapter<RvFinishedOrderListA
         return mOrderFinisheds.size();
     }
 
-    private void showDialog() {
-        dialog = new ProgressDialog(mContext);
-        dialog.setMessage(mContext.getResources().getString(R.string.Please_wait));
-        dialog.setCancelable(false);
-        dialog.show();
-    }
-
-    private void hideDialog() {
-        if (dialog != null && dialog.isShowing())
-            dialog.dismiss();
-    }
 
     @Override
     protected MyViewHolder onCreateView(ViewGroup viewGroup, int viewType) {
@@ -64,8 +65,19 @@ public class RvFinishedOrderListAdapter extends BaseAdapter<RvFinishedOrderListA
         return new MyViewHolder(itemView, RowItemorderFinisedBinding.bind(itemView));
     }
 
+    public interface OnClick {
+        void OnItemClick(RowItemorderFinisedBinding binding, View view, int position);
+    }
+
+    public void setOnClick(OnClick onClick) {
+        this.onClick = onClick;
+
+    }
+
     @Override
     protected void bindRViewHolder(MyViewHolder holder, int position) {
+        holder.setIsRecyclable(false);
+        orderFinished = (OrderFinished) mOrderFinisheds.get(position);
         if (Common.MERCHANT_TYPE == 1) {
             holder.binding.txtTitle.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
             holder.binding.txtTime.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
@@ -76,71 +88,71 @@ public class RvFinishedOrderListAdapter extends BaseAdapter<RvFinishedOrderListA
             holder.binding.btReOrder.setBackgroundDrawable(mContext.getResources().getDrawable(R.drawable.btn_goldenrectorange));
         }
         holder.binding.txtTitle.setText(Common.isStrempty(mOrderFinisheds.get(position).getRestaurant().getName()));
-        holder.binding.txtOrderId.setText("Oder No : " + Common.isStrempty(mOrderFinisheds.get(position).getOrderNumber()));
-        holder.binding.txtTime.setText("Oder time : " + Common.parseDateToddMMyyyy(mOrderFinisheds.get(position).getCreatedAt()));
-        holder.binding.txtDeliverTime.setText("Deliver time : " + Common.parseDateToddMMyyyy(mOrderFinisheds.get(position).getCreatedAt()));
+        holder.binding.txtOrderId.setText("Oder No : " + Common.isStrempty(orderFinished.getOrderNumber()));
+        holder.binding.txtTime.setText("Oder time : " + Common.parseDateToddMMyyyy(orderFinished.getCreatedAt()));
+        holder.binding.txtDeliverTime.setText("Deliver time : " + Common.parseDateToddMMyyyy(orderFinished.getCreatedAt()));
 //        holder.binding.txtOrderPaymentStatus.setText(Common.isStrempty(mOrderFinisheds.get(position).getPaymentStatus() + " : SR "+Common.isStrempty(mOrderFinisheds.get(position).getGrandTotal())));
-        Glide.with(mContext).load(mOrderFinisheds.get(position).getRestaurant().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivRestProfileImg);
+        Glide.with(mContext).load(orderFinished.getRestaurant().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivRestProfileImg);
 
-        if ((mOrderFinisheds.get(position).getDeliveryStatus() == 0)) {
+        if ((orderFinished.getDeliveryStatus() == 0)) {
             holder.binding.txtOrderStatus.setText("Status : " + "New");
-        } else if ((mOrderFinisheds.get(position).getDeliveryStatus() == 1)) {
+        } else if ((orderFinished.getDeliveryStatus() == 1)) {
             holder.binding.txtOrderStatus.setText("Status : " + "Processing");
-        } else if ((mOrderFinisheds.get(position).getDeliveryStatus() == 2)) {
+        } else if ((orderFinished.getDeliveryStatus() == 2)) {
             holder.binding.txtOrderStatus.setText("Status : " + "Cancelled By User");
-        } else if ((mOrderFinisheds.get(position).getDeliveryStatus() == 3)) {
+        } else if ((orderFinished.getDeliveryStatus() == 3)) {
             holder.binding.txtOrderStatus.setText("Status : " + "Cancelled");
-        } else if ((mOrderFinisheds.get(position).getDeliveryStatus() == 4)) {
+        } else if ((orderFinished.getDeliveryStatus() == 4)) {
             holder.binding.txtOrderStatus.setText("Status : " + "Completed");
-        } else if ((mOrderFinisheds.get(position).getDeliveryStatus() == 99)) {
+        } else if ((orderFinished.getDeliveryStatus() == 99)) {
             holder.binding.txtOrderStatus.setText("Status : " + "Unknown");
         }
 
-        if ((mOrderFinisheds.get(position).getPaymentType().equals("1"))) {
+        if ((orderFinished.getPaymentType().equals("1"))) {
             holder.binding.txtOrderPamentType.setText(mContext.getResources().getString(R.string.P_type) + " : " + "Wallet");
-        } else if ((mOrderFinisheds.get(position).getPaymentType().equals("2"))) {
+        } else if ((orderFinished.getPaymentType().equals("2"))) {
             holder.binding.txtOrderPamentType.setText(mContext.getResources().getString(R.string.P_type) + " : " + "Card");
-        } else if ((mOrderFinisheds.get(position).getPaymentType().equals("3"))) {
+        } else if ((orderFinished.getPaymentType().equals("3"))) {
             holder.binding.txtOrderPamentType.setText(mContext.getResources().getString(R.string.P_type) + " : " + "Apple Pay");
-        } else if ((mOrderFinisheds.get(position).getPaymentType().equals("99"))) {
+        } else if ((orderFinished.getPaymentType().equals("99"))) {
             holder.binding.txtOrderPamentType.setText(mContext.getResources().getString(R.string.P_type) + " : " + "Unknown");
-        } else if ((mOrderFinisheds.get(position).getPaymentType().equals("4"))) {
+        } else if ((orderFinished.getPaymentType().equals("4"))) {
             holder.binding.txtOrderPamentType.setText(mContext.getResources().getString(R.string.P_type) + " : " + "Cod");
         }
         try {
-            if (Common.isStrempty(mOrderFinisheds.get(position).getPaymentStatus()).equals("success")) {
+            if (Common.isStrempty(orderFinished.getPaymentStatus()).equals("success")) {
                 holder.binding.txtOrderPaymentStatus.setTextColor(mContext.getResources().getColor(R.color.green));
-                holder.binding.txtOrderPaymentStatus.setText("Paid" + " : SR " + Common.isStrempty(mOrderFinisheds.get(position).getTotalPrice()));
+                holder.binding.txtOrderPaymentStatus.setText("Paid" + " : SR " + Common.isStrempty(orderFinished.getTotalPrice()));
 
             } else {
-                holder.binding.txtOrderPaymentStatus.setText("Pending" + " : SR " + Common.isStrempty(mOrderFinisheds.get(position).getTotalPrice()));
+                holder.binding.txtOrderPaymentStatus.setText("Pending" + " : SR " + Common.isStrempty(orderFinished.getTotalPrice()));
                 holder.binding.txtOrderPaymentStatus.setTextColor(mContext.getResources().getColor(R.color.red));
             }
         } catch (Exception e) {
             holder.binding.txtOrderPaymentStatus.setVisibility(View.GONE);
         }
-        if(mOrderFinisheds.get(position).getReview() == null){
+        if (orderFinished.getReview() == null) {
             holder.binding.btReOrder.setVisibility(View.VISIBLE);
-        }else {
+            holder.binding.edReviewMsg.setEnabled(true);
+            holder.binding.rbRateReview.setIsIndicator(false);
+        } else {
             holder.binding.btReOrder.setVisibility(View.GONE);
-            holder.binding.edReviewMsg.setText(mOrderFinisheds.get(position).getReview().getReview());
-            holder.binding.rbRateReview.setRating((float) Float.parseFloat(mOrderFinisheds.get(position).getReview().getRate()));
+            holder.binding.edReviewMsg.setText(orderFinished.getReview().getReview());
+            holder.binding.edReviewMsg.setEnabled(false);
+            holder.binding.edReviewMsg.setInputType(InputType.TYPE_NULL);
+            holder.binding.rbRateReview.setIsIndicator(true);
+            holder.binding.rbRateReview.setRating((float) Float.parseFloat(orderFinished.getReview().getRate()));
+            if (!orderFinished.getReview().getAsReview()) {
+                holder.binding.btReOrder.setVisibility(View.GONE);
+            }
         }
+
 
         holder.binding.btReOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isConnected()) {
-                    String rating = String.valueOf(holder.binding.rbRateReview.getRating());
-                    if (rating == null) {
-                        Toast.makeText(mContext, "Please add rating.", Toast.LENGTH_SHORT).show();
-                        return;
-                    }
-                    if (holder.binding.edReviewMsg.getText().toString().equals("")) {
-                        Toast.makeText(mContext, "Enter your review message.", Toast.LENGTH_SHORT).show();
-                        return;
-                    }
-                    APICallUserOrderReview(mOrderFinisheds.get(position).getId(),holder.binding.edReviewMsg.getText().toString(),rating,mOrderFinisheds.get(position).getRestaurantId());
+                if (onClick != null) {
+                    onClick.OnItemClick(holder.binding, v, position);
                 }
             }
         });
@@ -149,62 +161,6 @@ public class RvFinishedOrderListAdapter extends BaseAdapter<RvFinishedOrderListA
     @Override
     protected int getListCounter() {
         return mOrderFinisheds.size();
-    }
-
-    public void APICallUserOrderReview(int order_id, String msg, String rating, Integer restaurantId) {
-        JSONObject jsonObject = new JSONObject();
-        try {
-            jsonObject.put("rate", rating);
-            jsonObject.put("review", msg);
-            jsonObject.put("merchant_id", restaurantId);
-            jsonObject.put("rate_type", 2);
-            jsonObject.put("order_id", order_id);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
-        String url = AppConstant.GET_USER_RATE;
-        APIcall apIcall = new APIcall(mContext);
-        apIcall.isPost(true);
-        apIcall.setBody(body);
-        apIcall.execute(url, APIcall.OPERATION_USER_RATE_US, this);
-    }
-
-    @Override
-    public void onStartLoading(int operationCode) {
-        if(operationCode == APIcall.OPERATION_USER_RATE_US){
-            showDialog();
-        }
-    }
-
-    @Override
-    public void onProgress(int operationCode, int progress) {
-
-    }
-
-    @Override
-    public void onSuccess(int operationCode, String response, Object customData) {
-        try {
-            if (operationCode == APIcall.OPERATION_USER_RATE_US) {
-                hideDialog();
-                JSONObject root = null;
-                try {
-                    root = new JSONObject(response);
-                    Toast.makeText(mContext, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }catch (Exception e){
-            hideDialog();
-        }
-
-    }
-
-    @Override
-    public void onFail(int operationCode, String response) {
-
     }
 
 

@@ -12,6 +12,7 @@
     <string name="bt_submit">إرسال</string>
     <!--    Mycart-->
     <string name="mycart_title">عربة التسوق الخاصة بي</string>
+    <string name="mycart_title_item">عنصر عربة التسوق الخاصة بي</string>
     <string name="mycart_next">التالى</string>
     <string name="mycart_no_data_found">لاتوجد بيانات.</string>
     <!--    ContectUs-->
@@ -132,4 +133,7 @@
     <string name="Total">مجموع</string>
 
     <string name="Save">حفظ</string>
+
+    <string name="please_enter_rating">Please Enter Rating</string>
+    <string name="please_enter_review">Please Enter Review</string>
 </resources>

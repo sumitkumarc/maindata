@@ -43,14 +43,18 @@ public class MutchantNotificationListAdapter extends RecyclerView.Adapter<Mutcha
 //        } else {
 //            holder.binding.txtTitle.setTextColor(mContext.getResources().getColor(R.color.super_mart));
 //        }
+        try {
+            holder.binding.txtName.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
+            holder.binding.txtName.setText(Common.isStrempty(mResponceData.get(position).getUser().getFullName()));
+            String data = mResponceData.get(position).getMessage();
 
-        String data = mResponceData.get(position).getMessage();
-
-        holder.binding.txtDetails1.setText("" + data);
-//        Glide.with(mContext).load(mResponceData.get(position).getRestaurant().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivProfile);
+            holder.binding.txtDetails1.setText("" + data);
+            Glide.with(mContext).load(mResponceData.get(position).getUser().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(holder.binding.ivProfile);
 //        holder.binding.txtTitle.setText(""+ mResponceData.get(position).getRestaurant().);
 
+        }catch (Exception e){
 
+        }
     }
 
     @Override

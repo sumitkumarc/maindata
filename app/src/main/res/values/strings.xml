@@ -12,6 +12,7 @@
 
     <!--    Mycart-->
     <string name="mycart_title">My Cart</string>
+    <string name="mycart_title_item">My Cart Item</string>
     <string name="mycart_next">Next</string>
     <string name="mycart_no_data_found">No data found.</string>
 
@@ -132,5 +133,8 @@
     <string name="Delivery_Type">Delivery Type</string>
     <string name="Total">Total</string>
     <string name="Save">Save</string>
+
+    <string name="please_enter_rating">Please Enter Rating</string>
+    <string name="please_enter_review">Please Enter Review</string>
 
 </resources>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
+            "outputFile": "C:\\Users\\Dell\\Documents\\GitHub\\new_ontime\\ontime_final_commit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\3884fa7f0bbc00c3fccba02b28526b79\\browser-1.3.0\\res\\values-pa\\values-pa.xml",

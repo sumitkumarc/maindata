@@ -30,6 +30,7 @@ import ontime.app.okhttp.AppConstant;
 import ontime.app.restaurant.model.readerOrder.ReaderExample;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -73,9 +74,9 @@ import retrofit2.Response;
 
 public class OrderSummaryActivity extends BaseActivity implements View.OnClickListener, APIcall.ApiCallListner, SessionDelegate {
     private int[] logos = {
-            R.drawable.cod, R.drawable.visa, R.drawable.wallettype, R.drawable.mac
+            R.drawable.cod, R.drawable.visa, R.drawable.wallettype/*, R.drawable.mac*/
     };
-   public static ActivityOrdersummaryBinding binding;
+    public static ActivityOrdersummaryBinding binding;
     RvPaymnetMethordListAdapter madapter;
     private final int SDK_REQUEST_CODE = 1001;
     private SDKSession sdkSession;
@@ -143,8 +144,9 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
             }
         });
     }
-    private void GetAPICallUserpaymentFail(){
-		 JSONObject jsonObject = new JSONObject();
+
+    private void GetAPICallUserpaymentFail() {
+        JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("payment_type", 2);
             jsonObject.put("transaction_amount", 100);
@@ -161,9 +163,10 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
         apIcall.isPost(true);
         apIcall.setBody(body);
         apIcall.execute(url, APIcall.OPERATION_USER_PAYMENT_FAIL, this);
-	}
-    private void GetAPICallUserpaymentPost(){
-		 JSONObject jsonObject = new JSONObject();
+    }
+
+    private void GetAPICallUserpaymentPost() {
+        JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("payment_type", 2);
             jsonObject.put("transaction_amount", 100);
@@ -178,7 +181,7 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
         apIcall.isPost(true);
         apIcall.setBody(body);
         apIcall.execute(url, APIcall.OPERATION_USER_PAYMENT_POST, this);
-	}
+    }
 
     private void GetAPICallRestaurantNewCartList() {
         if (Common.newCartItem.size() != 0) {
@@ -277,19 +280,19 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
         try {
             for (int i = 0; i < Common.newCartItem.size(); i++) {
                 itemA.put("menu_id", Common.newCartItem.get(i).getMenuId());
-                if(Common.newCartItem.get(i).getSizeId() != null){
+                if (Common.newCartItem.get(i).getSizeId() != null) {
                     itemA.put("size_id", Common.newCartItem.get(i).getSizeId().getId());
-                }else {
+                } else {
                     itemA.put("size_id", 0);
                 }
-                 if(Common.newCartItem.get(i).getRemovalId() != null){
+                if (Common.newCartItem.get(i).getRemovalId() != null) {
                     itemA.put("removal_id", Common.newCartItem.get(i).getRemovalId().getId());
-                }else {
+                } else {
                     itemA.put("removal_id", 0);
                 }
-                if(Common.newCartItem.get(i).getAdditionId() != null){
+                if (Common.newCartItem.get(i).getAdditionId() != null) {
                     itemA.put("addition_id", Common.newCartItem.get(i).getAdditionId().getId());
-                }else {
+                } else {
                     itemA.put("addition_id", 0);
                 }
                 itemA.put("item_id", Common.newCartItem.get(i).getItemId());
@@ -361,10 +364,10 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
         if (operationCode == APIcall.OPERATION_DISCOUNT) {
             showDialog();
         }
-		if (operationCode == APIcall.OPERATION_USER_PAYMENT_FAIL) {
+        if (operationCode == APIcall.OPERATION_USER_PAYMENT_FAIL) {
             showDialog();
         }
-		if (operationCode == APIcall.OPERATION_USER_PAYMENT_POST) {
+        if (operationCode == APIcall.OPERATION_USER_PAYMENT_POST) {
             showDialog();
         }
     }
@@ -427,10 +430,10 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
                     binding.txtServiceTax.setText("Service Fee Tax : SR " + Common.isStrempty(exampleUser.getResponceData().getServiceFeeTax()));
                     binding.txtOrderTotal.setText("Total : SR " + Common.isStrempty(exampleUser.getResponceData().getTotal()));
                     binding.txtPayAmount.setText("Total : SR " + Common.isStrempty(exampleUser.getResponceData().getGrandTotal()));
-                    String  nullres = Common.isStrempty(String.valueOf(exampleUser.getResponceData().getPercentage()));
-                    if(nullres.equals("null")){
+                    String nullres = Common.isStrempty(String.valueOf(exampleUser.getResponceData().getPercentage()));
+                    if (nullres.equals("null")) {
                         binding.txtDiscount.setText("Discount : " + "0%");
-                    }else {
+                    } else {
                         binding.txtDiscount.setText("Discount : " + Common.isStrempty(String.valueOf(exampleUser.getResponceData().getPercentage())) + "%");
                     }
 
@@ -438,7 +441,7 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
                     Toast.makeText(this, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
-            if(operationCode ==APIcall.OPERATION_WALLET){
+            if (operationCode == APIcall.OPERATION_WALLET) {
                 Gson gson = new Gson();
                 ExampleUser exampleUser = gson.fromJson(response, ExampleUser.class);
                 if (exampleUser.getStatus() == 200) {
@@ -454,32 +457,32 @@ public class OrderSummaryActivity extends BaseActivity implements View.OnClickLi
                     Toast.makeText(getContext(), "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
-			if (operationCode == APIcall.OPERATION_USER_PAYMENT_FAIL) {
-        
-				hideDialog();
+            if (operationCode == APIcall.OPERATION_USER_PAYMENT_FAIL) {
+
+                hideDialog();
                 JSONObject root = null;
                 try {
                     root = new JSONObject(response);
 //                    Toast.makeText(OrderSummaryActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
 
-                 
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-			}
-			if (operationCode == APIcall.OPERATION_USER_PAYMENT_POST) {
-        
-				hideDialog();
+            }
+            if (operationCode == APIcall.OPERATION_USER_PAYMENT_POST) {
+
+                hideDialog();
                 JSONObject root = null;
                 try {
                     root = new JSONObject(response);
 //                    Toast.makeText(OrderSummaryActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
 
-                 
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-			}
+            }
         } catch (Exception e) {
 
         }

@@ -3,6 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/backblack" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -11,26 +19,27 @@
         android:gravity="center"
         android:orientation="vertical">
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Wish you good health \n and happiness \n\n Rate Restaurant"
             android:textColor="@color/red"
-            android:textSize="26sp"/>
+            android:textSize="26sp" />
 
-<!--        <RatingBar-->
-<!--            style="@style/foodRatingBar"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="5dp"-->
-<!--            android:isIndicator="true"-->
-<!--            android:numStars="5"-->
-<!--            android:rating="0"-->
-<!--            android:scaleX="0.5"-->
-<!--            android:scaleY="0.5"-->
-<!--            android:stepSize="0.1"-->
-<!--            android:visibility="visible" />-->
+        <!--        <RatingBar-->
+        <!--            style="@style/foodRatingBar"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:isIndicator="true"-->
+        <!--            android:numStars="5"-->
+        <!--            android:rating="0"-->
+        <!--            android:scaleX="0.5"-->
+        <!--            android:scaleY="0.5"-->
+        <!--            android:stepSize="0.1"-->
+        <!--            android:visibility="visible" />-->
         <RatingBar
             android:id="@+id/rb_rate_review"
             style="?android:attr/ratingBarStyleIndicator"
@@ -52,13 +61,14 @@
             android:textSize="12sp" />
 
         <TextView
+            android:id="@+id/rateapp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:text="Rate App"
             android:textColor="@color/red"
-            android:textSize="26sp"/>
+            android:textSize="26sp" />
 
         <RatingBar
             android:id="@+id/rb_rate_review_1"
@@ -66,7 +76,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:isIndicator="false"
+            android:visibility="invisible"
+            android:isIndicator="true"
             android:numStars="5"
             android:theme="@style/RatingBar" />
 
@@ -83,6 +94,6 @@
             android:paddingBottom="@dimen/margin_basic_4dp"
             android:text="Submit"
             android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
     </LinearLayout>
 </FrameLayout>

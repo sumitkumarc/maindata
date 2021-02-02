@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.databinding.DataBindingUtil;
 
 import ontime.app.R;
+import ontime.app.customer.doneActivity.RestCartItemActivity;
 import ontime.app.customer.doneActivity.UserDashboardActivity;
 import ontime.app.databinding.ActivitySentrequestBinding;
 import ontime.app.utils.BaseActivity;
@@ -56,8 +57,8 @@ public class SentRequestActivity extends BaseActivity implements View.OnClickLis
         switch (view.getId()) {
             case R.id.back:
             case R.id.bt_goto_cart:
-                Intent intenta = new Intent(SentRequestActivity.this, UserDashboardActivity.class);
-                intenta.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                Intent intenta = new Intent(SentRequestActivity.this, RestCartItemActivity.class);
+               // intenta.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intenta);
                 finish();
                 break;

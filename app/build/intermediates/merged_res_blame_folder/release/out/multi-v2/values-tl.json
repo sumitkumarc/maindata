@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-tl\\values-tl.xml",
+            "outputFile": "C:\\Users\\Dell\\Documents\\GitHub\\new_ontime\\ontime_final_commit\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-tl\\values-tl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\c77d530a894c9cdc1e02ae73843c5ba2\\jetified-play-services-basement-17.1.0\\res\\values-tl\\values.xml",

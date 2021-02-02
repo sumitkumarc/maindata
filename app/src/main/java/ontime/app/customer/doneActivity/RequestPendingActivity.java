@@ -11,11 +11,13 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -45,7 +47,6 @@ public class RequestPendingActivity extends BaseActivity implements View.OnClick
     private String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
     Date event_date;
-    Date c_cancle_date;
 
     @Override
     protected void initView() {
@@ -68,12 +69,27 @@ public class RequestPendingActivity extends BaseActivity implements View.OnClick
                 break;
             case R.id.bt_cancel:
                 if (isConnected()) {
+                    DateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                    Calendar cal = Calendar.getInstance();
+                    cal.setTimeZone(TimeZone.getTimeZone("UTC"));
+                    Date date_cancels = null;
+                    try {
+                        date_cancels = timeFormat.parse(Common.ORDERPROCCESSING_ORDER.getCreatedAt());
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+                    cal.setTime(date_cancels);
+                    cal.add(Calendar.MINUTE, 2);
+                    timeFormat.format(cal.getTime());
+                    Date c_cancle_date = cal.getTime();
                     Date current_dateas = new Date();
                     if (!current_dateas.after(c_cancle_date)) {
                         APICallUserCancleOrder(Common.ORDERPROCCESSING_ORDER.getId());
                     } else {
                         Toast.makeText(this, "Time out for order cancel", Toast.LENGTH_SHORT).show();
+
                     }
+
 
                 }
                 break;
@@ -105,9 +121,10 @@ public class RequestPendingActivity extends BaseActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         try {
             binding.txtQty.setText(Common.isStrempty(String.valueOf(Common.ORDERPROCCESSING_ORDER.getOrderDetail().get(0).getQuantity())));
-            binding.txtTotal.setText("SR " + Common.isStrempty(String.valueOf(Common.ORDERPROCCESSING_ORDER.getGrandTotal())));
-            binding.txtName.setText(Common.isStrempty(String.valueOf(Common.ORDERPROCCESSING_ORDER.getRestaurant().getName())));
-            binding.txtOrderStatus.setText("Status : " + Common.isStrempty(String.valueOf(Common.ORDERPROCCESSING_ORDER.getPaymentStatus())));
+            binding.txtTotal.setText("SR " + Common.isStrempty(Common.ORDERPROCCESSING_ORDER.getTotalPrice()));
+            binding.txtName.setText(Common.isStrempty(Common.ORDERPROCCESSING_ORDER.getRestaurant().getName()));
+            binding.txtOrderStatus.setText("Status : " + Common.isStrempty(Common.ORDERPROCCESSING_ORDER.getPaymentStatus()));
+            Glide.with(this).load(Common.ORDERPROCCESSING_ORDER.getRestaurant().getImage()).centerCrop().placeholder(R.drawable.ic_action_user).into(binding.ivRestMenu);
             LinearLayoutManager mLayoutManager1as = new LinearLayoutManager(getContext());
             mLayoutManager1as.setOrientation(LinearLayoutManager.VERTICAL);
 
@@ -134,23 +151,7 @@ public class RequestPendingActivity extends BaseActivity implements View.OnClick
                 e.printStackTrace();
             }
             GetCountDownStart();
-
-            Calendar c_cancle = Calendar.getInstance();
-            dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
-            Date date_cancel = new Date();
-            try {
-//            mreaderProccessings.get(position).getCountdownTime()
-                date_cancel = dateFormat.parse(Common.ORDERPROCCESSING_ORDER.getCreatedAt());
-                c_cancle.setTime(date_cancel);
-//            mreaderProccessings.get(position).getDeliveryTime()
-                c_cancle.add(Calendar.SECOND, 120);
-                c_cancle_date = new Date();
-                dateFormat.setTimeZone(TimeZone.getDefault());
-                c_cancle_date = c_cancle.getTime();
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-        }catch (Exception e){
+        } catch (Exception e) {
 
         }
 

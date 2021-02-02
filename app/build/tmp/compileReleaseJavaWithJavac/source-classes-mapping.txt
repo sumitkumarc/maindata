@@ -17,6 +17,8 @@ ontime/app/databinding/ActivityMurNotificationBinding.java
  ontime.app.databinding.ActivityMurNotificationBinding
 ontime/app/restaurant/model/readerOrder/ReaderExample.java
  ontime.app.restaurant.model.readerOrder.ReaderExample
+ontime/app/restaurant/model/MerchantUser.java
+ ontime.app.restaurant.model.MerchantUser
 ontime/app/model/usermain/AdditionId.java
  ontime.app.model.usermain.AdditionId
 ontime/app/model/userprofile/AdditionDetail.java
@@ -530,6 +532,8 @@ ontime/app/databinding/ActivityNewOrderItemListBinding.java
  ontime.app.databinding.ActivityNewOrderItemListBinding
 ontime/app/customer/Fragment/TabOrderCancelled.java
  ontime.app.customer.Fragment.TabOrderCancelled
+ontime/app/model/usermain/NotificationDataModel.java
+ ontime.app.model.usermain.NotificationDataModel
 ontime/app/customer/Adapter/RvRestaurantMenuFilterItemListAdapter.java
  ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter
  ontime.app.customer.Adapter.RvRestaurantMenuFilterItemListAdapter$1

@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+
 import ontime.app.R;
 import ontime.app.customer.doneActivity.MyOrdersListActivity;
 import ontime.app.customer.doneActivity.RequestPendingActivity;
@@ -27,6 +28,7 @@ import ontime.app.restaurant.adapte.RvNewOrderAdapter;
 import ontime.app.restaurant.model.readerOrder.ReaderExample;
 import ontime.app.utils.BaseAdapter;
 import ontime.app.utils.Common;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
@@ -34,7 +36,14 @@ import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 import okhttp3.RequestBody;
 import retrofit2.Call;
@@ -43,10 +52,13 @@ import retrofit2.Response;
 
 public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderListAdapter.MyViewHolder> implements APIcall.ApiCallListner {
     Context mContext;
-    List<OrderProccessing> mProccessings;
+    ArrayList<OrderProccessing> mProccessings;
     ProgressDialog dialog;
+    int POSTION = 0;
+    Date c_cancle_date;
+    private String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
-    public RvProcessingOrderListAdapter(Context context, List<OrderProccessing> objProcessing) {
+    public RvProcessingOrderListAdapter(Context context, ArrayList<OrderProccessing> objProcessing) {
         mContext = context;
         mProccessings = objProcessing;
     }
@@ -85,7 +97,7 @@ public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderL
             holder.binding.txtOrderStatus.setText("Status : " + "Cancelled");
         } else if ((mProccessings.get(position).getDeliveryStatus() == 4)) {
             holder.binding.txtOrderStatus.setText("Status : " + "Completed");
-        }else if ((mProccessings.get(position).getDeliveryStatus() == 99)) {
+        } else if ((mProccessings.get(position).getDeliveryStatus() == 99)) {
             holder.binding.txtOrderStatus.setText("Status : " + "Unknown");
         }
 
@@ -112,6 +124,8 @@ public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderL
         } catch (Exception e) {
             holder.binding.txtOrderPaymentStatus.setVisibility(View.GONE);
         }
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT);
+
 
 //        holder.binding.txtTitle.setText(Common.isStrempty(mProccessings.get(position).getRestaurant().getName()));
 //        holder.binding.txtOrderId.setText("Oder No : " + Common.isStrempty(mProccessings.get(position).getOrderNumber()));
@@ -145,20 +159,42 @@ public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderL
 //        } else if ((mProccessings.get(position).getPaymentType().equals("4"))) {
 //            holder.binding.txtOrderStatus.setText("Payment type : " + "Cash On Delivery");
 //        }
-
         holder.binding.btCancelled.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                APICallUserCancleOrder(mProccessings.get(position).getId());
+                DateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                Calendar cal = Calendar.getInstance();
+                cal.setTimeZone(TimeZone.getTimeZone("UTC"));
+                Date date_cancels = null;
+                try {
+                    date_cancels = timeFormat.parse(mProccessings.get(position).getCreatedAt());
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                cal.setTime(date_cancels);
+                cal.add(Calendar.MINUTE, 2);
+                timeFormat.format(cal.getTime());
+                c_cancle_date = cal.getTime();
+                Date current_dateas = new Date();
+                if (!current_dateas.after(c_cancle_date)) {
+                    POSTION = position;
+                    APICallUserCancleOrder(mProccessings.get(position).getId());
+                } else {
+                    Toast.makeText(mContext, "Time out for order cancel", Toast.LENGTH_SHORT).show();
+
+                }
+
+
             }
         });
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mProccessings.get(position).getCountdownTime() != null){
-                    Common.ORDERPROCCESSING_ORDER=  mProccessings.get(position);
+
+                if (mProccessings.get(position).getCountdownTime() != null) {
+                    Common.ORDERPROCCESSING_ORDER = mProccessings.get(position);
                     mContext.startActivity(new Intent(mContext, RequestPendingActivity.class));
-                }else {
+                } else {
                     Toast.makeText(mContext, "Order Not accepted", Toast.LENGTH_SHORT).show();
                 }
 //                APICallUserCancleOrder(mProccessings.get(position).getId());
@@ -171,6 +207,12 @@ public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderL
     protected int getListCounter() {
         return mProccessings.size();
 
+    }
+
+    public void removeAt(int position) {
+        mProccessings.remove(position);
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position, mProccessings.size());
     }
 
     private void showDialog() {
@@ -217,12 +259,16 @@ public class RvProcessingOrderListAdapter extends BaseAdapter<RvProcessingOrderL
         try {
             if (operationCode == APIcall.OPERATION_USER_CANCEL_ORDER) {
                 hideDialog();
-                Gson gson = new Gson();
-                ExampleUser exampleUser = gson.fromJson(response, ExampleUser.class);
-                if (exampleUser.getStatus() == 200) {
-                    Toast.makeText(mContext, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                JSONObject json_data = new JSONObject(response);
+                if (json_data.getInt("status") == 200) {
+                    Toast.makeText(mContext, json_data.getString("message"), Toast.LENGTH_SHORT).show();
+                    removeAt(POSTION);
+                    if (mProccessings.size() > 0) {
+                        mProccessings.remove(POSTION);
+                        notifyDataSetChanged();
+                    }
                 } else {
-                    Toast.makeText(mContext, "" + exampleUser.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext, json_data.getString("message"), Toast.LENGTH_SHORT).show();
                 }
             }
         } catch (Exception e) {

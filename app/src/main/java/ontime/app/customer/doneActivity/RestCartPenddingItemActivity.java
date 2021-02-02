@@ -1,6 +1,7 @@
 package ontime.app.customer.doneActivity;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Build;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -26,7 +28,12 @@ import ontime.app.utils.Common;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import okhttp3.RequestBody;
+
+import static ontime.app.customer.doneActivity.RestaurantProfileActivity.isTakeAway;
 
 public class RestCartPenddingItemActivity extends BaseActivity implements View.OnClickListener, APIcall.ApiCallListner, rv_interface {
 
@@ -35,6 +42,8 @@ public class RestCartPenddingItemActivity extends BaseActivity implements View.O
     RvRestaurantCartPenddingListAdapter mAdapter;
     rv_interface anInterface;
     int position = 0;
+    int editPosition;
+    public ArrayList<UserCartItem> newCartItem = new ArrayList<>();
 
     @Override
     protected void initView() {
@@ -52,6 +61,8 @@ public class RestCartPenddingItemActivity extends BaseActivity implements View.O
     @SuppressLint("UseCompatLoadingForDrawables")
     private void setUpUI() {
         binding.payButtonId.setVisibility(View.VISIBLE);
+
+        binding.txtTitle.setText(getResources().getString(R.string.mycart_title_item));
         if (Common.MERCHANT_TYPE == 1) {
             Common.setSystemBarColor(this, R.color.colorAccent);
 //            Common.setSystemBarLight(this);
@@ -76,7 +87,9 @@ public class RestCartPenddingItemActivity extends BaseActivity implements View.O
             binding.rvList.setVisibility(View.VISIBLE);
             binding.tvNodata.setVisibility(View.GONE);
             binding.txtCount.setText("(" + String.valueOf(Common.newCartItem.size()) + ")");
-            mAdapter = new RvRestaurantCartPenddingListAdapter(getContext(), Common.newCartItem, true);
+            newCartItem.clear();
+            newCartItem.addAll(Common.newCartItem);
+            mAdapter = new RvRestaurantCartPenddingListAdapter(getContext(), newCartItem, true);
             binding.rvList.setItemAnimator(new DefaultItemAnimator());
             binding.rvList.setAdapter(mAdapter);
             mAdapter.setOnItemClickListener(this);
@@ -84,7 +97,35 @@ public class RestCartPenddingItemActivity extends BaseActivity implements View.O
             binding.rvList.setVisibility(View.GONE);
             binding.tvNodata.setVisibility(View.VISIBLE);
         }
+        mAdapter.setOnClick(new RvRestaurantCartPenddingListAdapter.OnClick() {
+            @Override
+            public void OnItemClick(View view, int position) {
+                editPosition = position;
+                Common.UpdateCart = newCartItem.get(position);
+                Intent i2 = new Intent(getContext(), RestaurantDetailActivity.class);
+                i2.putExtra("MENU_ID", newCartItem.get(position).getItemDetail().getMenuId());
+                i2.putExtra("ITEM_ID", newCartItem.get(position).getItemDetail().getId());
+                i2.putExtra("CART_ITEM_ID", newCartItem.get(position).getId());
+                i2.putExtra("CART_ITEM_SIZE", newCartItem.size());
+                i2.putExtra("restaurant_id", newCartItem.get(position).getItemDetail().getRestaurantId());
+                i2.putExtra("UPDATE_ITEM", 0);
+                startActivityForResult(i2, 34543);
+            }
+        });
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 34543 && resultCode == Activity.RESULT_OK) {
+            if (data != null) {
+                newCartItem.get(editPosition).setQuantity(Integer.valueOf(data.getStringExtra("Quantity")));
+                newCartItem.get(editPosition).setTotalPrice((data.getStringExtra("total")));
+                mAdapter.notifyDataSetChanged();
+            }
+
+        }
     }
 
     private void GetAPICallRestCartListItemDelete(int pos) {
@@ -114,6 +155,7 @@ public class RestCartPenddingItemActivity extends BaseActivity implements View.O
         switch (view.getId()) {
             case R.id.back:
                 onBackPressed();
+                isTakeAway = false;
                 break;
             case R.id.payButtonId:
                 startActivity(new Intent(this, OrderSummaryActivity.class));
@@ -121,6 +163,12 @@ public class RestCartPenddingItemActivity extends BaseActivity implements View.O
             default:
                 break;
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        isTakeAway = false;
     }
 
     private void showDialog() {
@@ -211,9 +259,9 @@ public class RestCartPenddingItemActivity extends BaseActivity implements View.O
                     JSONObject json_data = new JSONObject(response);
                     if (json_data.getInt("status") == 200) {
                         Toast.makeText(this, json_data.getString("message"), Toast.LENGTH_SHORT).show();
+                        newCartItem.remove(position);
                         mAdapter.notifyDataSetChanged();
-                        Common.newCartItem.remove(position);
-                        mAdapter.notifyItemRemoved(position);
+                        binding.txtCount.setText("(" + String.valueOf(newCartItem.size()) + ")");
                     } else {
                         Toast.makeText(this, json_data.getString("message"), Toast.LENGTH_SHORT).show();
                     }
