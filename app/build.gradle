@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
+    /*signingConfigs {
         debug {
             keyAlias 'myrestaurantapp'
             storeFile file('C:\\Users\\Dell\\Documents\\GitHub\\OntimeNew\\MyRestaurantApp.jks')
@@ -14,7 +14,7 @@ android {
             keyPassword 'MyRestaurantApp'
             keyAlias 'myrestaurantapp'
         }
-    }
+    }*/
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
 
@@ -26,7 +26,7 @@ android {
         versionName "1.1.3"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
-        signingConfig signingConfigs.release
+        //signingConfig signingConfigs.release
     }
 
     buildTypes {
@@ -72,7 +72,7 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:4.3.1'
     implementation 'com.squareup.okhttp:okhttp:2.7.5'
     implementation 'com.google.code.gson:gson:2.8.6'
-
+    implementation "com.squareup.okhttp3:logging-interceptor:3.8.0"
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'io.michaelrocks:libphonenumber-android:8.10.16'
     implementation 'com.google.firebase:firebase-core:18.0.1'

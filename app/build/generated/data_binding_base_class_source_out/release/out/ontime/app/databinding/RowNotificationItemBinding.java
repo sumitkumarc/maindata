@@ -25,11 +25,15 @@ public final class RowNotificationItemBinding implements ViewBinding {
   @NonNull
   public final TextView txtDetails1;
 
+  @NonNull
+  public final TextView txtName;
+
   private RowNotificationItemBinding(@NonNull RelativeLayout rootView, @NonNull ImageView ivProfile,
-      @NonNull TextView txtDetails1) {
+      @NonNull TextView txtDetails1, @NonNull TextView txtName) {
     this.rootView = rootView;
     this.ivProfile = ivProfile;
     this.txtDetails1 = txtDetails1;
+    this.txtName = txtName;
   }
 
   @Override
@@ -71,7 +75,14 @@ public final class RowNotificationItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RowNotificationItemBinding((RelativeLayout) rootView, ivProfile, txtDetails1);
+      id = R.id.txt_name;
+      TextView txtName = rootView.findViewById(id);
+      if (txtName == null) {
+        break missingId;
+      }
+
+      return new RowNotificationItemBinding((RelativeLayout) rootView, ivProfile, txtDetails1,
+          txtName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

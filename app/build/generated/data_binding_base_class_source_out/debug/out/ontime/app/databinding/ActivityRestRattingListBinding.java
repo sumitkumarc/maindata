@@ -36,9 +36,6 @@ public abstract class ActivityRestRattingListBinding extends ViewDataBinding {
   public final RatingBar rbRatingbar;
 
   @NonNull
-  public final RelativeLayout rlMain;
-
-  @NonNull
   public final RecyclerView rvFilterList;
 
   @NonNull
@@ -58,16 +55,15 @@ public abstract class ActivityRestRattingListBinding extends ViewDataBinding {
 
   protected ActivityRestRattingListBinding(Object _bindingComponent, View _root,
       int _localFieldCount, ImageView ivBackArrow, CircleImageView ivRestProfileImg,
-      LinearLayout llBack, RelativeLayout llBar, RatingBar rbRatingbar, RelativeLayout rlMain,
-      RecyclerView rvFilterList, TextView txtCount, TextView txtNoItem, TextView txtResBarnchname,
-      TextView txtResName, TextView txtTitle) {
+      LinearLayout llBack, RelativeLayout llBar, RatingBar rbRatingbar, RecyclerView rvFilterList,
+      TextView txtCount, TextView txtNoItem, TextView txtResBarnchname, TextView txtResName,
+      TextView txtTitle) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ivBackArrow = ivBackArrow;
     this.ivRestProfileImg = ivRestProfileImg;
     this.llBack = llBack;
     this.llBar = llBar;
     this.rbRatingbar = rbRatingbar;
-    this.rlMain = rlMain;
     this.rvFilterList = rvFilterList;
     this.txtCount = txtCount;
     this.txtNoItem = txtNoItem;
