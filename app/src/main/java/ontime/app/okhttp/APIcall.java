@@ -78,6 +78,7 @@ public class APIcall {
     public static int OPERATION_ADD_TO_CART_SUPER= 100045;
     public static int OPERATION_SUPER_MENU_ITEM_UPDATE_DETAIL = 100046;
     public static int OPERATION_USER_ORDERDETAIL = 100047;
+    public static int  OPERATION_LOGIN_UPDATE_OTP = 100048;
 
 
 

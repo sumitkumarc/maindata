@@ -233,7 +233,7 @@ public class RestCartPenddingItemActivity extends BaseActivity implements View.O
             jsonObject.put("quantity", item_id.getQuantity());
             jsonObject.put("unit_price", item_id.getUnitPrice());
             jsonObject.put("total_price", item_id.getTotalPrice());
-            jsonObject.put("addition_price", "0.00");
+            jsonObject.put("addition_price", item_id.getAdditionId().getPrice());
         } catch (JSONException e) {
             e.printStackTrace();
         }

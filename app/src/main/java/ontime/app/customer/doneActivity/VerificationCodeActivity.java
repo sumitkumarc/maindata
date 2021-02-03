@@ -544,17 +544,13 @@ public class VerificationCodeActivity extends BaseActivity implements View.OnCli
                             new Handler().postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
+
                                     if (getIntent().getIntExtra("FORGOTPWS", 0)  == 0) {
                                         GetAPICallRegistrationUser();
                                     } else {
-                                        Intent intent = new Intent(VerificationCodeActivity.this, ChangePasswordActivity.class);
-                                        intent.putExtra("PHONE_NO", strPhoneNumber);
-                                        intent.putExtra("PHONE_OTP", VERIFIY_CODE);
-                                        intent.putExtra("PhoneCode", "+" + strPhoneCode);
-                                        intent.putExtra("FORGOT_TYPE", 1);
-                                        startActivity(intent);
-                                    }
+                                        GetAPICallUpdateOtpUser();
 
+                                    }
                                 }
                             }, 500);
                         } else {
@@ -570,6 +566,24 @@ public class VerificationCodeActivity extends BaseActivity implements View.OnCli
                         }
                     }
                 });
+    }
+
+    private void GetAPICallUpdateOtpUser() {
+        Common.hideKeyboard(getActivity());
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("contact_number", strPhoneNumber);
+            jsonObject.put("country_code", "+" + strPhoneCode);
+            jsonObject.put("otp", VERIFIY_CODE);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        RequestBody body = RequestBody.create(APIcall.JSON, jsonObject + "");
+        String url = AppConstant.GET_LOGIN_UPDATE_OTP;
+        APIcall apIcall = new APIcall(getApplicationContext());
+        apIcall.isPost(true);
+        apIcall.setBody(body);
+        apIcall.execute(url, APIcall.OPERATION_LOGIN_UPDATE_OTP, this);
     }
 
 
@@ -645,10 +659,10 @@ public class VerificationCodeActivity extends BaseActivity implements View.OnCli
                 .addFormDataPart("contact_number", strPhoneNumber)
                 .addFormDataPart("password", strPassword)
                 .addFormDataPart("device_type", "android")
+                .addFormDataPart("device_token", token)
                 .addFormDataPart("image", strFilename,
                         RequestBody.create(new File(strFileParth), MEDIA_TYPE_PNG))
                 .build();
-
         String url = AppConstant.GET_USER_SIGNUP;
         APIcall apIcall = new APIcall(getApplicationContext());
         apIcall.isPost(true);
@@ -664,6 +678,9 @@ public class VerificationCodeActivity extends BaseActivity implements View.OnCli
             showDialog();
         }
         if (operationCode == APIcall.OPERATION_REGISTET) {
+            showDialog();
+        }
+		  if (operationCode == APIcall.OPERATION_LOGIN_UPDATE_OTP) {
             showDialog();
         }
 
@@ -724,6 +741,27 @@ public class VerificationCodeActivity extends BaseActivity implements View.OnCli
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+            }
+            if(operationCode == APIcall.OPERATION_LOGIN_UPDATE_OTP){
+                hideDialog();
+                JSONObject root = null;
+                try {
+                    root = new JSONObject(response);
+                    if (root.getString("status").equals("200")) {
+                   //     Toast.makeText(VerificationCodeActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(VerificationCodeActivity.this, ChangePasswordActivity.class);
+                        intent.putExtra("PHONE_NO", strPhoneNumber);
+                        intent.putExtra("PHONE_OTP", VERIFIY_CODE);
+                        intent.putExtra("PhoneCode", "+" + strPhoneCode);
+                        intent.putExtra("FORGOT_TYPE", 1);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(VerificationCodeActivity.this, "" + root.getString("message"), Toast.LENGTH_SHORT).show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
             }
         } catch (Exception e) {
 

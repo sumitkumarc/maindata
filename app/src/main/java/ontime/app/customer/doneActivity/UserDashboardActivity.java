@@ -25,25 +25,50 @@ import com.google.gson.Gson;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Locale;
+
 import okhttp3.RequestBody;
 import ontime.app.R;
 import ontime.app.databinding.ActivityHomeBinding;
 import ontime.app.model.usermain.Userdate;
 import ontime.app.okhttp.APIcall;
 import ontime.app.okhttp.AppConstant;
+import ontime.app.okhttp.SharedPreferenceManagerFile;
 import ontime.app.utils.BaseActivity;
 import ontime.app.utils.Common;
+import ontime.app.utils.LanguageManager;
 import ontime.app.utils.SessionManager;
 
 public class UserDashboardActivity extends BaseActivity implements View.OnClickListener, APIcall.ApiCallListner {
     SessionManager sessionManager;
     Userdate userData;
     ActivityHomeBinding binding;
+    Locale locale;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         sessionManager = new SessionManager(UserDashboardActivity.this);
         userData = sessionManager.getUserDetails();
+        Locale locale;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            locale = getResources().getConfiguration().getLocales().get(0);
+        } else {
+            locale = getResources().getConfiguration().locale;
+        }
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (locale.getLanguage().equals(LanguageManager.LANGUAGE_KEY_ARABIC)) {
+                    binding.menu.setVisibility(View.GONE);
+                    binding.menuNew.setVisibility(View.VISIBLE);
+                } else {
+                    binding.menuNew.setVisibility(View.GONE);
+                    binding.menu.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
 
         setUpUI();
         FirebaseMessaging.getInstance().getToken()
@@ -91,6 +116,7 @@ public class UserDashboardActivity extends BaseActivity implements View.OnClickL
         setUpUI();
         //will be executed onResume
     }
+
     @Override
     protected void setListener() {
         super.setListener();
@@ -99,6 +125,7 @@ public class UserDashboardActivity extends BaseActivity implements View.OnClickL
 
         binding.close.setOnClickListener(this);
         binding.menu.setOnClickListener(this);
+        binding.menuNew.setOnClickListener(this);
         binding.llhome.setOnClickListener(this);
         binding.llabout.setOnClickListener(this);
         binding.llangages.setOnClickListener(this);
@@ -172,6 +199,8 @@ public class UserDashboardActivity extends BaseActivity implements View.OnClickL
                 break;
             case R.id.menu:
                 binding.drawerLayout.openDrawer(Gravity.RIGHT);
+            case R.id.menuNew:
+                binding.drawerLayout.openDrawer(Gravity.RIGHT);
                 break;
             case R.id.close:
                 binding.drawerLayout.closeDrawers();
@@ -226,6 +255,7 @@ public class UserDashboardActivity extends BaseActivity implements View.OnClickL
                 break;
         }
     }
+
     @Override
     public void onStartLoading(int operationCode) {
 

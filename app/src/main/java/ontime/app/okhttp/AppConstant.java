@@ -8,6 +8,7 @@ public class AppConstant {
 
     public static final String BASE_URL_NEW =BASE_URL1 + "api/customer/";
     public static final String GET_LOGIN_NEW = BASE_URL_NEW +"login";
+    public static final String GET_LOGIN_UPDATE_OTP = BASE_URL_NEW +"updateOtp";
     public static final String GET_RESTAURANT_LIST = BASE_URL_NEW +"getRestaurant";
     public static final String GET_RESTAURANT_PROFILE = BASE_URL_NEW +"restaurantProfile";
     public static final String GET_RESTAURANT_MENU_ITEM = BASE_URL_NEW +"menu_items";
